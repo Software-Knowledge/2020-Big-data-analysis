@@ -428,7 +428,7 @@ $N_{Eps}(p) = \{q \in D | dist(p, q) \leq Eps\}$
 
 ![](img/lec7/24.png)
 
-### 8.7.3. DECLUE:使用密度函数
+### 8.7.3. DENCLUE:使用密度函数
 - 基于密度的簇（Hinneburg＆Keim，1998）
 - 主要特点
   - 适用于噪声较大的数据集
