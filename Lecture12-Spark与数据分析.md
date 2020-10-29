@@ -1,12 +1,11 @@
 lec12ture9-Spark与数据分析
 ---
-- 知道Spark的RDD、原理啥的就行
 
 # 1. 复习
 1. MapReduce
    1. 轻松编写应用程序，以可靠，容错的方式在大型集群上并行处理大量数据
    2. 负责安排任务，监视任务并重新执行失败的任务
-2. HDFS和MapReduce：在同一组节点上运行 -> 计算节点和存储节点相同（使数据接近计算） -> 高吞吐量
+2. HDFS和MapReduce：在同一组节点上运行`->`计算节点和存储节点相同（使数据接近计算）`->`高吞吐量
 3. YARN&MapReduce：一个主资源管理器，每个节点一个从属节点管理器，每个应用程序一个AppMaster
 
 # 2. 数据处理的目标
@@ -14,7 +13,7 @@ lec12ture9-Spark与数据分析
 2. 对实时数据（流）的低延迟查询：启用对实时数据的决策，例如，实时检测和阻止蠕虫（蠕虫可能在1.3秒内感染100万台主机）。
 3. 先进的数据处理：实现“更好”的决策，例如，异常检测，趋势分析。
 
-# 3. 今天的开源分析框架
+# 3. 现在的开源分析框架
 1. 主要针对大型磁盘数据集：非常适合批处理，但速度较慢
 
 ![](img/lec12/1.png)
@@ -30,10 +29,10 @@ lec12ture9-Spark与数据分析
 
 ## 5.1. 积极使用内存
 1. 为什么？
-   1. 内存传输率>>磁盘或SSD
+   1. 内存传输率远远快于磁盘或SSD
    2. 许多数据集已经适合内存
       1. Facebook，Yahoo！和Bing群集中超过90％的工作输入适合内存
-      2. 例如1TB = 10亿条记录@每个1KB
+      2. 例如1TB = 10亿条记录，每个记录大小为1KB
 2. 内存密度（仍）随摩尔定律增长：即将推出的RAM/SSD混合存储器
 
 |                     |                     |
@@ -41,7 +40,7 @@ lec12ture9-Spark与数据分析
 | ![](img/lec12/3.png) | ![](img/lec12/5.png) |
 
 ## 5.2. 增加并行度
-1. 为什么？减少每个节点的工作量 -> 改善延
+1. 为什么？减少每个节点的工作量 -> 改善延时
 2. 技术：
    1. 实现高局部性的低延迟并行调度程序
    2. 优化的并行通信模式（例如，随机播放，广播）
@@ -52,39 +51,32 @@ lec12ture9-Spark与数据分析
    1. 内存中处理不能保证交互式查询处理
       1. 例如，仅10秒就可以扫描512 GB RAM！
       2. 内存容量与传输速率之间的差距增大
-2. 挑战：
-   1. 准确估算错误和运行时间，以任意计算
+2. 挑战：准确估算错误和运行时间，以任意计算
 
 ![](img/lec12/6.png)
 
 # 6. Berkeley Data Analytics Stacks(BDAS)，伯克利数据分析堆栈
 ![](img/lec12/7.png)
 
-- 图片修正
-
 ## 6.1. 伯克利AMP实验室
-1. 2011年1月“启动”：6年计划
-   1. 8 CS职工
-   2. 大约40名学生
-   3. 3位软件工程师
-2. 组织协作：
+1. 2011年1月“启动”：6年计划，由8名计算机职工，大约40名学生，3名软件工程师组成，组织协作如下图
 
 ![](img/lec12/8.png)
 
-3. 资助:DARPA：数据，NSF：补助金
-4. 工业，创始赞助商
-5. 其他18个赞助商，包括
+2. 资助:DARPA：数据，NSF：补助金
+3. 工业，创始赞助商
+4. 其他18个赞助商，包括
 
 ![](img/lec12/9.png)
 
-6. 目标：面向工业和研究的下一代分析数据堆栈：
+5. 目标：面向工业和研究的下一代分析数据堆栈：
    1. 伯克利数据分析堆栈（BDAS）
    2. 发布为开源
 
 # 7. Hadoop和Spark的历史
-![](img/lec12/10.png)
-
 > 谷歌的三家马车
+
+![](img/lec12/10.png)
 
 ## 7.1. Apache的Hadoop和Spark
 > Spark可以不抛弃HDFS，只需要在其基础上添加一个YARN来完成操作。
@@ -107,7 +99,7 @@ lec12ture9-Spark与数据分析
 ![](img/lec12/14.png)
 
 ## 7.5. Spark 和 MapReduce：数据流
-> 将上面三个部分合并，省略了多次的HDFS read和HDFS write的时间
+> 将下面的三个部分合并，省略了多次的HDFS read和HDFS write的时间
 
 ![](img/lec12/15.png)
 
@@ -125,7 +117,7 @@ lec12ture9-Spark与数据分析
 ## 7.7. Spark:高表现和简单的数据流
 ![](img/lec12/17.png)
 
-## 7.8. 性能表现：Spark 和 MapReduce
+# 8. 性能表现：Spark 和 MapReduce
 1. 迭代算法
    1. Spark更快，简化了数据流
    2. 避免在每次迭代后在HDFS上实现数据
@@ -133,7 +125,7 @@ lec12ture9-Spark与数据分析
    1. HDFS读取
    2. 映射（将样本分配给最接近的质心）
    3. GroupBy（Centroid_ID）
-   4. 网络随机播放
+   4. 网络随机轮转
    5. 减少（计算新质心）
    6. HDFS写
 
@@ -148,23 +140,23 @@ lec12ture9-Spark与数据分析
 ![](img/lec12/19.png)
 ![](img/lec12/20.png)
 
-## 7.9. 驱动
+## 8.1. 驱动
 
-### 7.9.1. MapReduce：Hadoop生态系统的原始可扩展通用处理引擎
+### 8.1.1. MapReduce：Hadoop生态系统的原始可扩展通用处理引擎
 1. **基于磁盘的数据处理框架（HDFS文件）**
 2. 将中间结果持久化到磁盘
 3. 每次查询都会从磁盘重新加载数据→成本很高的I / O
 4. 最适合ETL之类的工作负载（批处理）
 5. **昂贵的I/O->不适合迭代或流处理工作量**
 
-### 7.9.2. Spark：通用计算框架，可大幅提高MapReduce的性能，但保留基本模型
-1. 基于内存的数据处理框架→通过将中间结果保留在内存中避免了昂贵的I / O
+### 8.1.2. Spark：通用计算框架，可大幅提高MapReduce的性能，并保留基本模型
+1. 基于内存的数据处理框架`->`通过将中间结果保留在内存中避免了昂贵的I/O
 2. 利用分布式内存
 3. 记住应用于数据集的操作
 4. 基于数据局部性的计算->高性能
 5. 最适合迭代（或流处理）和批处理工作负载
 
-### 7.9.3. 总结
+### 8.1.3. 总结
 1. 软件工程观点
    1. Hadoop代码量巨大
    2. 对Hadoop的贡献/扩展很繁琐
@@ -178,31 +170,16 @@ lec12ture9-Spark与数据分析
    2. 易于扩展新的运营商
    3. 更具描述性的计算模型
 
-## 7.10. 简单的历史
+## 8.2. 简单的历史
 ![](img/lec12/21.png)
 
-### 7.10.1. MapReduce的历史
-1. 大约1979年–斯坦福大学，麻省理工学院，CMU等
-   1. 在LISP，Prolog等中设置/列出操作，以进行并行处理
-   2. www-formal.stanford.edu/jmc/history/lisp/lisp.htm
-2. 2004年左右– Google
-   1. MapReduce：简化大型集群上的数据处理
-   2. Jeffrey Dean和Sanjay Ghemawat
-   3. research.google.com/archive/mapreduce.html
-3. 大约在2006年– Apache
-   1. Hadoop，源自Nutch项目
-   2. Doug Cutting
-   3. research.yahoo.com/files/cutting.pdf
-4. 大约2008年–雅虎
-   1. 网络规模搜索索引
-   2. Hadoop峰会，HUG等
-   3. developer.yahoo.com/hadoop/
-5. 大约2009年– AmazonAWS
-   1. 弹性MapReduce
-   2. Hadoop修改为EC2/S3，并支持Hive，Pig，Cascading等。
-   3. aws.amazon.com/elasticmapreduce/
-6. 公开讨论：
-   1. 列举自2002年以来数据中心技术的几项变化
+### 8.2.1. MapReduce的历史
+1. 大约1979年–斯坦福大学，麻省理工学院，CMU等，在LISP，Prolog等中设置/列出操作，以进行并行处理
+2. 2004年左右– Google，MapReduce：简化大型集群上的数据处理
+3. 大约在2006年– Apache，Hadoop，源自Nutch项目
+4. 大约2008年–雅虎，网络规模搜索索引
+5. 大约2009年– AmazonAWS，弹性MapReduce，Hadoop修改为EC2/S3，并支持Hive，Pig，Cascading等。
+6. 公开讨论：列举自2002年以来数据中心技术的几项变化
 
 ![](img/lec12/22.png)
 
@@ -214,20 +191,9 @@ lec12ture9-Spark与数据分析
 
 ![](img/lec12/23.png)
 
-- Spark的状态和我们下一步将要去哪里
-- Matei Zaharia
-- Spark Summit(2013)
-- youtu.be/nU6vO2EJAb4
-
-### 7.10.2. Spark
+### 8.2.2. Spark
 1. Spark:具有工作集的集群运算
-   1. Matei Zaharia,Mosharaf Chowdhury,
-   2. Michael J.Franklin,Scott Shenker,Ion StoicaUSENIX HotCloud (2010)
-   3. people.csail.mit.edu/matei/ papers/ 2010/ hotcloud_spark.pdf
 2. 用于内存中的集群运算的容错抽象
-   1. Matei Zaharia,Mosharaf Chowdhury,Tathagata Das,Ankur Dave,
-   2. Justin Ma,Murphy McCauley,Michael J.Franklin,Scott Shenker,Ion Stoica NSDI (2012)
-   3. usenix.org/system/ files/ conference/ nsdi12/ nsdi12- final138.pdf
 3. 与各种专用系统不同，Spark的目标是推广MapReduce以在同一引擎中支持新应用
 4. 两个相当小的添加就足以表示以前的模型：
    1. 快速数据共享
@@ -245,7 +211,7 @@ lec12ture9-Spark与数据分析
 ![](img/lec12/25.png)
 ![](img/lec12/26.png)
 
-# 8. 为什么会选择Spark(重要)
+# 9. 为什么会选择Spark(重要)
 1. Apache Spark是一个开放源代码集群计算框架，最初是在加利福尼亚大学伯克利分校的AMPLab中开发的，但后来捐赠给了Apache软件基金会，至今仍在使用。与Hadoop的基于磁盘的分析范例相反，Spark具有多阶段内存中分析。
 
 ![](img/lec12/27.png)
@@ -254,10 +220,10 @@ lec12ture9-Spark与数据分析
 2. 使用方便：可以很快的使用Java、Scala、Python和R进行开发。
 3. 通用性：集合了SQL、Streaming和复杂的分析。
 
-## 8.1. MapReduce和Spark
+## 9.1. MapReduce和Spark
 ![](img/lec12/28.png)
 
-## 8.2. Spark生态系统
+## 9.2. Spark生态系统
 ![](img/lec12/29.png)
 
 > RDD：resilient distributed datasets，弹性分布式数据集
@@ -266,7 +232,7 @@ lec12ture9-Spark与数据分析
 3. 转换按需执行。这意味着它们是惰性计算的。 例如：过滤，加入，排序
 4. 动作将返回RDD计算的最终结果。 Actions使用沿袭图触发执行，以将数据加载到原始RDD中，执行所有中间转换并将最终结果返回到Driver程序或将其写到文件系统中。 例如：collec12t()，count()，take()
 
-# 9. Spark工作流
+# 10. Spark工作流(重要)
 ![](img/lec12/30.png)
 
 1. Spark应用程序在群集上作为独立的进程集运行，由主程序（称为驱动程序）中的SparkContext对象协调。
@@ -274,17 +240,16 @@ lec12ture9-Spark与数据分析
 3. 连接后，Spark会在集群中的节点上获取执行程序，这些节点是运行计算并为您的应用程序存储数据的进程。
 4. 接下来，它将您的应用程序代码（由传递给SparkContext的JAR或Python文件定义）发送给执行者。 最后，SparkContext将任务发送给执行程序以运行。
 
-## 9.1. 概述
-1. 官网：http://spark.apache.org/
-2. Apache Spark™ is a fast and general engine for large-scale data processing.
-3. 快：基于内存的MapReduce计算比Hadoop快100x倍，基于硬盘的则快10x倍
-4. 易用：支持Scala、Java、Python和R语言开发
-5. 功能强：Spark SQL、Spark Streaming、Spark GraphX、Spark MLlib
-6. 更加通用
+## 10.1. 概述
+1. Apache spark是一个应用于大规模数据处理的快速通用引擎
+2. 快：基于内存的MapReduce计算比Hadoop快100x倍，基于硬盘的则快10x倍
+3. 易用：支持Scala、Java、Python和R语言开发
+4. 功能强：Spark SQL、Spark Streaming、Spark GraphX、Spark MLlib
+5. 更加通用
    1. 适用于多种不同的集群管理框架：Standalone cluster mode、Apache Mesos、Hadoop YARN、in the Cloud(EC2)
    2. 适用于多种不同的数据存储方式：数据读取接口：HDFS、HBase、MongoDB、Cassendra
 
-## 9.2. 功能
+## 10.2. 功能
 1. Spark SQL
    1. 前身是Shark，基于Hive的Spark SQL，代码量大、复杂，难优化和维护
    2. 交互式查询、标准访问接口、兼容Hive
@@ -295,16 +260,16 @@ lec12ture9-Spark与数据分析
 
 ![](img/lec12/34.png)
 
-## 9.3. 集群管理框架
+## 10.3. 集群管理框架
 1. Standalone mode：原生集群管理功能：任务调度、资源分配等
 2. Apache Mesos：从分布式计算节点上抽象CPU, memory, storage, and other compute resources给其他框架使用，实现了静态资源分配功能
 3. Hadoop Yarn：Hadoop MapReduce的第二个版本架构，把资源管理和任务管理剥离开；实现了静态资源分配和动态资源分配功能；
 4. EC2：Amazon EC2云平台，提供一个安装了Spark、Shark 和HDFS的集群，可直接登录到集群，把它当作你实验室的集群使用
 
-## 9.4. 集群管理框架图
+## 10.4. 集群管理框架图
 ![](img/lec12/31.png)
 
-## 9.5. 存储方式
+## 10.5. 存储方式
 1. HDFS:Hadoop分布式文件系统
 2. Hbase：基于HDFS的非关系型数据库(NoSQL数据库)
 3. MongoDB：
@@ -314,19 +279,17 @@ lec12ture9-Spark与数据分析
 4. Cassendra：基于列的分布式数据库，易扩展、模式灵活、按照范围查询等
 5. 它们和Spark的关系：Spark是一个计算程序，需要读取数据和存储数据，它们就是数据存储的地方
 
-## 9.6. Spark生态系统
+## 10.6. Spark生态系统
 ![](img/lec12/32.png)
 
-# 10. 实践目标
-1. Spark Standalone + HDFS + MongoDB
+# 11. 实践目标
 
 ![](img/lec12/33.png)
 
-## 10.1. 系统搭建
+## 11.1. 系统搭建
 1. 安装HDFS
    1. <a href = "http://hadoop.apache.org/releases.html">下载Hadoop</a>
    2. <a href = "http://hadoop.apache.org/docs/r3.0.0-alpha4/hadoop- project-dist/hadoop-common/ClusterSetup.html">配 置 Hadoop 集 群</a> 
-   3. HDFS自然就可以使用了
 2. 安装Spark
    1. <a href= "http://spark.apache.org/downloads.html">下载Spark</a>
    2. <a href = "http://spark.apache.org/docs/latest/spark-standalone.html">配置Spark Standalone集群</a>
@@ -338,7 +301,7 @@ lec12ture9-Spark与数据分析
 6. 设置SSH无密码登陆
 7. 安装JDK、Scala
 
-## 10.2. 利用Spark处理数据
+## 11.2. 利用Spark处理数据
 1. 理解Spark原理
    1. 开发Spark程序：开发环境、程序提交、运行模式
    2. 内核讲解：RDD
@@ -349,9 +312,9 @@ lec12ture9-Spark与数据分析
    3. Spark GraphX
    4. Spark MLlib
 
-# 11. Spark原理
+# 12. Spark原理
 
-## 11.1. Spark提交应用程序
+## 12.1. Spark提交应用程序
 ```
 ./bin/spark-submit \
    --class <main-class> \
@@ -368,7 +331,7 @@ lec12ture9-Spark与数据分析
 - Key=value:Spark的配置参数与值
 - application-jar:应用程序打包后
 
-## 11.2. Driver程序
+## 12.2. Driver程序
 1. 应用执行过程：Spark应用的入口程序：Driver，在**集群模式**下用户开发的Spark程序称为Driver
 2. 应用的执行位置
    1. Local
@@ -377,7 +340,7 @@ lec12ture9-Spark与数据分析
    1. 集群模式：如果在远离（网络远离）计算节点的本地机器上提交Spark程序到集群内部执行，称为集群模式，当程序提交后，本地机器就结束了和集群的交互，程序的运行结果也不会返回到本地，只保存在集群内部。
    2. 客户端模式：如果在靠近计算节点的机器上执行（Master或者就是Worker）程序，可以选择客户端模式，就是通过Spark 提供的Shell执行，程序会和集群产生持续的通信，集群的任务执行完成后，会把执行结果返回到客户端。
 
-## 11.3. SparkContext
+## 12.3. SparkContext
 1. SparkContext对象
    1. 使得应用程序能够和集群进行沟通，实现CPU、内存等资源的分配
    2. 每个Driver程序都有一个SC对象
@@ -388,7 +351,7 @@ lec12ture9-Spark与数据分析
 
 ![](img/lec12/35.png)
 
-## 11.4. 其他相关名词
+## 12.4. 其他相关名词
 1. Application：独立的Spark程序
 2. Master(Cluster Manager)，Worker
 3. 执行器(Executor)：Spark程序在对应计算节点上启动的专属线程，负责执行Task
@@ -396,7 +359,7 @@ lec12ture9-Spark与数据分析
 5. Stage：介于Job和Task之间，是一个Task集合
 6. Task：在执行器上执行的最小单元，例如在某个计算节点对一个RDD的分区进行的Transformation操作
 
-## 11.5. 具体执行过程
+## 12.5. 具体执行过程
 1. 分为两部分
    1. Driver程序
       1. 客户端模式下，Driver在本地，不会把Driver提交给Master，而直接提交任务
@@ -407,18 +370,18 @@ Worker节点较近的地方。
 
 ![](img/lec12/36.png)
 
-### 11.5.1. 详细的应用执行过程展示
+### 12.5.1. 详细的应用执行过程展示
 ![](img/lec12/37.png)
 
 - <a href = "https://blog.csdn.net/thomas0yang/article/details/50352261">Spark任务处理流程</a>
 
-### 11.5.2. 结合源代码分析的Spark执行过程解读
+### 12.5.2. 结合源代码分析的Spark执行过程解读
 ![](img/lec12/38.png)
 
 - <a href = "https://blog.csdn.net/u011007180/article/details/52388783">源码-spark运行流程分析</a>
 - <a href = "https://blog.csdn.net/zero__007/article/details/53121003">Spark运行流程源码走读</a>
 
-## 11.6. RDD
+## 12.6. RDD
 1. Job、Task、DAGScheduler的定义均依赖RDD
 2. Resilient Distributed Dataset 弹性分布式数据集
 3. 是Spark的核心数据结构
@@ -431,7 +394,7 @@ Worker节点较近的地方。
    7. RDD可以通过重复计算获得（实现高可靠性）
 4. RDD定义：包含5个属性
    1. 分区列表：记录了数据块所在的分区位置；一个RDD对应的数据是切分为数据块存储在集群的不同节点上的，`@transient def getPartitions_ : Array[Partition] = null`
-   2. 依赖列表：记录了当前这个RDD依赖于哪些其它的RDD.`private var dependencies_ : Seq[Dependency[_]] = null`
+   2. 依赖列表：记录了当前这个RDD依赖于哪些其它的RDD，`private var dependencies_ : Seq[Dependency[_]] = null`
    3. 计算函数compute，用于计算RDD各个分区的值`def compute(split: Partition, context: TaskContext): Iterator[T]`
    4. 可选：分区器，子类可以重新指定新的分区方式：Hash 和Range,`@transient val partitioner: Option[Partitioner] = None`
    5. 可选：计算各分区时优先的位置列表
@@ -461,20 +424,14 @@ Worker节点较近的地方。
 
 | Transformation操作 | 说明                                                  |
 | ------------------ | ----------------------------------------------------- |
-| map(func)          | 对源RDD中的每个元素调用func，生产新的元素，这些元素构 |
-成新的RDD并返回
-     |
+| map(func)          | 对源RDD中的每个元素调用func，生产新的元素，这些元素构 | 成新的RDD并返回 |
 | flatMap(func)                   | 与map类似，但是func的返回是多个成员     |
-| filter(func)                    |  对RDD成员进行过滤，成员调用func返回True的才保留，保留
-的构成新RDD返回
-    |
-| mapPartitions(f unc)            | 和map类似，但是func作用于整个分区，类型是`Iterator<T> => Iterator<T>`     |
-| mapPartitionsW ithIndex(func)   |      |
+| filter(func)                    |  对RDD成员进行过滤，成员调用func返回True的才保留，保留的构成新RDD返回 |
+| mapPartitions(func)            | 和map类似，但是func作用于整个分区，类型是`Iterator<T> => Iterator<T>`     |
+| mapPartitionsWithIndex(func)   |      |
 | union(otherDat aset)            |      |
-| reduceByKey(fu nc, [numTasks])  |  对`<key, value>`结构的RDD聚合，相同key的value调用reduce,
-func是(v,v)=>v
-    |
-| join(otherDatas et, [numTasks]) |      |
+| reduceByKey(func, [numTasks])  |  对`<key, value>`结构的RDD聚合，相同key的value调用reduce, func是(v,v)=>v   |
+| join(otherDataset, [numTasks]) |      |
 
 > Transformation操作对应的依赖关系
 
@@ -482,22 +439,16 @@ func是(v,v)=>v
 
 | Action操作   | 说明                                                  |
 | ------------ | ----------------------------------------------------- |
-| reduce(func) | 对RDD成员使用func进行reduce操作，func接收两个值只返回 |
-一个值；reduce只有一个返回值。func会并发执行
-     |
-| collec12t()                 | 将RDD读取到Driver程序里面，类型是Array，要求RDD不能太
-大
-     |
+| reduce(func) | 对RDD成员使用func进行reduce操作，func接收两个值只返回 |一个值；reduce只有一个返回值。func会并发执行 |
+| collec12t()                 | 将RDD读取到Driver程序里面，类型是Array，要求RDD不能太大 |
 | count()                   | 返回RDD成员数量     |
 | first()                   | 返回RDD第一个成员，等价于take(1)     |
 | take(n)                   |      |
-| saveAsTextFile(p ath)     | 把RDD转换成文本内容并保存到指定的path路径下，可能有多个文件；path可以是本地文件系统路径，也可以是HDFS路径，
-转换方法是RDD成员的toString方法
-     |
-| saveAsSequence File(path) |      |
+| saveAsTextFile(path)     | 把RDD转换成文本内容并保存到指定的path路径下，可能有多个文件；path可以是本地文件系统路径，也可以是HDFS路径，转换方法是RDD成员的toString方法 |
+| saveAsSequenceFile(path) |      |
 | foreach(func)             | 对RDD的每个成员执行func方法，没有返回值     |
 
-### 11.6.1. Spark Map-Reduce实例
+### 12.6.1. Spark Map-Reduce实例
 ```scala
 object MyFunctions{
    def lineSplit(line: String) : Array[String] = {
@@ -510,10 +461,10 @@ val words = textFile.flatMap(MyFunctions.lineSplit)
 val wordPairs = words.map(word => (word, 1))
 #先func再map
 val wordCounts = wordPairs.reduceByKey((a, b) => a
-+ b) wordCounts.collec12t()
++ b) wordCounts.collect()
 ```
 
-## 11.7. DAG 排程器
+## 12.7. DAG 排程器
 1. 把一个Spark Job转换成Stage的DAG(Directed Acyclic Graph有向无环图）
 2. 根据RDD和Stage之间的关系找出开销最小的调度方法， 然后把Stage以TaskSet的形式提交给TaskScheduler
 3. Job:一次Action的所有工作就是一个Job
@@ -535,7 +486,7 @@ val wordCounts = wordPairs.reduceByKey((a, b) => a
 
 ![](img/lec12/41.png)
 
-## 11.8. 任务排程器
+## 12.8. 任务排程器
 
 1. DAGScheduler最后一步:计算Task最佳执行位置；为每一个RDD分区创建Task；将一个Stage的Task封装成TaskSet交给TaskScheduler
 2. TaskScheduler为每个Stage的TaskSet创建一个TaskSetManager,负责跟踪task set中所有task,包括失败重启等
@@ -559,7 +510,7 @@ val wordCounts = wordPairs.reduceByKey((a, b) => a
 
 ![](img/lec12/42.png)
 
-## 11.9. 资源分配
+## 12.9. 资源分配
 1. 只考虑Standalone集群:最简单的集群模式
 2. Application调度
    1. 只支持先进先出(FIFO)的应用调度方式
@@ -574,9 +525,9 @@ val wordCounts = wordPairs.reduceByKey((a, b) => a
    1. FIFO
    2. Fair
 
-# 12. 使用Spark处理数据
+# 13. 使用Spark处理数据
 
-## 12.1. 数据读取、存储
+## 13.1. 数据读取、存储
 1. 从数据源到RDD
    1. parallelize()
    2. textFile(path)
@@ -604,7 +555,7 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
 .MongoOutputFormat[Any, Any]], config)
 ```
 
-## 12.2. Spark Streaming
+## 13.2. Spark Streaming
 1. 实时对大量数据进行快速处理：处理周期短；连续不断地计算
 2. 计算基本过程
 
@@ -631,7 +582,7 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
          2. saveAsTextFiles/saveAsObjectFiles()
          3. foreachRDD(func): func一般是对RDD的Action操作
 
-## 12.3. Spark GraphX
+## 13.3. Spark GraphX
 1. 图计算:以图为数据结构基础的相关算法及应用
 2. 数据结构——图
    1. G=`<V, E>`
@@ -667,11 +618,11 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
    2. 在节点上执行mergeMsg函数
    3. <a href = "http://spark.apache.org/docs/latest/graphx-programming-guide.html#summary-list-of-operators">官网API说明</a>
 
-## 12.4. Spark MLlib
+## 13.4. Spark MLlib
 1. Spark为机器学习问题开发的库:分类、回归、聚类和协同过滤等
 2. 机器学习简介
 
-### 12.4.1. 学习方法的类别-按输入数据分
+### 13.4.1. 学习方法的类别-按输入数据分
 1. 监督学习
    1. Decision trees, neural networks, nearest-neighbor algorithms,Bayesian learning, hidden Markov models, SVM
    2. 分类问题：输出是非连续的有限集合
@@ -681,14 +632,14 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
    2. 半监督学习
    3. 强化学习：Markov Decision Processes, temporal difference learning, Q-learning
 
-### 12.4.2. 分类问题的例子
+### 13.4.2. 分类问题的例子
 1. 判定一个给定案件的案由
 2. 目标：离婚纠纷、产品质量纠纷、债务纠纷、其它
 3. 输入：给定的案件情况描述
 
 ![](img/lec12/47.png)
 
-### 12.4.3. Spark中相关库
+### 13.4.3. Spark中相关库
 1. Spark为机器学习问题开发的库
    1. 分类、回归、聚类和协同过滤等
 2. 机器学习简介
@@ -705,9 +656,9 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
    3. 其它常用库
       1. mllib.evaluation:算法效果衡量方法
 
-# 13. 作业
+# 14. 作业
 
-## 13.1. 流数据处理
+## 14.1. 流数据处理
 1. 第一阶段
    1. 数据爬取和存储到MongoDB（作为以后实验的数据源）
    2. 流数据模拟
@@ -721,7 +672,7 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
    4. 阿里商品销售数据集（商店和用户）——按时间排序后统计店铺销售单数曲线
    5. 豆瓣用户小组信息——更新用户画像（假设爬取顺序就是加入顺序）
 
-## 13.2. GraphX
+## 14.2. GraphX
 1. 笫一阶段
    1. 构造图
    2. 展示图
@@ -732,7 +683,7 @@ rdd.saveAsNewAPIHadoopFile("file:///bogus", classOf[Any], classOf[Any], classOf[
 3. 选题范围
    1. 如作业1
 
-## 13.3. MLlib
+## 14.3. MLlib
 1. 分类
    1. 利用抓取的数据构建一个可以使用分类方法解决的需求
    2. 整理训练集、测试集
