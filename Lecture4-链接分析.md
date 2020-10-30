@@ -184,6 +184,11 @@ $$
 
 ![](img/lec4/22.png)
 
+> 另一种解决方案
+![](img/lec4/27.png)
+
+TODO 5页
+
 ### 3.7.4. 爬虫陷阱
 1. 所有的出链形成了一个环状结构
 2. 随机游走被困在环中
@@ -199,6 +204,8 @@ $$
 2. 冲浪者将在几步之内将其传送出Spider Traps
 
 ![](img/lec4/20.png)
+![](img/lec4/28.png)
+
 
 ## 3.9. 整体的解决方案:Random Teleports
 1. Google的解决方案是对于所有情况，每一步，随机冲浪者都有两个选择
@@ -284,3 +291,47 @@ $r = \beta*M*r + [\frac{1-\beta}{N}]_N$
       4. $r^{old} = r^{new}$
 4. 如果图形没有死角，则泄漏的PageRank数量为1-β。 但是因为我们有死胡同，PageRank的泄漏量可能更大。 我们必须通过计算S来明确说明这一点。
 5. 一次迭代的消耗:2|r| + |M|
+
+# 4. Topic-Sensitive PageRank
+1. 其实上面的讨论我们回避了一个事实，那就是“网页重要性”其实没一个标准答案，对于不同的用户，甚至有很大的差别。例如，当搜索“苹果”时，一个数码爱好者可能是想要看iphone的信息，一个果农可能是想看苹果的价格走势和种植技巧，而一个小朋友可能在找苹果的简笔画。理想情况下，应该为每个用户维护一套专用向量，但面对海量用户这种方法显然不可行。所以搜索引擎一般会选择一种称为Topic-Sensitive的折中方案。Topic-Sensitive PageRank的做法是预定义几个话题类别，例如体育、娱乐、科技等等，为每个话题单独维护一个向量，然后想办法关联用户的话题倾向，根据用户的话题倾向排序结果。
+
+## 4.1. 算法步骤
+
+### 4.1.1. 确定话题分类
+1. 一般来说，可以参考Open Directory（DMOZ）的一级话题类别作为topic。目前DMOZ的一级topic有：Arts（艺
+术）、Business（商务）、Computers（计算机）、Games（游戏）、Health（医疗健康）、Home（居家）、Kids and
+Teens（儿童）、News（新闻）、Recreation（娱乐修养）、Reference（参考）、Regional（地域）、Science（科技）、
+Shopping（购物）、Society（人文社会）、Sports（体育）。
+
+### 4.1.2. 网页topic归属
+这一步需要将每个页面归入最合适的分类，具体归类有很多算法，例如可以使用TF-IDF基于词素归类，也可以聚
+类后人工归类，具体不再展开。这一步最终的结果是每个网页被归到其中一个topic。
+
+### 4.1.3. 分topic向量计算
+1. 在Topic-Sensitive PageRank中，向量迭代公式为
+
+$$
+v' = (1- \beta)Mv + s\frac{\beta}{|s|}
+$$
+
+2. 首先是单位向量e变为了s。s是这样一个向量：对于某topic的s，如果网页k在此topic中，则s中第k个元素为1，否则为0。注意对于每一个topic都有一个不同的s。而|s|表示s中1的数量。
+3. 还是以上面的四张页面为例，假设页面A归为Arts，B归为Computers，C归为Computers，D归为Sports。那么对于 Computers这个topic，s就是：
+
+$$
+s = \begin{bmatrix}
+   0 \\
+   1 \\
+   1 \\
+   0 \\
+\end{bmatrix}
+$$
+
+- 而lsl=2，因此，迭代公式为
+
+![](img/lec4/29.png)
+
+# 5. 针对PageRank的Spam攻击与反作弊
+1. Link Spam:造出来很多空页来提高自己的页的rank值
+2. 反作弊：
+   1. 检测拓扑
+   2. TrustRank：如果比可信网站的rank高太多那么有理由认为是有问题的
