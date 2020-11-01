@@ -1,4 +1,4 @@
-lec12ture9-Spark与数据分析
+lecture12-Spark与数据分析
 ---
 
 # 1. 复习
@@ -9,9 +9,9 @@ lec12ture9-Spark与数据分析
 3. YARN&MapReduce：一个主资源管理器，每个节点一个从属节点管理器，每个应用程序一个AppMaster
 
 # 2. 数据处理的目标
-1. 低延迟（交互式）历史数据查询：做出更快的决策，例如，确定网站运行缓慢的原因并进行修复。
-2. 对实时数据（流）的低延迟查询：启用对实时数据的决策，例如，实时检测和阻止蠕虫（蠕虫可能在1.3秒内感染100万台主机）。
-3. 先进的数据处理：实现“更好”的决策，例如，异常检测，趋势分析。
+1. **低延迟（交互式）历史数据查询**：做出更快的决策，例如，确定网站运行缓慢的原因并进行修复。
+2. **对实时数据（流）的低延迟查询**：启用对实时数据的决策，例如，实时检测和阻止蠕虫（蠕虫可能在1.3秒内感染100万台主机）。
+3. **先进的数据处理**：实现“更好”的决策，例如，异常检测，趋势分析。
 
 # 3. 现在的开源分析框架
 1. 主要针对大型磁盘数据集：非常适合批处理，但速度较慢
@@ -28,11 +28,9 @@ lec12ture9-Spark与数据分析
 # 5. 支持互动和流媒体压缩
 
 ## 5.1. 积极使用内存
-1. 为什么？
-   1. 内存传输率远远快于磁盘或SSD
-   2. 许多数据集已经适合内存
-      1. Facebook，Yahoo！和Bing群集中超过90％的工作输入适合内存
-      2. 例如1TB = 10亿条记录，每个记录大小为1KB
+1. 为什么？内存传输率远远快于磁盘或SSD，许多数据集的大小已经适合内存
+   1. Facebook，Yahoo！和Bing群集中超过90％的工作输入适合内存
+   2. 例如1TB = 10亿条记录，每个记录大小为1KB
 2. 内存密度（仍）随摩尔定律增长：即将推出的RAM/SSD混合存储器
 
 |                     |                     |
@@ -47,10 +45,9 @@ lec12ture9-Spark与数据分析
    3. 从故障和缓解混乱中有效恢复
 
 ## 5.3. 在**结果准确性**和**响应时间**之间进行权衡
-1. 为什么？
-   1. 内存中处理不能保证交互式查询处理
-      1. 例如，仅10秒就可以扫描512 GB RAM！
-      2. 内存容量与传输速率之间的差距增大
+1. 为什么？内存中处理不能保证交互式查询处理
+   1. 例如，内存仅10秒就可以扫描512 GB RAM！
+   2. 内存容量与传输速率之间的差距增大
 2. 挑战：准确估算错误和运行时间，以任意计算
 
 ![](img/lec12/6.png)
@@ -145,16 +142,15 @@ lec12ture9-Spark与数据分析
 ### 8.1.1. MapReduce：Hadoop生态系统的原始可扩展通用处理引擎
 1. **基于磁盘的数据处理框架（HDFS文件）**
 2. 将中间结果持久化到磁盘
-3. 每次查询都会从磁盘重新加载数据→成本很高的I / O
+3. 每次查询都会从磁盘重新加载数据->成本很高的I/O
 4. 最适合ETL之类的工作负载（批处理）
 5. **昂贵的I/O->不适合迭代或流处理工作量**
 
 ### 8.1.2. Spark：通用计算框架，可大幅提高MapReduce的性能，并保留基本模型
 1. 基于内存的数据处理框架`->`通过将中间结果保留在内存中避免了昂贵的I/O
-2. 利用分布式内存
-3. 记住应用于数据集的操作
-4. 基于数据局部性的计算->高性能
-5. 最适合迭代（或流处理）和批处理工作负载
+2. 利用分布式内存，记录应用于数据集的操作
+3. 基于数据局部性的计算->高性能
+4. 最适合迭代（或流处理）和批处理工作负载
 
 ### 8.1.3. 总结
 1. 软件工程观点
@@ -224,13 +220,17 @@ lec12ture9-Spark与数据分析
 ![](img/lec12/28.png)
 
 ## 9.2. Spark生态系统
+> RDD：resilient distributed datasets，弹性分布式数据集
+
 ![](img/lec12/29.png)
 
-> RDD：resilient distributed datasets，弹性分布式数据集
-1. RDD（弹性分布式数据集）是Spark中的主要逻辑数据单元。RDD是对象的分布式集合。 分布式方式，每个RDD分为多个分区。这些分区中的每个分区都可以驻留在内存中或存储在群集中不同计算机的磁盘上。RDD是不可变的（只读）数据结构。 您无法更改原始RDD，但可以随时将其更改为具有所有所需更改的RDD。
-2. 在Spark中，所有工作都表示为创建新的RDD，转换现有的RDD或对RDD调用操作以计算结果
+1. RDD（弹性分布式数据集）是Spark中的主要逻辑数据单元。RDD是对象的**分布式集合**。分布式方式，每个RDD分为多个**分区**。这些分区中的每个分区都可以驻留在内存中或存储在群集中不同计算机的磁盘上。RDD是**不可变的（只读）数据结构**。您无法更改原始RDD，但可以随时将其更改为具有所有所需更改的RDD。
+2. 在Spark中，所有工作都表示为
+   1. 创建新的RDD
+   2. 转换现有的RDD
+   3. 对RDD调用操作以计算结果
 3. 转换按需执行。这意味着它们是惰性计算的。 例如：过滤，加入，排序
-4. 动作将返回RDD计算的最终结果。 Actions使用沿袭图触发执行，以将数据加载到原始RDD中，执行所有中间转换并将最终结果返回到Driver程序或将其写到文件系统中。 例如：collec12t()，count()，take()
+4. 动作将返回RDD计算的最终结果。 Actions使用沿袭图触发执行，以将数据加载到原始RDD中，执行所有中间转换并将最终结果返回到Driver程序或将其写到文件系统中。 例如：collect()，count()，take()
 
 # 10. Spark工作流(重要)
 ![](img/lec12/30.png)
@@ -238,13 +238,13 @@ lec12ture9-Spark与数据分析
 1. Spark应用程序在群集上作为独立的进程集运行，由主程序（称为驱动程序）中的SparkContext对象协调。
 2. 要求集群管理器在各个应用程序之间分配资源。
 3. 连接后，Spark会在集群中的节点上获取执行程序，这些节点是运行计算并为您的应用程序存储数据的进程。
-4. 接下来，它将您的应用程序代码（由传递给SparkContext的JAR或Python文件定义）发送给执行者。 最后，SparkContext将任务发送给执行程序以运行。
+4. 接下来，它将您的应用程序代码（由传递给SparkContext的JAR或Python文件定义）发送给执行者。最后，SparkContext将任务发送给执行程序以运行。
 
 ## 10.1. 概述
 1. Apache spark是一个应用于大规模数据处理的快速通用引擎
-2. 快：基于内存的MapReduce计算比Hadoop快100x倍，基于硬盘的则快10x倍
-3. 易用：支持Scala、Java、Python和R语言开发
-4. 功能强：Spark SQL、Spark Streaming、Spark GraphX、Spark MLlib
+2. **快**：基于内存的MapReduce计算比Hadoop快100x倍，基于硬盘的则快10x倍
+3. **易用**：支持Scala、Java、Python和R语言开发
+4. **功能强**：Spark SQL、Spark Streaming、Spark GraphX、Spark MLlib
 5. 更加通用
    1. 适用于多种不同的集群管理框架：Standalone cluster mode、Apache Mesos、Hadoop YARN、in the Cloud(EC2)
    2. 适用于多种不同的数据存储方式：数据读取接口：HDFS、HBase、MongoDB、Cassendra
@@ -254,14 +254,14 @@ lec12ture9-Spark与数据分析
    1. 前身是Shark，基于Hive的Spark SQL，代码量大、复杂，难优化和维护
    2. 交互式查询、标准访问接口、兼容Hive
    3. 专门用于处理结构化数据：分布式SQL引擎；在Spark 程序中调用API
-2. Spark Streaming：实时对大量数据进行快速处理，处理周期短
-3. Spark GraphX：以图为基础数据结构的算法实现和相关应用
-4. Spark MLlib：为解决机器学习开发的库，包括分类、回归、聚类和协同过滤等
+2. Spark Streaming：实时对**大量数据进行快速处理**，处理周期短
+3. Spark GraphX：**以图为基础**数据结构的算法实现和相关应用
+4. Spark MLlib：为解决**机器学习**开发的库，包括分类、回归、聚类和协同过滤等
 
 ![](img/lec12/34.png)
 
 ## 10.3. 集群管理框架
-1. Standalone mode：原生集群管理功能：任务调度、资源分配等
+1. Standalone mode：独立集群管理功能：任务调度、资源分配等
 2. Apache Mesos：从分布式计算节点上抽象CPU, memory, storage, and other compute resources给其他框架使用，实现了静态资源分配功能
 3. Hadoop Yarn：Hadoop MapReduce的第二个版本架构，把资源管理和任务管理剥离开；实现了静态资源分配和动态资源分配功能；
 4. EC2：Amazon EC2云平台，提供一个安装了Spark、Shark 和HDFS的集群，可直接登录到集群，把它当作你实验室的集群使用
@@ -271,7 +271,7 @@ lec12ture9-Spark与数据分析
 
 ## 10.5. 存储方式
 1. HDFS:Hadoop分布式文件系统
-2. Hbase：基于HDFS的非关系型数据库(NoSQL数据库)
+2. HBase：基于HDFS的非关系型数据库(NoSQL数据库)
 3. MongoDB：
    1. 基于分布式存储的数据库，介于关系型和非关系型数据库之间
    2. 是NoSQL数据库中最像关系型数据库的一个
@@ -325,11 +325,11 @@ lec12ture9-Spark与数据分析
    <application-jar> \
    [application-arguments]
 ```
-- main-class:main方法所在的类的路径
-- master-url:集群管理器的地址
-- deploy-mode:应用程序部署的模式，是交互式还是集群式
-- Key=value:Spark的配置参数与值
-- application-jar:应用程序打包后
+1. main-class:main方法所在的类的路径
+2. master-url:集群管理器的地址
+3. deploy-mode:应用程序部署的模式，是交互式还是集群式
+4. Key=value:Spark的配置参数与值
+5. application-jar:应用程序打包后
 
 ## 12.2. Driver程序
 1. 应用执行过程：Spark应用的入口程序：Driver，在**集群模式**下用户开发的Spark程序称为Driver
@@ -408,7 +408,7 @@ Worker节点较近的地方。
    5. PairedRDD
 6. 从外部数据读入并初始化为RDD
    1. 文件系统：单个文件(textFile)、文件目录(wholeTextFiles)
-   2. Hadoop Inputformat：不同的读取函数返回HadoopRDD
+   2. Hadoop Input format：不同的读取函数返回HadoopRDD
    3. 从Driver数据集生成RDD,SparkContext的parallelized函数
    4. 对RDD的一些操作后产生新的RDD
 7. 对RDD的操作
@@ -440,7 +440,7 @@ Worker节点较近的地方。
 | Action操作   | 说明                                                  |
 | ------------ | ----------------------------------------------------- |
 | reduce(func) | 对RDD成员使用func进行reduce操作，func接收两个值只返回 |一个值；reduce只有一个返回值。func会并发执行 |
-| collec12t()                 | 将RDD读取到Driver程序里面，类型是Array，要求RDD不能太大 |
+| collect()                 | 将RDD读取到Driver程序里面，类型是Array，要求RDD不能太大 |
 | count()                   | 返回RDD成员数量     |
 | first()                   | 返回RDD第一个成员，等价于take(1)     |
 | take(n)                   |      |
@@ -489,11 +489,11 @@ val wordCounts = wordPairs.reduceByKey((a, b) => a
 ## 12.8. 任务排程器
 
 1. DAGScheduler最后一步:计算Task最佳执行位置；为每一个RDD分区创建Task；将一个Stage的Task封装成TaskSet交给TaskScheduler
-2. TaskScheduler为每个Stage的TaskSet创建一个TaskSetManager,负责跟踪task set中所有task,包括失败重启等
-3. 使用SchedulerBuilder管理TaskSetManager,决定TaskSet的调度顺序
+2. TaskScheduler为每个Stage的TaskSet创建一个TaskSetManager,负责跟踪Task Set中所有Task,包括失败重启等
+3. 使用SchedulerBuilder管理TaskSetManager,决定Task Set的调度顺序
    1. FIFOSchedulerBuilder:先来先调度
    2. FairSchedulerBuilder:公平调度,按照资源情况调度
-4. driverEndpoint通过makeOffers找出计算资源
+4. DriverEndpoint通过makeOffers找出计算资源
 5. TaskScheduler根据计算资源为TaskSet中每一个Task分配Executor
    1. 遍历TaskSet
    2. 使用TaskSetManager遍历TaskSet里面的Task
