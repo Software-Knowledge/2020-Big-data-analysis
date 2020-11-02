@@ -3,13 +3,14 @@ Exam1-课堂练习
 
 # 1. 选择题
 1. 设计分布式数据仓库Jive的数据表时，为取样更高效，一般可以对表中的连续字段进行**分桶**操作。
-2. 客户端首次查询HBase数据库时，首先需要从-ROOT-表开始查找。
+2. 客户端首次查询HBase数据库时，首先需要从`-ROOT-`表开始查找。
 3. HBase的Region组成中，必须要有**MemStore**项。
 4. HBase是分布式列式存储系统，记录按**列族**集中存放。
 5. HBase数据库的BlockCache缓存的数据块中，**普通的数据块**不一定能提高效率。
-6. 视频监控数据属于非结构化数据7. MapReduce编程模型，键值对`<key, value>`的key必须实现`WritableComparable`
+6. 视频监控数据属于非结构化数据
+7. MapReduce编程模型，键值对`<key, value>`的key必须实现`WritableComparable`
 8.  若不针对MapReduce编程模型中的key和value值进行特别设置，**Average**是MapReduce不适宜的运算。
-9. 在实验集群的master节点使用jps命令查看进程时，终端出现`Namenode,JobTracker, secondaryNameNode`能说明Hadoop主节点启动成功
+9. 在实验集群的master节点使用jps命令查看进程时，终端出现`Namenode,JobTracker, Secondary NameNode`能说明Hadoop主节点启动成功
 10. Client 端上传文件的时候下列哪项正确？B
     - A. 数据经过 NameNode 传递给 DataNode
     - B. Client 端将文件切分为 Block，依次上传
@@ -22,13 +23,13 @@ Exam1-课堂练习
 15. **Datanode**负责 HDFS 数据存储。
 
 # 2. 判断题
-1. Hadoop 支持数据的随机读写。（错，hbase支持，hadoop不支持）
+1. Hadoop 支持数据的随机读写。（错，Hbase支持，Hadoop不支持）
 2. NameNode 负责管理元数据信息metadata，client 端每次读写请求，它都会从磁盘中读取或会写入 metadata 信息并反馈给 client 端。（错，内存中读取）
 3. MapReduce 的 input split 一定是一个 block。（错，默认是）
 4. MapReduce适于PB级别以上的海量数据在线处理。（错，离线）
 5. 链式MapReduce计算中，对任意一个MapReduce作业，Map和Reduce阶段可以有无限个Mapper，但Reducer只能有一个。（ 对）
 6. MapReduce计算过程中，相同的key默认会被发送到同一个reduce task处理。（对）
-7. HBase对于空（NULL）的列，不需要占用存储空间。（没有则空不存储）对）
+7. HBase对于NULL的列，不需要占用存储空间。（没有则空不存储）对）
 8. HBase可以有列，可以没有列族（column family）。 （错，有列族）
 
 # 3. 简答题
