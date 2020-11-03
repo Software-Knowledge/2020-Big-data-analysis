@@ -160,7 +160,7 @@ $$
 p = \frac{TP}{TP + FP}
 $$
 
-4. 召回率(真正率)，为正确分类的正例个数栈实际整理个数的比例
+4. 召回率(真正率)，为正确分类的正例个数占实际整理个数的比例
 
 $$
 r = \frac{被正确分类的正例样本个数}{实际正例样本个数} = \frac{TP}{TP+FN}
@@ -272,6 +272,7 @@ $Gain(D, a) = Ent(D) - \sum\limits^V\limits_{v=1} \frac{|D^k|}{|D|} * Ent(D^v)$
 1. C4.5算法是ID3算法的改进，C4.5克服了ID3的两个缺点
    1. 不能处理连续特征
    2. 用信息增益选择属性时偏向于选择分支较多的特征值，即取值多的特征
+2. <a href = "https://blog.csdn.net/zjsghww/article/details/51638126">C4.5算法实例</a>
 
 ### 4.3.1. 将连续的特征离散化
 1. 将n个连续的样本按值从小到大排列，得到数据$a_1, a_2, ..., a_n$
@@ -320,8 +321,10 @@ $$
 - 假设有n个类别，第k个类别的概率为$p_k$，概率分布的基尼系数表达式:
 
 $$
-Gini(p) = \sum\limits^{n}\limits_{k=1}p_k(1-p_k) \\
-= 1 - \sum\limit^{n}\limits_{k=1}p_k^2 \\
+\begin{array}{l}
+   Gini(p) = \sum\limits^{n}\limits_{k=1}p_k(1-p_k) \\
+   = 1 - \sum\limits^{n}\limits_{k=1}p_k^2 \\
+\end{array}
 $$
 
 - 如果是二分类问题，第一个样本输出概率为p，概率分布的基尼系数表达式特化为$Gini(p) = 2p(1-p)$
@@ -362,9 +365,11 @@ $$
 2. 比如
 
 $$
-A \to \{A1\},\{A2,A3\} \\
-A \to \{A2\},\{A1,A3\} \\
-A \to \{A3\},\{A1,A2\} \\
+\begin{array}{l}
+   A \to \{A1\},\{A2,A3\} \\
+   A \to \{A2\},\{A1,A3\} \\
+   A \to \{A3\},\{A1,A2\} \\
+\end{array}
 $$
 
 3. 然后找到上面的基尼系数最小的组合，建立二叉树节点，然后继续划分剩下的特征
@@ -440,8 +445,10 @@ L_2定义为|x|=\sqrt{\sum\limits_{i=1}\limits^{n}x_i^2}，其中x=\begin{bmatri
 $$
 
 $$
-n维空间点a(x_{11},x_{12},...x_{1n})与b(x_{21}, x_{22}, ..., x_{2n}) \\
-d_{12} = \max(|x_{1i}-x_{2i}|)
+\begin{array}{l}
+   n维空间点a(x_{11},x_{12},...x_{1n})与b(x_{21}, x_{22}, ..., x_{2n}) \\
+   d_{12} = \max(|x_{1i}-x_{2i}|)
+\end{array}
 $$
 
 ## 5.2. K值的选择
@@ -537,8 +544,10 @@ $$
 1. 逻辑回归的目的是从特征学习出一个0/1分类模型，而这个模型是将特征的线性组合作为自变量，由于自变量的取值范围是负无穷到正无穷，因此我们使用sigmoid函数将自变量映射到(0, 1)上，映射后的值被认为是属于y=1的规律。
 
 $$
-sigmoid(x) = \frac{1}{ 1 + e^{-x}} \\
-h_\theta(x) = g(\theta^Tx) = \frac{1}{1+e^{-\theta^Tx}}
+\begin{array}{l}
+   sigmoid(x) = \frac{1}{ 1 + e^{-x}} \\
+   h_\theta(x) = g(\theta^Tx) = \frac{1}{1+e^{-\theta^Tx}}
+\end{array}
 $$
 
 2. $h_\theta(x)$只和$\theta^Tx$有关，如果$\theta^Tx>0.5$，则$h_\theta(x)>0.5$
@@ -662,21 +671,27 @@ $$
 
 - 前提条件
 $$
-x_1 = x_2 + 2 \gamma\frac{w}{||w||} \\
+\begin{array}{l}
+   x_1 = x_2 + 2 \gamma\frac{w}{||w||} \\
 \ \\
-w * x_1 + b = +1 \\
-w * x_2 + b = -1 \\
+   w * x_1 + b = +1 \\
+   w * x_2 + b = -1 \\
+\end{array}
+
 $$
 
 - 计算$\gamma$
 
 $$
-w * x_1 + b = + 1 \\
-w (x_2 + 2\gamma\frac{w}{||w||}) + b = + 1 \\
-\ \\
-w * x_2 + b + 2\gamma\frac{w}{||w||} = + 1 \\
-\ \\
-\gamma = \frac{||w||}{w * w} = \frac{1}{||w||} \\
+\begin{array}{l}
+   w * x_1 + b = + 1 \\
+   w (x_2 + 2\gamma\frac{w}{||w||}) + b = + 1 \\
+   \ \\
+   w * x_2 + b + 2\gamma\frac{w}{||w||} = + 1 \\
+   \ \\
+   \gamma = \frac{||w||}{w * w} = \frac{1}{||w||} \\   
+\end{array}
+
 $$
 
 ## 7.9. 通过上述化简后最大距离
@@ -830,9 +845,11 @@ $$
 1. 对于一个数据点进行分类，实际上是将x代入$f(x) = w^Tx+b$计算出结果，根据正负号进行类别划分。
 
 $$
-\because w^* = \sum\limits_{i=1}\limits^{n}\alpha_iy_ix_i \\
-\therefore f(x) = (\sum\limits_{i=1}\limits^{n}\alpha_iy_ix_i)^T x + b \\
-= \sum\limits_{i=1}\limits^{n}\alpha_iy_i<x_i, x> + b
+\begin{array}{l}
+   \because w^* = \sum\limits_{i=1}\limits^{n}\alpha_iy_ix_i \\
+   \therefore f(x) = (\sum\limits_{i=1}\limits^{n}\alpha_iy_ix_i)^T x + b \\
+   = \sum\limits_{i=1}\limits^{n}\alpha_iy_i<x_i, x> + b   
+\end{array}
 $$
 
 2. 也就是对新点预测，只需要计算其与训练数据点的内积即可：非支持向量对应的$\alpha=0$，这些点不影响分类
@@ -885,9 +902,11 @@ $$
 2. 方法二：平方，在低维空间计算，如果遇到维度爆炸，前一种可能无法计算
 
 $$
-(<x_1, x_2> + 1)^2 = 2\eta_1\xi_1 + \eta_1^2\xi_1^2 + 2\eta_2\xi_2 + \eta_2^2\xi_2^2 + 2\eta_1\eta_2\xi_1\xi_2 + 1 \\
-等价于 \\
-\phi(x_1, x_2) = (\sqrt{2}x_1, x_1^2, \sqrt{2}x_2,x_2^2,\sqrt{2}x_1x_2,1)^T \\
+\begin{array}{l}
+   (<x_1, x_2> + 1)^2 = 2\eta_1\xi_1 + \eta_1^2\xi_1^2 + 2\eta_2\xi_2 + \eta_2^2\xi_2^2 + 2\eta_1\eta_2\xi_1\xi_2 + 1 \\
+   等价于 \\
+   \phi(x_1, x_2) = (\sqrt{2}x_1, x_1^2, \sqrt{2}x_2,x_2^2,\sqrt{2}x_1x_2,1)^T \\   
+\end{array}
 $$
 
 ### 8.2.3. 核函数

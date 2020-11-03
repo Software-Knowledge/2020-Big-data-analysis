@@ -242,10 +242,10 @@ lecture12-Spark与数据分析
 
 ## 10.1. 概述
 1. Apache spark是一个应用于大规模数据处理的快速通用引擎
-2. **快**：基于内存的MapReduce计算比Hadoop快100x倍，基于硬盘的则快10x倍
-3. **易用**：支持Scala、Java、Python和R语言开发
-4. **功能强**：Spark SQL、Spark Streaming、Spark GraphX、Spark MLlib
-5. 更加通用
+   1. **快**：基于内存的MapReduce计算比Hadoop快100x倍，基于硬盘的则快10x倍
+   2. **易用**：支持Scala、Java、Python和R语言开发
+   3. **功能强**：Spark SQL、Spark Streaming、Spark GraphX、Spark MLlib
+2. 更加通用
    1. 适用于多种不同的集群管理框架：Standalone cluster mode、Apache Mesos、Hadoop YARN、in the Cloud(EC2)
    2. 适用于多种不同的数据存储方式：数据读取接口：HDFS、HBase、MongoDB、Cassendra
 
