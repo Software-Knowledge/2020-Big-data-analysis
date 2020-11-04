@@ -1,6 +1,8 @@
 Lecture3-大数据存储和处理
 ---
 
+[TOC]
+
 # 1. 常见存储方式
 1. 关系型数据库
 2. NoSQL:泛指非关系型数据库，比如MongoDB
@@ -48,13 +50,13 @@ Lecture3-大数据存储和处理
 <2, name>, 隔壁老王
 ```
 
-3. 传统表中使用Altere子句来修改表结构，而Hase直接插入就可以修改表结构
+3. 传统表中使用Alter子句来修改表结构，而HBase直接插入就可以修改表结构
 
 ## 1.3. ES方式
 | 文档id | 文档内容                                                      |
 | ------ | ------------------------------------------------------------- |
 | doc1   | how are you? fine, thank you, and you? I fine too, thank you! |
-| doc2   | good morning,LiLei,good morning,Hanmeimei                     |
+| doc2   | good morning, LiLei, good morning, Hanmeimei                     |
 
 > 倒排索引示例:ES的存储(倒排索引)的结果如下
 > 1. 应该将查询频率高的单词放在前面(越高越前)
@@ -63,12 +65,12 @@ Lecture3-大数据存储和处理
 
 | dictionary | posting-list    |
 | ---------- | --------------- |
-| fine       | -> doc1         |
-| Hanmei     | -> doc2         |
-| good       | -> doc2         |
-| LiLei      | -> doc2         |
+| fine       | `->` doc1         |
+| Hanmei     | `->` doc2         |
+| good       | `->` doc2         |
+| LiLei      | `->` doc2         |
 | ...        | ...             |
-| you        | -> doc1 -> doc2 |
+| you        | `->` doc1 `->` doc2 |
 
 ## 1.4. 列存储和行存储
 
@@ -197,14 +199,14 @@ Lecture3-大数据存储和处理
    2. Checkpoint.size
   
 #### 2.4.3.4. Datanode
-1. 文件存储的基本单位。它存储文件块在本地文件系统中，保存了文件块的meta-data，同时周期性的发送所有存在的文件块的报错给Namenode
+文件存储的基本单位。它存储文件块在本地文件系统中，保存了文件块的meta-data，同时周期性的发送所有存在的文件块的报错给Namenode
 
 #### 2.4.3.5. HDFS文件读写
-1. 读文件：读取完之后会校验(Check Sum)，未通过则告知错误
+读文件：读取完之后会校验(Check Sum)，未通过则告知错误
 
 ![](img/lec3/5.png)
 
-2. 写文件:复制的策略，冗余数据放置在机柜中，跨机柜要经过交换机等设备
+写文件:复制的策略，冗余数据放置在机柜中，跨机柜要经过交换机等设备
 
 ![](img/lec3/6.png)
 
@@ -239,17 +241,17 @@ Lecture3-大数据存储和处理
 ![](img/lec3/13.png)
 
 ## 3.4. HBase数据模型
-1. Table & Column Family
-   1. RowKey:Table的主键, 记录按照RowKey排序
-   2. Timestamp:每次数据操作对应的时间戳,可以看作是数据的version number(垃圾清理)
-   3. Column Family:Table在水平方向由一个或者多个Column Family组成,一个Column Family中可以由任意多个Colum组成
+> Table & Column Family
+1. RowKey:Table的主键, 记录按照RowKey排序
+2. Timestamp:每次数据操作对应的时间戳,可以看作是数据的version number(垃圾清理)
+3. Column Family:Table在水平方向由一个或者多个Column Family组成,一个Column Family中可以由任意多个Colum组成
 
 ![](img/lec3/14.png)
 
-1. Table & Region
-   1. 记录数不断增多后,Table会逐渐分裂成多份splits,成为regions
-   2. 一个region由[startkey,endkey)表示
-   3. 不同的region会被Master分配给相应的RegionServer进行管理.
+> Table & Region
+1. 记录数不断增多后,Table会逐渐分裂成多份splits,成为regions
+2. 一个region由[startkey,endkey)表示
+3. 不同的region会被Master分配给相应的RegionServer进行管理.
 
 ![](img/lec3/15.png)
 
@@ -300,16 +302,16 @@ hadoop jar ~/hbase-0.92. 1/hbase-0.92.1.jar completebulkload/output users
 # 5. Pig
 > Apache Pig架构
 
-1. 严格用于使用Pig分析Hadoop中的数据的语言称为Pig Latin是一种高级数据处理语言。它提供了一-组丰富的数据类型和操作符来对数据执行各种操作。
-2. 要执行特定任务时,程序员使用Pig ,需要用Pig Latin语言编写Pig脚本,并使用任何执行机制( Grunt Shell，UDFs，Embedded )执行它们。执行后,这些脚本将通过应用Pig框架的一系列转换来生成所需的输出。
-3. 在内部, Apache Pig将这些脚本转换为一系列MapReduce作业,因此,它使程序员的_工作变得容易。
+1. 严格用于使用Pig分析Hadoop中的数据的语言称为Pig Latin是一种高级数据处理语言。它提供了一组丰富的数据类型和操作符来对数据执行各种操作。
+2. 要执行特定任务时，程序员使用Pig，需要用Pig Latin语言编写Pig脚本,并使用任何执行机制( Grunt Shell，UDFs，Embedded )执行它们。执行后,这些脚本将通过应用Pig框架的一系列转换来生成所需的输出。
+3. 在内部, Apache Pig将这些脚本转换为一系列MapReduce作业,因此,它使程序员的工作变得容易。
 
 ## 5.1. Pig组成组成
 
-1. Parser (解析器)：最初, Pig脚本由解析器处理,它检查脚本的语法,类型检查和其他杂项检查。解析器的输出将是DAG (有向无环图) , 它表示Pig Latin语句和逻辑运算符。在DAG中,脚本的逻辑运算符表示为节点,数据流表示为边。
+1. Parser (解析器)：最初, Pig脚本由解析器处理,它检查脚本的语法,类型检查和其他杂项检查。解析器的输出将是DAG(有向无环图),它表示Pig Latin语句和逻辑运算符。在DAG中,脚本的逻辑运算符表示为节点,数据流表示为边。
 2. Optimizer (优化器)：逻辑计划(DAG)传递到逻辑优化器,逻辑优化器执行逻辑优化,例如投影和下推。
 3. Compiler (编译器)：编译器将优化的逻辑计划编译为一系列MapReduce作业。
-4. Execution engine (执行引擎)：最后, MapReduce作业以排序顺序提交到Hadoop。这些MapReduce作业在Hadoop上执行,产生所需的结果。
+4. Execution engine (执行引擎)：最后,MapReduce作业以排序顺序提交到Hadoop。这些MapReduce作业在Hadoop上执行,产生所需的结果。
 
 ## 5.2. Pig与SQL区别
 1. 使用延迟评价、使用ETL、能够在管道中任何时刻存储数据、支持管道分裂

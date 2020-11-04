@@ -1,6 +1,8 @@
 Lecture2-大数据平台
 ---
 
+[TOC]
+
 # 1. Hadoop
 ![](img/lec2/1.png)
 
