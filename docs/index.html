@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Tec9-SVD · GitBook</title>
+        <title>Introduction · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Tec10-基于MovieLens的推荐系统.html" />
+    <link rel="next" href="Exam-整理.html" />
     
-    
-    <link rel="prev" href="Tec8-鸢尾花数据集分类.html" />
     
 
     </head>
@@ -89,7 +87,7 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="./">
+        <li class="chapter active" data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -375,7 +373,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.23" data-path="Tec9-SVD.html">
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
             
                 <a href="Tec9-SVD.html">
             
@@ -431,7 +429,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Tec9-SVD</a>
+        <a href="." >Introduction</a>
     </h1>
 </div>
 
@@ -446,22 +444,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="tec9-svd">Tec9-SVD</h2>
-<blockquote>
-<p>&#x4F7F;&#x7528;Python</p>
-</blockquote>
-<h1 id="1-python&#x4F7F;&#x7528;svd">1. Python&#x4F7F;&#x7528;SVD</h1>
-<pre><code class="lang-py">a = np.array([[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]])
-U,Sigma,VT = np.linalg.svd(a)
-</code></pre>
-<h1 id="2-&#x9009;&#x62E9;&#x5947;&#x5F02;&#x503C;&#x91CD;&#x6784;&#x56FE;&#x7247;">2. &#x9009;&#x62E9;&#x5947;&#x5F02;&#x503C;&#x91CD;&#x6784;&#x56FE;&#x7247;</h1>
-<pre><code class="lang-py">sval_nums = <span class="hljs-number">60</span>
-restruct1 = (U[:,<span class="hljs-number">0</span>:sval_nums]).dot(np.diag(Sigma[<span class="hljs-number">0</span>:sval_nums])).dot(VT[<span class="hljs-number">0</span>:sval_nums,:])
-</code></pre>
-<h1 id="3-&#x53C2;&#x8003;">3. &#x53C2;&#x8003;</h1>
-<ol>
-<li><a href="https://www.cnblogs.com/endlesscoding/p/10033527.html" target="_blank">SVD&#xFF08;&#x5947;&#x5F02;&#x503C;&#x5206;&#x89E3;&#xFF09;&#x5C0F;&#x7ED3;</a></li>
-</ol>
+                                <h1 id="big-data-analysis">Big-data-analysis</h1>
+<p>&#x5927;&#x6570;&#x636E;&#x5206;&#x6790;</p>
 
                                 
                                 </section>
@@ -489,12 +473,8 @@ restruct1 = (U[:,<span class="hljs-number">0</span>:sval_nums]).dot(np.diag(Sigm
 
             
                 
-                <a href="Tec8-鸢尾花数据集分类.html" class="navigation navigation-prev " aria-label="Previous page: Tec8-鸢尾花数据集分类">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="Tec10-基于MovieLens的推荐系统.html" class="navigation navigation-next " aria-label="Next page: Tec10-基于MovieLens的推荐系统">
+                <a href="Exam-整理.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Exam-整理">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -505,7 +485,7 @@ restruct1 = (U[:,<span class="hljs-number">0</span>:sval_nums]).dot(np.diag(Sigm
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Tec9-SVD","level":"1.23","depth":1,"next":{"title":"Tec10-基于MovieLens的推荐系统","level":"1.24","depth":1,"path":"Tec10-基于MovieLens的推荐系统.md","ref":"Tec10-基于MovieLens的推荐系统.md","articles":[]},"previous":{"title":"Tec8-鸢尾花数据集分类","level":"1.22","depth":1,"path":"Tec8-鸢尾花数据集分类.md","ref":"Tec8-鸢尾花数据集分类.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tec9-SVD.md","mtime":"2020-10-11T12:07:05.071Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Exam-整理","level":"1.2","depth":1,"path":"Exam-整理.md","ref":"Exam-整理.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-10-13T15:28:39.297Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:51:54.635Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
