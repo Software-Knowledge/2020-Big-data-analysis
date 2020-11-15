@@ -1,0 +1,795 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Tec10-基于MovieLens的推荐系统 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Tec9-SVD.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Tec10-基于MovieLens的推荐系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="tec10-&#x57FA;&#x4E8E;movielens&#x7684;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;">Tec10-&#x57FA;&#x4E8E;MovieLens&#x7684;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;</h2>
+<h1 id="1-&#x6982;&#x8FF0;">1. &#x6982;&#x8FF0;</h1>
+<ol>
+<li>&#x57FA;&#x4E8E;MovieLens&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x63A8;&#x8350;</li>
+<li>&#x4F7F;&#x7528;&#x4E86;&#x57FA;&#x4E8E;&#x5185;&#x5BB9;&#x7684;&#x63A8;&#x8350;&#x548C;&#x57FA;&#x4E8E;&#x534F;&#x540C;&#x8FC7;&#x6EE4;&#x7684;&#x63A8;&#x8350;</li>
+</ol>
+<h1 id="2-&#x5B8C;&#x6574;&#x4EE3;&#x7801;">2. &#x5B8C;&#x6574;&#x4EE3;&#x7801;</h1>
+<pre><code class="lang-py"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> csv
+<span class="hljs-keyword">import</span> time
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">from</span> tqdm <span class="hljs-keyword">import</span> tqdm
+<span class="hljs-keyword">from</span> sklearn.feature_extraction.text <span class="hljs-keyword">import</span> TfidfVectorizer
+<span class="hljs-keyword">from</span> sklearn.metrics.pairwise <span class="hljs-keyword">import</span> linear_kernel
+<span class="hljs-keyword">from</span> sklearn.metrics.pairwise <span class="hljs-keyword">import</span> cosine_similarity
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyRecommend</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, movie_data_path, rating_data_path, tags_data_path)</span>:</span>
+        self.movie_data = pd.read_csv(movie_data_path)
+        self.movie_data[<span class="hljs-string">&apos;genres&apos;</span>] = self.movie_data[<span class="hljs-string">&quot;genres&quot;</span>].fillna(<span class="hljs-string">&quot;&quot;</span>)
+        self.rating_data = pd.read_csv(rating_data_path)
+        self.tags_data = pd.read_csv(tags_data_path)
+        self.movie_origin_source = {}
+        self.user_average = {}
+        self.movie_average = {}
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">init_similarity</span><span class="hljs-params">(self)</span>:</span>
+        user_ids = self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>].drop_duplicates().sort_values()
+        movie_ids = self.rating_data[<span class="hljs-string">&quot;movieId&quot;</span>].drop_duplicates().sort_values()
+        i = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> movie_id <span class="hljs-keyword">in</span> movie_ids:
+            self.movie_origin_source[movie_id] = i
+            i += <span class="hljs-number">1</span>
+
+        all_user_matrix = []
+        zeros = []
+        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(len(movie_ids)):
+            zeros.append(<span class="hljs-number">0</span>)
+        <span class="hljs-keyword">for</span> user_id <span class="hljs-keyword">in</span> tqdm(user_ids):
+            tmp = zeros.copy()
+            seen_movies = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == user_id]
+            seen_movies_ids = seen_movies[<span class="hljs-string">&quot;movieId&quot;</span>]
+            <span class="hljs-keyword">for</span> seen_movies_id <span class="hljs-keyword">in</span> seen_movies_ids:
+                position = self.movie_origin_source[seen_movies_id]
+                tmp[position] = seen_movies[seen_movies[<span class="hljs-string">&quot;movieId&quot;</span>] == seen_movies_id][<span class="hljs-string">&quot;rating&quot;</span>].values[<span class="hljs-number">0</span>]
+            average = np.mean(tmp)
+            self.user_average[user_id] = average
+            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(tmp)):
+                tmp[i] -= average
+            all_user_matrix.append(tmp)
+
+        all_user_df = pd.DataFrame(all_user_matrix)
+        all_user_matrix.clear()
+        self.all_user_similarity = cosine_similarity(all_user_df.values)
+
+        all_movie_matrix = []
+        zeros = []
+        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> range(len(user_ids)):
+            zeros.append(<span class="hljs-number">0</span>)
+        <span class="hljs-keyword">for</span> movie_id <span class="hljs-keyword">in</span> tqdm(movie_ids):
+            tmp = zeros.copy()
+            seen_users = self.rating_data[self.rating_data[<span class="hljs-string">&quot;movieId&quot;</span>] == movie_id]
+            seen_users_ids = seen_users[<span class="hljs-string">&quot;userId&quot;</span>]
+            <span class="hljs-keyword">for</span> seen_user_id <span class="hljs-keyword">in</span> seen_users_ids:
+                tmp[seen_user_id - <span class="hljs-number">1</span>] = seen_users[seen_users[<span class="hljs-string">&quot;userId&quot;</span>] == seen_user_id][<span class="hljs-string">&quot;rating&quot;</span>].values[<span class="hljs-number">0</span>]
+            average = np.mean(tmp)
+            self.movie_average[movie_id] = average
+            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(tmp)):
+                tmp[i] -= average
+            all_movie_matrix.append(tmp)
+
+        all_movie_df = pd.DataFrame(all_movie_matrix)
+        all_movie_matrix.clear()
+        self.all_movie_similarity = cosine_similarity(all_movie_df.values)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">user_based_one</span><span class="hljs-params">(self, user_id, movie_id, is_seen=True)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x7528;&#x6237;-&#x7528;&#x6237;&#x534F;&#x540C;&#x8FC7;&#x6EE4;
+        &#x9884;&#x6D4B; user_id &#x4F1A;&#x7ED9; movie_id &#x7684;&#x8BC4;&#x5206;
+        :param is_seen:
+        :param user_id:
+        :param movie_id:
+        :return:
+        &quot;&quot;&quot;</span>
+        <span class="hljs-comment"># &#x7528;&#x6237; user_id &#x7684;&#x5168;&#x90E8;&#x8BC4;&#x5206;&#x4FE1;&#x606F;</span>
+        user_ratings = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == user_id]
+
+        <span class="hljs-comment"># &#x68C0;&#x67E5;&#x662F;&#x4E0D;&#x662F;&#x6CA1;&#x6709;&#x8BC4;&#x4EF7;&#x8FC7;</span>
+        <span class="hljs-keyword">if</span> len(user_ratings[user_ratings[<span class="hljs-string">&quot;movieId&quot;</span>] == movie_id].values) <span class="hljs-keyword">and</span> is_seen:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0.0</span>
+
+        <span class="hljs-comment"># &#x770B;&#x8FC7;&#x5F71;&#x7247; movie_id &#x7684;&#x5168;&#x90E8;&#x7528;&#x6237;id</span>
+        seen_user_ids = self.rating_data[self.rating_data[<span class="hljs-string">&quot;movieId&quot;</span>] == movie_id][<span class="hljs-string">&quot;userId&quot;</span>]
+        <span class="hljs-comment"># &#x7528;&#x6237;&#x76F8;&#x4F3C;&#x5EA6;</span>
+        similarity_users = []
+        weight_similarity = <span class="hljs-number">0.0</span>
+        total_similarity = <span class="hljs-number">0.0</span>
+
+        <span class="hljs-keyword">for</span> seen_user_id <span class="hljs-keyword">in</span> seen_user_ids:
+            <span class="hljs-comment"># &#x770B;&#x8FC7;movie_id&#x7684;&#x7535;&#x5F71;&#x7684;&#x7528;&#x6237;&#x7684;&#x5168;&#x90E8;&#x8BC4;&#x5206;&#x60C5;&#x51B5;</span>
+            seen_user_ratings = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == seen_user_id]
+
+            similarity = self.all_user_similarity[seen_user_id - <span class="hljs-number">1</span>][user_id - <span class="hljs-number">1</span>]
+            similarity_user = [seen_user_id, similarity]
+            similarity_users.append(similarity_user)
+
+            weight_similarity += similarity * \
+                                 seen_user_ratings[seen_user_ratings[<span class="hljs-string">&quot;movieId&quot;</span>] == movie_id][<span class="hljs-string">&quot;rating&quot;</span>].values[<span class="hljs-number">0</span>]
+            total_similarity += similarity
+        <span class="hljs-keyword">if</span> total_similarity == <span class="hljs-number">0.0</span> <span class="hljs-keyword">or</span> total_similarity == <span class="hljs-number">0</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0.0</span>
+        <span class="hljs-keyword">return</span> weight_similarity / total_similarity + self.user_average[user_id]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">movie_based_one</span><span class="hljs-params">(self, user_id, movie_id, is_seen=True)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x7269;&#x54C1;-&#x7269;&#x54C1;&#x534F;&#x540C;&#x8FC7;&#x6EE4;
+        &#x9884;&#x6D4B; user_id &#x4F1A;&#x7ED9; movie_id &#x7684;&#x8BC4;&#x5206;
+        :param is_seen:
+        :param user_id:
+        :param movie_id:
+        :return:
+        &quot;&quot;&quot;</span>
+        <span class="hljs-comment"># movie_id&#x7684;&#x5168;&#x90E8;&#x8BC4;&#x5206;&#x60C5;&#x51B5;</span>
+        movie_ratings = self.rating_data[self.rating_data[<span class="hljs-string">&quot;movieId&quot;</span>] == movie_id]
+
+        <span class="hljs-comment"># &#x68C0;&#x67E5;&#x662F;&#x4E0D;&#x662F;&#x6CA1;&#x6709;&#x8BC4;&#x4EF7;&#x8FC7;</span>
+        <span class="hljs-keyword">if</span> len(movie_ratings[movie_ratings[<span class="hljs-string">&quot;userId&quot;</span>] == user_id].values) <span class="hljs-keyword">and</span> is_seen:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0.0</span>
+
+        <span class="hljs-comment"># user_id &#x770B;&#x8FC7;&#x7684;&#x6240;&#x6709;&#x5F71;&#x7247; movie_id</span>
+        seen_movie_ids = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == user_id][<span class="hljs-string">&quot;movieId&quot;</span>]
+
+        <span class="hljs-comment"># &#x5F71;&#x7247;&#x76F8;&#x4F3C;&#x5EA6;</span>
+        similarity_movies = []
+        weight_similarity = <span class="hljs-number">0.0</span>
+        total_similarity = <span class="hljs-number">0.0</span>
+
+        <span class="hljs-keyword">for</span> seen_movie_id <span class="hljs-keyword">in</span> seen_movie_ids:
+            seen_movie_ratings = self.rating_data[self.rating_data[<span class="hljs-string">&quot;movieId&quot;</span>] == seen_movie_id]
+
+            <span class="hljs-keyword">try</span>:
+                similarity = self.all_movie_similarity[self.movie_origin_source[seen_movie_id]][
+                    self.movie_origin_source[movie_id]]
+            <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+                similarity = <span class="hljs-number">0.0</span>
+            similarity_movie = [seen_movie_id, similarity]
+            similarity_movies.append(similarity_movie)
+
+            weight_similarity += similarity * \
+                                 seen_movie_ratings[seen_movie_ratings[<span class="hljs-string">&quot;userId&quot;</span>] == user_id][<span class="hljs-string">&quot;rating&quot;</span>].values[<span class="hljs-number">0</span>]
+            total_similarity += similarity
+        result = weight_similarity / total_similarity
+        <span class="hljs-keyword">if</span>(movie_id <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> self.movie_average):
+            <span class="hljs-keyword">return</span> result
+        <span class="hljs-keyword">return</span> result + self.movie_average[movie_id]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">content_based_predict</span><span class="hljs-params">(self, movie_ids, seen_movie_ids, n=<span class="hljs-number">10</span>)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x627E;&#x5230;&#x548C; movie_id &#x76F8;&#x4F3C;&#x7684;&#x7535;&#x5F71;
+        :param movie_ids:
+        :param seen_movie_ids: &#x5DF2;&#x7ECF;&#x770B;&#x8FC7;&#x7684;&#x7535;&#x5F71;
+        :param n: &#x63A8;&#x8350;&#x4E2A;&#x6570;
+        :return:
+        &quot;&quot;&quot;</span>
+        tfidf = TfidfVectorizer(stop_words=<span class="hljs-string">&quot;english&quot;</span>)
+        tfidf_matrix = tfidf.fit_transform(self.movie_data[<span class="hljs-string">&quot;genres&quot;</span>])
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x4F59;&#x5F26;&#x76F8;&#x4F3C;&#x5EA6;</span>
+        cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
+
+        <span class="hljs-comment"># &#x5EFA;&#x7ACB;&#x7535;&#x5F71;&#x5217;&#x8868;&#x7D22;&#x5F15;&#xFF0C;&#x65B9;&#x4FBF;&#x8FDB;&#x884C;&#x76F8;&#x4E92;&#x7D22;&#x5F15;</span>
+        indices = pd.Series(self.movie_data.index, index=self.movie_data[<span class="hljs-string">&quot;movieId&quot;</span>]).drop_duplicates()
+
+        similarities = {}
+        <span class="hljs-keyword">for</span> movie_id <span class="hljs-keyword">in</span> movie_ids:
+            idx = indices[movie_id]
+            similarity = list(enumerate(cosine_sim[idx]))
+            similarity = sorted(similarity, key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>], reverse=<span class="hljs-keyword">True</span>)
+            similarity = similarity[<span class="hljs-number">1</span>: <span class="hljs-number">1</span> + int(n / <span class="hljs-number">2</span>)]
+            <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> similarity:
+                <span class="hljs-keyword">if</span> s[<span class="hljs-number">0</span>] <span class="hljs-keyword">in</span> similarities <span class="hljs-keyword">or</span> s[<span class="hljs-number">0</span>] <span class="hljs-keyword">in</span> seen_movie_ids:
+                    <span class="hljs-keyword">continue</span>
+                <span class="hljs-keyword">else</span>:
+                    similarities[s[<span class="hljs-number">0</span>]] = s[<span class="hljs-number">1</span>]
+        recommend_ids = list(similarities.keys())
+        recommend_ids.sort(key=<span class="hljs-keyword">lambda</span> x: similarities[x], reverse=<span class="hljs-keyword">True</span>)
+        movie_indices = recommend_ids[:n]
+        recommends = self.movie_data[<span class="hljs-string">&quot;movieId&quot;</span>].iloc[movie_indices]
+        <span class="hljs-keyword">return</span> recommends
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">predict</span><span class="hljs-params">(self, user_ids, n=<span class="hljs-number">10</span>, least_rating=<span class="hljs-number">3.0</span>)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x8054;&#x5408;&#x63A8;&#x8350;&#xFF0C;&#x5148;&#x901A;&#x8FC7;&#x5185;&#x5BB9;&#x63A8;&#x8350;&#x6765;&#x7F29;&#x5C0F;&#x8303;&#x56F4;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x534F;&#x540C;&#x8FC7;&#x6EE4;
+        :param user_ids: &#x7528;&#x6237;&#x8303;&#x56F4;
+        :param n:&#x5185;&#x5BB9;&#x8FC7;&#x6EE4;&#x8F93;&#x51FA;&#x4E3A;&#x524D;10
+        :param least_rating:&#x6700;&#x4F4E;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x8BC4;&#x5206;
+        :return:
+        &quot;&quot;&quot;</span>
+        users_result = {}
+        <span class="hljs-keyword">for</span> user_id <span class="hljs-keyword">in</span> tqdm(user_ids):
+            <span class="hljs-comment"># &#x63A8;&#x8350;&#x7684;&#x7535;&#x5F71;</span>
+            result = []
+            seen_movie_ids = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == user_id][<span class="hljs-string">&quot;movieId&quot;</span>].drop_duplicates()
+            <span class="hljs-comment"># &#x9009;&#x62E9;&#x7528;&#x6237;&#x6700;&#x559C;&#x6B22;&#x7684;&#x524D;n&#x4E2A;&#x7535;&#x5F71;</span>
+            love_movie_ids = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == user_id].sort_values(by=[<span class="hljs-string">&quot;rating&quot;</span>]).head(n)[
+                <span class="hljs-string">&quot;movieId&quot;</span>].drop_duplicates()
+            recommend_ids = self.content_based_predict(love_movie_ids, seen_movie_ids, n)
+            <span class="hljs-keyword">for</span> recommend_id <span class="hljs-keyword">in</span> recommend_ids:
+                result.append(recommend_id)
+            <span class="hljs-comment"># &#x8FDB;&#x884C;&#x534F;&#x540C;&#x8FC7;&#x6EE4;(&#x7269;&#x54C1;&#x548C;&#x7528;&#x6237;&#x4E24;&#x79CD;)&#xFF0C;&#x4F4E;&#x4E8E;&#x9884;&#x6D4B;&#x8BC4;&#x5206;&#x4E0D;&#x8FDB;&#x884C;&#x63A8;&#x8350;</span>
+            recommend_scores = []
+            <span class="hljs-keyword">for</span> recommend_id <span class="hljs-keyword">in</span> recommend_ids:
+                user_based_score = self.user_based_one(user_id, recommend_id)
+                movie_based_score = self.movie_based_one(user_id, recommend_id)
+                <span class="hljs-keyword">if</span> user_based_score &lt; least_rating <span class="hljs-keyword">and</span> movie_based_score &lt; least_rating:
+                    <span class="hljs-keyword">continue</span>
+                recommend_scores.append([recommend_id, user_based_score, movie_based_score])
+            recommend_scores.sort(key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">1</span>] + x[<span class="hljs-number">2</span>])
+            <span class="hljs-comment"># &#x63A8;&#x8350;&#x81F3;&#x5C11;&#x524D;2&#x540D;</span>
+            <span class="hljs-keyword">if</span> (len(recommend_scores) &lt; <span class="hljs-number">2</span>):
+                users_result[user_id] = [recommend_id[<span class="hljs-number">0</span>] <span class="hljs-keyword">for</span> recommend_id <span class="hljs-keyword">in</span> recommend_scores]
+            <span class="hljs-keyword">else</span>:
+                users_result[user_id] = [recommend_id[<span class="hljs-number">0</span>] <span class="hljs-keyword">for</span> recommend_id <span class="hljs-keyword">in</span> recommend_scores[:<span class="hljs-number">2</span>]]
+
+        <span class="hljs-keyword">with</span> open(<span class="hljs-string">&quot;result/movie&quot;</span> + str(time.time()) + <span class="hljs-string">&quot;.csv&quot;</span>, <span class="hljs-string">&quot;w&quot;</span>, encoding=<span class="hljs-string">&quot;utf-8&quot;</span>, newline=<span class="hljs-string">&quot;&quot;</span>) <span class="hljs-keyword">as</span> f:
+            writer = csv.writer(f)
+            writer.writerow([<span class="hljs-string">&quot;userId&quot;</span>, <span class="hljs-string">&quot;movieId&quot;</span>])
+            <span class="hljs-keyword">for</span> user_id <span class="hljs-keyword">in</span> users_result.keys():
+                <span class="hljs-keyword">for</span> recommend_id <span class="hljs-keyword">in</span> users_result[user_id]:
+                    writer.writerow([user_id, recommend_id])
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">evaluate</span><span class="hljs-params">(self, user_ids, edges)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x8BC4;&#x4F30;&#x6548;&#x679C;&#xFF0C;&#x4EE5;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x4E3A;&#x4F8B;&#xFF0C;&#x68C0;&#x9A8C;&#x534F;&#x540C;&#x8FC7;&#x6EE4;&#x7B97;&#x6CD5;
+        :param user_ids:
+        :param edges: &#x8FB9;&#x754C;
+        :return:
+        &quot;&quot;&quot;</span>
+        valid = {}
+        <span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> edges:
+            valid[edge] = <span class="hljs-number">0</span>
+        total = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> user_id <span class="hljs-keyword">in</span> user_ids:
+            seen_movies = self.rating_data[self.rating_data[<span class="hljs-string">&quot;userId&quot;</span>] == user_id]
+            seen_movie_ids = seen_movies[<span class="hljs-string">&quot;movieId&quot;</span>]
+            total += len(seen_movie_ids)
+            <span class="hljs-keyword">for</span> seen_movie_id <span class="hljs-keyword">in</span> tqdm(seen_movie_ids):
+                real_score = seen_movies[seen_movies[<span class="hljs-string">&quot;movieId&quot;</span>] == seen_movie_id][<span class="hljs-string">&quot;rating&quot;</span>].values[<span class="hljs-number">0</span>]
+                user_based_score = self.user_based_one(user_id, seen_movie_id, <span class="hljs-keyword">False</span>)
+                movie_based_score = self.movie_based_one(user_id, seen_movie_id, <span class="hljs-keyword">False</span>)
+                <span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> edges:
+                    <span class="hljs-keyword">if</span> (abs(real_score - user_based_score) &lt;= edge <span class="hljs-keyword">or</span>
+                            abs(real_score - movie_based_score) &lt;= edge):
+                        valid[edge] += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> edges:
+            print(<span class="hljs-string">&quot;&#x4E0A;&#x4E0B;&#x6D6E;&#x52A8;&#x8303;&#x56F4;&#x4E3A;&quot;</span> + str(edge) + <span class="hljs-string">&quot;&#x65F6;&#x7684;&#x51C6;&#x786E;&#x7387;&#x4E3A;&quot;</span> + str(valid[edge] / total * <span class="hljs-number">100</span>) + <span class="hljs-string">&quot;%&quot;</span>)
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    myRecommend = MyRecommend(<span class="hljs-string">&quot;./ml-latest-small/movies.csv&quot;</span>,
+                              <span class="hljs-string">&quot;./ml-latest-small/ratings.csv&quot;</span>,
+                              <span class="hljs-string">&quot;./ml-latest-small/tags.csv&quot;</span>)
+    myRecommend.init_similarity()
+    print(myRecommend.user_based_one(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-keyword">False</span>))
+    myRecommend.predict(range(<span class="hljs-number">611</span>))
+    myRecommend.evaluate(range(<span class="hljs-number">5</span>), [<span class="hljs-number">0.25</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">0.75</span>, <span class="hljs-number">1</span>])
+</code></pre>
+<h1 id="3-&#x53C2;&#x8003;">3. &#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://www.jianshu.com/p/9ada2ba92919?utm_campaign" target="_blank">&#x5206;&#x6790;9000&#x90E8;&#x7535;&#x5F71;|&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7535;&#x5F71;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;</a></li>
+<li><a href="https://blog.csdn.net/weixin_26752765/article/details/108132875" target="_blank">&#x57FA;&#x4E8E;MovieLens&#x7684;&#x7535;&#x5F71;&#x63A8;&#x8350;&#x7CFB;&#x7EDF;</a></li>
+<li><a href="https://blog.csdn.net/Joenyye/article/details/80912909" target="_blank">Python&#x63A8;&#x8350;&#x7B97;&#x6CD5;&#x6848;&#x4F8B;&#xFF08;2&#xFF09;&#x2014;&#x2014;&#x57FA;&#x4E8E;&#x5185;&#x5BB9;&#x7684;&#x7535;&#x5F71;&#x63A8;&#x8350;</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Tec9-SVD.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Tec9-SVD">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tec10-基于MovieLens的推荐系统","level":"1.24","depth":1,"previous":{"title":"Tec9-SVD","level":"1.23","depth":1,"path":"Tec9-SVD.md","ref":"Tec9-SVD.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tec10-基于MovieLens的推荐系统.md","mtime":"2020-10-19T06:46:42.612Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

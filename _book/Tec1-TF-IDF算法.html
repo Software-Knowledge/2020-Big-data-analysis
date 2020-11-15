@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Tec1-TF-IDF算法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Tec2-安装Hadoop和Spark.html" />
+    
+    
+    <link rel="prev" href="Lecture12-Spark与数据分析.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Tec1-TF-IDF算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="tec1-tf-idf">Tec1-TF-IDF</h2>
+<h1 id="1-tf-idf&#x7B97;&#x6CD5;">1. TF-IDF&#x7B97;&#x6CD5;</h1>
+<ol>
+<li><strong>TF-IDF&#xFF08;term frequency&#x2013;inverse document frequency&#xFF0C;&#x8BCD;&#x9891;-&#x9006;&#x5411;&#x6587;&#x4EF6;&#x9891;&#x7387;&#xFF09;</strong>&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#xFF08;information retrieval&#xFF09;&#x4E0E;&#x6587;&#x672C;&#x6316;&#x6398;&#xFF08;text mining&#xFF09;&#x7684;&#x5E38;&#x7528;<strong>&#x52A0;&#x6743;&#x6280;&#x672F;</strong>&#x3002;</li>
+<li>TF-IDF&#x662F;&#x4E00;&#x79CD;&#x7EDF;&#x8BA1;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4EE5;&#x8BC4;&#x4F30;&#x4E00;&#x5B57;&#x8BCD;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x96C6;&#x6216;&#x4E00;&#x4E2A;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x4EFD;&#x6587;&#x4EF6;&#x7684;&#x91CD;&#x8981;&#x7A0B;&#x5EA6;&#x3002;<strong>&#x5B57;&#x8BCD;&#x7684;&#x91CD;&#x8981;&#x6027;&#x968F;&#x7740;&#x5B83;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#x6210;&#x6B63;&#x6BD4;&#x589E;&#x52A0;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x4F1A;&#x968F;&#x7740;&#x5B83;&#x5728;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x9891;&#x7387;&#x6210;&#x53CD;&#x6BD4;&#x4E0B;&#x964D;&#x3002;</strong></li>
+<li><strong>TF-IDF&#x7684;&#x4E3B;&#x8981;&#x601D;&#x60F3;&#x662F;</strong>&#xFF1A;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x5355;&#x8BCD;&#x5728;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x9891;&#x7387;TF&#x9AD8;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x5176;&#x4ED6;&#x6587;&#x7AE0;&#x4E2D;&#x5F88;&#x5C11;&#x51FA;&#x73B0;&#xFF0C;&#x5219;&#x8BA4;&#x4E3A;&#x6B64;&#x8BCD;&#x6216;&#x8005;&#x77ED;&#x8BED;&#x5177;&#x6709;&#x5F88;&#x597D;&#x7684;&#x7C7B;&#x522B;&#x533A;&#x5206;&#x80FD;&#x529B;&#xFF0C;&#x9002;&#x5408;&#x7528;&#x6765;&#x5206;&#x7C7B;&#x3002;</li>
+</ol>
+<h2 id="11-tf&#x662F;&#x8BCD;&#x9891;term-frequency">1.1. TF&#x662F;&#x8BCD;&#x9891;(Term Frequency)</h2>
+<ol>
+<li>&#x8BCD;&#x9891;&#xFF08;TF&#xFF09;&#x8868;&#x793A;&#x8BCD;&#x6761;&#xFF08;&#x5173;&#x952E;&#x5B57;&#xFF09;&#x5728;&#x6587;&#x672C;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x9891;&#x7387;&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x901A;&#x5E38;&#x4F1A;&#x88AB;&#x5F52;&#x4E00;&#x5316;(&#x4E00;&#x822C;&#x662F;&#x8BCD;&#x9891;&#x9664;&#x4EE5;&#x6587;&#x7AE0;&#x603B;&#x8BCD;&#x6570;), &#x4EE5;&#x9632;&#x6B62;&#x5B83;&#x504F;&#x5411;&#x957F;&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x516C;&#x5F0F;:$TF<em>{ij} = \frac{n</em>{i,j}}{\sum<em>{k}n</em>{k,j}}$&#x6216;$TF_{w} = \frac{&#x5728;&#x67D0;&#x4E00;&#x7C7B;&#x4E2D;&#x8BCD;&#x6761;w&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;}{&#x8BE5;&#x7C7B;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x8BCD;&#x6761;&#x6761;&#x76EE;}$</li>
+<li>$n<em>{i,j}$&#x662F;&#x8BE5;&#x8BCD;&#x5728;$d</em>{j}$&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x5206;&#x6BCD;&#x5219;&#x662F;&#x6587;&#x4EF6;$d_{j}$&#x4E2D;&#x6240;&#x6709;&#x8BCD;&#x6C47;&#x51FA;&#x73B0;&#x7684;&#x6B21;&#x6570;&#x603B;&#x548C;&#x3002;</li>
+</ol>
+<h2 id="12-idf&#x662F;&#x9006;&#x5411;&#x6587;&#x4EF6;&#x9891;&#x7387;inverse-document-frequency">1.2. IDF&#x662F;&#x9006;&#x5411;&#x6587;&#x4EF6;&#x9891;&#x7387;(Inverse Document Frequency)</h2>
+<ol>
+<li><strong>&#x9006;&#x5411;&#x6587;&#x4EF6;&#x9891;&#x7387; (IDF)</strong>&#xFF1A;&#x67D0;&#x4E00;&#x7279;&#x5B9A;&#x8BCD;&#x8BED;&#x7684;IDF&#xFF0C;&#x53EF;&#x4EE5;&#x7531;<strong>&#x603B;&#x6587;&#x4EF6;&#x6570;&#x76EE;&#x9664;&#x4EE5;&#x5305;&#x542B;&#x8BE5;&#x8BCD;&#x8BED;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x6570;&#x76EE;&#xFF0C;&#x518D;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x5546;&#x53D6;&#x5BF9;&#x6570;&#x5F97;&#x5230;&#x3002;</strong></li>
+<li>&#x5982;&#x679C;&#x5305;&#x542B;&#x8BCD;&#x6761;t&#x7684;&#x6587;&#x6863;&#x8D8A;&#x5C11;, IDF&#x8D8A;&#x5927;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x8BCD;&#x6761;&#x5177;&#x6709;&#x5F88;&#x597D;&#x7684;&#x7C7B;&#x522B;&#x533A;&#x5206;&#x80FD;&#x529B;&#x3002;</li>
+<li>&#x516C;&#x5F0F;:$IDF<em>{i} = \log{\frac{|D|}{{j: t</em>{i}\in d_{j}}}}$</li>
+<li>&#x5176;&#x4E2D;|D|&#x662F;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x603B;&#x6570;&#xFF0C;$|{j:t<em>{i}\in d</em>{j}|$&#x8868;&#x793A;&#x5305;&#x542B;&#x8BCD;&#x8BED;$t<em>{i}$&#x7684;&#x6587;&#x4EF6;&#x7EFC;&#x8FF0;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x8BCD;&#x8BED;&#x4E0D;&#x5728;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x5206;&#x6BCD;&#x4E3A;0&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;$1 + |{j:t</em>{i}\in d_{j}|$</li>
+<li>&#x6240;&#x4EE5;&#x516C;&#x5F0F;&#x662F;$IDF = \log{\frac{&#x8BED;&#x6599;&#x5E93;&#x7684;&#x6587;&#x6863;&#x603B;&#x6570;}{&#x5305;&#x542B;&#x8BCD;&#x6761;w&#x7684;&#x6587;&#x6863;&#x6570; + 1}}$</li>
+</ol>
+<h2 id="13-tf-idf&#x7684;&#x8BA1;&#x7B97;">1.3. TF-IDF&#x7684;&#x8BA1;&#x7B97;</h2>
+<ol>
+<li>$TF-IDF = TF * IDF$</li>
+</ol>
+<h1 id="2-tf-idf&#x5E94;&#x7528;">2. TF-IDF&#x5E94;&#x7528;</h1>
+<ol>
+<li>&#x641C;&#x7D22;&#x5F15;&#x64CE;</li>
+<li>&#x5173;&#x952E;&#x8BCD;&#x62BD;&#x53D6;</li>
+<li>&#x6587;&#x672C;&#x76F8;&#x4F3C;&#x5EA6;</li>
+<li>&#x6587;&#x672C;&#x6458;&#x8981;</li>
+</ol>
+<h1 id="3-tf-idf&#x7684;&#x5B9E;&#x73B0;">3. TF-IDF&#x7684;&#x5B9E;&#x73B0;</h1>
+<h2 id="31-nltk&#x7684;&#x5B9E;&#x73B0;">3.1. NLTK&#x7684;&#x5B9E;&#x73B0;</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> nltk.text <span class="hljs-keyword">import</span> TextCollection
+<span class="hljs-keyword">from</span> nltk.tokenize <span class="hljs-keyword">import</span> word_tokenize
+
+<span class="hljs-comment">#&#x9996;&#x5148;&#xFF0C;&#x6784;&#x5EFA;&#x8BED;&#x6599;&#x5E93;corpus</span>
+sents=[<span class="hljs-string">&apos;this is sentence one&apos;</span>,<span class="hljs-string">&apos;this is sentence two&apos;</span>,<span class="hljs-string">&apos;this is sentence three&apos;</span>]
+sents=[word_tokenize(sent) <span class="hljs-keyword">for</span> sent <span class="hljs-keyword">in</span> sents] <span class="hljs-comment">#&#x5BF9;&#x6BCF;&#x4E2A;&#x53E5;&#x5B50;&#x8FDB;&#x884C;&#x5206;&#x8BCD;</span>
+print(sents)  <span class="hljs-comment">#&#x8F93;&#x51FA;&#x5206;&#x8BCD;&#x540E;&#x7684;&#x7ED3;&#x679C;</span>
+corpus=TextCollection(sents)  <span class="hljs-comment">#&#x6784;&#x5EFA;&#x8BED;&#x6599;&#x5E93;</span>
+print(corpus)  <span class="hljs-comment">#&#x8F93;&#x51FA;&#x8BED;&#x6599;&#x5E93;</span>
+
+<span class="hljs-comment">#&#x8BA1;&#x7B97;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&quot;one&quot;&#x7684;tf&#x503C;</span>
+tf=corpus.tf(<span class="hljs-string">&apos;one&apos;</span>,corpus)    <span class="hljs-comment"># 1/12</span>
+print(tf)
+
+<span class="hljs-comment">#&#x8BA1;&#x7B97;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&quot;one&quot;&#x7684;idf&#x503C;</span>
+idf=corpus.idf(<span class="hljs-string">&apos;one&apos;</span>)      <span class="hljs-comment">#log(3/1)</span>
+print(idf)
+
+<span class="hljs-comment">#&#x8BA1;&#x7B97;&#x8BED;&#x6599;&#x5E93;&#x4E2D;&quot;one&quot;&#x7684;tf-idf&#x503C;</span>
+tf_idf=corpus.tf_idf(<span class="hljs-string">&apos;one&apos;</span>,corpus)
+print(tf_idf)
+</code></pre>
+<h2 id="32-sklearn&#x5B9E;&#x73B0;tf-idf">3.2. Sklearn&#x5B9E;&#x73B0;TF-IDF</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> sklearn.feature_extraction.text <span class="hljs-keyword">import</span> CountVectorizer
+<span class="hljs-keyword">from</span> sklearn.feature_extraction.text <span class="hljs-keyword">import</span> TfidfTransformer
+
+x_train = [<span class="hljs-string">&apos;TF-IDF &#x4E3B;&#x8981; &#x601D;&#x60F3; &#x662F;&apos;</span>,<span class="hljs-string">&apos;&#x7B97;&#x6CD5; &#x4E00;&#x4E2A; &#x91CD;&#x8981; &#x7279;&#x70B9; &#x53EF;&#x4EE5; &#x8131;&#x79BB; &#x8BED;&#x6599;&#x5E93; &#x80CC;&#x666F;&apos;</span>,
+           <span class="hljs-string">&apos;&#x5982;&#x679C; &#x4E00;&#x4E2A; &#x7F51;&#x9875; &#x88AB; &#x5F88;&#x591A; &#x5176;&#x4ED6; &#x7F51;&#x9875; &#x94FE;&#x63A5; &#x8BF4;&#x660E; &#x7F51;&#x9875; &#x91CD;&#x8981;&apos;</span>]
+x_test=[<span class="hljs-string">&apos;&#x539F;&#x59CB; &#x6587;&#x672C; &#x8FDB;&#x884C; &#x6807;&#x8BB0;&apos;</span>,<span class="hljs-string">&apos;&#x4E3B;&#x8981; &#x601D;&#x60F3;&apos;</span>]
+
+<span class="hljs-comment">#&#x8BE5;&#x7C7B;&#x4F1A;&#x5C06;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x8BCD;&#x8BED;&#x8F6C;&#x6362;&#x4E3A;&#x8BCD;&#x9891;&#x77E9;&#x9635;&#xFF0C;&#x77E9;&#x9635;&#x5143;&#x7D20;a[i][j] &#x8868;&#x793A;j&#x8BCD;&#x5728;i&#x7C7B;&#x6587;&#x672C;&#x4E0B;&#x7684;&#x8BCD;&#x9891;</span>
+vectorizer = CountVectorizer(max_features=<span class="hljs-number">10</span>)
+<span class="hljs-comment">#&#x8BE5;&#x7C7B;&#x4F1A;&#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x8BCD;&#x8BED;&#x7684;tf-idf&#x6743;&#x503C;</span>
+tf_idf_transformer = TfidfTransformer()
+<span class="hljs-comment">#&#x5C06;&#x6587;&#x672C;&#x8F6C;&#x4E3A;&#x8BCD;&#x9891;&#x77E9;&#x9635;&#x5E76;&#x8BA1;&#x7B97;tf-idf</span>
+tf_idf = tf_idf_transformer.fit_transform(vectorizer.fit_transform(x_train))
+<span class="hljs-comment">#&#x5C06;tf-idf&#x77E9;&#x9635;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x5143;&#x7D20;a[i][j]&#x8868;&#x793A;j&#x8BCD;&#x5728;i&#x7C7B;&#x6587;&#x672C;&#x4E2D;&#x7684;tf-idf&#x6743;&#x91CD;</span>
+x_train_weight = tf_idf.toarray()
+
+<span class="hljs-comment">#&#x5BF9;&#x6D4B;&#x8BD5;&#x96C6;&#x8FDB;&#x884C;tf-idf&#x6743;&#x91CD;&#x8BA1;&#x7B97;</span>
+tf_idf = tf_idf_transformer.transform(vectorizer.transform(x_test))
+x_test_weight = tf_idf.toarray()  <span class="hljs-comment"># &#x6D4B;&#x8BD5;&#x96C6;TF-IDF&#x6743;&#x91CD;&#x77E9;&#x9635;</span>
+
+print(<span class="hljs-string">&apos;&#x8F93;&#x51FA;x_train&#x6587;&#x672C;&#x5411;&#x91CF;&#xFF1A;&apos;</span>)
+print(x_train_weight)
+print(<span class="hljs-string">&apos;&#x8F93;&#x51FA;x_test&#x6587;&#x672C;&#x5411;&#x91CF;&#xFF1A;&apos;</span>)
+print(x_test_weight)
+</code></pre>
+<h2 id="33-jieba&#x5B9E;&#x73B0;tf-idf&#x7B97;&#x6CD5;">3.3. jieba&#x5B9E;&#x73B0;TF-IDF&#x7B97;&#x6CD5;</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> jieba.analyse
+
+text=<span class="hljs-string">&apos;&#x5173;&#x952E;&#x8BCD;&#x662F;&#x80FD;&#x591F;&#x8868;&#x8FBE;&#x6587;&#x6863;&#x4E2D;&#x5FC3;&#x5185;&#x5BB9;&#x7684;&#x8BCD;&#x8BED;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x6807;&#x5F15;&#x8BBA;&#x6587;&#x5185;&#x5BB9;&#x7279;&#x5F81;&#x3001;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x3001;&#x7CFB;&#x7EDF;&#x6C47;&#x96C6;&#x4EE5;&#x4F9B;&#x8BFB;&#x8005;&#x68C0;&#x9605;&#x3002;&#x5173;&#x952E;&#x8BCD;&#x63D0;&#x53D6;&#x662F;&#x6587;&#x672C;&#x6316;&#x6398;&#x9886;&#x57DF;&#x7684;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x662F;&#x6587;&#x672C;&#x68C0;&#x7D22;&#x3001;&#x6587;&#x6863;&#x6BD4;&#x8F83;&#x3001;&#x6458;&#x8981;&#x751F;&#x6210;&#x3001;&#x6587;&#x6863;&#x5206;&#x7C7B;&#x548C;&#x805A;&#x7C7B;&#x7B49;&#x6587;&#x672C;&#x6316;&#x6398;&#x7814;&#x7A76;&#x7684;&#x57FA;&#x7840;&#x6027;&#x5DE5;&#x4F5C;&apos;</span>
+
+keywords=jieba.analyse.extract_tags(text, topK=<span class="hljs-number">5</span>, withWeight=<span class="hljs-keyword">False</span>, allowPOS=())
+<span class="hljs-comment"># topK&#x9ED8;&#x8BA4;&#x4E3A;20&#xFF0C;withWeight&#x8868;&#x793A;&#x662F;&#x5426;&#x4E00;&#x5E76;&#x8FD4;&#x56DE;&#x5173;&#x952E;&#x8BCD;&#x6743;&#x91CD;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false&#xFF0C;allowPOS&#x4EC5;&#x5305;&#x62EC;&#x6307;&#x5B9A;&#x8BCD;&#x6027;&#x7684;&#x8BCD;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E0D;&#x7B5B;&#x9009;</span>
+print(keywords)
+</code></pre>
+<h1 id="4-tf-idf&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x8DB3;">4. TF-IDF&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x8DB3;</h1>
+<ol>
+<li>TF-IDF&#x7684;&#x7B80;&#x5355;&#x7ED3;&#x6784;&#x4E0D;&#x80FD;&#x6709;&#x6548;&#x53CD;&#x6620;&#x5355;&#x8BCD;&#x7684;&#x91CD;&#x8981;&#x7A0B;&#x5EA6;&#x548C;&#x7279;&#x5F81;&#x8BCD;&#x7684;&#x5206;&#x5E03;&#x60C5;&#x51B5;&#xFF0C;&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x6743;&#x503C;&#x8C03;&#x6574;&#x3002;</li>
+<li>&#x5728;&#x6587;&#x672C;&#x5DF2;&#x7ECF;&#x5206;&#x7C7B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7CBE;&#x5EA6;&#x4E0D;&#x9AD8;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x80FD;&#x5F88;&#x591A;&#x91CD;&#x5408;&#x7684;&#x5173;&#x952E;&#x8BCD;&#x90FD;&#x88AB;&#x8986;&#x76D6;&#x3002;</li>
+<li>&#x6CA1;&#x6709;&#x8003;&#x8651;&#x7279;&#x5F81;&#x8BCD;&#x4F4D;&#x7F6E;&#x56E0;&#x7D20;&#x5BF9;&#x6587;&#x672C;&#x7684;&#x533A;&#x5206;&#x5EA6;</li>
+<li>&#x5BF9;&#x4E8E;&#x6587;&#x6863;&#x4E2D;&#x51FA;&#x73B0;&#x6B21;&#x6570;&#x8F83;&#x5C11;&#x7684;&#x91CD;&#x8981;&#x4EBA;&#x540D;&#x548C;&#x5730;&#x540D;&#x4FE1;&#x606F;&#x63D0;&#x53D6;&#x6548;&#x679C;&#x4E0D;&#x4F73;&#x3002;</li>
+</ol>
+<h1 id="5-&#x53C2;&#x8003;">5. &#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://blog.csdn.net/asialee_bird/article/details/81486700" target="_blank">TF-IDF&#x7B97;&#x6CD5;&#x4ECB;&#x7ECD;&#x53CA;&#x5B9E;&#x73B0;</a></li>
+<li><a href="https://image.hanspub.org/pdf/CSA20130100000_81882762.pdf" target="_blank">&#x6539;&#x8FDB;:TF-IWF&#x7B97;&#x6CD5;&#x8BBA;&#x6587;</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lecture12-Spark与数据分析.html" class="navigation navigation-prev " aria-label="Previous page: Lecture12-Spark与数据分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Tec2-安装Hadoop和Spark.html" class="navigation navigation-next " aria-label="Next page: Tec2-安装Hadoop和Spark">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tec1-TF-IDF算法","level":"1.15","depth":1,"next":{"title":"Tec2-安装Hadoop和Spark","level":"1.16","depth":1,"path":"Tec2-安装Hadoop和Spark.md","ref":"Tec2-安装Hadoop和Spark.md","articles":[]},"previous":{"title":"Lecture12-Spark与数据分析","level":"1.14","depth":1,"path":"Lecture12-Spark与数据分析.md","ref":"Lecture12-Spark与数据分析.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tec1-TF-IDF算法.md","mtime":"2020-09-16T02:27:20.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,946 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lecture4-链接分析 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lecture5-数据降维.html" />
+    
+    
+    <link rel="prev" href="Lecture3-大数据存储和处理.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Lecture4-链接分析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lecture4-&#x94FE;&#x63A5;&#x5206;&#x6790;">Lecture4-&#x94FE;&#x63A5;&#x5206;&#x6790;</h2>
+<p>[TOC]</p>
+<h1 id="1-&#x65B0;&#x578B;&#x6570;&#x636E;&#x56FE;&#x6570;&#x636E;">1. &#x65B0;&#x578B;&#x6570;&#x636E;:&#x56FE;&#x6570;&#x636E;</h1>
+<p><img src="img/lec4/1.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>&#x793E;&#x4EA4;&#x7F51;&#x7EDC;</th>
+<th>&#x5A92;&#x4F53;&#x7F51;&#x7EDC;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec4/2.png" alt=""></td>
+<td><img src="img/lec4/3.png" alt=""></td>
+</tr>
+<tr>
+<td>&#x4FE1;&#x606F;&#x7F51;&#x7EDC;</td>
+<td>&#x4FE1;&#x606F;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td><img src="img/lec4/4.png" alt=""></td>
+<td><img src="img/lec4/5.png" alt=""></td>
+</tr>
+<tr>
+<td>&#x6280;&#x672F;&#x7F51;&#x7EDC;</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="img/lec4/6.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-&#x56FE;&#x6570;&#x636E;&#x5F62;&#x6001;&#x7684;&#x7F51;&#x7EDC;">2. &#x56FE;&#x6570;&#x636E;&#x5F62;&#x6001;&#x7684;&#x7F51;&#x7EDC;</h1>
+<h2 id="21-&#x7F51;&#x7EDC;&#x7684;&#x6709;&#x5411;&#x56FE;&#x8868;&#x793A;">2.1. &#x7F51;&#x7EDC;&#x7684;&#x6709;&#x5411;&#x56FE;&#x8868;&#x793A;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x56FE;&#x5F62;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8282;&#x70B9;</td>
+<td>&#x7F51;&#x9875;</td>
+</tr>
+<tr>
+<td>&#x8FB9;</td>
+<td>&#x8D85;&#x94FE;&#x63A5;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="22-&#x5982;&#x4F55;&#x7EC4;&#x7EC7;&#x7F51;&#x7EDC;">2.2. &#x5982;&#x4F55;&#x7EC4;&#x7EC7;&#x7F51;&#x7EDC;</h2>
+<h3 id="221-&#x65B9;&#x5F0F;&#x4E00;&#x7F51;&#x9875;&#x7D22;&#x5F15;&#x4EBA;&#x5DE5;&#x7F16;&#x8F91;">2.2.1. &#x65B9;&#x5F0F;&#x4E00;:&#x7F51;&#x9875;&#x7D22;&#x5F15;(&#x4EBA;&#x5DE5;&#x7F16;&#x8F91;)</h3>
+<p>Yahoo&#x3001;DMOZ&#x3001;LookSmart</p>
+<h3 id="222-&#x65B9;&#x5F0F;&#x4E8C;&#x7F51;&#x7EDC;&#x641C;&#x7D22;">2.2.2. &#x65B9;&#x5F0F;&#x4E8C;:&#x7F51;&#x7EDC;&#x641C;&#x7D22;</h3>
+<ol>
+<li>&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x8C03;&#x67E5;:&#x5728;&#x4E00;&#x4E2A;&#x5C0F;&#x800C;&#x53EF;&#x4FE1;&#x7684;&#x96C6;&#x5408;&#x4E2D;&#x627E;&#x5230;&#x76F8;&#x5173;&#x6587;&#x6863;</li>
+<li>&#x88AB;&#x641C;&#x7D22;&#x96C6;&#x5408;:&#x65B0;&#x95FB;&#x62A5;&#x7EB8;&#x3001;&#x6587;&#x7AE0;&#x3001;&#x5F15;&#x7528;&#x7B49;&#x7B49;&#x3002;</li>
+<li>&#x7F3A;&#x9677;:&#x7F51;&#x7EDC;&#x662F;&#x5DE8;&#x5927;&#x7684;&#xFF0C;&#x5145;&#x6EE1;&#x4E0D;&#x53EF;&#x4FE1;&#x3001;&#x8FC7;&#x65F6;&#x548C;&#x968F;&#x673A;&#x7684;&#x4E1C;&#x897F;</li>
+<li>&#x7F51;&#x7EDC;&#x641C;&#x7D22;&#x4E2D;&#x7684;&#x6311;&#x6218;<ol>
+<li>&#x7F51;&#x7EDC;&#x4E2D;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x6765;&#x6E90;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x76F8;&#x4FE1;&#x54EA;&#x4E00;&#x4E2A;&#x6765;&#x6E90;&#x7684;&#x6570;&#x636E;&#x5462;&#xFF1F;&#x53EF;&#x4FE1;&#x7684;&#x7F51;&#x9875;&#x5F7C;&#x6B64;&#x4E92;&#x76F8;&#x5F15;&#x7528;&#x548C;&#x8FDE;&#x63A5;</li>
+<li>&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x7684;&#x6700;&#x4F73;&#x56DE;&#x7B54;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6CA1;&#x6709;&#x5355;&#x4E2A;&#x7684;&#x6700;&#x4F73;&#x7B54;&#x6848;&#xFF0C;&#x5B9E;&#x9645;&#x5173;&#x4E8E;&#x6570;&#x636E;&#x7684;&#x9875;&#x9762;&#x5F80;&#x5F80;&#x6307;&#x5411;&#x8BB8;&#x591A;&#x201C;&#x6570;&#x636E;&#x201D;</li>
+</ol>
+</li>
+</ol>
+<h4 id="2221-&#x5728;&#x56FE;&#x4E2D;&#x4F5C;&#x8282;&#x70B9;&#x6392;&#x5E8F;">2.2.2.1. &#x5728;&#x56FE;&#x4E2D;&#x4F5C;&#x8282;&#x70B9;&#x6392;&#x5E8F;</h4>
+<ol>
+<li>&#x6240;&#x6709;&#x7684;&#x7F51;&#x9875;&#x7684;&#x91CD;&#x8981;&#x6027;&#x662F;&#x4E0D;&#x5E73;&#x7B49;&#x7684;</li>
+<li>&#x5728;&#x7F51;&#x7EDC;&#x56FE;&#x8282;&#x70B9;&#x7684;&#x8FDE;&#x63A5;&#x4E2D;&#x6709;&#x6781;&#x9AD8;&#x7684;&#x591A;&#x53D8;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x94FE;&#x63A5;&#x7ED3;&#x6784;&#x6765;&#x5BF9;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</li>
+</ol>
+<h4 id="2222-&#x94FE;&#x63A5;&#x5206;&#x6790;&#x7B97;&#x6CD5;">2.2.2.2. &#x94FE;&#x63A5;&#x5206;&#x6790;&#x7B97;&#x6CD5;</h4>
+<ol>
+<li>&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x96C6;&#x4E2D;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x4E09;&#x79CD;&#x94FE;&#x63A5;&#x5206;&#x6790;&#x65B9;&#x6CD5;&#x6765;&#x8BA1;&#x7B97;&#x56FE;&#x4E2D;&#x8282;&#x70B9;&#x7684;&#x91CD;&#x8981;&#x6027;&#x3002;<ol>
+<li>Page Rank &#x7B97;&#x6CD5;</li>
+<li>Topic-Specific(Personalized) Page Rank &#x7B97;&#x6CD5;</li>
+<li>Web Spam Detection Algorithms &#x7B97;&#x6CD5;</li>
+</ol>
+</li>
+</ol>
+<h4 id="2223-&#x94FE;&#x63A5;&#x6295;&#x7968;">2.2.2.3. &#x94FE;&#x63A5;&#x6295;&#x7968;</h4>
+<ol>
+<li>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;:&#x94FE;&#x63A5;&#x6295;&#x7968;&#xFF0C;&#x9875;&#x9762;&#x62E5;&#x6709;&#x7684;&#x5165;&#x94FE;&#x6743;&#x91CD;&#x548C;&#x8D8A;&#x5927;&#x8D8A;&#x91CD;&#x8981;&#xFF0C;&#x6765;&#x81EA;&#x91CD;&#x8981;(&#x9AD8;&#x6743;&#x91CD;)&#x7684;&#x94FE;&#x63A5;&#x6743;&#x91CD;&#x66F4;&#x5927;&#xFF0C;&#x5730;&#x63A8;&#x95EE;&#x9898;</li>
+<li>&#x8003;&#x8651;&#x6765;&#x81EA;&#x5916;&#x90E8;&#x7F51;&#x7AD9;&#x7684;&#x94FE;&#x63A5;:<ol>
+<li><code>www.stanford.edu</code>&#x6709;23400&#x4E2A;&#x94FE;&#x63A5;</li>
+<li><code>www.joe-schmoe.com</code>&#x6709;1&#x4E2A;&#x94FE;&#x63A5;</li>
+</ol>
+</li>
+<li>&#x6240;&#x6709;&#x5165;&#x94FE;&#x90FD;&#x662F;&#x7B49;&#x6743;&#x91CD;&#x7684;&#x5417;&#xFF1F;&#x4E0D;&#x662F;&#xFF0C;&#x6765;&#x81EA;&#x91CD;&#x8981;&#x7684;&#x94FE;&#x63A5;&#x6743;&#x91CD;&#x66F4;&#x5927;&#xFF0C;&#x9012;&#x63A8;&#x95EE;&#x9898;</li>
+</ol>
+<h1 id="3-page-rank-&#x7B97;&#x6CD5;">3. Page Rank &#x7B97;&#x6CD5;</h1>
+<ul>
+<li>Page Rank&#x7B97;&#x6CD5;&#x793A;&#x610F;&#x56FE;:</li>
+</ul>
+<p><img src="img/lec4/7.png" alt=""></p>
+<h2 id="31-page-rank&#x7684;&#x7B80;&#x5355;&#x9012;&#x63A8;&#x516C;&#x5F0F;">3.1. Page Rank&#x7684;&#x7B80;&#x5355;&#x9012;&#x63A8;&#x516C;&#x5F0F;</h2>
+<ol>
+<li>&#x6240;&#x6709;&#x94FE;&#x63A5;&#x7684;&#x6295;&#x7968;&#x6743;&#x91CD;&#x4E0E;&#x5176;&#x6E90;&#x7F51;&#x9875;&#x7684;<strong>&#x6743;&#x91CD;</strong>&#x6210;&#x6BD4;&#x4F8B;</li>
+<li>&#x9875;&#x9762;j&#x7684;&#x6743;&#x91CD;&#x4E3A;$r<em>j$&#xFF0C;&#x62E5;&#x6709;n&#x4E2A;&#x51FA;&#x94FE;&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;&#x51FA;&#x94FE;&#x6709;&#x7684;&#x6295;&#x7968;&#x6743;&#x91CD;&#x4E3A;$r</em>{j_{out}} = \frac{r_j}{n}$</li>
+<li>&#x9875;&#x9762;j&#x81EA;&#x8EAB;&#x7684;&#x6743;&#x91CD;$r_j$&#x4E3A;&#x5176;&#x5165;&#x94FE;&#x6743;&#x91CD;&#x4E4B;&#x548C;</li>
+<li>Page Rank&#x7F51;&#x7EDC;&#x5C40;&#x90E8;&#x793A;&#x610F;:</li>
+</ol>
+<p><img src="img/lec4/8.png" alt=""></p>
+<h2 id="32-page-rank&#x6D41;&#x6A21;&#x578B;">3.2. Page Rank:&#x6D41;&#x6A21;&#x578B;</h2>
+<ol>
+<li>&#x6765;&#x81EA;<strong>&#x91CD;&#x8981;&#x9875;&#x9762;</strong>&#x7684;&#x8FDE;&#x63A5;&#x6743;&#x91CD;&#x8F83;&#x5927;</li>
+<li>&#x88AB;&#x5176;&#x4ED6;&#x9875;&#x9762;&#x6307;&#x5411;&#x7684;&#x9875;&#x9762;&#x662F;&#x76F8;&#x5BF9;&#x91CD;&#x8981;&#x7684;&#x7684;</li>
+<li>&#x4E3A;&#x9875;&#x9762;j&#x5B9A;&#x4E49;&quot;rank&quot;:$r_{j}$</li>
+</ol>
+<p>$$
+r<em>{j} = \sum\limits\limits</em>{i-&gt;j} \frac{r_i}{d_i}\ d_i&#x662F;&#x7ED3;&#x70B9;i&#x7684;&#x51FA;&#x5EA6;</p>
+<p>$$</p>
+<table>
+<thead>
+<tr>
+<th>&#x56FE;&#x793A;&#x610F;</th>
+<th>&#x672C;&#x5F0F;&#x6CA1;&#x6709;&#x7279;&#x89E3;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec4/9.png" alt=""></td>
+<td><img src="img/lec4/10.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="33-&#x7B80;&#x5355;&#x6D41;&#x7B49;&#x5F0F;&#x7684;&#x6C42;&#x89E3;">3.3. &#x7B80;&#x5355;&#x6D41;&#x7B49;&#x5F0F;&#x7684;&#x6C42;&#x89E3;</h2>
+<ol>
+<li>&#x4E0A;&#x9762;&#x7684;&#x53F3;&#x56FE;&#x7684;&#x5F0F;&#x5B50;&#x6CA1;&#x6709;&#x7279;&#x89E3;&#xFF0C;&#x9644;&#x52A0;&#x7EA6;&#x675F;&#x6761;&#x4EF6;:<ol>
+<li>&#x6C42;&#x89E3;&#x6D41;&#x7B49;&#x5F0F;:$r_y + r_a + r_m = 1$</li>
+<li>&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x4E3A;:$r_y = \frac{2}{5}, r_a = \frac{2}{5}, r_m = \frac{1}{5}$</li>
+</ol>
+</li>
+<li>&#x9AD8;&#x65AF;&#x6CD5;&#x6D88;&#x53BB;&#x53EA;&#x9002;&#x7528;&#x4E8E;&#x5C0F;&#x89C4;&#x6A21;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x6765;&#x5E94;&#x5BF9;&#x5927;&#x89C4;&#x6A21;&#x7684;Web&#x56FE;</li>
+</ol>
+<h2 id="34-pagerank&#x7684;&#x77E9;&#x9635;&#x7B49;&#x5F0F;&#x6838;&#x5FC3;">3.4. PageRank&#x7684;&#x77E9;&#x9635;&#x7B49;&#x5F0F;(&#x6838;&#x5FC3;)</h2>
+<blockquote>
+<p>$r^{(0)}$:&#x7ED9;&#x5B9A;&#x56DB;&#x4E2A;&#x7F51;&#x9875;&#x7684;&#x521D;&#x59CB;&#x7684;PR&#x503C;</p>
+</blockquote>
+<h3 id="341-&#x968F;&#x673A;&#x90BB;&#x63A5;&#x77E9;&#x9635;m">3.4.1. &#x968F;&#x673A;&#x90BB;&#x63A5;&#x77E9;&#x9635;M</h3>
+<ol>
+<li>&#x9875;&#x9762;i&#x6709;$d_i$&#x4E2A;&#x51FA;&#x94FE;</li>
+<li>&#x5982;&#x679C;i<code>-&gt;</code>j&#xFF0C;&#x5219;$M<em>{ji} = \frac{i}{d_i}$&#xFF0C;&#x4E0D;&#x7136;$M</em>{ji}=0$&#xFF0C;&#x5217;&#x6240;&#x6709;&#x5143;&#x7D20;&#x548C;&#x4E3A;1</li>
+</ol>
+<h3 id="342-&#x6392;&#x5E8F;&#x5411;&#x91CF;r">3.4.2. &#x6392;&#x5E8F;&#x5411;&#x91CF;r</h3>
+<ol>
+<li>&#x6BCF;&#x4E00;&#x9875;&#x6709;&#x4E00;&#x4E2A;&#x6761;&#x76EE;&#x7684;&#x5411;&#x91CF;</li>
+<li>$r_i$&#x662F;&#x9875;&#x9762;i&#x7684;&#x51FA;&#x94FE;&#x6743;&#x91CD;&#xFF0C;$d_i$&#x662F;&#x51FA;&#x94FE;&#x7684;&#x4E2A;&#x6570;</li>
+</ol>
+<p>$$\sum\limits<em>{i}r_i = 1 \
+r_j = \sum\limits</em>{i-&gt;j}\frac{r_i}{d_i} \
+&#x6D41;&#x7B49;&#x5F0F;:r = M * r</p>
+<p>$$</p>
+<p><img src="img/lec4/19.png" alt=""></p>
+<h3 id="343-&#x7279;&#x5F81;&#x5411;&#x91CF;&#x7B49;&#x5F0F;">3.4.3. &#x7279;&#x5F81;&#x5411;&#x91CF;&#x7B49;&#x5F0F;</h3>
+<ol>
+<li>&#x7531;&#x4E0A;&#x5F0F;&#x53EF;&#x77E5;&#xFF0C;&#x6392;&#x5E8F;&#x5411;&#x91CF;r&#x662F;&#x968F;&#x673A;&#x90BB;&#x63A5;&#x77E9;&#x9635;M&#x7684;&#x7279;&#x5F81;&#x5411;&#x91CF;<ol>
+<li>&#x5176;&#x7B2C;&#x4E00;&#x4E2A;&#x6216;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x5411;&#x91CF;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x7279;&#x5F81;&#x503C;&#x4E3A;1</li>
+<li>M&#x7684;&#x6700;&#x5927;&#x7279;&#x5F81;&#x503C;&#x4E3A;1&#xFF0C;&#x56E0;&#x4E3A;M&#x4E3A;&#x5217;&#x968F;&#x673A;(&#x975E;&#x8D1F;&#x9879;)</li>
+<li>&#x6211;&#x4EEC;&#x77E5;&#x9053;r&#x662F;&#x5355;&#x4F4D;&#x957F;&#x5EA6;&#xFF0C;&#x5E76;&#x4E14;&#x6BCF;&#x4E00;&#x5217;&#x548C;&#x4E3A;1&#xFF0C;$M*r$ &lt;= 1</li>
+<li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9AD8;&#x6548;&#x89E3;&#x51FA;r&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x53EB;Power iteration</li>
+</ol>
+</li>
+</ol>
+<p><img src="img/lec4/11.png" alt=""></p>
+<h2 id="35-power-iteraion&#x65B9;&#x6CD5;">3.5. Power iteraion&#x65B9;&#x6CD5;</h2>
+<ol>
+<li>&#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x6709;n&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x7F51;&#x7EDC;&#x56FE;(&#x8282;&#x70B9;&#x662F;&#x9875;&#xFF0C;&#x8FB9;&#x662F;&#x8D85;&#x94FE;&#x63A5;)</li>
+<li>Power iteration&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;<ol>
+<li>&#x5047;&#x8BBE;&#x8FD9;&#x91CC;&#x6709;N&#x4E2A;&#x7F51;&#x7EDC;&#x8282;&#x70B9;</li>
+<li>&#x521D;&#x59CB;&#x5316;:$r^{(0)} = [\frac{1}{N}, ..., \frac{1}{N}]^{T}$</li>
+<li>&#x8BA1;&#x7B97;:$r^{(t + 1)} = M * r^{(t)}$&#xFF0C;&#x91CD;&#x590D;&#x64CD;&#x4F5C;&#x76F4;&#x5230;&#x6EE1;&#x8DB3;&#x505C;&#x6B62;&#x6761;&#x4EF6;</li>
+<li>&#x505C;&#x6B62;&#x6761;&#x4EF6;:$|r^{(t + 1)} - r^{(t)}| &lt; \varepsilon$</li>
+</ol>
+</li>
+</ol>
+<h3 id="351-&#x4F7F;&#x7528;power-iteration&#x65B9;&#x6CD5;&#x6C42;&#x89E3;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;">3.5.1. &#x4F7F;&#x7528;power iteration&#x65B9;&#x6CD5;&#x6C42;&#x89E3;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;</h3>
+<p><img src="img/lec4/12.png" alt=""></p>
+<h3 id="352-power-iteration&#x65B9;&#x6CD5;&#x539F;&#x7406;">3.5.2. Power Iteration&#x65B9;&#x6CD5;&#x539F;&#x7406;</h3>
+<ol>
+<li><p>&#x67E5;&#x627E;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x5411;&#x91CF;&#xFF08;&#x5BF9;&#x5E94;&#x4E8E;&#x6700;&#x5927;&#x7279;&#x5F81;&#x503C;&#x7684;&#x5411;&#x91CF;&#xFF09;&#x7684;&#x65B9;&#x6CD5;
+$$
+r^{(1)} = M <em> r ^{(0)} \
+r^{(2)} = M^{2} </em> r ^{(0)} \
+r^{(3)} = M^{3} <em> r ^{(0)} \
+... \
+r^{(n)} = M^{n} </em> r ^{(0)} \
+$$</p>
+</li>
+<li><p>&#x8BC1;&#x660E;:&#x5E8F;&#x5217;:$M <em> r ^{(0)}$&#x3001;$M^{2} </em> r ^{(0)}$&#x3001;$M^{3} <em> r ^{(0)}$&#x3001;...&#x3001;$M^{k} </em> r ^{(0)}$&#x3001;...&#x63A5;&#x8FD1;M&#x7684;&#x4E3B;&#x8981;&#x7279;&#x5F81;&#x5411;&#x91CF;</p>
+<ol>
+<li>&#x5047;&#x8BBE;&#x77E9;&#x9635;M&#x6709;n&#x4E2A;&#x7EBF;&#x6027;&#x72EC;&#x7ACB;&#x7279;&#x5F81;&#x53D8;&#x91CF;$x_1,x_2,...,x_n$,&#x5BF9;&#x5E94;&#x7684;&#x7279;&#x5F81;&#x53D8;&#x91CF;&#x4E3A;$\lambda_1,\lambda_2,...,\lambda_n$,&#x5E76;&#x4E14;$\lambda_1&gt;\lambda_2&gt;...&gt;\lambda_n$</li>
+<li>&#x5411;&#x91CF;$x_1,x_2,...,x_n$&#x6784;&#x6210;&#x4E00;&#x7EC4;&#x57FA;&#x5411;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5199;&#x6210;$r ^{(0)} = c_1 <em> x_1 + c_2 </em> x_2 + ... + c_n * x_n$</li>
+<li>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x53EF;&#x5F97;:$M^k <em> r ^{(0)} = c_1 </em> \lambda^k_1 <em> x_1 + c_2 </em> \lambda^k_2<em> x_2 + ... + c_n </em> \lambda^k_n* x_n$</li>
+<li>&#x63D0;&#x51FA;$\lambda^k_1$:$M^k <em> r ^{(0)} =\lambda^k_1 </em> ( c_1 <em> x_1 + c_2 </em> (\frac{\lambda_2}{\lambda_1})^k <em> x_2 + ... + c_n </em> (\frac{\lambda_n}{\lambda_1})^k * x_n)$</li>
+<li>&#x7531;&#x4E8E;&#x4E4B;&#x524D;&#x7684;&#x5047;&#x8BBE;&#xFF0C;&#x53EF;&#x77E5;$\frac{\lambda_2}{\lambda_1,\frac{\lambda_3}{\lambda_1},... &lt; 1}$</li>
+<li>$\lim\limits_{k\to\infty}\frac{\lambda_i}{\lambda_1}^k = 0$</li>
+<li>$M^{k} <em> r ^{(0)} \approx c_1 </em> \lambda^k_1 *  x_1$</li>
+</ol>
+</li>
+<li>&#x4ECE;&#x4E0A;&#x9762;&#x8BC1;&#x660E;&#x7684;&#x6700;&#x540E;&#x7ED3;&#x8BBA;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#xFF0C;&#x5982;&#x679C;c1&#x7B49;&#x4E8E;0&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x6536;&#x655B;</li>
+</ol>
+<h2 id="36-random-walk-&#x7B97;&#x6CD5;">3.6. Random Walk &#x7B97;&#x6CD5;</h2>
+<ol>
+<li>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7F51;&#x7EDC;&#x6E38;&#x6807;<ol>
+<li>&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x95F4;t&#xFF0C;&#x6E38;&#x6807;&#x5728;&#x7B2C;i&#x4E2A;&#x8282;&#x70B9;&#x4E0A;</li>
+<li>&#x5728;&#x65F6;&#x95F4;t+1&#xFF0C;&#x6E38;&#x6807;&#x79FB;&#x52A8;&#x5230;i&#x7684;&#x968F;&#x673A;&#x4E00;&#x4E2A;&#x5916;&#x94FE;&#x4E0A;</li>
+<li>&#x6700;&#x7EC8;&#x7ED3;&#x675F;&#x5230;&#x8FDE;&#x63A5;i&#x8282;&#x70B9;&#x7684;j&#x8282;&#x70B9;&#x4E0A;</li>
+<li>&#x91CD;&#x590D;&#x4EE5;&#x4E0A;&#x7684;&#x8FC7;&#x7A0B;</li>
+</ol>
+</li>
+<li>$p(t)$&#x662F;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x6982;&#x7387;&#x5206;&#x5E03;</li>
+</ol>
+<h3 id="361-&#x5E73;&#x7A33;&#x5206;&#x5E03;">3.6.1. &#x5E73;&#x7A33;&#x5206;&#x5E03;</h3>
+<ol>
+<li>&#x65F6;&#x95F4;&#x4E0A;&#x6EE1;&#x8DB3;&#x7B49;&#x5F0F;&#xFF1A;$p(t+1) = M * p(t)$</li>
+<li>&#x5F53;&#x6EE1;&#x8DB3;&#x7B49;&#x5F0F;&#xFF1A;$p(t+1) = M * p(t) = p(t)$&#x7684;&#x65F6;&#x5019;$p(t)$&#x662F;Random Walk&#x7684;&#x4E00;&#x4E2A;&#x5E73;&#x7A33;&#x5206;&#x5E03;</li>
+<li>&#x7ED3;&#x5408;&#x4E4B;&#x524D;&#x77E9;&#x9635;&#x5F62;&#x5F0F;&#x7684;&#x7B49;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;r&#x5C31;&#x662F;Random Walk&#x7684;&#x5E73;&#x7A33;&#x5206;&#x5E03;</li>
+</ol>
+<h3 id="362-&#x5B58;&#x5728;&#x6027;&#x548C;&#x552F;&#x4E00;&#x6027;">3.6.2. &#x5B58;&#x5728;&#x6027;&#x548C;&#x552F;&#x4E00;&#x6027;</h3>
+<p>&#x968F;&#x673A;&#x6E38;&#x8D70;&#x7406;&#x8BBA;&#xFF08;&#x53C8;&#x79F0;&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x8FC7;&#x7A0B;&#xFF09;&#x7684;&#x4E3B;&#x8981;&#x7ED3;&#x679C;&#x662F;&#xFF1A;&#x5BF9;&#x4E8E;&#x6EE1;&#x8DB3;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x7684;&#x56FE;&#xFF0C;&#x5E73;&#x7A33;&#x5206;&#x5E03;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x65E0;&#x8BBA;&#x5728;&#x65F6;&#x95F4;t = 0&#x65F6;&#x7684;&#x521D;&#x59CB;&#x6982;&#x7387;&#x5206;&#x5E03;&#x5982;&#x4F55;&#xFF0C;&#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x8FBE;&#x5230;&#x5E73;&#x7A33;&#x5206;&#x5E03;</p>
+<h2 id="37-pagerank&#x7684;&#x95EE;&#x9898;">3.7. PageRank&#x7684;&#x95EE;&#x9898;</h2>
+<ol>
+<li>PageRank&#x662F;&#x5426;&#x6536;&#x655B;&#xFF1F;</li>
+<li>PageRank&#x662F;&#x5426;&#x6309;&#x7167;&#x6211;&#x4EEC;&#x8BBE;&#x60F3;&#x7684;&#x65B9;&#x5F0F;&#x6536;&#x655B;&#x4E86;&#xFF1F;</li>
+<li>&#x7ED3;&#x679C;&#x662F;&#x5426;&#x6709;&#x6548;&#x53EF;&#x4FE1;&#xFF1F;</li>
+<li>&#x6709;&#x4E9B;&#x70B9;&#x662F;&#x6B7B;&#x80E1;&#x540C;&#xFF1F;</li>
+<li>&#x6709;&#x7684;&#x7F51;&#x7EDC;&#x62D3;&#x6251;&#x5F62;&#x6210;&#x4E86;&#x56FE;&#x7ED3;&#x6784;(&#x722C;&#x866B;&#x9677;&#x9631;)&#xFF1F;</li>
+</ol>
+<p><img src="img/lec4/17.png" alt=""></p>
+<h3 id="371-&#x6536;&#x655B;&#x5224;&#x5B9A;">3.7.1. &#x6536;&#x655B;&#x5224;&#x5B9A;</h3>
+<p><img src="img/lec4/13.png" alt=""></p>
+<h3 id="372-&#x662F;&#x5426;&#x6536;&#x655B;&#x81F3;&#x671F;&#x5F85;&#x6C34;&#x5E73;">3.7.2. &#x662F;&#x5426;&#x6536;&#x655B;&#x81F3;&#x671F;&#x5F85;&#x6C34;&#x5E73;</h3>
+<p><img src="img/lec4/16.png" alt=""></p>
+<h3 id="373-&#x6B7B;&#x80E1;&#x540C;dead-end">3.7.3. &#x6B7B;&#x80E1;&#x540C;(Dead end)</h3>
+<ol>
+<li>&#x968F;&#x610F;&#x6F2B;&#x6B65;&#x201C;&#x65E0;&#x5904;&#x53EF;&#x53BB;&#x201D;&#xFF0C;&#x8FD9;&#x4E9B;&#x9875;&#x9762;&#x5BFC;&#x81F4;&#x6743;&#x91CD;&#x88AB;&#x6CC4;&#x9732;</li>
+<li>&#x5F52;&#x6839;&#x7ED3;&#x5E95;:&#x8BE5;&#x77E9;&#x9635;&#x4E0D;&#x662F;&#x5217;&#x968F;&#x673A;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x7684;&#x521D;&#x59CB;&#x5047;&#x8BBE;</li>
+</ol>
+<p><img src="img/lec4/21.png" alt=""></p>
+<blockquote>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;:&#x4F7F;&#x7528;Teleport!&#x5F53;&#x65E0;&#x5904;&#x53EF;&#x53BB;&#x65F6;&#xFF0C;&#x603B;&#x662F;&#x901A;&#x8FC7;&#x4F20;&#x9001;&#x4F7F;&#x77E9;&#x9635;&#x5217;&#x6210;&#x4E3A;&#x968F;&#x673A;&#x7684;,&#x8C03;&#x6574;dead-ends&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x4F7F;&#x5176;&#x6709;&#x968F;&#x673A;&#x7684;&#x6982;&#x7387;&#x5230;&#x56FE;&#x4E0A;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x70B9;&#x3002;</p>
+</blockquote>
+<p><img src="img/lec4/22.png" alt=""></p>
+<blockquote>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;(&#x88C1;&#x526A;&#x65B9;&#x6848;&#xFF0C;&#x8003;&#x8BD5;&#x4F7F;&#x7528;)</p>
+</blockquote>
+<p><img src="img/lec4/27.png" alt=""></p>
+<h3 id="374-&#x722C;&#x866B;&#x9677;&#x9631;">3.7.4. &#x722C;&#x866B;&#x9677;&#x9631;</h3>
+<ol>
+<li>&#x6240;&#x6709;&#x7684;&#x51FA;&#x94FE;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x73AF;&#x72B6;&#x7ED3;&#x6784;&#xFF0C;&#x968F;&#x673A;&#x6E38;&#x8D70;&#x5C06;&#x88AB;&#x56F0;&#x5728;&#x73AF;&#x4E2D;</li>
+<li>&#x8FD9;&#x4E2A;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x7ED3;&#x679C;:&#x8FD9;&#x4E2A;&#x73AF;&#x5438;&#x6536;&#x8D70;&#x4E86;&#x6A21;&#x578B;&#x7684;&#x6240;&#x6709;&#x7684;&#x91CD;&#x8981;&#x6027;</li>
+</ol>
+<p><img src="img/lec4/18.png" alt=""></p>
+<h2 id="38-&#x722C;&#x866B;&#x9677;&#x9631;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;teleports">3.8. &#x722C;&#x866B;&#x9677;&#x9631;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;:Teleports</h2>
+<ol>
+<li>Google&#x9488;&#x5BF9;Spider Traps&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x5728;&#x6BCF;&#x4E2A;&#x65F6;&#x95F4;&#x6B65;&#xFF0C;&#x968F;&#x673A;&#x51B2;&#x6D6A;&#x8005;&#x90FD;&#x6709;&#x4E24;&#x4E2A;&#x9009;&#x62E9;<ol>
+<li>&#x5BF9;&#x4E8E;&#x6982;&#x7387;$\beta$:&#x9009;&#x62E9;&#x968F;&#x673A;&#x4E00;&#x4E2A;&#x51FA;&#x94FE;&#x884C;&#x8D70;</li>
+<li>&#x5BF9;&#x4E8E;&#x6982;&#x7387;$1 - \beta$:&#x9009;&#x62E9;&#x968F;&#x673A;&#x4E00;&#x4E2A;&#x70B9;&#x884C;&#x8D70;</li>
+<li>&#x6982;&#x7387;$\beta$&#x5F80;&#x5F80;&#x5728;0.8-0.9&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x9009;&#x62E9;&#xFF0C;&#x7ECF;&#x9A8C;&#x4E0A;&#x4F1A;&#x9009;&#x62E9;0.85&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x5B66;&#x4E60;&#x6765;&#x786E;&#x5B9A;$\beta$&#x7684;&#x503C;</li>
+</ol>
+</li>
+<li>&#x51B2;&#x6D6A;&#x8005;&#x5C06;&#x5728;&#x51E0;&#x6B65;&#x4E4B;&#x5185;&#x5C06;&#x5176;&#x4F20;&#x9001;&#x51FA;Spider Traps</li>
+</ol>
+<p><img src="img/lec4/20.png" alt="">
+<img src="img/lec4/28.png" alt=""></p>
+<h2 id="39-&#x6574;&#x4F53;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;random-teleports">3.9. &#x6574;&#x4F53;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;:Random Teleports</h2>
+<ol>
+<li>Google&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x60C5;&#x51B5;&#xFF0C;&#x6BCF;&#x4E00;&#x6B65;&#xFF0C;&#x968F;&#x673A;&#x51B2;&#x6D6A;&#x8005;&#x90FD;&#x6709;&#x4E24;&#x4E2A;&#x9009;&#x62E9;<ol>
+<li>&#x5BF9;&#x4E8E;&#x6982;&#x7387;$\beta$:&#x9009;&#x62E9;&#x968F;&#x673A;&#x4E00;&#x4E2A;&#x51FA;&#x94FE;&#x884C;&#x8D70;</li>
+<li>&#x5BF9;&#x4E8E;&#x6982;&#x7387;$1 - \beta$:&#x9009;&#x62E9;&#x968F;&#x673A;&#x4E00;&#x4E2A;&#x70B9;&#x884C;&#x8D70;</li>
+</ol>
+</li>
+<li>PageRank&#x7B49;&#x5F0F;&#x7684;&#x4FEE;&#x6B63;:$r<em>j = \sum\limits\limits</em>{i-j} \beta <em> \frac{r_i}{d_i} + (1 - \beta) </em> \frac{1}{N}$</li>
+<li>&#x8BE5;&#x516C;&#x5F0F;&#x5047;&#x5B9A;/&#x6CA1;&#x6709;dead ends&#x3002; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9884;&#x5904;&#x7406;&#x77E9;&#x9635;/&#x5220;&#x9664;&#x6240;&#x6709;dead ends&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;dead ends&#x4E2D;&#x4EE5;&#x6982;&#x7387;1.0&#x663E;&#x5F0F;&#x5730;&#x8DDF;&#x968F;&#x968F;&#x673A;&#x4F20;&#x9001;&#x94FE;&#x63A5;&#x3002;</li>
+<li>$A = \beta M + (1 - \beta)[\frac{1}{N}]_{N * N}$</li>
+<li>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x6C42;&#x89E3;&#x4E00;&#x4E2A;&#x9012;&#x5F52;&#x95EE;&#x9898;:$r = A * r$</li>
+<li>Power Iteration&#x65B9;&#x6CD5;&#x4ECD;&#x7136;&#x9002;&#x7528;</li>
+<li>Random Teleports&#x4F8B;&#x5B50;($\beta = 0.8$)</li>
+</ol>
+<p><img src="img/lec4/23.png" alt=""></p>
+<h2 id="310-&#x95EE;&#x9898;&#x5927;&#x89C4;&#x6A21;&#x7F51;&#x7EDC;&#x8BA1;&#x7B97;&#x4F1A;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;">3.10. &#x95EE;&#x9898;:&#x5927;&#x89C4;&#x6A21;&#x7F51;&#x7EDC;&#x8BA1;&#x7B97;&#x4F1A;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;</h2>
+<p>&#x5047;&#x8BBE;N = 1,000,000,&#x6211;&#x4EEC;&#x5F88;&#x76F4;&#x89C2;&#x7684;&#x53EF;&#x4EE5;&#x611F;&#x53D7;&#x5230;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x6570;&#x91CF;&#x6781;&#x5927;</p>
+<h3 id="3101-&#x77E9;&#x9635;&#x516C;&#x5F0F;random-teleport&#x7684;&#x7B49;&#x4EF7;&#x5F62;&#x5F0F;">3.10.1. &#x77E9;&#x9635;&#x516C;&#x5F0F;(Random Teleport&#x7684;&#x7B49;&#x4EF7;&#x5F62;&#x5F0F;)</h3>
+<ol>
+<li>&#x4ECE;i&#x5230;&#x6BCF;&#x9694;&#x4E00;&#x9875;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x4F20;&#x9001;&#x94FE;&#x63A5;&#x5E76;&#x5C06;&#x4F20;&#x9001;&#x6982;&#x7387;&#x8BBE;&#x7F6E;&#x4E3A; $\frac{1 - \beta}{N}$</li>
+<li>&#x964D;&#x4F4E;&#x8DDF;&#x8E2A;&#x6BCF;&#x4E2A;&#x51FA;&#x7AD9;&#x94FE;&#x63A5;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x4ECE;$\frac{1}{|d_i|}$&#x5230;$\frac{\beta}{|d_i|}$</li>
+<li>&#x7B49;&#x4EF7;&#x4E8E;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6743;&#x4E58;&#x4EE5;$(1- \beta)$&#xFF0C;&#x7136;&#x540E;&#x5747;&#x5300;&#x5730;&#x91CD;&#x65B0;&#x5206;&#x914D;</li>
+</ol>
+<h3 id="3102-&#x65B9;&#x7A0B;&#x5F0F;&#x91CD;&#x6392;">3.10.2. &#x65B9;&#x7A0B;&#x5F0F;&#x91CD;&#x6392;</h3>
+<p>$$
+r = A <em> r \
+A_{ji} = \beta</em>M<em>{ji} + \frac{1 - \beta}{N} \
+r_j = \sum\limits</em>{i = 1}\limits^{N}[\beta<em>M_{ji} + \frac{1 - \beta}{N}] </em> r<em>i \
+r_j = \sum\limits</em>{i = 1}\limits^{N}\beta <em> M_{ji}</em> r<em>i + \frac{1 - \beta}{N} * \sum\limits</em>{i = 1}\limits^{N}r<em>i \
+r_j = \sum\limits</em>{i = 1}\limits^{N}\beta <em> M_{ji}</em> r_i + \frac{1 - \beta}{N} \</p>
+<p>$$</p>
+<blockquote>
+<p>&#x6240;&#x4EE5;:$r = \beta<em>M</em>r + [\frac{1-\beta}{N}]_N$</p>
+</blockquote>
+<h3 id="3103-&#x7A00;&#x758F;&#x77E9;&#x9635;&#x516C;&#x5F0F;">3.10.3. &#x7A00;&#x758F;&#x77E9;&#x9635;&#x516C;&#x5F0F;</h3>
+<p>$$
+r = \beta<em>M</em>r + [\frac{1-\beta}{N}]_N</p>
+<p>$$</p>
+<ol>
+<li>$[\frac{1-\beta}{N}]_N$&#x662F;&#x4E00;&#x4E2A;N&#x7EF4;$\frac{1-\beta}{N}$&#x7684;&#x5217;&#x5411;&#x91CF;(&#x5E38;&#x91CF;)</li>
+<li>M&#x662F;&#x4E00;&#x4E2A;<strong>&#x7A00;&#x758F;&#x77E9;&#x9635;</strong></li>
+<li>&#x8FC7;&#x7A0B;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x89C4;&#x5212;&#x4E3A;&#x5982;&#x4E0B;<ol>
+<li>&#x8BA1;&#x7B97;$r^{new} = \beta <em> M </em> r^{old}$</li>
+<li>$r^{new} = r^{new} + [\frac{1-\beta}{N}]_N$</li>
+</ol>
+</li>
+<li>&#x6CE8;&#x610F;&#x5728;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;$\sum\limits<em>{j}r</em>{j}^{new} &lt; 1$&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;$r^{new}$&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x4F7F;&#x5176;&#x548C;&#x4E3A;1(&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x662F;M&#x5305;&#x542B;dead-ends)</li>
+</ol>
+<h3 id="3104-&#x7A00;&#x758F;&#x77E9;&#x9635;&#x7F16;&#x7801;">3.10.4. &#x7A00;&#x758F;&#x77E9;&#x9635;&#x7F16;&#x7801;</h3>
+<ol>
+<li>&#x4EC5;&#x4F7F;&#x7528;&#x975E;&#x96F6;&#x6761;&#x76EE;&#x5BF9;&#x7A00;&#x758F;&#x77E9;&#x9635;&#x8FDB;&#x884C;&#x7F16;&#x7801;</li>
+<li>&#x5047;&#x8BBE;&#x6709;1,000,000&#x6761;&#x6570;&#x636E;&#xFF0C;4 <em> 10 </em> 1 billion = 40GB&#x5BF9;&#x4E8E;&#x5185;&#x5B58;&#x662F;&#x4E0D;&#x73B0;&#x5B9E;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x78C1;&#x76D8;&#x662F;&#x53EF;&#x4EE5;&#x7684;</li>
+</ol>
+<p><img src="img/lec4/24.png" alt=""></p>
+<h3 id="3105-&#x7A00;&#x758F;&#x77E9;&#x9635;&#x7B97;&#x6CD5;">3.10.5. &#x7A00;&#x758F;&#x77E9;&#x9635;&#x7B97;&#x6CD5;</h3>
+<ol>
+<li>&#x6211;&#x4EEC;&#x5047;&#x8BBE;RAM&#x53EF;&#x4EE5;&#x5C06;$r^{new}&#x8F7D;&#x5165;&#x5230;&#x78C1;&#x76D8;$&#xFF0C;&#x5B58;&#x50A8;$r^{old}$&#x548C;&#x77E9;&#x9635;M&#x5728;&#x78C1;&#x76D8;&#x4E2D;</li>
+<li>power-iteration&#x7684;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;<ol>
+<li>&#x521D;&#x59CB;&#x5316;:$r^{new} = \frac{1-\beta}{N}$</li>
+<li>&#x5BF9;&#x4E8E;&#x9875;&#x9762;i(&#x51FA;&#x5EA6;&#x4E3A;$d_i$)<ol>
+<li>&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x52A0;&#x8F7D;:$i,d<em>i,dest_1,...,dest</em>{d_i},r^{old}(i)$</li>
+<li>&#x5BF9;&#x4E8E;$j = 1 ... d_i$<ul>
+<li>$r^{new}(dest_j) += \frac{\beta r^{old}}{d_i}(i)$</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="3106-&#x57FA;&#x4E8E;&#x5757;&#x66F4;&#x65B0;&#x7684;&#x7B97;&#x6CD5;">3.10.6. &#x57FA;&#x4E8E;&#x5757;&#x66F4;&#x65B0;&#x7684;&#x7B97;&#x6CD5;</h3>
+<ol>
+<li>&#x8FDB;&#x4E00;&#x6B65;&#x51CF;&#x5C11;&#x7A7A;&#x95F4;&#x6D88;&#x8017;&#xFF0C;&#x5C06;$r^{new}$&#x91CD;&#x65B0;&#x5207;&#x5206;&#x6210;k&#x5757;&#xFF0C;&#x6765;&#x9002;&#x914D;&#x5185;&#x5B58;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E00;&#x5757;&#x626B;&#x63CF;M&#x548C;$r^{old}$</li>
+</ol>
+<p><img src="img/lec4/25.png" alt=""></p>
+<ol>
+<li>&#x5757;&#x66F4;&#x65B0;&#x6D88;&#x8017;:<ol>
+<li>k&#x6B21;&#x626B;&#x63CF;M&#x548C;$r^{old}$</li>
+<li>&#x6BCF;&#x6B21;Power iteration&#x7684;&#x6D88;&#x8017;:$k(|M| + |r|) + |r| = k|M| + (k+1)|r|$</li>
+</ol>
+</li>
+<li>&#x6211;&#x4EEC;&#x6709;&#x6CA1;&#x6709;&#x505A;&#x7684;&#x66F4;&#x597D;&#x4E86;&#x5462;?<ol>
+<li>M&#x76F8;&#x5BF9;&#x4E8E;r&#x66F4;&#x52A0;&#x5927;(&#x5927;&#x7EA6;&#x6709;10-20x)&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x6BCF;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x8BFB;k&#x6B21;</li>
+</ol>
+</li>
+</ol>
+<p><img src="img/lec4/26.png" alt=""></p>
+<h2 id="311-pagerank&#x5B8C;&#x6574;&#x7B97;&#x6CD5;">3.11. PageRank&#x5B8C;&#x6574;&#x7B97;&#x6CD5;</h2>
+<ol>
+<li>&#x8F93;&#x5165;<ol>
+<li>&#x4E00;&#x4E2A;&#x6709;&#x5411;&#x56FE;G&#xFF0C;&#x53EF;&#x4EE5;&#x6709;Spider Traps&#x548C;Dead ends</li>
+<li>&#x53C2;&#x6570;$\beta$</li>
+</ol>
+</li>
+<li>&#x8F93;&#x51FA;:PageRank vector $r^{new}$</li>
+<li>&#x8FC7;&#x7A0B;<ol>
+<li>&#x521D;&#x59CB;&#x5316;:$r_{j}^{old} = \frac{1}{N}$</li>
+<li>&#x91CD;&#x590D;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#x76F4;&#x5230;&#x6536;&#x655B;:$\sum\limits_{j}|r_j^{new} - r_j^{old}| &gt; \varepsilon$<ol>
+<li>$\forall j: r<em>j^{&apos;new} = \sum\limits</em>{i-&gt;j}\beta\frac{r_i^{old}}{d_i}$</li>
+<li>$\forall j: r_j^{&apos;new} = 0$&#xFF0C;if in-degree of j is 0</li>
+<li>&#x73B0;&#x5728;&#xFF0C;&#x91CD;&#x65B0;&#x63D2;&#x5165;&#x7684;PageRank&#xFF1A;<ol>
+<li>$\forall j: r<em>j^{new} = r_j^{&apos;new} + \frac{1 - S}{N}\ where\ S = \sum\limits_jr</em>{j}^{&apos;new}$</li>
+</ol>
+</li>
+<li>$r^{old} = r^{new}$</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>&#x5982;&#x679C;&#x56FE;&#x5F62;&#x6CA1;&#x6709;&#x6B7B;&#x89D2;&#xFF0C;&#x5219;&#x6CC4;&#x6F0F;&#x7684;PageRank&#x6570;&#x91CF;&#x4E3A;1-&#x3B2;&#x3002; &#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x6709;&#x6B7B;&#x80E1;&#x540C;&#xFF0C;PageRank&#x7684;&#x6CC4;&#x6F0F;&#x91CF;&#x53EF;&#x80FD;&#x66F4;&#x5927;&#x3002; &#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;S&#x6765;&#x660E;&#x786E;&#x8BF4;&#x660E;&#x8FD9;&#x4E00;&#x70B9;&#x3002;</li>
+<li>&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x7684;&#x6D88;&#x8017;:2|r| + |M|</li>
+</ol>
+<h1 id="4-topic-sensitive-pagerank">4. Topic-Sensitive PageRank</h1>
+<p>&#x5176;&#x5B9E;&#x4E0A;&#x9762;&#x7684;&#x8BA8;&#x8BBA;&#x6211;&#x4EEC;&#x56DE;&#x907F;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x5B9E;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x201C;&#x7F51;&#x9875;&#x91CD;&#x8981;&#x6027;&#x201D;&#x5176;&#x5B9E;&#x6CA1;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7B54;&#x6848;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x751A;&#x81F3;&#x6709;&#x5F88;&#x5927;&#x7684;&#x5DEE;&#x522B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x641C;&#x7D22;&#x201C;&#x82F9;&#x679C;&#x201D;&#x65F6;&#xFF0C;&#x4E00;&#x4E2A;&#x6570;&#x7801;&#x7231;&#x597D;&#x8005;&#x53EF;&#x80FD;&#x662F;&#x60F3;&#x8981;&#x770B;iphone&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4E00;&#x4E2A;&#x679C;&#x519C;&#x53EF;&#x80FD;&#x662F;&#x60F3;&#x770B;&#x82F9;&#x679C;&#x7684;&#x4EF7;&#x683C;&#x8D70;&#x52BF;&#x548C;&#x79CD;&#x690D;&#x6280;&#x5DE7;&#xFF0C;&#x800C;&#x4E00;&#x4E2A;&#x5C0F;&#x670B;&#x53CB;&#x53EF;&#x80FD;&#x5728;&#x627E;&#x82F9;&#x679C;&#x7684;&#x7B80;&#x7B14;&#x753B;&#x3002;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x8BE5;&#x4E3A;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x7EF4;&#x62A4;&#x4E00;&#x5957;&#x4E13;&#x7528;&#x5411;&#x91CF;&#xFF0C;&#x4F46;&#x9762;&#x5BF9;&#x6D77;&#x91CF;&#x7528;&#x6237;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x663E;&#x7136;&#x4E0D;&#x53EF;&#x884C;&#x3002;&#x6240;&#x4EE5;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x4E00;&#x822C;&#x4F1A;&#x9009;&#x62E9;&#x4E00;&#x79CD;&#x79F0;&#x4E3A;Topic-Sensitive&#x7684;&#x6298;&#x4E2D;&#x65B9;&#x6848;&#x3002;Topic-Sensitive PageRank&#x7684;&#x505A;&#x6CD5;&#x662F;&#x9884;&#x5B9A;&#x4E49;&#x51E0;&#x4E2A;&#x8BDD;&#x9898;&#x7C7B;&#x522B;&#xFF0C;&#x4F8B;&#x5982;&#x4F53;&#x80B2;&#x3001;&#x5A31;&#x4E50;&#x3001;&#x79D1;&#x6280;&#x7B49;&#x7B49;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E2A;&#x8BDD;&#x9898;&#x5355;&#x72EC;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x5411;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x60F3;&#x529E;&#x6CD5;&#x5173;&#x8054;&#x7528;&#x6237;&#x7684;&#x8BDD;&#x9898;&#x503E;&#x5411;&#xFF0C;&#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x8BDD;&#x9898;&#x503E;&#x5411;&#x6392;&#x5E8F;&#x7ED3;&#x679C;&#x3002;</p>
+<h2 id="41-&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;">4.1. &#x7B97;&#x6CD5;&#x6B65;&#x9AA4;</h2>
+<h3 id="411-&#x786E;&#x5B9A;&#x8BDD;&#x9898;&#x5206;&#x7C7B;">4.1.1. &#x786E;&#x5B9A;&#x8BDD;&#x9898;&#x5206;&#x7C7B;</h3>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;Open Directory&#xFF08;DMOZ&#xFF09;&#x7684;&#x4E00;&#x7EA7;&#x8BDD;&#x9898;&#x7C7B;&#x522B;&#x4F5C;&#x4E3A;topic&#x3002;&#x76EE;&#x524D;DMOZ&#x7684;&#x4E00;&#x7EA7;topic&#x6709;&#xFF1A;Arts&#xFF08;&#x827A;&#x672F;&#xFF09;&#x3001;Business&#xFF08;&#x5546;&#x52A1;&#xFF09;&#x3001;Computers&#xFF08;&#x8BA1;&#x7B97;&#x673A;&#xFF09;&#x3001;Games&#xFF08;&#x6E38;&#x620F;&#xFF09;&#x3001;Health&#xFF08;&#x533B;&#x7597;&#x5065;&#x5EB7;&#xFF09;&#x3001;Home&#xFF08;&#x5C45;&#x5BB6;&#xFF09;&#x3001;Kids and Teens&#xFF08;&#x513F;&#x7AE5;&#xFF09;&#x3001;News&#xFF08;&#x65B0;&#x95FB;&#xFF09;&#x3001;Recreation&#xFF08;&#x5A31;&#x4E50;&#x4FEE;&#x517B;&#xFF09;&#x3001;Reference&#xFF08;&#x53C2;&#x8003;&#xFF09;&#x3001;Regional&#xFF08;&#x5730;&#x57DF;&#xFF09;&#x3001;Science&#xFF08;&#x79D1;&#x6280;&#xFF09;&#x3001;Shopping&#xFF08;&#x8D2D;&#x7269;&#xFF09;&#x3001;Society&#xFF08;&#x4EBA;&#x6587;&#x793E;&#x4F1A;&#xFF09;&#x3001;Sports&#xFF08;&#x4F53;&#x80B2;&#xFF09;&#x3002;</p>
+<h3 id="412-&#x7F51;&#x9875;topic&#x5F52;&#x5C5E;">4.1.2. &#x7F51;&#x9875;topic&#x5F52;&#x5C5E;</h3>
+<p>&#x8FD9;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x5C06;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x5F52;&#x5165;&#x6700;&#x5408;&#x9002;&#x7684;&#x5206;&#x7C7B;&#xFF0C;&#x5177;&#x4F53;&#x5F52;&#x7C7B;&#x6709;&#x5F88;&#x591A;&#x7B97;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;TF-IDF&#x57FA;&#x4E8E;&#x8BCD;&#x7D20;&#x5F52;&#x7C7B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x805A;&#x7C7B;&#x540E;&#x4EBA;&#x5DE5;&#x5F52;&#x7C7B;&#xFF0C;&#x5177;&#x4F53;&#x4E0D;&#x518D;&#x5C55;&#x5F00;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x6BCF;&#x4E2A;&#x7F51;&#x9875;&#x88AB;&#x5F52;&#x5230;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;topic&#x3002;</p>
+<h3 id="413-&#x5206;topic&#x5411;&#x91CF;&#x8BA1;&#x7B97;">4.1.3. &#x5206;topic&#x5411;&#x91CF;&#x8BA1;&#x7B97;</h3>
+<ol>
+<li>&#x5728;Topic-Sensitive PageRank&#x4E2D;&#xFF0C;&#x5411;&#x91CF;&#x8FED;&#x4EE3;&#x516C;&#x5F0F;&#x4E3A;</li>
+</ol>
+<p>$$
+v&apos; = (1- \beta)Mv + s\frac{\beta}{|s|}</p>
+<p>$$</p>
+<ol>
+<li>&#x9996;&#x5148;&#x662F;&#x5355;&#x4F4D;&#x5411;&#x91CF;e&#x53D8;&#x4E3A;&#x4E86;s&#x3002;s&#x662F;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x5411;&#x91CF;&#xFF1A;&#x5BF9;&#x4E8E;&#x67D0;topic&#x7684;s&#xFF0C;&#x5982;&#x679C;&#x7F51;&#x9875;k&#x5728;&#x6B64;topic&#x4E2D;&#xFF0C;&#x5219;s&#x4E2D;&#x7B2C;k&#x4E2A;&#x5143;&#x7D20;&#x4E3A;1&#xFF0C;&#x5426;&#x5219;&#x4E3A;0&#x3002;&#x6CE8;&#x610F;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;topic&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;s&#x3002;&#x800C;|s|&#x8868;&#x793A;s&#x4E2D;1&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li>&#x8FD8;&#x662F;&#x4EE5;&#x4E0A;&#x9762;&#x7684;&#x56DB;&#x5F20;&#x9875;&#x9762;&#x4E3A;&#x4F8B;&#xFF0C;&#x5047;&#x8BBE;&#x9875;&#x9762;A&#x5F52;&#x4E3A;Arts&#xFF0C;B&#x5F52;&#x4E3A;Computers&#xFF0C;C&#x5F52;&#x4E3A;Computers&#xFF0C;D&#x5F52;&#x4E3A;Sports&#x3002;&#x90A3;&#x4E48;&#x5BF9;&#x4E8E; Computers&#x8FD9;&#x4E2A;topic&#xFF0C;s&#x5C31;&#x662F;&#xFF1A;</li>
+</ol>
+<p>$$
+s = \begin{bmatrix}
+   0 \
+   1 \
+   1 \
+   0 \
+\end{bmatrix}</p>
+<p>$$</p>
+<ul>
+<li>&#x800C;lsl=2&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x8FED;&#x4EE3;&#x516C;&#x5F0F;&#x4E3A;</li>
+</ul>
+<p><img src="img/lec4/29.png" alt=""></p>
+<h1 id="5-&#x9488;&#x5BF9;pagerank&#x7684;spam&#x653B;&#x51FB;&#x4E0E;&#x53CD;&#x4F5C;&#x5F0A;">5. &#x9488;&#x5BF9;PageRank&#x7684;Spam&#x653B;&#x51FB;&#x4E0E;&#x53CD;&#x4F5C;&#x5F0A;</h1>
+<ol>
+<li>Link Spam:&#x9020;&#x51FA;&#x6765;&#x5F88;&#x591A;&#x7A7A;&#x9875;&#x6765;&#x63D0;&#x9AD8;&#x81EA;&#x5DF1;&#x7684;&#x9875;&#x7684;rank&#x503C;</li>
+<li>&#x53CD;&#x4F5C;&#x5F0A;&#xFF1A;<ol>
+<li>&#x68C0;&#x6D4B;&#x62D3;&#x6251;</li>
+<li>TrustRank&#xFF1A;&#x5982;&#x679C;&#x6BD4;&#x53EF;&#x4FE1;&#x7F51;&#x7AD9;&#x7684;rank&#x9AD8;&#x592A;&#x591A;&#x90A3;&#x4E48;&#x6709;&#x7406;&#x7531;&#x8BA4;&#x4E3A;&#x662F;&#x6709;&#x95EE;&#x9898;&#x7684;</li>
+</ol>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lecture3-大数据存储和处理.html" class="navigation navigation-prev " aria-label="Previous page: Lecture3-大数据存储和处理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lecture5-数据降维.html" class="navigation navigation-next " aria-label="Next page: Lecture5-数据降维">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lecture4-链接分析","level":"1.6","depth":1,"next":{"title":"Lecture5-数据降维","level":"1.7","depth":1,"path":"Lecture5-数据降维.md","ref":"Lecture5-数据降维.md","articles":[]},"previous":{"title":"Lecture3-大数据存储和处理","level":"1.5","depth":1,"path":"Lecture3-大数据存储和处理.md","ref":"Lecture3-大数据存储和处理.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Lecture4-链接分析.md","mtime":"2020-11-04T12:10:21.831Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1645 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lecture6-分类 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lecture7-聚类.html" />
+    
+    
+    <link rel="prev" href="Lecture5-数据降维.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Lecture6-分类</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lecture6-&#x5206;&#x7C7B;">Lecture6-&#x5206;&#x7C7B;</h2>
+<p>[TOC]</p>
+<h1 id="1-&#x5206;&#x7C7B;">1. &#x5206;&#x7C7B;</h1>
+<ol>
+<li>&#x5728;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x67D0;&#x4E2A;&#x57DF;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F53;&#x7F6E;&#x4E8E;&#x4E00;&#x7EC4;&#x79BB;&#x6563;&#x7684;&#x7C7B;&#x522B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x4E2D;&#xFF1A;&#x662F;/&#x5426;&#xFF0C;&#x670B;&#x53CB;/&#x654C;&#x4EBA;&#xFF0C;&#x597D;/&#x574F;/&#x65E0;&#x6240;&#x8C13;&#xFF0C;&#x84DD;&#x8272;/&#x7EA2;&#x8272;/&#x7EFF;&#x8272;&#x7B49;&#x3002;</li>
+<li>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x6807;&#x7B7E;&#x7684;&#x5B9E;&#x4F53;&#x7684;&#x8BAD;&#x7EC3;&#x96C6;&#xFF0C;&#x5236;&#x5B9A;&#x4E00;&#x4E2A;&#x5C06;&#x6807;&#x7B7E;&#x5206;&#x914D;&#x7ED9;&#x6D4B;&#x8BD5;&#x96C6;&#x4E2D;&#x7684;&#x5B9E;&#x4F53;&#x7684;&#x89C4;&#x5219;</li>
+</ol>
+<h2 id="11-&#x5206;&#x7C7B;&#x5F15;&#x5165;">1.1. &#x5206;&#x7C7B;&#x5F15;&#x5165;</h2>
+<p><img src="img/lec6/2.png" alt=""></p>
+<ol>
+<li>&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5206;&#x9694;&#x7B26;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x4E8C;&#x7EF4;&#x7684;&#x76F4;&#x7EBF;&#x6216;&#x4E00;&#x822C;&#x7684;&#x8D85;&#x5E73;&#x9762;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x6CA1;&#x6709;</li>
+<li>&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x5404;&#x79CD;&#x201C;&#x566A;&#x97F3;&#x201D;</li>
+<li>&#x53EF;&#x80FD;&#x6709;&#x201C;&#x6570;&#x636E;&#x91CD;&#x53E0;&#x201D;</li>
+<li>&#x4E0D;&#x5E94;&#x88AB;&#x4F4E;&#x7EF4;&#x7684;&#x51E0;&#x4F55;&#x76F4;&#x89C9;&#x6240;&#x6B3A;&#x9A97;</li>
+<li>&#x4E00;&#x4E9B;&#x5206;&#x7C7B;&#x5668;&#x663E;&#x5F0F;&#x8868;&#x793A;&#x5206;&#x9694;&#x7B26;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x76F4;&#x7EBF;&#xFF09;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x5206;&#x7C7B;&#x5668;&#xFF0C;&#x9690;&#x5F0F;&#x5B8C;&#x6210;&#x5206;&#x9694;</li>
+<li>&#x4E00;&#x4E9B;&#x5206;&#x7C7B;&#x5668;&#x53EA;&#x662F;&#x51B3;&#x5B9A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5728;&#x54EA;&#x4E2A;&#x7C7B;&#x4E2D;</li>
+</ol>
+<h2 id="12-&#x7269;&#x4F53;&#x7684;&#x8868;&#x793A;">1.2. &#x7269;&#x4F53;&#x7684;&#x8868;&#x793A;</h2>
+<ol>
+<li>&#x6BCF;&#x4E2A;&#x8981;&#x5206;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x5BF9;&#xFF08;x&#xFF0C;y&#xFF09;&#xFF1A;<ol>
+<li>&#x5176;&#x4E2D;x&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x63CF;&#x8FF0;&#xFF08;&#x8BF7;&#x53C2;&#x89C1;&#x4EE5;&#x4E0B;&#x5E7B;&#x706F;&#x7247;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x793A;&#x4F8B;&#xFF09;</li>
+<li>&#x5176;&#x4E2D;y&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF08;&#x73B0;&#x5728;&#x5047;&#x5B9A;&#x4E3A;&#x4E8C;&#x5206;&#x7C7B;&#xFF09;</li>
+</ol>
+</li>
+<li>&#x673A;&#x5668;&#x5B66;&#x4E60;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x6210;&#x529F;&#x6216;&#x5931;&#x8D25;&#x901A;&#x5E38;&#x53D6;&#x51B3;&#x4E8E;&#x9009;&#x62E9;&#x6B63;&#x786E;&#x7684;&#x5BF9;&#x8C61;&#x63CF;&#x8FF0;<ol>
+<li>&#x63CF;&#x8FF0;&#x7684;&#x9009;&#x62E9;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x5B66;&#x4E60;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4EE5;&#x540E;&#x7684;&#x8BB2;&#x5EA7;&#x4E2D;&#x8BA8;&#x8BBA;&#x9009;&#x62E9;&#x63CF;&#x8FF0;&#x7684;&#x81EA;&#x52A8;&#x5316;&#x8FC7;&#x7A0B;</li>
+<li>&#x4F46;&#x662F;&#x8FD9;&#x91CC;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x826F;&#x597D;&#x7684;&#x76F4;&#x89C9;</li>
+</ol>
+</li>
+</ol>
+<h2 id="13-&#x6570;&#x636E;&#x7C7B;&#x578B;">1.3. &#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<ol>
+<li>&#x6570;&#x636E;&#x5904;&#x7406;&#x65B9;&#x5F0F;:&#x5411;&#x91CF;&#x5316;&#x6570;&#x636E;<ol>
+<li>&#x7269;&#x7406;&#x7279;&#x5F81;</li>
+<li>&#x884C;&#x4E3A;&#x7279;&#x5F81;:&#x6587;&#x5B57;&#x3001;&#x53D1;&#x5E03;&#x4FE1;&#x606F;&#x7684;&#x60C5;&#x51B5;</li>
+<li>&#x4E0A;&#x4E0B;&#x6587;:&#x4F60;&#x6240;&#x5728;&#x7684;&#x73AF;&#x5883;</li>
+<li>&#x5386;&#x53F2;:&#x8FC7;&#x53BB;&#x7684;&#x5370;&#x8FF9;(&#x8DB3;&#x8FF9;)</li>
+</ol>
+</li>
+<li>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5047;&#x8BBE;&#x8FD9;&#x6837;&#x7684;&#x5411;&#x91CF;&#x5728;&#x8868;&#x4E2D;&#x660E;&#x786E;&#x8868;&#x793A;&#xFF0C;&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x5047;&#x8BBE;</li>
+<li>&#x6570;&#x636E;&#x8868;&#x73B0;&#x7684;&#x5F62;&#x5F0F;<ol>
+<li>&#x6587;&#x672C;&#x548C;&#x8D85;&#x6587;&#x672C;</li>
+<li>&#x90AE;&#x4EF6;</li>
+<li>&#x86CB;&#x767D;&#x8D28;&#x5E8F;&#x5217;</li>
+<li>Unix&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;&#x987A;&#x5E8F;</li>
+<li>&#x7F51;&#x7EDC;&#x5C42;:&#x56FE;</li>
+<li>&#x56FE;&#x7247;:&#x8BC6;&#x522B;&#x76EE;&#x6807;&#x7269;</li>
+</ol>
+</li>
+</ol>
+<h2 id="14-&#x8BAD;&#x7EC3;&#x548C;&#x9A8C;&#x8BC1;">1.4. &#x8BAD;&#x7EC3;&#x548C;&#x9A8C;&#x8BC1;</h2>
+<ol>
+<li>&#x6570;&#x636E;&#x96C6;(&#x6807;&#x7B7E;&#x6837;&#x672C;)&#x4F1A;&#x88AB;&#x5212;&#x5206;&#x4E3A;&#x4E09;&#x90E8;&#x5206;<ol>
+<li>&#x8BAD;&#x7EC3;&#x96C6;</li>
+<li>&#x9A8C;&#x8BC1;&#x96C6;</li>
+<li>&#x6D4B;&#x8BD5;&#x96C6;</li>
+</ol>
+</li>
+</ol>
+<h3 id="141-&#x8BAD;&#x7EC3;">1.4.1. &#x8BAD;&#x7EC3;</h3>
+<ol>
+<li>&#x4F30;&#x8BA1;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x7684;&#x53C2;&#x6570;</li>
+<li>&#x8C03;&#x6574;&#x9A8C;&#x8BC1;&#x96C6;&#x4E0A;&#x7684;&#x8D85;&#x53C2;&#x6570;</li>
+<li>&#x5728;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x62A5;&#x544A;&#x7ED3;&#x679C;</li>
+<li>&#x7F3A;&#x5C11;&#x4EFB;&#x4F55;&#x8FD9;&#x4E9B;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x8FC7;&#x62DF;&#x5408;&#x7684;&#x4EA7;&#x751F;</li>
+</ol>
+<p><img src="img/lec6/3.png" alt=""></p>
+<h3 id="142-&#x7EDF;&#x8BA1;&#x95EE;&#x9898;">1.4.2. &#x7EDF;&#x8BA1;&#x95EE;&#x9898;</h3>
+<ol>
+<li>&#x60F3;&#x8981;&#x4E00;&#x4E2A;&#x5BF9;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x8868;&#x73B0;&#x826F;&#x597D;&#x7684;&#x5206;&#x7C7B;&#x5668;</li>
+<li>&#x8FC7;&#x5EA6;&#x62DF;&#x5408;&#xFF1A;&#x975E;&#x5E38;&#x7D27;&#x5BC6;&#x5730;&#x62DF;&#x5408;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x5F88;&#x597D;&#x5730;&#x6982;&#x62EC;</li>
+<li>&#x8BEF;&#x5DEE;&#x7EBF;&#xFF1A;&#x60F3;&#x8981;&#x5BF9;&#x51C6;&#x786E;&#x6027;&#x8FDB;&#x884C;&#x73B0;&#x5B9E;&#xFF08;&#x4FDD;&#x5B88;&#xFF09;&#x7684;&#x4F30;&#x8BA1;</li>
+</ol>
+<h2 id="15-&#x5206;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;">1.5. &#x5206;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</h2>
+<h3 id="151-spam-filter-&#x5783;&#x573E;&#x90AE;&#x4EF6;&#x8BC6;&#x522B;&#x5668;">1.5.1. Spam Filter &#x5783;&#x573E;&#x90AE;&#x4EF6;&#x8BC6;&#x522B;&#x5668;</h3>
+<ol>
+<li>&#x8F93;&#x5165;:email</li>
+<li>&#x8F93;&#x51FA;:&#x5783;&#x573E;&#x90AE;&#x4EF6;/&#x4E0D;&#x662F;&#x5783;&#x573E;&#x90AE;&#x4EF6;</li>
+<li>&#x521D;&#x59CB;&#x5316;:<ol>
+<li>&#x83B7;&#x5F97;&#x5F88;&#x591A;&#x7684;&#x6837;&#x4F8B;&#x90AE;&#x4EF6;&#xFF0C;&#x5DF2;&#x7ECF;&#x88AB;&#x6807;&#x8BB0;&#x4E3A;spam&#x6216;&#x8005;&#x662F;ham</li>
+<li>&#x60F3;&#x8981;&#x53BB;&#x9884;&#x6D4B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x672A;&#x6765;&#x7684;&#x90AE;&#x4EF6;&#x662F;&#x4E0D;&#x662F;&#x5783;&#x573E;&#x90AE;&#x4EF6;</li>
+</ol>
+</li>
+<li>&#x7279;&#x70B9;:&#x4EE5;&#x4E0B;&#x7684;&#x5C5E;&#x6027;&#x88AB;&#x7528;&#x6765;&#x533A;&#x5206;&#x90AE;&#x4EF6;&#x662F;&#x4E0D;&#x662F;&#x5783;&#x573E;&#x90AE;&#x4EF6;<ol>
+<li>&#x8BCD;:FREE!</li>
+<li>&#x6587;&#x672C;&#x6A21;&#x5F0F;:$dd&#xFF0C;CAPS</li>
+<li>&#x975E;&#x6587;&#x672C;:&#x53D1;&#x9001;&#x65B9;</li>
+</ol>
+</li>
+</ol>
+<p><img src="img/lec6/1.png" alt=""></p>
+<h3 id="152-&#x6570;&#x5B57;&#x8BC6;&#x522B;">1.5.2. &#x6570;&#x5B57;&#x8BC6;&#x522B;</h3>
+<ol>
+<li>&#x8F93;&#x5165;:&#x56FE;&#x7247;&#x6216;&#x8005;&#x50CF;&#x7D20;&#x7F51;&#x683C;</li>
+<li>&#x8F93;&#x51FA;:&#x6570;&#x5B57;0-9</li>
+<li>&#x521D;&#x59CB;&#x5316;:<ol>
+<li>&#x83B7;&#x5F97;&#x5F88;&#x591A;&#x7684;&#x6837;&#x4F8B;&#x56FE;&#x7247;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x88AB;&#x6807;&#x8BB0;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;</li>
+<li>&#x60F3;&#x8981;&#x53BB;&#x9884;&#x6D4B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x672A;&#x6765;&#x7684;&#x6570;&#x5B57;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x6570;&#x5B57;</li>
+</ol>
+</li>
+<li>&#x7279;&#x70B9;:&#x4EE5;&#x4E0B;&#x7684;&#x5C5E;&#x6027;&#x88AB;&#x7528;&#x6765;&#x533A;&#x5206;&#x5F53;&#x524D;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x6570;&#x5B57;<ol>
+<li>&#x50CF;&#x7D20;:(6,8)&#x662F;ON</li>
+<li>&#x5F62;&#x72B6;&#x6A21;&#x5F0F;:&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x3001;&#x7EB5;&#x6A2A;&#x6BD4;&#x3001;&#x5FAA;&#x73AF;&#x68C0;&#x6D4B;&#x6570;&#x5B57;</li>
+</ol>
+</li>
+<li>&#x5F53;&#x524D;&#x72B6;&#x6001;:&#x548C;&#x4EBA;&#x76F8;&#x4F3C;</li>
+<li>&#x5206;&#x7C7B;&#x662F;&#x63D0;&#x524D;&#x8BBE;&#x7F6E;&#x597D;&#x7684;&#xFF0C;&#x6709;&#x9650;&#x7684;&#xFF0C;&#x76EE;&#x6807;&#x660E;&#x786E;&#x7684;&#x3002;</li>
+</ol>
+<h2 id="16-&#x5B9E;&#x9645;&#x5206;&#x7C7B;&#x4EFB;&#x52A1;&#x7684;&#x5176;&#x4ED6;&#x793A;&#x4F8B;">1.6. &#x5B9E;&#x9645;&#x5206;&#x7C7B;&#x4EFB;&#x52A1;&#x7684;&#x5176;&#x4ED6;&#x793A;&#x4F8B;</h2>
+<ol>
+<li>&#x6B3A;&#x8BC8;&#x68C0;&#x6D4B;&#xFF08;&#x8F93;&#x5165;&#xFF1A;&#x5E10;&#x6237;&#x6D3B;&#x52A8;&#xFF0C;&#x7C7B;&#x522B;&#xFF1A;&#x6B3A;&#x8BC8;/&#x65E0;&#x6B3A;&#x8BC8;&#xFF09;</li>
+<li>&#x7F51;&#x9875;&#x5783;&#x573E;&#x90AE;&#x4EF6;&#x68C0;&#x6D4B;&#xFF08;&#x8F93;&#x5165;&#xFF1A;HTML /&#x6E32;&#x67D3;&#x9875;&#x9762;&#xFF0C;&#x7C7B;&#x522B;&#xFF1A;&#x5783;&#x573E;&#x90AE;&#x4EF6;/&#x706B;&#x817F;&#xFF09;</li>
+<li>&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x548C;&#x8BF4;&#x8BDD;&#x8005;&#x8BC6;&#x522B;&#xFF08;&#x8F93;&#x5165;&#xFF1A;&#x6CE2;&#x5F62;&#xFF0C;&#x7C7B;&#x522B;&#xFF1A;&#x97F3;&#x7D20;&#x6216;&#x5355;&#x8BCD;&#xFF09;</li>
+<li>&#x533B;&#x5B66;&#x8BCA;&#x65AD;&#xFF08;&#x8F93;&#x5165;&#xFF1A;&#x75C7;&#x72B6;&#xFF0C;&#x7C7B;&#x522B;&#xFF1A;&#x75BE;&#x75C5;&#xFF09;</li>
+<li>&#x81EA;&#x52A8;&#x4F5C;&#x6587;&#x8BC4;&#x5206;&#x5668;&#xFF08;&#x8F93;&#x5165;&#xFF1A;&#x6587;&#x6863;&#xFF0C;&#x8BFE;&#x7A0B;&#xFF1A;&#x6210;&#x7EE9;&#xFF09;</li>
+<li>&#x5BA2;&#x6237;&#x670D;&#x52A1;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x8DEF;&#x7531;&#x548C;&#x6587;&#x4EF6;&#x5939;</li>
+<li>&#x793E;&#x4EA4;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x94FE;&#x63A5;&#x9884;&#x6D4B;</li>
+<li>&#x836F;&#x7269;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;&#x50AC;&#x5316;&#x6D3B;&#x6027;</li>
+</ol>
+<h2 id="17-&#x5206;&#x7C7B;&#x7684;&#x5E94;&#x7528;&#x9886;&#x57DF;">1.7. &#x5206;&#x7C7B;&#x7684;&#x5E94;&#x7528;&#x9886;&#x57DF;</h2>
+<ol>
+<li>&#x4E8C;&#x5206;&#x7C7B;&#x95EE;&#x9898;</li>
+<li>&#x591A;&#x5206;&#x7C7B;&#x95EE;&#x9898;(Eg, &#x5154;&#x5B50;&#xFF0C;&#x8001;&#x864E;&#xFF0C;&#x725B;)<ol>
+<li>&#x76F4;&#x63A5;&#x5206;&#x7C7B;</li>
+<li>&#x5212;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x5E76;&#x5217;&#x7684;&#x4E8C;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#x5408;&#x5E76;(Eg, &#x5154;&#x5B50;&#x548C;&#x864E;&#x3001;&#x864E;&#x548C;&#x725B;&#x3001;&#x5154;&#x5B50;&#x548C;&#x725B;)</li>
+<li>&#x5212;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x4E32;&#x884C;&#x7684;&#x4E8C;&#x5206;&#x7C7B;&#x95EE;&#x9898;(Eg.&#x975E;&#x864E;&#xFF0C;&#x975E;&#x5154;)</li>
+</ol>
+</li>
+<li>&#x975E;&#x4E13;&#x5C5E;&#x7C7B;&#x522B;</li>
+<li>&#x6392;&#x4F4D;</li>
+</ol>
+<h2 id="18-&#x5206;&#x7C7B;&#x6548;&#x679C;&#x7684;&#x8BC4;&#x4EF7;&#x6807;&#x51C6;">1.8. &#x5206;&#x7C7B;&#x6548;&#x679C;&#x7684;&#x8BC4;&#x4EF7;&#x6807;&#x51C6;</h2>
+<h3 id="181-&#x5206;&#x7C7B;&#x51C6;&#x786E;&#x7387;">1.8.1. &#x5206;&#x7C7B;&#x51C6;&#x786E;&#x7387;</h3>
+<p>&#x6307;&#x6A21;&#x578B;&#x6B63;&#x786E;&#x5730;&#x9884;&#x6D4B;&#x65B0;&#x7684;&#x6216;&#x5148;&#x524D;&#x672A;&#x89C1;&#x8FC7;&#x7684;&#x6570;&#x636E;&#x7684;&#x7C7B;&#x6807;&#x53F7;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x901A;&#x5E38;&#x5206;&#x7C7B;&#x7B97;&#x6CD5;&#x5BFB;&#x627E;&#x7684;&#x662F;&#x5206;&#x7C7B;&#x51C6;&#x786E;&#x7387;&#x9AD8;&#x7684;&#x5206;&#x7C7B;&#x6A21;&#x578B;&#xFF0C;&#x5206;&#x7C7B;&#x51C6;&#x786E;&#x7387;&#x5728;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x5206;&#x7C7B;&#x5668;&#x6A21;&#x578B;&#x7684;&#x6BD4;&#x8F83;</p>
+<h3 id="182-&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x5EA6;">1.8.2. &#x8BA1;&#x7B97;&#x590D;&#x6742;&#x5EA6;</h3>
+<ol>
+<li>&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x5EA6;&#x51B3;&#x5B9A;&#x7740;&#x7B97;&#x6CD5;&#x6267;&#x884C;&#x7684;&#x901F;&#x5EA6;&#x548C;&#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x5B83;&#x4F9D;&#x8D56;&#x4E8E;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x548C;&#x8F6F;&#x786C;&#x4EF6;&#x73AF;&#x5883;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x6570;&#x636E;&#x6316;&#x6398;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x662F;&#x6D77;&#x91CF;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x56E0;&#x800C;&#x7A7A;&#x95F4;&#x548C;&#x65F6;&#x95F4;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;</li>
+</ol>
+<h3 id="183-&#x53EF;&#x89E3;&#x91CA;&#x6027;">1.8.3. &#x53EF;&#x89E3;&#x91CA;&#x6027;</h3>
+<p>&#x5206;&#x7C7B;&#x7ED3;&#x679C;&#x53EA;&#x6709;&#x53EF;&#x89E3;&#x91CA;&#x6027;&#x597D;&#xFF0C;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x624D;&#x80FD;&#x66F4;&#x597D;&#x5730;&#x7528;&#x4E8E;&#x51B3;&#x7B56;&#x652F;&#x6301;&#xFF0C;&#x7ED3;&#x679C;&#x7684;&#x53EF;&#x89E3;&#x91CA;&#x6027;&#x8D8A;&#x597D;&#xFF0C;&#x7B97;&#x6CD5;&#x53D7;&#x6B22;&#x8FCE;&#x7684;&#x7A0B;&#x5EA6;&#x8D8A;&#x9AD8;</p>
+<h3 id="184-&#x53EF;&#x4F38;&#x7F29;&#x6027;">1.8.4. &#x53EF;&#x4F38;&#x7F29;&#x6027;</h3>
+<p>&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#x662F;&#x53EF;&#x4F38;&#x7F29;&#x7684;&#xFF0C;&#x662F;&#x6307;&#x5728;&#x7ED9;&#x5B9A;&#x5185;&#x5B58;&#x548C;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x7B49;&#x53EF;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x7B97;&#x6CD5;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x5E94;&#x5F53;&#x968F;&#x6570;&#x636E;&#x5E93;&#x5927;&#x5C0F;&#x7EBF;&#x6027;&#x589E;&#x52A0;</p>
+<h3 id="185-&#x5F3A;&#x58EE;&#x6027;&#x6216;&#x9C81;&#x68D2;&#x6027;">1.8.5. &#x5F3A;&#x58EE;&#x6027;&#x6216;&#x9C81;&#x68D2;&#x6027;</h3>
+<p>&#x6307;&#x5728;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x542B;&#x6709;&#x566A;&#x58F0;&#x548C;&#x7F3A;&#x5931;&#x503C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5206;&#x7C7B;&#x5668;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x6570;&#x636E;&#x7684;&#x80FD;&#x529B;</p>
+<h3 id="186-&#x7D2F;&#x79EF;&#x589E;&#x76CA;&#x56FE;">1.8.6. &#x7D2F;&#x79EF;&#x589E;&#x76CA;&#x56FE;</h3>
+<ol>
+<li>&#x7D2F;&#x79EF;&#x589E;&#x76CA;&#x56FE;&#x4F1A;&#x5728;&#x7ED9;&#x5B9A;&#x7684;&#x7C7B;&#x522B;&#x4E2D;&#x663E;&#x793A;&#x901A;&#x8FC7;&#x628A;&#x4E2A;&#x6848;&#x603B;&#x6570;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x4F5C;&#x4E3A;&#x76EE;&#x6807;&#x800C;&#x589E;&#x76CA;&#x7684;&#x4E2A;&#x6848;&#x603B;&#x6570;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;&#x5BF9;&#x89D2;&#x7EBF;&#x662F;&#x201C;&#x57FA;&#x7EBF;&#x201D;&#x66F2;&#x7EBF;&#xFF0C;&#x66F2;&#x7EBF;&#x79BB;&#x57FA;&#x7EBF;&#x7684;&#x4E0A;&#x65B9;&#x8D8A;&#x8FDC;&#xFF0C;&#x589E;&#x76CA;&#x8D8A;&#x5927;&#x3002;</li>
+<li>&#x7D2F;&#x79EF;&#x589E;&#x76CA;&#x56FE;&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x4E8E;&#x5927;&#x91CF;&#x6536;&#x76CA;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x9009;&#x62E9;&#x5206;&#x7C7B;&#x6807;&#x51C6;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x767E;&#x5206;&#x6BD4;&#x4E0E;&#x9002;&#x5F53;&#x5206;&#x754C;&#x503C;&#x6620;&#x5C04;&#x3002;</li>
+</ol>
+<p><img src="img/lec6/51.png" alt=""></p>
+<h3 id="187-&#x4E0D;&#x5E73;&#x8861;&#x6570;&#x636E;&#x5206;&#x7C7B;">1.8.7. &#x4E0D;&#x5E73;&#x8861;&#x6570;&#x636E;&#x5206;&#x7C7B;</h3>
+<ol>
+<li>&#x4E0D;&#x5E73;&#x8861;&#x6570;&#x636E;&#x662F;&#x6307;&#x8BAD;&#x7EC3;&#x6837;&#x672C;&#x6570;&#x91CF;&#x5728;&#x7C7B;&#x95F4;&#x5206;&#x5E03;&#x4E0D;&#x5E73;&#x8861;&#xFF0C;&#x5177;&#x4F53;&#x5730;&#x8BF4;&#x5C31;&#x662F;&#x5728;&#x540C;&#x4E00;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x67D0;&#x4E9B;&#x7C7B;&#x7684;&#x6837;&#x672C;&#x6570;&#x8FDC;&#x5927;&#x4E8E;&#x5176;&#x4ED6;&#x7C7B;&#x7684;&#x6837;&#x672C;&#x6570;<ol>
+<li>&#x6837;&#x672C;&#x6570;&#x5C11;&#x7684;&#x7C7B;&#x4E3A;&#x5C11;&#x6570;&#x7C7B;(&#x6B63;&#x7C7B;)</li>
+<li>&#x6837;&#x672C;&#x6570;&#x591A;&#x7684;&#x7C7B;&#x4E3A;&#x591A;&#x6570;&#x7C7B;(&#x8D1F;&#x7C7B;)</li>
+</ol>
+</li>
+<li>&#x5177;&#x6709;&#x4E0D;&#x5E73;&#x8861;&#x7C7B;&#x5206;&#x5E03;&#x7684;&#x6570;&#x636E;&#x96C6;&#x51FA;&#x73B0;&#x5728;&#x5F88;&#x591A;&#x7684;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5F88;&#x591A;&#x91CD;&#x8981;&#x4FE1;&#x606F;&#x9690;&#x85CF;&#x5728;&#x5C11;&#x6570;&#x7C7B;&#x4E2D;</li>
+<li>&#x5728;&#x8FD9;&#x79CD;&#x7C7B;&#x4E2D;&#x3002;&#x5C11;&#x6570;&#x7C7B;&#x7684;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x6BD4;&#x591A;&#x6570;&#x7C7B;&#x7684;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x66F4;&#x6709;&#x4EF7;&#x503C;&#xFF0C;&#x6BD4;&#x5982;1%&#x7684;&#x7684;&#x4FE1;&#x7528;&#x5361;&#x4EA4;&#x6613;&#x662F;&#x6B3A;&#x8BC8;&#x3002;</li>
+</ol>
+<h3 id="188-&#x4F7F;&#x7528;&#x6DF7;&#x6DC6;&#x7CFB;&#x6570;&#x77E9;&#x9635;">1.8.8. &#x4F7F;&#x7528;&#x6DF7;&#x6DC6;&#x7CFB;&#x6570;&#x77E9;&#x9635;</h3>
+<p><img src="img/lec6/52.png" alt=""></p>
+<ul>
+<li>&#x4E0D;&#x5E73;&#x8861;&#x6570;&#x636E;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5173;&#x6CE8;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x7684;&#x8D1F;&#x4F8B;</li>
+<li>&#x5B9E;&#x9645;&#x6B63;&#x4F8B;&#x6570;(P) = TP + FN</li>
+<li>&#x5B9E;&#x9645;&#x8D1F;&#x4F8B;&#x6570;(N) = FP + TN</li>
+<li><p>&#x5B9E;&#x4F8B;&#x603B;&#x6570;C = P + N</p>
+</li>
+<li><p>&#x5206;&#x7C7B;&#x51C6;&#x786E;&#x7387;&#xFF0C;&#x5BF9;&#x6D4B;&#x8BD5;&#x96C6;&#x5206;&#x7C7B;&#x65F6;&#xFF0C;&#x5206;&#x7C7B;&#x6B63;&#x786E;&#x6837;&#x672C;&#x7684;&#x767E;&#x5206;&#x6BD4;</p>
+</li>
+</ul>
+<p>$$
+Accuracy = \frac{&#x6B63;&#x786E;&#x9884;&#x6D4B;&#x6570;}{&#x6837;&#x672C;&#x603B;&#x6570;} = \frac{TP + TN}{C}</p>
+<p>$$</p>
+<ol>
+<li>&#x9519;&#x8BEF;&#x7387;&#xFF0C;&#x5BF9;&#x6D4B;&#x8BD5;&#x96C6;&#x5206;&#x7C7B;&#x65F6;&#xFF0C;&#x9519;&#x8BEF;&#x5206;&#x7C7B;&#x7684;&#x6837;&#x672C;&#x5360;&#x6837;&#x672C;&#x603B;&#x6570;&#x7684;&#x767E;&#x5206;&#x6BD4;</li>
+</ol>
+<p>$$
+Errorrate = 1- Accuracy = 1 - \frac{TP + TN}{C} = \frac{FN + FP}{C}</p>
+<p>$$</p>
+<ol>
+<li>&#x7CBE;&#x5EA6;(&#x771F;&#x8D1F;&#x7387;)&#xFF0C;&#x4E3A;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x7684;&#x6B63;&#x4F8B;&#x5360;&#x5206;&#x7C7B;&#x7ED3;&#x679C;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x6837;&#x672C;&#x4E2A;&#x6570;&#x7684;&#x6BD4;&#x4F8B;</li>
+</ol>
+<p>$$
+p = \frac{TP}{TP + FP}</p>
+<p>$$</p>
+<ol>
+<li>&#x53EC;&#x56DE;&#x7387;(&#x771F;&#x6B63;&#x7387;)&#xFF0C;&#x4E3A;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x7684;&#x6B63;&#x4F8B;&#x4E2A;&#x6570;&#x5360;&#x5B9E;&#x9645;&#x6B63;&#x4F8B;&#x4E2A;&#x6570;&#x7684;&#x6BD4;&#x4F8B;</li>
+</ol>
+<p>$$
+r = \frac{&#x88AB;&#x6B63;&#x786E;&#x5206;&#x7C7B;&#x7684;&#x6B63;&#x4F8B;&#x6837;&#x672C;&#x4E2A;&#x6570;}{&#x5B9E;&#x9645;&#x6B63;&#x4F8B;&#x6837;&#x672C;&#x4E2A;&#x6570;} = \frac{TP}{TP+FN}</p>
+<p>$$</p>
+<ol>
+<li>$F_1$&#x5EA6;&#x91CF;&#xFF0C;&#x8868;&#x793A;&#x7CBE;&#x5EA6;&#x6216;&#x53EC;&#x56DE;&#x7387;&#x7684;&#x8C03;&#x548C;&#x5E73;&#x5747;&#x503C;:$F_1 = \frac{2rp}{r+p}$&#xFF0C;$F_1$&#x5EA6;&#x91CF;&#x8D8B;&#x5411;&#x4E8E;&#x63A5;&#x8FD1;&#x7CBE;&#x5EA6;&#x6216;&#x53EC;&#x56DE;&#x7387;&#x4E2D;&#x7684;&#x8F83;&#x5C0F;&#x8005;&#x3002;</li>
+<li>&#x7CBE;&#x5EA6;&#x548C;&#x53EC;&#x56DE;&#x7387;&#x662F;&#x8BC4;&#x4EF7;&#x4E0D;&#x5E73;&#x8861;&#x6570;&#x636E;&#x5206;&#x7C7B;&#x6A21;&#x578B;&#x7684;&#x4E24;&#x4E2A;&#x5E38;&#x7528;&#x5EA6;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x4E3A;&#x57FA;&#x7EBF;&#x6A21;&#x578B;&#xFF0C;&#x6700;&#x5927;&#x5316;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5EA6;&#x91CF;&#xFF0C;&#x53D1;&#x73B0;&#x7CBE;&#x5EA6;&#x9AD8;&#xFF0C;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x53EC;&#x56DE;&#x7387;&#x4F4E;&#xFF0C;&#x53EC;&#x56DE;&#x7387;&#x9AD8;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x7CBE;&#x5EA6;&#x4F4E;&#xFF0C;&#x800C;$F_1$&#x5EA6;&#x91CF;&#x5E73;&#x8861;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x6548;&#x679C;&#x3002;</li>
+</ol>
+<h1 id="2-&#x5206;&#x7C7B;&#x7B97;&#x6CD5;">2. &#x5206;&#x7C7B;&#x7B97;&#x6CD5;</h1>
+<ul>
+<li>Bayes</li>
+<li>Decision Tree</li>
+<li>SVM&#xFF1A;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#xFF0C;&#x6700;&#x53D7;&#x5DE5;&#x4E1A;&#x8BA4;&#x53EF;</li>
+<li>KNN</li>
+<li>Logistic Regression</li>
+<li>&#x5224;&#x522B;&#x5206;&#x6790;</li>
+<li>&#x611F;&#x77E5;&#x673A;</li>
+<li>&#x589E;&#x5F3A;&#x548C;&#x5176;&#x4ED6;&#x8BC4;&#x4F30;&#x65B9;</li>
+<li>BPNN(BP&#x795E;&#x7ECF;&#x7F51;&#x7EDC;)</li>
+<li>&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;</li>
+<li>&#x968F;&#x673A;&#x68EE;&#x6797;</li>
+<li>&#x96C6;&#x6210;&#x5B66;&#x4E60;&#xFF1A;&#x6BD4;&#x5982;&#x6709;100&#x4E2A;&#x7B97;&#x6CD5;&#x6A21;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x6295;&#x7968;&#x51B3;&#x5B9A;&#x662F;&#x4EC0;&#x4E48;</li>
+</ul>
+<h1 id="3-&#x6734;&#x7D20;&#x8D1D;&#x53F6;&#x65AF;">3. &#x6734;&#x7D20;&#x8D1D;&#x53F6;&#x65AF;</h1>
+<h2 id="31-&#x6761;&#x4EF6;&#x6982;&#x7387;">3.1. &#x6761;&#x4EF6;&#x6982;&#x7387;</h2>
+<ol>
+<li>&#x6307;&#x5728;&#x4E8B;&#x4EF6;B&#x53D1;&#x751F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E8B;&#x4EF6;A&#x53D1;&#x751F;&#x7684;&#x6982;&#x7387;&#xFF0C;&#x7528;$P(A|B)$&#x8868;&#x793A;&#xFF0C;&#x8BFB;&#x4F5C;&#x5728;B&#x6761;&#x4EF6;&#x4E0B;&#x7684;A&#x7684;&#x6982;&#x7387;</li>
+</ol>
+<h2 id="32-&#x5168;&#x6982;&#x7387;&#x516C;&#x5F0F;">3.2. &#x5168;&#x6982;&#x7387;&#x516C;&#x5F0F;</h2>
+<p>$P(A) = P(A|B_1) + P(A|B_2) + ... + P(A|B_N)$</p>
+<h2 id="33-&#x8D1D;&#x53F6;&#x65AF;&#x516C;&#x5F0F;">3.3. &#x8D1D;&#x53F6;&#x65AF;&#x516C;&#x5F0F;</h2>
+<ol>
+<li>&#x540E;&#x9A8C;&#x6982;&#x7387; = &#x5148;&#x9A8C;&#x6982;&#x7387; * &#x8C03;&#x6574;&#x56E0;&#x5B50;</li>
+<li>$P(A|B)=P(A)*\frac{P(B|A)}{P(B)}$</li>
+</ol>
+<p><img src="img/lec6/4.png" alt=""></p>
+<h2 id="34-&#x8D1D;&#x53F6;&#x65AF;&#x7684;&#x4F8B;&#x5B50;">3.4. &#x8D1D;&#x53F6;&#x65AF;&#x7684;&#x4F8B;&#x5B50;</h2>
+<p><img src="img/lec6/5.png" alt="">
+<img src="img/lec6/6.png" alt=""></p>
+<h2 id="35-&#x6734;&#x7D20;&#x8D1D;&#x53F6;&#x65AF;&#x7684;&#x6982;&#x7387;&#x6A21;&#x578B;">3.5. &#x6734;&#x7D20;&#x8D1D;&#x53F6;&#x65AF;&#x7684;&#x6982;&#x7387;&#x6A21;&#x578B;</h2>
+<ol>
+<li>&#x4E00;&#x4E2A;&#x5F85;&#x5206;&#x7C7B;&#x9879;:$X = f_1, f_2, f_3,..., f_n$</li>
+<li>&#x7C7B;&#x522B;&#x96C6;&#x5408;:$C_1, C_2, ...,C_m$</li>
+<li>&#x9700;&#x8981;&#x8BA1;&#x7B97;:$P(C_1|X), P(C_2|X), ...,P(C_m|X)$</li>
+<li>$P(f_1|C_1), P(f_2|C_1),..., P(f_n|C_1), P(f_1|C_2), ...,P(f1|C_m),...,P(f_n|C_m)$</li>
+<li>&#x5982;&#x679C;$P(C_k|X) = max(P(C_1|X), P(C_2|X), ...,P(C_m|X))$,&#x5219;$X \in C_k, P(C_i|X) = \frac{P(X|C_i) * P(C_i)}{P(X)}$</li>
+<li>$P(X|C<em>i)P(C_i) = P(f_1|C_i)*P(f_2|C_i),...,P(f_n|C_i)P(C_i) = P(C_i)\prod\limits</em>{j=1}\limits^nP(f_i|C_i)$</li>
+</ol>
+<h2 id="36-&#x6734;&#x7D20;&#x8D1D;&#x53F6;&#x65AF;&#x6D41;&#x7A0B;">3.6. &#x6734;&#x7D20;&#x8D1D;&#x53F6;&#x65AF;&#x6D41;&#x7A0B;</h2>
+<p><img src="img/lec6/7.png" alt=""></p>
+<h1 id="4-&#x51B3;&#x7B56;&#x6811;">4. &#x51B3;&#x7B56;&#x6811;</h1>
+<ol>
+<li>&#x51B3;&#x7B56;&#x6811;&#x7ED3;&#x70B9;&#x548C;&#x6709;&#x5411;&#x8FB9;&#x7EC4;&#x6210;</li>
+<li>&#x7ED3;&#x70B9;&#x6709;&#x5185;&#x90E8;&#x7ED3;&#x70B9;&#x548C;&#x53F6;&#x8282;&#x70B9;&#x4E24;&#x79CD;&#x7C7B;&#x578B;</li>
+<li>&#x5185;&#x90E8;&#x7ED3;&#x70B9;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7279;&#x5F81;&#xFF0C;&#x53F6;&#x8282;&#x70B9;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x7C7B;</li>
+</ol>
+<h2 id="41-&#x51B3;&#x7B56;&#x6811;&#x7684;&#x793A;&#x4F8B;">4.1. &#x51B3;&#x7B56;&#x6811;&#x7684;&#x793A;&#x4F8B;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec6/10.png" alt=""></td>
+<td><img src="img/lec6/9.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="42-&#x51B3;&#x7B56;&#x6811;&#x4E4B;id3&#x7B97;&#x6CD5;">4.2. &#x51B3;&#x7B56;&#x6811;&#x4E4B;ID3&#x7B97;&#x6CD5;</h2>
+<h3 id="421-&#x4FE1;&#x606F;&#x71B5;">4.2.1. &#x4FE1;&#x606F;&#x71B5;</h3>
+<ol>
+<li>&#x5BF9;&#x4E8E;&#x6709;k&#x4E2A;&#x7C7B;&#x522B;&#x7684;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#xFF0C;&#x5047;&#x5B9A;&#x6837;&#x672C;&#x96C6;&#x5408;D&#x4E2D;&#x7B2C;k&#x7C7B;&#x6837;&#x672C;&#x6240;&#x5360;&#x7684;&#x6BD4;&#x4F8B;&#x662F;$p_k$(k=1, 2, 3, ...,k)&#xFF0C;&#x5219;&#x6837;&#x672C;&#x96C6;&#x5408;D&#x7684;&#x4FE1;&#x606F;&#x71B5;&#x4E3A;:</li>
+</ol>
+<p>$$
+Ent(D) = -\sum\limits^k\limits_{k=1}p_k*\log_2 p_k</p>
+<p>$$</p>
+<ol>
+<li>&#x662F;&#x523B;&#x753B;&#x7CFB;&#x7EDF;&#x6574;&#x4F53;&#x7684;&#x6DF7;&#x4E71;&#x7A0B;&#x5EA6;&#x7684;&#x91CF;&#xFF0C;&#x4FE1;&#x606F;&#x71B5;&#x8D8A;&#x5927;&#xFF0C;&#x7CFB;&#x7EDF;&#x8D8A;&#x6DF7;&#x4E71;&#x3002;</li>
+</ol>
+<h3 id="422-&#x4FE1;&#x606F;&#x589E;&#x76CA;">4.2.2. &#x4FE1;&#x606F;&#x589E;&#x76CA;</h3>
+<blockquote>
+<p>&#x5728;&#x51B3;&#x7B56;&#x6811;&#x7684;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x662F;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x7279;&#x5F81;T&#xFF0C;&#x8BA1;&#x7B97;&#x539F;&#x6709;&#x6570;&#x636E;&#x7684;&#x4FE1;&#x606F;&#x71B5;&#x4E0E;&#x5F15;&#x7528;&#x7279;&#x5F81;&#x540E;&#x7684;&#x4FE1;&#x606F;&#x71B5;&#x4E4B;&#x5DEE;&#xFF0C;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7684;&#x5B9A;&#x4E49;&#x4E3A;:</p>
+</blockquote>
+<p>$$
+Gain(D, a) = Ent(D) - \sum\limits^V\limits_{v=1} \frac{|D^k|}{|D|} * Ent(D^v)</p>
+<p>$$</p>
+<h3 id="423-&#x4FE1;&#x606F;&#x71B5;&#x548C;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7684;&#x8BA1;&#x7B97;&#x793A;&#x4F8B;">4.2.3. &#x4FE1;&#x606F;&#x71B5;&#x548C;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7684;&#x8BA1;&#x7B97;&#x793A;&#x4F8B;</h3>
+<blockquote>
+<p>&#x6839;&#x8282;&#x70B9;&#x7684;&#x4FE1;&#x606F;&#x71B5;</p>
+</blockquote>
+<p><img src="img/lec6/12.png" alt="">
+<img src="img/lec6/11.png" alt=""></p>
+<blockquote>
+<p>&#x90E8;&#x5206;&#x7279;&#x5F81;&#x7684;&#x4FE1;&#x606F;&#x589E;&#x76CA;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="img/lec6/13.png" alt=""></th>
+<th><img src="img/lec6/14.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec6/15.png" alt=""></td>
+<td><img src="img/lec6/16.png" alt=""></td>
+</tr>
+<tr>
+<td><img src="img/lec6/17.png" alt=""></td>
+<td><img src="img/lec6/18.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x6700;&#x7EC8;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;:&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6700;&#x5927;&#x7684;&#x7279;&#x5F81;&#x4F5C;&#x4E3A;&#x672C;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x53D6;&#x503C;&#x4F5C;&#x4E3A;&#x5176;&#x4ED6;&#x51E0;&#x4E2A;&#x5B50;&#x8282;&#x70B9;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec6/19.png" alt=""></td>
+<td><img src="img/lec6/20.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h3 id="424-id3&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;&#x63CF;&#x8FF0;">4.2.4. ID3&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;&#x63CF;&#x8FF0;</h3>
+<ol>
+<li>&#x8BA1;&#x7B97;&#x7ED9;&#x5B9A;&#x6837;&#x672C;&#x5206;&#x7C7B;&#x6240;&#x9700;&#x7684;&#x4FE1;&#x606F;&#x71B5;</li>
+<li>&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x7279;&#x5F81;&#x7684;&#x4FE1;&#x606F;&#x71B5;&#x3001;&#x4FE1;&#x606F;&#x589E;&#x76CA;</li>
+<li>&#x4ECE;&#x6240;&#x6709;&#x7279;&#x5F81;&#x5217;&#x4E2D;&#x9009;&#x51FA;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6700;&#x5927;&#x7684;&#x7279;&#x5F81;&#x4F5C;&#x4E3A;&#x6839;&#x8282;&#x70B9;&#x6216;&#x8005;&#x5185;&#x90E8;&#x7ED3;&#x70B9;-&#x5212;&#x5206;&#x7ED3;&#x70B9;&#xFF0C;&#x5176;&#x5B50;&#x8282;&#x70B9;&#x5206;&#x522B;&#x4E3A;&#x8BE5;&#x7279;&#x5F81;&#x7684;&#x53EF;&#x80FD;&#x53D6;&#x503C;</li>
+<li>&#x6839;&#x636E;&#x5212;&#x5206;&#x7ED3;&#x70B9;&#x7684;&#x4E0D;&#x540C;&#x53D6;&#x503C;&#x6765;&#x67E5;&#x5206;&#x6570;&#x636E;&#x96C6;&#x4E3A;&#x5BF9;&#x5E94;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x5220;&#x53BB;&#x5F53;&#x524D;&#x7684;&#x7279;&#x5F81;&#x5217;&#xFF0C;&#x5728;&#x8BA1;&#x7B97;&#x5269;&#x4F59;&#x5217;&#x7684;&#x4FE1;&#x606F;&#x71B5;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x5C31;&#x91CD;&#x590D;&#x7B2C;&#x4E8C;&#x6B65;&#x76F4;&#x5230;&#x5212;&#x5206;&#x7ED3;&#x675F;</li>
+<li>&#x5212;&#x5206;&#x7ED3;&#x675F;&#x7684;&#x6807;&#x5FD7;:&#x5B50;&#x96C6;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x522B;&#x6807;&#x7B7E;&#xFF0C;&#x505C;&#x6B62;&#x5212;&#x5206;&#x3002;</li>
+</ol>
+<h3 id="425-id3&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x8DB3;">4.2.5. ID3&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x8DB3;</h3>
+<ol>
+<li>ID3&#x6CA1;&#x8003;&#x8651;&#x8FDE;&#x7EED;&#x7279;&#x5F81;&#xFF0C;&#x6BD4;&#x5982;&#x957F;&#x5EA6;&#x3001;&#x5BC6;&#x5EA6;&#x90FD;&#x662F;&#x8FDE;&#x7EED;&#x503C;&#xFF0C;&#x65E0;&#x6CD5;&#x5728;ID3&#x8FD0;&#x7528;&#x3002;</li>
+<li>ID3&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x4F5C;&#x4E3A;&#x6807;&#x51C6;&#x5BB9;&#x6613;&#x504F;&#x5411;&#x53D6;&#x503C;&#x8F83;&#x591A;&#x7684;&#x7279;&#x5F81;&#x3002;&#x7136;&#x800C;&#x5728;&#x76F8;&#x540C;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x53D6;&#x503C;&#x6BD4;&#x8F83;&#x591A;&#x7684;&#x7279;&#x5F81;&#x6BD4;&#x53D6;&#x503C;&#x5C11;&#x7684;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x5927;&#x3002;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6709;2&#x4E2A;&#x503C;&#xFF0C;&#x5404;&#x4E3A;1/2&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4E3A;3&#x4E2A;&#x503C;&#xFF0C;&#x5404;&#x4E3A;1/3&#xFF0C;&#x5176;&#x5B9E;&#x4ED6;&#x4EEC;&#x90FD;&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4F46;&#x662F;&#x53D6;3&#x4E2A;&#x503C;&#x6BD4;&#x53D6;2&#x4E2A;&#x503C;&#x7684;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x5927;&#x3002;&#x5982;&#x4F55;&#x6821;&#x6B63;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF1F;</li>
+<li>ID3&#x7B97;&#x6CD5;&#x6CA1;&#x8003;&#x8651;&#x7F3A;&#x5931;&#x503C;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x6CA1;&#x8003;&#x8651;&#x8FC7;&#x62DF;&#x5408;&#x95EE;&#x9898;&#x3002;</li>
+</ol>
+<h2 id="43-c45&#x7B97;&#x6CD5;">4.3. C4.5&#x7B97;&#x6CD5;</h2>
+<ol>
+<li>C4.5&#x7B97;&#x6CD5;&#x662F;ID3&#x7B97;&#x6CD5;&#x7684;&#x6539;&#x8FDB;&#xFF0C;C4.5&#x514B;&#x670D;&#x4E86;ID3&#x7684;&#x4E24;&#x4E2A;&#x7F3A;&#x70B9;<ol>
+<li>&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x8FDE;&#x7EED;&#x7279;&#x5F81;</li>
+<li>&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x9009;&#x62E9;&#x5C5E;&#x6027;&#x65F6;&#x504F;&#x5411;&#x4E8E;&#x9009;&#x62E9;&#x5206;&#x652F;&#x8F83;&#x591A;&#x7684;&#x7279;&#x5F81;&#x503C;&#xFF0C;&#x5373;&#x53D6;&#x503C;&#x591A;&#x7684;&#x7279;&#x5F81;</li>
+</ol>
+</li>
+<li><a href="https://blog.csdn.net/zjsghww/article/details/51638126" target="_blank">C4.5&#x7B97;&#x6CD5;&#x5B9E;&#x4F8B;</a></li>
+</ol>
+<h3 id="431-&#x5C06;&#x8FDE;&#x7EED;&#x7684;&#x7279;&#x5F81;&#x79BB;&#x6563;&#x5316;">4.3.1. &#x5C06;&#x8FDE;&#x7EED;&#x7684;&#x7279;&#x5F81;&#x79BB;&#x6563;&#x5316;</h3>
+<ol>
+<li>&#x5C06;n&#x4E2A;&#x8FDE;&#x7EED;&#x7684;&#x6837;&#x672C;&#x6309;&#x503C;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x6392;&#x5217;&#xFF0C;&#x5F97;&#x5230;&#x6570;&#x636E;$a_1, a_2, ..., a_n$</li>
+<li>&#x53D6;&#x76F8;&#x90BB;&#x4E24;&#x6837;&#x672C;&#x503C;&#x7684;&#x5E73;&#x5747;&#x6570;&#xFF0C;&#x4F1A;&#x5F97;&#x5230;$n-1$&#x4E2A;&#x5212;&#x5206;&#x70B9;&#xFF0C;&#x5176;&#x4E2D;&#x7B2C;i&#x4E2A;&#x5212;&#x5206;&#x70B9;$T<em>i = \frac{a_i + a</em>{i+1}}{2}$</li>
+<li>&#x5BF9;&#x8FD9;n-1&#x4E2A;&#x70B9;&#xFF0C;&#x5206;&#x522B;&#x8BA1;&#x7B97;&#x6BCF;&#x4E00;&#x4E2A;&#x70B9;&#x4F5C;&#x4E3A;&#x4E8C;&#x5143;&#x5206;&#x7C7B;&#x70B9;&#x65F6;&#x7684;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#xFF0C;&#x9009;&#x62E9;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6700;&#x5927;&#x7684;&#x70B9;&#x4F5C;&#x4E3A;&#x8BE5;&#x8FDE;&#x7EED;&#x7279;&#x5F81;&#x7684;&#x4E8C;&#x5143;&#x79BB;&#x6563;&#x5206;&#x7C7B;&#x70B9;</li>
+<li>&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6BD4;&#x9009;&#x62E9;&#x6700;&#x4F73;&#x5212;&#x5206;</li>
+<li>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x8FD8;&#x4E0D;&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec6/21.png" alt=""></td>
+<td><img src="img/lec6/22.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h3 id="432-&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;">4.3.2. &#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;</h3>
+<blockquote>
+<p>&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;&#x662F;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x4E0E;&#x7279;&#x5F81;&#x71B5;&#x7684;&#x6BD4;&#xFF0C;&#x7279;&#x5F81;&#x6570;&#x8D8A;&#x591A;&#x7684;&#x7279;&#x5F81;&#x5BF9;&#x5E94;&#x7684;&#x7279;&#x5F81;&#x71B5;&#x8D8A;&#x5927;&#x3002;</p>
+</blockquote>
+<p>$$
+\begin{array}{l}
+   Gain(D,a) = Ent(D) - \sum\limits^k\limits<em>{v=1}Ent(D^v) \
+   Gain</em>{ratio}(D,a) = \frac{Gain(D,a)}{Iv(a)} \
+   IV(a) = -\sum\limits^V\limits_{v=1}\frac{|D^v|}{|D|}\log_2\frac{|D^V|}{|D|}
+\end{array}</p>
+<p>$$</p>
+<h3 id="433-&#x5BF9;&#x4E8E;&#x7F3A;&#x5931;&#x503C;&#x5904;&#x7406;&#x7684;&#x95EE;&#x9898;">4.3.3. &#x5BF9;&#x4E8E;&#x7F3A;&#x5931;&#x503C;&#x5904;&#x7406;&#x7684;&#x95EE;&#x9898;</h3>
+<ol>
+<li>&#x4E3B;&#x8981;&#x89E3;&#x51B3;&#x4E24;&#x4E2A;&#x95EE;&#x9898;<ol>
+<li>&#x6837;&#x672C;&#x67D0;&#x4E9B;&#x7279;&#x5F81;&#x7F3A;&#x5931;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x9009;&#x62E9;&#x5212;&#x5206;&#x7684;&#x5C5E;&#x6027;</li>
+<li>&#x9009;&#x5B9A;&#x4E86;&#x5212;&#x5206;&#x5C5E;&#x6027;&#xFF0C;&#x5BF9;&#x4E8E;&#x5728;&#x8BE5;&#x5C5E;&#x6027;&#x4E0A;&#x7F3A;&#x5931;&#x7279;&#x5F81;&#x7684;&#x6837;&#x672C;&#x7684;&#x5904;&#x7406;</li>
+</ol>
+</li>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;:C4.5&#x7684;&#x60F3;&#x6CD5;&#x662F;&#x5C06;&#x6570;&#x636E;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#x90FD;&#x8BBE;&#x7F6E;&#x6743;&#x91CD;(&#x521D;&#x59CB;&#x4E3A;1)&#xFF0C;&#x7136;&#x540E;&#x5212;&#x5206;&#x6570;&#x636E;&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x6709;&#x7279;&#x5F81;A&#x7684;D1&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x6CA1;&#x6709;&#x7279;&#x5F81;A&#x7684;&#x6570;&#x636E;D2&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x4E8E;&#x6CA1;&#x6709;&#x786E;&#x5B9E;&#x7279;&#x5F81;A&#x7684;&#x6570;&#x636E;&#x96C6;D1&#x6765;&#x548C;&#x5BF9;&#x5E94;A&#x7279;&#x5F81;&#x7684;&#x5404;&#x4E2A;&#x7279;&#x5F81;&#x503C;&#x4E00;&#x8D77;&#x8BA1;&#x7B97;&#x52A0;&#x6743;&#x91CD;&#x540E;&#x7684;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6BD4;&#xFF0C;&#x6700;&#x540E;&#x4E58;&#x4EE5;&#x4E00;&#x4E2A;&#x7CFB;&#x6570;(&#x7CFB;&#x6570;=&#x65E0;&#x7279;&#x5F81;A&#x7F3A;&#x5931;&#x7684;&#x6837;&#x672C;&#x52A0;&#x6743;&#x540E;&#x6240;&#x5360;&#x52A0;&#x6743;&#x603B;&#x6837;&#x672C;&#x7684;&#x6BD4;&#x4F8B;)</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x95EE;&#x9898;:&#x53EF;&#x4EE5;&#x5C06;&#x7F3A;&#x5931;&#x7279;&#x5F81;&#x7684;&#x6837;&#x672C;&#x540C;&#x65F6;&#x5212;&#x5206;&#x5165;&#x6240;&#x6709;&#x7684;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x4E0D;&#x8FC7;&#x8BE5;&#x6837;&#x672C;&#x7684;&#x6743;&#x91CD;&#x6309;&#x7167;&#x5404;&#x4E2A;&#x5B50;&#x6837;&#x672C;&#x7684;&#x6570;&#x91CF;&#x6BD4;&#x4F8B;&#x6765;&#x5206;&#x7C7B;&#xFF0C;&#x6BD4;&#x5982;&#x7F3A;&#x5931;&#x7279;&#x5F81;A&#x7684;&#x6837;&#x672C;a&#x4E4B;&#x524D;&#x6743;&#x91CD;&#x4E3A;1&#xFF0C;&#x7279;&#x5F81;&#x6709;3&#x4E2A;&#x7279;&#x5F81;&#x503C;A1&#xFF0C;A2&#xFF0C;A3&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x7684;&#x65E0;A&#x7279;&#x5F81;&#x7684;&#x6837;&#x672C;&#x4E2A;&#x6570;&#x4E3A;2&#xFF0C;3&#xFF0C;4&#xFF0C;&#x5219;a&#x540C;&#x65F6;&#x5212;&#x5165;A1&#xFF0C;A2&#xFF0C;A3&#xFF0C;&#x5BF9;&#x5E94;&#x6743;&#x91CD;&#x8C03;&#x8282;&#x4E3A;2/9&#x3001;3/9&#x3001;4/9</li>
+</ol>
+<h3 id="434-c45&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x8DB3;&#x4E0E;&#x6539;&#x8FDB;">4.3.4. C4.5&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x8DB3;&#x4E0E;&#x6539;&#x8FDB;</h3>
+<ol>
+<li>&#x51B3;&#x7B56;&#x6811;&#x7B97;&#x6CD5;&#x5F88;&#x5BB9;&#x6613;&#x8FC7;&#x62DF;&#x5408;&#xFF0C;&#x6240;&#x4EE5;&#x51B3;&#x7B56;&#x6811;&#x9700;&#x8981;&#x526A;&#x679D;&#xFF0C;&#x800C;C4.5&#x7684;&#x526A;&#x679D;&#x65B9;&#x6CD5;&#x6709;&#x4F18;&#x5316;&#x7A7A;&#x95F4;<ol>
+<li>&#x9884;&#x526A;&#x679D;:&#x751F;&#x6210;&#x51B3;&#x7B56;&#x6811;&#x7684;&#x65F6;&#x5019;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x526A;&#x679D;</li>
+<li>&#x540E;&#x526A;&#x679D;:&#x751F;&#x6210;&#x51B3;&#x7B56;&#x6811;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x4EA4;&#x53C9;&#x68C0;&#x9A8C;&#x8FDB;&#x884C;&#x526A;&#x679D;</li>
+</ol>
+</li>
+<li>&#x751F;&#x6210;&#x591A;&#x53C9;&#x6811;&#xFF0C;&#x4E0D;&#x5982;&#x4E8C;&#x53C9;&#x6811;&#x8BA1;&#x7B97;&#x5FEB;</li>
+<li>&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x5206;&#x7C7B;</li>
+<li>&#x4F7F;&#x7528;&#x4E86;&#x71B5;&#x6A21;&#x578B;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FDE;&#x7EED;&#x5C5E;&#x6027;&#x8FD8;&#x6709;&#x5927;&#x91CF;&#x6392;&#x5E8F;&#xFF0C;&#x5982;&#x679C;&#x4E3A;&#x4E86;&#x68C0;&#x67E5;&#x6A21;&#x578B;&#x5E76;&#x4E0D;&#x5E0C;&#x671B;&#x727A;&#x7272;&#x592A;&#x591A;&#x51C6;&#x786E;&#x6027;&#xFF0C;&#x4F7F;&#x7528;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x4EE3;&#x66FF;&#x71B5;&#x6A21;&#x578B;&#x3002;</li>
+</ol>
+<h2 id="44-cart&#x7B97;&#x6CD5;">4.4. CART&#x7B97;&#x6CD5;</h2>
+<ol>
+<li>Classification And Regression Tree&#xFF0C;&#x5373;&#x5206;&#x7C7B;&#x56DE;&#x5F52;&#x6811;&#x7B97;&#x6CD5;&#xFF0C;&#x7B80;&#x79F0;CART&#x7B97;&#x6CD5;&#xFF0C;&#x4F7F;&#x7528;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x4EE3;&#x66FF;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x6BD4;</li>
+<li>&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x4EE3;&#x8868;&#x4E86;&#x6A21;&#x578B;&#x7684;&#x4E0D;&#x7EAF;&#x5EA6;&#xFF0C;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x8D8A;&#x5C0F;&#xFF0C;&#x4E0D;&#x7EAF;&#x5EA6;&#x8D8A;&#x4F4E;&#xFF0C;&#x7279;&#x5F81;&#x8D8A;&#x597D;&#xFF0C;&#x548C;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;&#x76F8;&#x53CD;</li>
+<li>&#x6B65;&#x9AA4;:<ol>
+<li>&#x7528;&#x6837;&#x672C;&#x9012;&#x5F52;&#x5212;&#x5206;&#x8FDB;&#x884C;&#x5EFA;&#x6811;&#x8FC7;&#x7A0B;</li>
+<li>&#x7528;&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x526A;&#x679D;</li>
+</ol>
+</li>
+<li>&#x627E;&#x51FA;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x5927;&#x4E8E;&#x5E73;&#x5747;&#x6C34;&#x5E73;&#x7684;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x627E;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;&#x6700;&#x5927;&#x7684;&#x3002;</li>
+</ol>
+<h3 id="441-gini&#x6307;&#x6570;">4.4.1. GINI&#x6307;&#x6570;</h3>
+<ul>
+<li>&#x5047;&#x8BBE;&#x6709;n&#x4E2A;&#x7C7B;&#x522B;&#xFF0C;&#x7B2C;k&#x4E2A;&#x7C7B;&#x522B;&#x7684;&#x6982;&#x7387;&#x4E3A;$p_k$&#xFF0C;&#x6982;&#x7387;&#x5206;&#x5E03;&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x8868;&#x8FBE;&#x5F0F;:</li>
+</ul>
+<p>$$
+\begin{array}{l}
+   Gini(p) = \sum\limits^{n}\limits<em>{k=1}p_k(1-p_k) \
+   = 1 - \sum\limits^{n}\limits</em>{k=1}p_k^2 \
+\end{array}</p>
+<p>$$</p>
+<ul>
+<li>&#x5982;&#x679C;&#x662F;&#x4E8C;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x8F93;&#x51FA;&#x6982;&#x7387;&#x4E3A;p&#xFF0C;&#x6982;&#x7387;&#x5206;&#x5E03;&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x7279;&#x5316;&#x4E3A;$Gini(p) = 2p(1-p)$</li>
+<li>&#x5BF9;&#x4E8E;&#x6837;&#x672C;D&#xFF0C;&#x4E2A;&#x6570;&#x4E3A;|D|&#xFF0C;&#x5047;&#x8BBE;&#x6709;n&#x4E2A;&#x7C7B;&#x522B;&#xFF0C;&#x7B2C;k&#x4E2A;&#x7C7B;&#x522B;&#x7684;&#x6570;&#x91CF;&#x4E3A;$|C_k|$&#xFF0C;&#x5219;&#x6837;&#x672C;D&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x8868;&#x8FBE;&#x5F0F;</li>
+</ul>
+<p>$$
+Gini(D) = 1 - \sum\limits_{k=1}\limits^{K}(\frac{|C_k|}{|D|})^2</p>
+<p>$$</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x6837;&#x672C;D&#xFF0C;&#x4E2A;&#x6570;&#x4E3A;|D|&#xFF0C;&#x6839;&#x636E;&#x7279;&#x5F81;A&#x7684;&#x67D0;&#x4E2A;&#x503C;a&#xFF0C;&#x628A;D&#x5206;&#x4E3A;$|D_1|$&#x548C;$|D_2|$&#xFF0C;&#x5728;&#x7279;&#x5F81;A&#x7684;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x6837;&#x672C;D&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;</li>
+</ul>
+<p>$$
+Gini(D, A) = \frac{|D_1|}{|D|}Gini(D_1) + \frac{|D2|}{|D|}Gini(D_2)</p>
+<p>$$</p>
+<h3 id="442-&#x7B97;&#x6CD5;&#x5177;&#x4F53;&#x6D41;&#x7A0B;">4.4.2. &#x7B97;&#x6CD5;&#x5177;&#x4F53;&#x6D41;&#x7A0B;</h3>
+<ol>
+<li>&#x8F93;&#x5165;:&#x8BAD;&#x7EC3;&#x96C6;D&#xFF0C;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x7684;&#x9608;&#x503C;&#xFF0C;&#x6837;&#x672C;&#x4E2A;&#x6570;&#x9608;&#x503C;</li>
+<li>&#x8F93;&#x51FA;:&#x51B3;&#x7B56;&#x6811;T</li>
+<li>&#x7B97;&#x6CD5;&#x6B65;&#x9AA4;<ol>
+<li>&#x5BF9;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x96C6;D&#xFF0C;&#x5982;&#x679C;&#x6837;&#x672C;&#x5BB9;&#x91CF;&#x5C0F;&#x4E8E;&#x9608;&#x503C;&#x6216;&#x6CA1;&#x6709;&#x7279;&#x5F81;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x51B3;&#x7B56;&#x5B50;&#x6811;&#xFF0C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x505C;&#x6B62;&#x9012;&#x5F52;</li>
+<li>&#x8BA1;&#x7B97;&#x6837;&#x672C;&#x96C6;D&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x5C0F;&#x4E8E;&#x9608;&#x503C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x51B3;&#x7B56;&#x5B50;&#x6811;&#xFF0C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x505C;&#x6B62;&#x9012;&#x5F52;</li>
+<li>&#x8BA1;&#x7B97;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x73B0;&#x6709;&#x7684;&#x5404;&#x4E2A;&#x7279;&#x5F81;&#x7684;&#x5404;&#x4E2A;&#x7279;&#x5F81;&#x503C;&#x5BF9;&#x6570;&#x636E;&#x96C6;D&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x3002;</li>
+<li>&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x5404;&#x4E2A;&#x7279;&#x5F81;&#x7684;&#x5404;&#x4E2A;&#x7279;&#x5F81;&#x503C;&#x5BF9;&#x6570;&#x636E;&#x96C6;D&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x6700;&#x5C0F;&#x7684;&#x7279;&#x5F81;A&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x7279;&#x5F81;&#x503C;a&#xFF0C;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x6700;&#x4F18;&#x7279;&#x5F81;&#x548C;&#x6700;&#x4F18;&#x7279;&#x5F81;&#x503C;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x96C6;&#x5212;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;$D_1$&#x548C;$D_2$&#xFF0C;&#x540C;&#x65F6;&#x5EFA;&#x7ACB;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x53F3;&#x8282;&#x70B9;&#xFF0C;&#x5DE6;&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E3A;$D_1$&#xFF0C;&#x53F3;&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E3A;$D_2$</li>
+<li>&#x5BF9;&#x5DE6;&#x53F3;&#x7684;&#x5B57;&#x8282;&#x70B9;&#x9012;&#x5F52;&#x8C03;&#x7528;1-4&#x6B65;&#x9AA4;</li>
+</ol>
+</li>
+</ol>
+<h3 id="443-cart&#x4F8B;&#x5B50;&#x4E00;">4.4.3. CART&#x4F8B;&#x5B50;&#x4E00;</h3>
+<p><img src="img/lec6/48.png" alt="">
+<img src="img/lec6/49.png" alt=""></p>
+<ul>
+<li>&#x6CE8;&#x610F;&#x4E0A;&#x9762;&#x516C;&#x5F0F;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;</li>
+</ul>
+<h3 id="444-&#x8FDE;&#x7EED;&#x7279;&#x5F81;&#x7684;&#x5904;&#x7406;">4.4.4. &#x8FDE;&#x7EED;&#x7279;&#x5F81;&#x7684;&#x5904;&#x7406;</h3>
+<ol>
+<li>&#x601D;&#x60F3;&#x548C;C4.5&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x90FD;&#x662F;&#x5C06;&#x8FDE;&#x7EED;&#x7684;&#x7279;&#x5F81;&#x79BB;&#x6563;&#x5316;&#xFF0C;&#x53EA;&#x662F;&#x5C06;&#x4FE1;&#x606F;&#x589E;&#x76CA;&#x7387;&#x66FF;&#x6362;&#x6210;&#x4E86;Gini&#x6307;&#x6570;</li>
+<li>&#x548C;ID3&#x3001;C4.5&#x7684;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x4E3A;&#x8FDE;&#x7EED;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x8BE5;&#x5C5E;&#x6027;&#x5728;&#x540E;&#x9762;&#x8FD8;&#x53EF;&#x4EE5;&#x53C2;&#x4E0E;&#x8282;&#x70B9;&#x7684;&#x4EA7;&#x751F;&#x9009;&#x62E9;&#x8FC7;&#x7A0B;&#x3002;</li>
+</ol>
+<h3 id="445-&#x79BB;&#x6563;&#x6570;&#x636E;&#x7684;&#x5904;&#x7406;">4.4.5. &#x79BB;&#x6563;&#x6570;&#x636E;&#x7684;&#x5904;&#x7406;</h3>
+<ol>
+<li>&#x5927;&#x81F4;&#x601D;&#x8DEF;&#x662F;&#x4E0D;&#x65AD;&#x4E8C;&#x5206;&#x7C7B;</li>
+<li>&#x6BD4;&#x5982;</li>
+</ol>
+<p>$$
+\begin{array}{l}
+   A \to {A1},{A2,A3} \
+   A \to {A2},{A1,A3} \
+   A \to {A3},{A1,A2} \
+\end{array}</p>
+<p>$$</p>
+<ol>
+<li>&#x7136;&#x540E;&#x627E;&#x5230;&#x4E0A;&#x9762;&#x7684;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;&#x6700;&#x5C0F;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x5EFA;&#x7ACB;&#x4E8C;&#x53C9;&#x6811;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x5212;&#x5206;&#x5269;&#x4E0B;&#x7684;&#x7279;&#x5F81;</li>
+</ol>
+<h3 id="446-cart&#x4F8B;&#x5B50;&#x4E8C;">4.4.6. CART&#x4F8B;&#x5B50;&#x4E8C;</h3>
+<p><img src="img/lec6/23.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th><img src="img/lec6/24.png" alt=""></th>
+<th><img src="img/lec6/25.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec6/26.png" alt=""></td>
+<td><img src="img/lec6/27.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="45-&#x526A;&#x679D;">4.5. &#x526A;&#x679D;</h2>
+<ol>
+<li>CART&#x6811;&#x7684;&#x526A;&#x679D;:&#x7528;&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x96C6;&#x5BF9;&#x751F;&#x6210;&#x7684;&#x6811;&#x8FDB;&#x884C;&#x526A;&#x679D;&#x5E76;&#x9009;&#x62E9;&#x6700;&#x4F18;&#x5B50;&#x6811;&#xFF0C;&#x635F;&#x5931;&#x51FD;&#x6570;&#x6700;&#x5C0F;&#x4F5C;&#x4E3A;&#x526A;&#x679D;&#x7684;&#x6807;&#x51C6;</li>
+<li>CART&#x5206;&#x7C7B;&#x6811;&#x7684;&#x526A;&#x679D;&#x7B56;&#x7565;&#x662F;&#x5728;&#x5EA6;&#x91CF;&#x635F;&#x5931;&#x7684;&#x65F6;&#x5019;&#x7528;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;</li>
+<li>(&#x4E86;&#x89E3;)CART&#x56DE;&#x5F52;&#x6811;&#x7684;&#x526A;&#x679D;&#x7B56;&#x7565;&#x662F;&#x5728;&#x5EA6;&#x91CF;&#x635F;&#x5931;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x5747;&#x65B9;&#x5DEE;</li>
+<li>&#x526A;&#x679D;&#x540E;&#x7684;CART&#x6811;&#xFF0C;&#x901A;&#x8FC7;&#x4EA4;&#x53C9;&#x68C0;&#x9A8C;&#x9A8C;&#x8BC1;&#x526A;&#x679D;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x9009;&#x62E9;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#x6700;&#x597D;&#x7684;&#x526A;&#x679D;&#x7B56;&#x7565;&#x3002;</li>
+</ol>
+<h3 id="451-&#x526A;&#x679D;&#x635F;&#x5931;&#x51FD;&#x6570;">4.5.1. &#x526A;&#x679D;&#x635F;&#x5931;&#x51FD;&#x6570;</h3>
+<p>$C_a(T_i)=C(T_t) +\alpha|T_t|$</p>
+<ul>
+<li>$\alpha$&#x662F;&#x6B63;&#x5219;&#x5316;&#x53C2;&#x6570;&#xFF0C;$C(T_t)$&#x662F;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x7684;&#x9884;&#x6D4B;&#x8BEF;&#x5DEE;&#xFF0C;$|T_t|$&#x662F;&#x6811;T&#x7684;&#x5B50;&#x8282;&#x70B9;&#x4E2A;&#x6570;<ul>
+<li>&#x5F53;$\alpha = 0$&#x65F6;&#xFF0C;&#x751F;&#x6210;&#x7684;CART&#x6811;&#x8BB0;&#x4E3A;&#x6700;&#x4F18;&#x5B50;&#x6811;</li>
+<li>&#x5F53;$\alpha \to \infty$&#x65F6;&#xFF0C;&#x6B63;&#x5219;&#x5316;&#x5F3A;&#x5EA6;&#x6700;&#x5927;</li>
+</ul>
+</li>
+<li>$\alpha$&#x56FA;&#x5B9A;&#xFF0C;&#x6700;&#x540E;&#x7684;&#x5B50;&#x6811;&#x56FA;&#x5B9A;</li>
+</ul>
+<h3 id="452-&#x526A;&#x679D;&#x601D;&#x8DEF;">4.5.2. &#x526A;&#x679D;&#x601D;&#x8DEF;</h3>
+<ol>
+<li>&#x5BF9;&#x4E8E;&#x4F4D;&#x4E8E;&#x8282;&#x70B9;t&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x68F5;&#x5B50;&#x6811;<ol>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x526A;&#x679D;&#xFF0C;&#x635F;&#x5931;&#x51FD;&#x6570;&#x4E3A;$C_a(T_i)=C(T_t) +\alpha|T_t|$</li>
+<li>&#x5982;&#x679C;&#x526A;&#x679D;&#x540E;&#xFF0C;&#x4EC5;&#x4FDD;&#x7559;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x635F;&#x5931;&#x51FD;&#x6570;&#x4E3A;$C_a(T_i)=C(T_t) +\alpha$</li>
+</ol>
+</li>
+<li>&#x5F53;$\alpha=0$&#x6216;&#x8005;&#x5F88;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#xFF0C;$C_a(T_i) &lt; C_a(T)$</li>
+<li>&#x5F53;$\alpha$&#x589E;&#x5927;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x65F6;&#xFF0C;$C_a(T_i) = C_a(T)$</li>
+<li>&#x5F53;$\alpha$&#x7EE7;&#x7EED;&#x589E;&#x5927;&#x65F6;&#xFF0C;&#x5219;&#x6EE1;&#x8DB3;$\alpha = \frac{C(T) -C(T_i)}{|T_i|-1}$</li>
+<li>$T_i$&#x548C;T&#x6709;&#x76F8;&#x540C;&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#xFF0C;&#x4F46;T&#x8282;&#x70B9;&#x66F4;&#x5C11;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x5BF9;&#x5B50;&#x6811;T_t&#x8FDB;&#x884C;&#x526A;&#x679D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5C06;&#x5B83;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x5168;&#x90E8;&#x526A;&#x6389;&#xFF0C;&#x53D8;&#x6210;&#x53F6;&#x5B50;&#x8282;&#x70B9;T</li>
+</ol>
+<h3 id="453-&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x7B56;&#x7565;">4.5.3. &#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x7B56;&#x7565;</h3>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x6240;&#x6709;&#x8282;&#x70B9;&#x662F;&#x5426;&#x526A;&#x679D;&#x7684;&#x503C;$\alpha$&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x9488;&#x5BF9;&#x4E0D;&#x540C;$\alpha$&#x526A;&#x679D;&#x540E;&#x7684;&#x6700;&#x4F18;&#x5B50;&#x6811;&#x505A;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#xFF0C;&#x5F97;&#x5230;&#x6700;&#x597D;&#x7684;$\alpha$&#xFF0C;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x6700;&#x4F18;&#x5B50;&#x6811;&#x4F5C;&#x4E3A;&#x6700;&#x7EC8;&#x7ED3;&#x679C;</p>
+<h3 id="454-&#x526A;&#x679D;&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;">4.5.4. &#x526A;&#x679D;&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;</h3>
+<ol>
+<li>&#x8F93;&#x5165;:&#x539F;&#x59CB;&#x51B3;&#x7B56;&#x6811;T</li>
+<li>&#x8F93;&#x51FA;:&#x6700;&#x4F18;&#x51B3;&#x7B56;&#x6811;$T_{\alpha}$</li>
+<li>&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;<ol>
+<li>&#x521D;&#x59CB;&#x5316;$\alpha_{min} = \infty$&#xFF0C;&#x6700;&#x4F18;&#x5B50;&#x6811;&#x96C6;&#x5408;$w = {T}$</li>
+<li>&#x4ECE;&#x53F6;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x8BA1;&#x7B97;&#x5185;&#x90E8;&#x7ED3;&#x70B9;t&#x7684;&#x8BAD;&#x7EC3;&#x8BEF;&#x5DEE;&#x635F;&#x5931;&#x51FD;&#x6570;$C<em>a(T_t)$(&#x56DE;&#x5F52;&#x6811;&#x4E3A;&#x5747;&#x65B9;&#x5DEE;&#xFF0C;&#x5206;&#x7C7B;&#x6811;&#x4E3A;&#x57FA;&#x5C3C;&#x7CFB;&#x6570;)&#xFF0C;&#x53F6;&#x8282;&#x70B9;&#x6811;$|T_t|$&#xFF0C;&#x4EE5;&#x53CA;&#x6B63;&#x5219;&#x5316;&#x9608;&#x503C;$\alpha = \min{\frac{C(T) -C(T_i)}{|T_i|-1}, \alpha</em>{\min}}$</li>
+<li>&#x5F97;&#x5230;&#x6240;&#x6709;&#x8282;&#x70B9;&#x7684;$\alpha$&#x503C;&#x4E3A;&#x96C6;&#x5408;M</li>
+<li>&#x4ECE;M&#x4E2D;&#x9009;&#x62E9;&#x6700;&#x5927;&#x7684;&#x503C;$\alpha_k$&#xFF0C;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x7684;&#x8BBF;&#x95EE;&#x5B50;&#x6811;t&#x7684;&#x5185;&#x90E8;&#x8282;&#x70B9;&#xFF0C;&#x5982;&#x679C;$\frac{C(T) -C(T_i)}{|T_i|-1} \leq a_k$&#x65F6;&#xFF0C;&#x8FDB;&#x884C;&#x526A;&#x679D;&#xFF0C;&#x5E76;&#x51B3;&#x5B9A;&#x53F6;&#x8282;&#x70B9;&#x7684;t&#x7684;&#x503C;&#xFF0C;&#x5BF9;&#x4E8E;&#x5206;&#x7C7B;&#x6811;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x6982;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x7C7B;&#x522B;</li>
+<li>&#x6700;&#x4F18;&#x5B50;&#x6811;&#x96C6;&#x5408;$w=w \cup T_k&#xFF0C;M = M - {a_k}$</li>
+<li>&#x5982;&#x679C;M&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x56DE;&#x5230;&#x6B65;&#x9AA4;4&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x6240;&#x6709;&#x7684;&#x53EF;&#x9009;&#x6700;&#x4F18;&#x5B50;&#x6811;&#x96C6;&#x5408;w</li>
+<li>&#x91C7;&#x7528;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x5728;w&#x9009;&#x62E9;&#x6700;&#x4F18;&#x5B50;&#x6811;$T_a$</li>
+</ol>
+</li>
+</ol>
+<h1 id="5-knn&#x7B97;&#x6CD5;">5. KNN&#x7B97;&#x6CD5;</h1>
+<ul>
+<li>KNN&#x7B97;&#x6CD5;&#x53C8;&#x88AB;&#x79F0;&#x4E3A;&#x6700;&#x8FD1;&#x90BB;&#x7B97;&#x6CD5;</li>
+<li>&#x7B97;&#x6CD5;&#x601D;&#x60F3;:&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x4E0E;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x7684;k&#x4E2A;&#x6837;&#x672C;&#x6700;&#x76F8;&#x4F3C;&#xFF0C;&#x5982;&#x679C;&#x8FD9;k&#x4E2A;&#x6837;&#x672C;&#x4E2D;&#x5927;&#x591A;&#x6570;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x7C7B;&#x522B;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x6837;&#x672C;&#x4E5F;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x7C7B;&#x522B;</li>
+</ul>
+<p><img src="img/lec6/28.png" alt=""></p>
+<h2 id="51-&#x8DDD;&#x79BB;&#x5EA6;&#x91CF;">5.1. &#x8DDD;&#x79BB;&#x5EA6;&#x91CF;</h2>
+<ol>
+<li>&#x9009;&#x62E9;&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x76F8;&#x4F3C;&#x6027;&#x65F6;&#xFF0C;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x6B27;&#x6C0F;&#x8DDD;&#x79BB;&#xFF0C;Lp&#x8DDD;&#x79BB;&#x5B9A;&#x4E49;$L<em>p(x_i, x_j) = (\sum\limits</em>{l=1}\limits^n|x_{i}^{(l)} - x_j^{(l)}|^p)^{\frac{1}{p}}$</li>
+<li>&#x5176;&#x4E2D;$x<em>i\in R^n, x_j \in R^n$&#xFF0C;&#x5176;&#x4E2D;$L</em>{\infty}$&#x5B9A;&#x4E49;&#x4E3A;$L\infty(x<em>i, x_j) = max</em>{l}|x_i^{(l)}-x_j^{(l)}|$&#xFF0C;&#x5176;&#x4E2D;p&#x662F;&#x4E00;&#x4E2A;&#x53D8;&#x53C2;&#x6570;<ol>
+<li>$p=1$&#xFF0C;&#x5C31;&#x662F;&#x66FC;&#x54C8;&#x987F;&#x8DDD;&#x79BB;(&#x5BF9;&#x5E94;L1&#x8303;&#x6570;)</li>
+<li>$p=2$&#xFF0C;&#x5C31;&#x662F;&#x6B27;&#x5F0F;&#x8DDD;&#x79BB;(&#x5BF9;&#x5E94;L2&#x8303;&#x6570;)</li>
+<li>$p \to \infty$&#xFF0C;&#x5C31;&#x662F;&#x5207;&#x6BD4;&#x96EA;&#x592B;&#x8DDD;&#x79BB;</li>
+</ol>
+</li>
+</ol>
+<p>$$
+L<em>1&#x5B9A;&#x4E49;&#x4E3A;|x|=\sum\limits</em>{i=1}\limits^n|x_i|&#xFF0C;&#x5176;&#x4E2D;x=\begin{bmatrix}
+   x_1 \ x_2 \ . \ . \ . \ x_n
+\end{bmatrix} \in R^n</p>
+<p>$$</p>
+<p>$$
+L<em>2&#x5B9A;&#x4E49;&#x4E3A;|x|=\sqrt{\sum\limits</em>{i=1}\limits^{n}x_i^2}&#xFF0C;&#x5176;&#x4E2D;x=\begin{bmatrix}
+   x_1 \ x_2 \ . \ . \ . \ x_n
+\end{bmatrix} \in R^n</p>
+<p>$$</p>
+<p>$$
+\begin{array}{l}
+   n&#x7EF4;&#x7A7A;&#x95F4;&#x70B9;a(x<em>{11},x</em>{12},...x<em>{1n})&#x4E0E;b(x</em>{21}, x<em>{22}, ..., x</em>{2n}) \
+   d<em>{12} = \max(|x</em>{1i}-x_{2i}|)
+\end{array}</p>
+<p>$$</p>
+<h2 id="52-k&#x503C;&#x7684;&#x9009;&#x62E9;">5.2. K&#x503C;&#x7684;&#x9009;&#x62E9;</h2>
+<ol>
+<li>&#x8FD1;&#x4F3C;&#x8BEF;&#x5DEE;:&#x5BF9;&#x73B0;&#x6709;&#x8BAD;&#x7EC3;&#x96C6;&#x7684;&#x8BAD;&#x7EC3;&#x8BEF;&#x5DEE;</li>
+<li>&#x4F30;&#x8BA1;&#x8BEF;&#x5DEE;:&#x5BF9;&#x6D4B;&#x8BD5;&#x96C6;&#x7684;&#x6D4B;&#x8BD5;&#x8BEF;&#x5DEE;&#xFF0C;&#x4F30;&#x8BA1;&#x8BEF;&#x5DEE;&#x5C0F;&#xFF0C;&#x8BF4;&#x660E;&#x5BF9;&#x672A;&#x77E5;&#x6570;&#x636E;&#x7684;&#x9884;&#x6D4B;&#x80FD;&#x529B;&#x597D;</li>
+<li>K&#x503C;&#x8F83;&#x5C0F;&#xFF0C;&#x5219;&#x662F;&#x5728;&#x8F83;&#x5C0F;&#x7684;&#x90BB;&#x57DF;&#x4E2D;&#x7684;&#x8BAD;&#x7EC3;&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#xFF0C;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x8FC7;&#x62DF;&#x5408;&#x3002;<ol>
+<li>&#x5B66;&#x4E60;&#x7684;&#x8FD1;&#x4F3C;&#x8BEF;&#x5DEE;&#x4F1A;&#x51CF;&#x5C0F;:&#x53EA;&#x6709;&#x8F93;&#x5165;&#x5B9E;&#x4F8B;&#x8F83;&#x8FD1;&#x7684;&#x8BAD;&#x7EC3;&#x5B9E;&#x4F8B;&#x624D;&#x4F1A;&#x5BF9;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x8D77;&#x4F5C;&#x7528;</li>
+<li>&#x5B66;&#x4E60;&#x7684;&#x4F30;&#x8BA1;&#x8BEF;&#x5DEE;&#x4F1A;&#x589E;&#x5927;:&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x4F1A;&#x5BF9;&#x7D27;&#x90BB;&#x7684;&#x5B9E;&#x4F8B;&#x70B9;&#x654F;&#x611F;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x662F;&#x566A;&#x58F0;&#x4F1A;&#x5BFC;&#x81F4;&#x9884;&#x6D4B;&#x51FA;&#x9519;</li>
+</ol>
+</li>
+<li>K&#x503C;&#x8F83;&#x5927;&#xFF0C;&#x5219;&#x662F;&#x5728;&#x8F83;&#x5927;&#x7684;&#x90BB;&#x57DF;&#x4E2D;&#x7684;&#x8BAD;&#x7EC3;&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x9884;&#x6D4B;<ol>
+<li>&#x5B66;&#x4E60;&#x7684;&#x4F30;&#x8BA1;&#x8BEF;&#x5DEE;&#x4F1A;&#x51CF;&#x5C0F;</li>
+<li>&#x5B66;&#x4E60;&#x7684;&#x8FD1;&#x4F3C;&#x8BEF;&#x5DEE;&#x4F1A;&#x589E;&#x5927;</li>
+</ol>
+</li>
+<li>K&#x503C;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x6837;&#x672C;&#x6570;&#x91CF;&#x7684;&#x5E73;&#x65B9;&#x6839;</li>
+</ol>
+<h2 id="53-&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;">5.3. &#x7B97;&#x6CD5;&#x63CF;&#x8FF0;</h2>
+<ol>
+<li>&#x8BA1;&#x7B97;&#x5DF2;&#x77E5;&#x7C7B;&#x522B;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x70B9;&#x4E0E;&#x5F53;&#x524D;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x8DDD;&#x79BB;</li>
+<li>&#x6309;&#x7167;&#x8DDD;&#x79BB;&#x589E;&#x6B21;&#x5E8F;&#x6392;&#x5E8F;</li>
+<li>&#x9009;&#x53D6;&#x4E0E;&#x5F53;&#x524D;&#x70B9;&#x8DDD;&#x79BB;&#x6700;&#x5C0F;&#x7684;k&#x4E2A;&#x70B9;</li>
+<li>&#x7EDF;&#x8BA1;&#x524D;k&#x4E2A;&#x70B9;&#x6240;&#x5728;&#x7684;&#x7C7B;&#x522B;&#x51FA;&#x73B0;&#x7684;&#x9891;&#x7387;</li>
+<li>&#x8FD4;&#x56DE;&#x524D;k&#x4E2A;&#x70B9;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x7C7B;&#x522B;&#x4F5C;&#x4E3A;&#x5F53;&#x524D;&#x70B9;&#x7684;&#x9884;&#x6D4B;&#x5206;&#x7C7B;<ol>
+<li>&#x6295;&#x7968;&#x6CD5;:&#x53EF;&#x4EE5;&#x9009;&#x62E9;K&#x4E2A;&#x70B9;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x6700;&#x9AD8;&#x7684;&#x7C7B;&#x522B;&#x4F5C;&#x4E3A;&#x9884;&#x6D4B;&#x7ED3;&#x679C;</li>
+<li>&#x5E73;&#x5747;&#x6CD5;:&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;K&#x4E2A;&#x70B9;&#x7684;&#x5B9E;&#x503C;&#x8F93;&#x51FA;&#x6807;&#x8BB0;&#x7684;&#x5E73;&#x5747;&#x503C;&#x4F5C;&#x4E3A;&#x9884;&#x6D4B;&#x7ED3;&#x679C;</li>
+<li>&#x52A0;&#x6743;&#x5E73;&#x5747;&#x6CD5;:&#x6839;&#x636E;&#x8DDD;&#x79BB;&#x8FDC;&#x8FD1;&#x5B8C;&#x6210;&#x52A0;&#x6743;&#x5E73;&#x5747;&#x7B49;&#x65B9;&#x6CD5;</li>
+</ol>
+</li>
+</ol>
+<h2 id="54-&#x7B97;&#x6CD5;&#x4F18;&#x70B9;">5.4. &#x7B97;&#x6CD5;&#x4F18;&#x70B9;</h2>
+<ol>
+<li>&#x7B80;&#x5355;&#x6709;&#x6548;</li>
+<li>&#x91CD;&#x65B0;&#x8BAD;&#x7EC3;&#x4EE3;&#x4EF7;&#x4F4E;</li>
+<li>&#x7B97;&#x6CD5;&#x590D;&#x6742;&#x5EA6;&#x4F4E;</li>
+<li>&#x9002;&#x5408;&#x7C7B;&#x57DF;&#x4EA4;&#x53C9;&#x6837;&#x672C;</li>
+<li>&#x9002;&#x7528;&#x5927;&#x6837;&#x672C;&#x81EA;&#x52A8;&#x5206;&#x7C7B;</li>
+</ol>
+<h2 id="55-&#x7B97;&#x6CD5;&#x7F3A;&#x70B9;">5.5. &#x7B97;&#x6CD5;&#x7F3A;&#x70B9;</h2>
+<ol>
+<li>&#x60F0;&#x6027;&#x5B66;&#x4E60;</li>
+<li>&#x7C7B;&#x522B;&#x5206;&#x7C7B;&#x4E0D;&#x6807;&#x51C6;&#x5316;</li>
+<li>&#x8F93;&#x51FA;&#x53EF;&#x89E3;&#x91CA;&#x6027;&#x4E0D;&#x5F3A;</li>
+<li>&#x4E0D;&#x5747;&#x8861;&#x6027;</li>
+<li>&#x8BA1;&#x7B97;&#x91CF;&#x8F83;&#x5927;</li>
+</ol>
+<h1 id="6-&#x96C6;&#x6210;&#x5B66;&#x4E60;">6. &#x96C6;&#x6210;&#x5B66;&#x4E60;</h1>
+<ul>
+<li>&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x5E76;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x6570;&#x636E;&#x96C6;&#x5728;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x5206;&#x7C7B;&#x5668;&#x4E0A;&#x91CD;&#x590D;&#x8BAD;&#x7EC3;&#xFF0C;&#x800C;&#x662F;&#x5BF9;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x6270;&#x52A8;</li>
+<li>&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x8BAD;&#x7EC3;&#x4E2D;&#x7684;&#x9519;&#x8BEF;&#x8FD8;&#x53EF;&#x4EE5;&#x88AB;&#x4E0B;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x5668;&#x8FDB;&#x884C;&#x5229;&#x7528;</li>
+<li>&#x5206;&#x7C7B;&#x5668;&#x9884;&#x6D4B;&#x9519;&#x8BEF;&#x7684;&#x539F;&#x56E0;&#x662F;&#x672A;&#x77E5;&#x7684;&#x5B9E;&#x4F8B;&#x4E0E;&#x5B66;&#x4E60;&#x7684;&#x5B9E;&#x4F8B;&#x7684;&#x5206;&#x5E03;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x901A;&#x8FC7;&#x6270;&#x52A8;&#xFF0C;&#x5206;&#x7C7B;&#x5668;&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#x5230;&#x66F4;&#x52A0;&#x4E00;&#x822C;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x4ECE;&#x800C;&#x6D88;&#x9664;&#x5355;&#x4E2A;&#x5206;&#x7C7B;&#x5668;&#x4EA7;&#x751F;&#x7684;&#x504F;&#x5DEE;&#xFF0C;&#x800C;&#x5F97;&#x5230;&#x66F4;&#x4E3A;&#x7CBE;&#x51C6;&#x7684;&#x6A21;&#x578B;&#x3002;</li>
+</ul>
+<h2 id="61-&#x4EC0;&#x4E48;&#x662F;&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x6CD5;ensemble-learning">6.1. &#x4EC0;&#x4E48;&#x662F;&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x6CD5;(Ensemble learning)</h2>
+<ol>
+<li>&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x6CD5;&#x901A;&#x8FC7;&#x591A;&#x4E2A;&#x5206;&#x7C7B;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#x805A;&#x96C6;&#x4E00;&#x8D77;&#x6765;&#x63D0;&#x9AD8;&#x5206;&#x7C7B;&#x51C6;&#x786E;&#x7387;&#xFF0C;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x7684;&#x7A33;&#x5B9A;&#x6027;</li>
+<li>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x4E2A;&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x5206;&#x7C7B;&#x578B;&#x80FD;&#x8981;&#x597D;&#x4E8E;&#x5355;&#x4E2A;&#x5206;&#x7C7B;&#x5668;</li>
+<li>&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x6CD5;&#x7531;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x6784;&#x5EFA;&#x4E00;&#x7EC4;&#x57FA;&#x5206;&#x7C7B;&#x5668;(base classifier)&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x5BF9;&#x6BCF;&#x4E2A;&#x57FA;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x9884;&#x6D4B;&#x8FDB;&#x884C;&#x6295;&#x7968;&#x6765;&#x5B9E;&#x73B0;&#x5206;&#x7C7B;&#x3002;</li>
+<li>&#x5728;&#x6784;&#x5EFA;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E00;&#x822C;&#x6709;&#x4E24;&#x79CD;&#x96C6;&#x6210;&#x65B9;&#x6CD5;<ol>
+<li>&#x4E00;&#x79CD;&#x662F;&#x4F7F;&#x7528;&#x8BAD;&#x7EC3;&#x96C6;&#x7684;&#x4E0D;&#x540C;&#x81EA;&#x5DF1;&#x8BAD;&#x7EC3;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x57FA;&#x5206;&#x7C7B;&#x5668;</li>
+<li>&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x8BAD;&#x7EC3;&#x96C6;&#x7684;&#x4E0D;&#x540C;&#x5C5E;&#x6027;&#x5B50;&#x96C6;&#x8BAD;&#x7EC3;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x57FA;&#x5206;&#x7C7B;&#x5668;</li>
+</ol>
+</li>
+</ol>
+<h2 id="62-&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;">6.2. &#x96C6;&#x6210;&#x5B66;&#x4E60;&#x7684;&#x57FA;&#x672C;&#x601D;&#x60F3;</h2>
+<p>&#x5728;&#x539F;&#x59CB;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x6784;&#x5EFA;&#x591A;&#x4E2A;&#x5206;&#x7C7B;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5206;&#x7C7B;&#x672A;&#x77E5;&#x6837;&#x672C;&#x65F6;&#x805A;&#x96C6;&#x5B83;&#x4EEC;&#x7684;&#x9884;&#x6D4B;&#x7ED3;&#x679C;&#x3002;</p>
+<h2 id="63-&#x6784;&#x5EFA;&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x8FC7;&#x7A0B;&#x63CF;&#x8FF0;">6.3. &#x6784;&#x5EFA;&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x8FC7;&#x7A0B;&#x63CF;&#x8FF0;</h2>
+<p><img src="img/lec6/50.png" alt=""></p>
+<ul>
+<li>&#x4E0A;&#x56FE;&#x662F;&#x96C6;&#x6210;&#x5B66;&#x4E60;&#x6CD5;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x56FE;</li>
+</ul>
+<h2 id="64-&#x6784;&#x5EFA;&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x65B9;&#x6CD5;">6.4. &#x6784;&#x5EFA;&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x65B9;&#x6CD5;</h2>
+<h3 id="641-&#x901A;&#x8FC7;&#x5904;&#x7406;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;">6.4.1. &#x901A;&#x8FC7;&#x5904;&#x7406;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;</h3>
+<ol>
+<li>&#x5B83;&#x6839;&#x636E;&#x67D0;&#x79CD;&#x62BD;&#x6837;&#x5206;&#x5E03;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x539F;&#x59CB;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x518D;&#x62BD;&#x6837;&#x6765;&#x5F97;&#x5230;&#x591A;&#x4E2A;&#x8BAD;&#x7EC3;&#x96C6;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x4E3A;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x96C6;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5206;&#x7C7B;&#x5668;&#x3002;</li>
+<li>&#x5178;&#x578B;&#x7684;&#x5904;&#x7406;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x6CD5;&#x6709;&#x88C5;&#x888B;(bagging)&#x548C;&#x63D0;&#x5347;(boosting)</li>
+</ol>
+<h3 id="642-&#x901A;&#x8FC7;&#x5904;&#x7406;&#x8F93;&#x5165;&#x7279;&#x5F81;">6.4.2. &#x901A;&#x8FC7;&#x5904;&#x7406;&#x8F93;&#x5165;&#x7279;&#x5F81;</h3>
+<ol>
+<li>&#x5728;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x9009;&#x62E9;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7684;&#x81EA;&#x5DF1;&#x6765;&#x5F62;&#x6210;&#x6BCF;&#x4E2A;&#x8BAD;&#x7EC3;&#x96C6;&#x3002;&#x4E00;&#x4E9B;&#x7814;&#x7A76;&#x8868;&#x660E;&#xFF0C;&#x5BF9;&#x90A3;&#x4E9B;&#x542B;&#x6709;&#x5927;&#x91CF;&#x5197;&#x4F59;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x6027;&#x80FD;&#x975E;&#x5E38;&#x597D;&#x3002;</li>
+<li>&#x968F;&#x673A;&#x68EE;&#x6797;(Random forest)&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x5904;&#x7406;&#x8F93;&#x5165;&#x7279;&#x5F81;&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x6CD5;</li>
+</ol>
+<h3 id="643-&#x901A;&#x8FC7;&#x5904;&#x7406;&#x7C7B;&#x6807;&#x53F7;">6.4.3. &#x901A;&#x8FC7;&#x5904;&#x7406;&#x7C7B;&#x6807;&#x53F7;</h3>
+<ol>
+<li>&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x9002;&#x7528;&#x4E8E;&#x7C7B;&#x6570;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x901A;&#x8FC7;&#x5C06;&#x7C7B;&#x6807;&#x53F7;&#x968F;&#x673A;&#x5212;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x4E0D;&#x76F8;&#x4EA4;&#x7684;&#x5B50;&#x96C6;A0&#x548C;A1&#xFF0C;&#x628A;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x53D8;&#x6362;&#x4E3A;&#x4E8C;&#x7C7B;&#x95EE;&#x9898;&#xFF0C;&#x7C7B;&#x6807;&#x53F7;&#x5C5E;&#x4E8E;&#x5B50;&#x96C6;A0&#x7684;&#x8BAD;&#x7EC3;&#x6837;&#x672C;&#x6307;&#x6D3E;&#x5230;&#x7C7B;0&#xFF0C;&#x800C;&#x90A3;&#x4E9B;&#x7C7B;&#x6807;&#x53F7;&#x5C5E;&#x4E8E;&#x5B50;&#x96C6;A1&#x7684;&#x8BAD;&#x7EC3;&#x6837;&#x672C;&#x6307;&#x6D3E;&#x5230;&#x7C7B;1&#x3002;</li>
+<li>&#x7136;&#x540E;&#x4F7F;&#x7528;&#x91CD;&#x65B0;&#x6807;&#x8BB0;&#x8FC7;&#x7684;&#x6570;&#x636E;&#x6765;&#x8BAD;&#x7EC3;&#x4E00;&#x4E2A;&#x57FA;&#x5206;&#x7C7B;&#x5668;&#xFF0C;&#x91CD;&#x590D;&#x91CD;&#x65B0;&#x6807;&#x8BB0;&#x7C7B;&#x548C;&#x6784;&#x5EFA;&#x6A21;&#x578B;&#x6B65;&#x9AA4;&#x591A;&#x6B21;&#xFF0C;&#x5C31;&#x5F97;&#x5230;&#x4E00;&#x7EC4;&#x57FA;&#x5206;&#x7C7B;&#x5668;</li>
+<li>&#x5F53;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x68C0;&#x9A8C;&#x6837;&#x672C;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x6BCF;&#x4E2A;&#x57FA;&#x5206;&#x7C7B;&#x5668;Ci&#x9884;&#x6D4B;&#x5B83;&#x7684;&#x7C7B;&#x6807;&#x53F7;&#x3002;<ol>
+<li>&#x5982;&#x679C;&#x88AB;&#x9884;&#x6D4B;&#x4E3A;&#x7C7B;0&#xFF0C;&#x5219;&#x6240;&#x6709;&#x5C5E;&#x4E8E;A0&#x7684;&#x7C7B;&#x90FD;&#x5F97;&#x5230;&#x4E00;&#x7968;</li>
+<li>&#x5982;&#x679C;&#x88AB;&#x9884;&#x6D4B;&#x4E3A;&#x7C7B;1&#xFF0C;&#x5219;&#x6240;&#x6709;&#x5C5E;&#x4E8E;A1&#x7684;&#x7C7B;&#x90FD;&#x5F97;&#x5230;&#x4E00;&#x7968;</li>
+</ol>
+</li>
+<li>&#x6700;&#x540E;&#x7EDF;&#x8BA1;&#x9009;&#x7968;&#xFF0C;&#x5C06;&#x68C0;&#x9A8C;&#x6837;&#x672C;&#x6307;&#x6D3E;&#x5230;&#x5F97;&#x7968;&#x6700;&#x9AD8;&#x7684;&#x7C7B;&#x3002;</li>
+</ol>
+<h3 id="644-&#x901A;&#x8FC7;&#x5904;&#x7406;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;">6.4.4. &#x901A;&#x8FC7;&#x5904;&#x7406;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;</h3>
+<ol>
+<li>&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x6267;&#x884C;&#x4E0D;&#x540C;&#x7B97;&#x6CD5;&#x800C;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x578B;&#x3002;</li>
+</ol>
+<h2 id="65-&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x65B9;&#x6CD5;&#x7684;&#x4F18;&#x7F3A;&#x70B9;">6.5. &#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x65B9;&#x6CD5;&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h2>
+<ol>
+<li>&#x4F18;&#x70B9;:&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x514B;&#x670D;&#x4E86;&#x5355;&#x4E00;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x8BF8;&#x591A;&#x7F3A;&#x70B9;&#xFF0C;&#x6BD4;&#x5982;&#x5BF9;&#x6837;&#x672C;&#x7684;&#x654F;&#x611F;&#x6027;&#xFF0C;&#x96BE;&#x4EE5;&#x63D0;&#x9AD8;&#x5206;&#x7C7B;&#x7CBE;&#x5EA6;&#x7B49;</li>
+<li>&#x7F3A;&#x70B9;:&#x96C6;&#x6210;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x6027;&#x80FD;&#x4F18;&#x4E8E;&#x5355;&#x4E2A;&#x5206;&#x7C7B;&#x5668;&#xFF0C;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x57FA;&#x5206;&#x7C7B;&#x5668;&#x4E4B;&#x95F4;&#x5B8C;&#x5168;&#x72EC;&#x7ACB;&#xFF0C;&#x4F46;&#x65F6;&#x95F4;&#x4E0A;&#x5F88;&#x96BE;&#x4FDD;&#x8BC1;&#x57FA;&#x5206;&#x7C7B;&#x5668;&#x4E4B;&#x95F4;&#x5B8C;&#x5168;&#x72EC;&#x7ACB;</li>
+</ol>
+<h1 id="7-svm-&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;">7. SVM &#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;</h1>
+<h2 id="71-&#x7EBF;&#x6027;&#x5212;&#x5206;&#x548C;&#x975E;&#x7EBF;&#x6027;&#x5212;&#x5206;">7.1. &#x7EBF;&#x6027;&#x5212;&#x5206;&#x548C;&#x975E;&#x7EBF;&#x6027;&#x5212;&#x5206;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec6/29.png" alt=""></td>
+<td><img src="img/lec6/30.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="72-&#x5206;&#x7C7B;&#x6807;&#x6CE8;&#x7684;&#x8D77;&#x6E90;&#xFF1A;&#x903B;&#x8F91;&#x56DE;&#x5F52;">7.2. &#x5206;&#x7C7B;&#x6807;&#x6CE8;&#x7684;&#x8D77;&#x6E90;&#xFF1A;&#x903B;&#x8F91;&#x56DE;&#x5F52;</h2>
+<ol>
+<li>&#x903B;&#x8F91;&#x56DE;&#x5F52;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4ECE;&#x7279;&#x5F81;&#x5B66;&#x4E60;&#x51FA;&#x4E00;&#x4E2A;0/1&#x5206;&#x7C7B;&#x6A21;&#x578B;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x662F;&#x5C06;&#x7279;&#x5F81;&#x7684;&#x7EBF;&#x6027;&#x7EC4;&#x5408;&#x4F5C;&#x4E3A;&#x81EA;&#x53D8;&#x91CF;&#xFF0C;&#x7531;&#x4E8E;&#x81EA;&#x53D8;&#x91CF;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;&#x8D1F;&#x65E0;&#x7A77;&#x5230;&#x6B63;&#x65E0;&#x7A77;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4F7F;&#x7528;sigmoid&#x51FD;&#x6570;&#x5C06;&#x81EA;&#x53D8;&#x91CF;&#x6620;&#x5C04;&#x5230;(0, 1)&#x4E0A;&#xFF0C;&#x6620;&#x5C04;&#x540E;&#x7684;&#x503C;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5C5E;&#x4E8E;y=1&#x7684;&#x89C4;&#x5F8B;&#x3002;</li>
+</ol>
+<p>$$
+\begin{array}{l}
+   sigmoid(x) = \frac{1}{ 1 + e^{-x}} \
+   h_\theta(x) = g(\theta^Tx) = \frac{1}{1+e^{-\theta^Tx}}
+\end{array}</p>
+<p>$$</p>
+<ol>
+<li>$h<em>\theta(x)$&#x53EA;&#x548C;$\theta^Tx$&#x6709;&#x5173;&#xFF0C;&#x5982;&#x679C;$\theta^Tx&gt;0.5$&#xFF0C;&#x5219;$h</em>\theta(x)&gt;0.5$</li>
+<li>&#x5E0C;&#x671B;&#x6A21;&#x578B;&#x8FBE;&#x5230;&#x7684;&#x76EE;&#x6807;&#x5C31;&#x662F;&#x8BA9;&#x8BAD;&#x7EC3;&#x96C6;&#x4E2D;y=1&#x7684;&#x7279;&#x5F81;$\theta^Tx&gt;&gt;0$&#xFF0C;&#x800C;y=0&#x7684;&#x7279;&#x5F81;$\theta^Tx&lt;&lt;0$</li>
+<li>&#x5BF9;&#x4E8E;&#x66F4;&#x9AD8;&#x7EF4;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E0B;&#x5F0F;$\theta^Tx = w^Tx + b$</li>
+</ol>
+<h2 id="73-&#x51FD;&#x6570;&#x95F4;&#x9694;functional-margin&#x4E0E;&#x51E0;&#x4F55;&#x95F4;&#x9694;geometrical-margin">7.3. &#x51FD;&#x6570;&#x95F4;&#x9694;(Functional margin)&#x4E0E;&#x51E0;&#x4F55;&#x95F4;&#x9694;(Geometrical margin)</h2>
+<h3 id="731-&#x51FD;&#x6570;&#x95F4;&#x9694;">7.3.1. &#x51FD;&#x6570;&#x95F4;&#x9694;</h3>
+<ol>
+<li>&#x51FD;&#x6570;&#x95F4;&#x9694;$\hat{\gamma} = y(w^Tx+b) = yf(x)$</li>
+<li>&#x8D85;&#x5E73;&#x9762;(w, b)&#x5173;&#x4E8E;T&#x4E2D;&#x6240;&#x6709;&#x6837;&#x672C;&#x70B9;&#x7684;&#x6700;&#x5C0F;&#x51FD;&#x6570;&#x95F4;&#x9694;&#x5373;&#x4E3A;&#x8D85;&#x5E73;&#x9762;(w, b)&#x5173;&#x4E8E;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x96C6;T&#x7684;&#x51FD;&#x6570;&#x95F4;&#x9694;</li>
+</ol>
+<p>$$
+\hat{\gamma} = \min\hat{\gamma},(i = 1, ..., n)</p>
+<p>$$</p>
+<ol>
+<li>&#x51FD;&#x6570;&#x95F4;&#x9694;&#x5B58;&#x5728;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x6210;&#x6BD4;&#x4F8B;&#x4FEE;&#x6539;w&#x548C;b&#x4F1A;&#x5BFC;&#x81F4;&#x51FD;&#x6570;&#x95F4;&#x9694;&#x7684;&#x503C;f(x)&#x53D8;&#x4E3A;&#x539F;&#x6765;2&#x500D;&#x3002;</li>
+</ol>
+<h3 id="732-&#x51E0;&#x4F55;&#x95F4;&#x9694;">7.3.2. &#x51E0;&#x4F55;&#x95F4;&#x9694;</h3>
+<ol>
+<li>&#x6211;&#x4EEC;&#x5BF9;&#x4E8E;&#x70B9;x&#xFF0C;&#x4EE4;&#x5176;&#x5782;&#x76F4;&#x6295;&#x5F71;&#x5230;&#x8D85;&#x5E73;&#x9762;&#x4E0A;&#x7684;&#x70B9;$x_0$&#xFF0C;w&#x662F;&#x5782;&#x76F4;&#x4E8E;&#x8D85;&#x5E73;&#x9762;&#x7684;&#x5411;&#x91CF;&#xFF0C;$\gamma$&#x662F;&#x6837;&#x672C;x&#x5230;&#x5206;&#x7C7B;&#x95F4;&#x9694;&#x7684;&#x8DDD;&#x79BB;</li>
+</ol>
+<p><img src="img/lec6/53.png" alt=""></p>
+<ol>
+<li>&#x6709;$x = x_0 + \gamma\frac{w}{||w||}$&#xFF0C;&#x5176;&#x4E2D;||w||&#x662F;&#x8303;&#x6570;</li>
+<li>&#x53C8;&#x56E0;&#x4E3A;$x_0$&#x5728;&#x5E73;&#x9762;&#x4E0A;&#xFF0C;&#x6240;&#x4EE5;$f(x_0)=0$&#xFF0C;&#x4EE3;&#x5165;&#x8D85;&#x5E73;&#x9762;&#x7684;&#x65B9;&#x7A0B;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x51FA;</li>
+</ol>
+<p>$$
+\gamma = \frac{f(x)}{||w||}</p>
+<p>$$</p>
+<ol>
+<li>&#x4E3A;&#x4E86;&#x83B7;&#x53D6;$\gamma$&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#xFF0C;&#x4F7F;&#x5176;&#x4E58;&#x4EE5;&#x5176;&#x7C7B;&#x522B;&#xFF0C;&#x5F97;&#x5230;&#x51E0;&#x4F55;&#x95F4;&#x9694;</li>
+</ol>
+<p>$$
+\hat{\gamma} = y\gamma = \frac{\hat{\gamma}}{||w||}</p>
+<p>$$</p>
+<h2 id="74-&#x6700;&#x5927;&#x5206;&#x79BB;&#x5668;maximum-margin-classifier&#x7684;&#x5B9A;&#x4E49;">7.4. &#x6700;&#x5927;&#x5206;&#x79BB;&#x5668;Maximum Margin Classifier&#x7684;&#x5B9A;&#x4E49;</h2>
+<ol>
+<li>&#x6700;&#x5927;&#x95F4;&#x9694;&#x5206;&#x7C7B;&#x5668;&#x7684;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x4E3A;$\max\hat{\gamma}$</li>
+<li>&#x5176;&#x4ED6;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;:$y_i(w^Tx_i + b) = \hat{\gamma_i}\geq\hat{\gamma}, i = 1,...,n$</li>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x95F4;&#x9694;$\hat{\gamma}$&#x4E3A;1&#xFF0C;&#x4E0A;&#x8FF0;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x5728;&#x8F6C;&#x5316;&#x4E3A;</li>
+</ol>
+<p>$$
+\max\frac{1}{||w||}, s.t.\ y_i(w^Tx_i + b) \geq 1, i = 1, ..., n</p>
+<p>$$</p>
+<h2 id="75-&#x5982;&#x4F55;&#x5BFB;&#x627E;&#x5230;&#x6700;&#x4F18;&#x8D85;&#x5E73;&#x9762;">7.5. &#x5982;&#x4F55;&#x5BFB;&#x627E;&#x5230;&#x6700;&#x4F18;&#x8D85;&#x5E73;&#x9762;</h2>
+<ol>
+<li>&#x6700;&#x5927;&#x5316;&#x8DDD;&#x79BB;:&#x6700;&#x5927;&#x5316;&#x8DDD;&#x79BB;&#x53EF;&#x4EE5;&#x4E3A;&#x6A21;&#x578B;&#x5E26;&#x6765;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;</li>
+</ol>
+<p><img src="img/lec6/31.png" alt=""></p>
+<ol>
+<li>&#x652F;&#x6301;&#x5411;&#x91CF;&#x7684;&#x56FE;&#x5F62;&#x5316;&#x8868;&#x793A;</li>
+</ol>
+<p><img src="img/lec6/32.png" alt=""></p>
+<ol>
+<li><p>&#x6700;&#x521D;&#x4F18;&#x5316;&#x95EE;&#x9898;:&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x6700;&#x5927;&#x95F4;&#x8DDD;&#x4F5C;&#x4E3A;&#x8FD9;&#x4E2A;&#x4F18;&#x5316;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4F7F;&#x5F97;$\frac{2}{||w||}$&#x7684;&#x503C;&#x6700;&#x5927;&#xFF0C;&#x5E76;&#x4E14;&#x6EE1;&#x8DB3;&#x4E00;&#x4E0B;&#x4E24;&#x4E2A;&#x7EA6;&#x675F;&#x6761;&#x4EF6;</p>
+<ol>
+<li>$(wx+b) \geq 1, \forall$ x in class 1</li>
+<li>$(wx+b) \leq -1, \forall$ x in class 2</li>
+</ol>
+</li>
+<li><p>&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x5668;</p>
+<ol>
+<li>$w^Tx + b = 0$</li>
+<li>$f(x) = w^Tx +b$</li>
+</ol>
+</li>
+</ol>
+<h2 id="76-&#x51B3;&#x7B56;&#x8FB9;&#x754C;">7.6. &#x51B3;&#x7B56;&#x8FB9;&#x754C;</h2>
+<h3 id="761-&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x8FB9;&#x754C;">7.6.1. &#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x8FB9;&#x754C;</h3>
+<p><img src="img/lec6/33.png" alt=""></p>
+<h3 id="762-&#x975E;&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x8FB9;&#x754C;">7.6.2. &#x975E;&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x8FB9;&#x754C;</h3>
+<p><img src="img/lec6/34.png" alt=""></p>
+<blockquote>
+<p>&#x4F7F;&#x7528;&#x4E8C;&#x6B21;&#x66F2;&#x7EBF;&#x8FDB;&#x884C;&#x5212;&#x5206;</p>
+</blockquote>
+<h2 id="77-&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;">7.7. &#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;</h2>
+<ol>
+<li>&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x6761;&#x5C3D;&#x53EF;&#x80FD;&#x597D;&#x7684;&#x76F4;&#x7EBF;(&#x8D85;&#x5E73;&#x9762;)&#x5C06;&#x4E24;&#x7C7B;&#x4E0D;&#x540C;&#x7684;&#x7269;&#x4F53;&#x5206;&#x5F00;&#x3002;</li>
+<li>&#x6570;&#x636E;:<ol>
+<li>&#x8BAD;&#x7EC3;&#x96C6;:$(x_1,y_1),...,(x_n,y_n)$</li>
+<li>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x4F8B;i:<ol>
+<li>$x_i = {x_i^{(1)}, ... , x_i^{(d)}}$&#xFF0C;$x_i^{(j)}&#x662F;&#x5B9E;&#x6570;$</li>
+<li>$y_i \in {-1, +1}$</li>
+</ol>
+</li>
+<li>&#x5411;&#x91CF;&#x5185;&#x79EF;:$w<em>x = \sum\limits_{j=1}\limits^{d}w^{(j)}</em>x^{(j)}$</li>
+<li>&#x4EC0;&#x4E48;&#x662F;&#x88AB;$w$&#x5B9A;&#x4E49;&#x7684;&#x6700;&#x4F73;&#x7684;&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x5668;?</li>
+</ol>
+</li>
+</ol>
+<h3 id="771-&#x6700;&#x5927;&#x8DDD;&#x79BB;">7.7.1. &#x6700;&#x5927;&#x8DDD;&#x79BB;</h3>
+<ol>
+<li>&#x8DDD;&#x5206;&#x79BB;&#x8D85;&#x5E73;&#x9762;&#x7684;&#x8DDD;&#x79BB;&#x5BF9;&#x5E94;&#x4E8E;&#x9884;&#x6D4B;&#x7684;&#x201C;&#x7F6E;&#x4FE1;&#x5EA6;&#x201D;</li>
+<li>&#x5728;&#x4E0B;&#x56FE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA4;&#x4E3A;A&#x548C;B&#x662F;&#x5DE6;&#x4FA7;&#x7C7B;&#x7684;&#x6982;&#x7387;&#x6BD4;C&#x5927;&#x3002;</li>
+</ol>
+<p><img src="img/lec6/35.png" alt=""></p>
+<ol>
+<li>Margin $\gamma$:&#x8DDD;&#x79BB;&#x5206;&#x7C7B;&#x76F4;&#x7EBF;&#x6216;&#x8D85;&#x5E73;&#x9762;&#x6700;&#x8FD1;&#x7684;&#x4E00;&#x4E2A;&#x70B9;&#x7684;&#x8DDD;&#x79BB;&#x3002;</li>
+</ol>
+<p><img src="img/lec6/36.png" alt=""></p>
+<ol>
+<li>&#x4E4B;&#x6240;&#x4EE5;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49;&#x8FB9;&#x8DDD;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x7406;&#x8BBA;&#x4E0A;&#x7684;&#x8FB9;&#x754C;&#x4EE5;&#x53CA;&#x4F9D;&#x8D56;&#x4E8E;&#x8FB9;&#x8DDD;&#x503C;&#x7684;&#x6CDB;&#x5316;&#x8BEF;&#x5DEE;&#x8303;&#x56F4;&#x7684;&#x5B58;&#x5728;&#x3002;</li>
+</ol>
+<h3 id="772-&#x4E3A;&#x4EC0;&#x4E48;&#x6700;&#x5927;&#x8DDD;&#x79BB;&#x662F;&#x597D;&#x7684;">7.7.2. &#x4E3A;&#x4EC0;&#x4E48;&#x6700;&#x5927;&#x8DDD;&#x79BB;&#x662F;&#x597D;&#x7684;</h3>
+<ol>
+<li>&#x70B9;&#x79EF;:$A <em> B = ||A|| </em> ||B|| * \cos \theta$</li>
+</ol>
+<p><img src="img/lec6/37.png" alt=""></p>
+<ol>
+<li>$\gamma$&#x548C;&#x95F4;&#x8DDD;&#x662F;&#x7EBF;&#x6027;&#x6B63;&#x76F8;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x662F;&#x53EF;&#x4EE5;&#x7684;</li>
+</ol>
+<h3 id="773-&#x8DDD;&#x79BB;&#x5982;&#x4F55;&#x8868;&#x793A;">7.7.3. &#x8DDD;&#x79BB;&#x5982;&#x4F55;&#x8868;&#x793A;</h3>
+<p><img src="img/lec6/38.png" alt=""></p>
+<h3 id="774-&#x6700;&#x5927;&#x8DDD;&#x79BB;&#x7684;&#x6C42;&#x89E3;">7.7.4. &#x6700;&#x5927;&#x8DDD;&#x79BB;&#x7684;&#x6C42;&#x89E3;</h3>
+<ol>
+<li>&#x9884;&#x6D4B;&#x503C; = $sign(w*x+b)$</li>
+<li>&#x7F6E;&#x4FE1;&#x5EA6;(Confidence) = $(w*x + b)y$</li>
+<li>&#x5BF9;&#x4E8E;&#x7B2C;i&#x4E2A;&#x6570;&#x636E;&#x70B9;:$\gamma_i = (w*x_i + b)y_i$</li>
+<li>&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;:$\max\limits_w\min\limits_i\gamma_i$</li>
+<li>&#x91CD;&#x65B0;&#x89E3;&#x91CA;&#x4E3A;:&#x6C42;&#x89E3;$\max\limits_{w,\gamma}\gamma s.t.\forall i, y_i(w*x_i + b) \geq \gamma$</li>
+</ol>
+<p><img src="img/lec6/39.png" alt=""></p>
+<h2 id="78-&#x89C4;&#x8303;&#x8D85;&#x5E73;&#x9762;">7.8. &#x89C4;&#x8303;&#x8D85;&#x5E73;&#x9762;</h2>
+<ol>
+<li>&#x8F6C;&#x5316;&#x95EE;&#x9898;:$(2wx + 2b)y = 2\gamma$</li>
+<li>&#x4E00;&#x822C;&#x5316;w:$\gamma = (\frac{w}{||w||} * x + b) y$</li>
+<li>&#x5F53;&#x7136;&#x63D0;&#x4F9B;<strong>&#x652F;&#x6301;&#x5411;&#x91CF;</strong>$x_j$&#x5728;&#x5DEE;&#x5E73;&#x9762;&#x4E0A;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;$w*x_j + b = \pm 1$</li>
+</ol>
+<p><img src="img/lec6/40.png" alt=""></p>
+<ul>
+<li><p>&#x524D;&#x63D0;&#x6761;&#x4EF6;
+$$
+\begin{array}{l}
+ x_1 = x_2 + 2 \gamma\frac{w}{||w||} \
+\ \
+ w <em> x_1 + b = +1 \
+ w </em> x_2 + b = -1 \
+\end{array}
+$$</p>
+</li>
+<li><p>&#x8BA1;&#x7B97;$\gamma$</p>
+</li>
+</ul>
+<p>$$
+\begin{array}{l}
+   w <em> x_1 + b = + 1 \
+   w (x_2 + 2\gamma\frac{w}{||w||}) + b = + 1 \
+   \ \
+   w </em> x_2 + b + 2\gamma\frac{w}{||w||} = + 1 \
+   \ \
+   \gamma = \frac{||w||}{w * w} = \frac{1}{||w||} \<br>\end{array}</p>
+<p>$$</p>
+<h2 id="79-&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x5316;&#x7B80;&#x540E;&#x6700;&#x5927;&#x8DDD;&#x79BB;">7.9. &#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x5316;&#x7B80;&#x540E;&#x6700;&#x5927;&#x8DDD;&#x79BB;</h2>
+<p>$$
+\arg \max\gamma = arg \arg\min\frac{1}{||w||} = \arg\min\frac{1}{2}||w||^2</p>
+<p>$$</p>
+<ul>
+<li>&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x7684;&#x5F3A;&#x7EA6;&#x675F;&#x6761;&#x4EF6;:</li>
+</ul>
+<p>$$
+\min\limits_w\frac{1}{2}||w||^2 \
+s.t. \forall i, y_i(w * x_i + b) \geq 1</p>
+<p>$$</p>
+<h2 id="710-&#x975E;&#x7EBF;&#x6027;&#x5206;&#x6790;">7.10. &#x975E;&#x7EBF;&#x6027;&#x5206;&#x6790;</h2>
+<ol>
+<li>&#x5982;&#x679C;&#x6570;&#x636E;&#x4E0D;&#x662F;&#x7EBF;&#x6027;&#x53EF;&#x5206;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x60E9;&#x7F5A;&#x9879;C</li>
+</ol>
+<p>$$
+\min\limits_w\frac{1}{2}||w||^2 + C \
+\ \
+s.t. \forall i, y_i(w * x_i + b) \geq 1</p>
+<p>$$</p>
+<ol>
+<li>&#x901A;&#x8FC7;&#x4EA4;&#x53C9;&#x68C0;&#x9A8C;&#x6CD5;&#x786E;&#x5B9A;C&#x7684;&#x503C;</li>
+<li>&#x6240;&#x6709;&#x7684;&#x9519;&#x8BEF;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x6837;&#x7684;&#x574F;</li>
+<li>&#x5F15;&#x5165;&#x5BBD;&#x677E;&#x91CF;$\xi_i$</li>
+</ol>
+<p>$$
+\min\limits<em>{w,b,\xi_i \geq 0} \frac{1}{2} <em> ||w||^2 + C</em>\sum\limits</em>{i=1}\limits^{n}\xi_i \
+\ \
+s.t. \forall i, y_i(w*x_i + b) \geq 1 - \xi_i</p>
+<p>$$</p>
+<ol>
+<li>&#x5982;&#x679C;$x_i$&#x4F4D;&#x4E8E;&#x9519;&#x8BEF;&#x7684;&#x4E00;&#x8FB9;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x5C06;&#x4F1A;&#x6709;&#x60E9;&#x7F5A;&#x9879;$\xi_i$</li>
+</ol>
+<p><img src="img/lec6/41.png" alt=""></p>
+<h3 id="7101-slack-penalty-c">7.10.1. Slack Penalty C</h3>
+<ol>
+<li>&#x5F53;C&#x662F;&#x65E0;&#x7A77;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x5E0C;&#x671B;&#x901A;&#x8FC7;w&#x548C;b&#x6765;&#x5206;&#x5F00;&#x6570;&#x636E;</li>
+<li>&#x5F53;C&#x662F;0&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x8BBA;&#x8BBE;&#x7F6E;$\xi_i$&#x662F;&#x591A;&#x5C11;&#xFF0C;w&#x90FD;&#x662F;0&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5FFD;&#x7565;&#x4E86;&#x6570;&#x636E;</li>
+</ol>
+<p><img src="img/lec6/42.png" alt=""></p>
+<h3 id="7102-&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x7684;&#x81EA;&#x7136;&#x5F62;&#x5F0F;">7.10.2. &#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x7684;&#x81EA;&#x7136;&#x5F62;&#x5F0F;</h3>
+<p>$$
+\arg\min\limits<em>{w,b}\frac{1}{2}w<em>w + C</em>\sum</em>{i=1}^{n}\max{0,1-y_i(w*x_i+b)}</p>
+<p>$$</p>
+<ul>
+<li>$w * w$:&#x8DDD;&#x79BB;</li>
+<li>$C$:&#x6B63;&#x5219;&#x5316;&#x53C2;&#x6570;</li>
+<li>$\sum_{i=1}^{n}\max{0,1-y_i(w*x_i+b)}$:&#x7ECF;&#x9A8C;&#x635F;&#x5931;L&#xFF08;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x62DF;&#x5408;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#xFF09;</li>
+<li>SVM&#x4F7F;&#x7528;&quot;Hinge Loss&quot;:max{0, 1-z}</li>
+</ul>
+<p><img src="img/lec6/43.png" alt=""></p>
+<h2 id="711-&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8DDD;&#x79BB;">7.11. &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8DDD;&#x79BB;</h2>
+<p>$$
+\min\limits<em>{w,b}\frac{1}{2}w<em>w + C</em>\sum</em>{i=1}^{n}\xi_i \
+s.t. 
+\forall i,y_i<em>(x_i </em> w + b) \geq 1 - \xi_i</p>
+<p>$$</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x4E8C;&#x6B21;&#x6C42;&#x89E3;&#x5668;<ul>
+<li>&#x6700;&#x5C0F;&#x5316;&#x4E8C;&#x6B21;&#x51FD;&#x6570;</li>
+<li>&#x53D7;&#x5230;&#x7EBF;&#x6027;&#x7EA6;&#x675F;</li>
+</ul>
+</li>
+<li>&#x95EE;&#x9898;:&#x6C42;&#x89E3;&#x5668;&#x5BF9;&#x4E8E;&#x5927;&#x6570;&#x636E;&#x6548;&#x7387;&#x4F4E;&#x4E0B;&#xFF01;</li>
+</ul>
+<p>$f(w,b) = \frac{1}{2} w <em> w + C</em>\sum_{i=1}^{n}\max{0,1-y_i(w*x_i+b)}$</p>
+<ul>
+<li>&#x5982;&#x4F55;&#x6700;&#x5C0F;&#x5316;&#x51F8;&#x51FD;&#x6570;g(z):&#x5207;&#x7EBF;</li>
+<li>&#x4F7F;&#x7528;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5;</li>
+</ul>
+<p><img src="img/lec6/44.png" alt=""></p>
+<h2 id="712-&#x5982;&#x4F55;&#x8BA1;&#x7B97;w">7.12. &#x5982;&#x4F55;&#x8BA1;&#x7B97;w</h2>
+<p><img src="img/lec6/45.png" alt="">
+<img src="img/lec6/46.png" alt="">
+<img src="img/lec6/47.png" alt=""></p>
+<h1 id="8-&#x6DF1;&#x5165;svm">8. &#x6DF1;&#x5165;SVM</h1>
+<h2 id="81-&#x4ECE;&#x7EBF;&#x6027;&#x53EF;&#x5206;&#x5230;&#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;&#x5230;&#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;">8.1. &#x4ECE;&#x7EBF;&#x6027;&#x53EF;&#x5206;&#x5230;&#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;&#x5230;&#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;</h2>
+<h3 id="811-&#x4ECE;&#x539F;&#x59CB;&#x95EE;&#x9898;&#x5230;&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x6C42;&#x89E3;">8.1.1. &#x4ECE;&#x539F;&#x59CB;&#x95EE;&#x9898;&#x5230;&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x6C42;&#x89E3;</h3>
+<ol>
+<li>&#x7B49;&#x4EF7;&#x95EE;&#x9898;&#x8F6C;&#x5316;</li>
+</ol>
+<p>$$
+\max\frac{1}{||w||}, s.t.\ y_i(w^Tx_i + b) \geq 1, i = 1, ..., n \
+&#x8F6C;&#x5316;&#x4E3A; \
+\min \frac{1}{2}||w||^2, s.t.\ y_i(w^Tx_i + b) \geq 1, i = 1, ..., n \</p>
+<p>$$</p>
+<ol>
+<li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x662F;&#x4E8C;&#x6B21;&#x7684;&#xFF0C;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x662F;&#x7EBF;&#x6027;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x5B9E;&#x4E00;&#x4E2A;&#x51F8;&#x4E8C;&#x6B21;&#x89C4;&#x5212;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x95EE;&#x9898;&#x7684;&#x7279;&#x6B8A;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x62C9;&#x683C;&#x6717;&#x65E5;&#x5BF9;&#x5076;&#x6027;&#x5BF9;&#x6362;&#x5230;&#x5BF9;&#x5076;&#x53D8;&#x91CF;&#x7684;&#x4F18;&#x5316;&#x95EE;&#x9898;&#xFF0C;&#x5373;&#x901A;&#x8FC7;&#x6C42;&#x89E3;&#x4E0E;&#x539F;&#x95EE;&#x9898;&#x7B49;&#x4EF7;&#x7684;&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x5F97;&#x5230;&#x539F;&#x59CB;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x4F18;&#x70B9;&#x5982;&#x4E0B;<ol>
+<li>&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x66F4;&#x5BB9;&#x6613;&#x6C42;&#x89E3;&#x3002;</li>
+<li>&#x4FBF;&#x4E8E;&#x5F15;&#x5165;&#x6838;&#x51FD;&#x6570;&#xFF0C;&#x63A8;&#x5E7F;&#x5230;&#x975E;&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x95EE;&#x9898;&#x3002;</li>
+</ol>
+</li>
+<li>&#x62C9;&#x683C;&#x6717;&#x65E5;&#x5BF9;&#x5076;&#x6027;&#xFF1A;&#x901A;&#x8FC7;&#x7ED9;&#x6BCF;&#x4E00;&#x4E2A;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x62C9;&#x683C;&#x6717;&#x65E5;&#x4E58;&#x5B50;$\alpha$</li>
+</ol>
+<p>$$
+L(w, b, \alpha) = \frac{1}{2}||w||^2 - \sum\limits<em>{i=1}\limits^n\alpha_i<em>(y_i(w^T</em>x_i + b) - 1) \
+\theta(w) = \max\limits</em>{\alpha_i\geq 0}L(w, b ,\alpha) \</p>
+<p>$$</p>
+<ol>
+<li>&#x5BB9;&#x6613;&#x9A8C;&#x8BC1;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;$\theta(w) = \infty$&#xFF0C;&#x5F53;&#x6240;&#x6709;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x65F6;&#xFF0C;&#x5219;&#x6709;$\theta(w) = \frac{1}{2}||w||^2$&#xFF0C;&#x5373;&#x6700;&#x521D;&#x8981;&#x6700;&#x5C0F;&#x5316;&#x7684;&#x503C;&#x3002;</li>
+<li>&#x5373;&#x5C06;&#x95EE;&#x9898;&#x8F6C;&#x5316;&#x4E3A;&#x6C42;&#x89E3;</li>
+</ol>
+<p>$$
+\min\limits<em>{w, b}\theta(w) = \min\limits</em>{w, b}\max\limits_{\alpha_i\geq 0}L(w, b ,\alpha) = p^*</p>
+<p>$$</p>
+<ol>
+<li>&#x8FD9;&#x6837;&#x662F;&#x4E0D;&#x5BB9;&#x6613;&#x6C42;&#x89E3;&#x7684;&#x6211;&#x4EEC;&#x5C06;&#x6700;&#x5927;&#x548C;&#x6700;&#x5C0F;&#x8FDB;&#x884C;&#x4EA4;&#x6362;&#xFF0C;&#x5F97;&#x5230;</li>
+</ol>
+<p>$$
+\max\limits<em>{\alpha_i\geq 0}\min\limits</em>{w, b}L(w, b ,\alpha) = d^*</p>
+<p>$$</p>
+<ol>
+<li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x6709;$d^<em>\leq p^</em>$(&#x5728;&#x6EE1;&#x8DB3;K.K.T.&#x6761;&#x4EF6;&#x65F6;&#x7B49;&#x4EF7;)&#xFF0C;&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x66F4;&#x5BB9;&#x6613;&#x6C42;&#x89E3;&#xFF0C;&#x4E0B;&#x9762;&#x5148;&#x6C42;L&#x5BF9;w&#x548C;b&#x7684;&#x6781;&#x5C0F;&#xFF0C;&#x518D;&#x6C42;L&#x5BF9;$\alpha$&#x7684;&#x6781;&#x5927;</li>
+</ol>
+<h3 id="812-kkt&#x6761;&#x4EF6;">8.1.2. K.K.T.&#x6761;&#x4EF6;</h3>
+<ol>
+<li>&#x4E00;&#x822C;&#x6700;&#x4F18;&#x5316;&#x6570;&#x5B66;&#x6A21;&#x578B;&#x80FD;&#x8868;&#x793A;&#x4E3A;&#x5982;&#x4E0B;&#x6807;&#x51C6;&#x5F62;&#x5F0F;</li>
+</ol>
+<p>$$
+\min f(x) \
+s.t. h_j(x) = 0, j = 1, ..., p\
+g_k(x)\leq 0, k = 1, ..., q \
+x \in X \subset R^n \</p>
+<p>$$</p>
+<ul>
+<li><p>f(x)&#x662F;&#x9700;&#x8981;&#x6700;&#x5C0F;&#x5316;&#x7684;&#x51FD;&#x6570;&#xFF0C;h(x)&#x662F;&#x7B49;&#x5F0F;&#x7EA6;&#x675F;&#xFF0C;g(x)&#x662F;&#x4E0D;&#x7B49;&#x5F0F;&#x7EA6;&#x675F;&#xFF0C;p&#x548C;q&#x5206;&#x522B;&#x4E3A;&#x7B49;&#x5F0F;&#x7EA6;&#x675F;&#x548C;&#x4E0D;&#x7B49;&#x5F0F;&#x7EA6;&#x675F;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x51F8;&#x4F18;&#x5316;:$X\subset R^n$&#x662F;&#x4E00;&#x51F8;&#x96C6;&#xFF0C;f:X-&gt;R&#x4E3A;&#x4E00;&#x51F8;&#x51FD;&#x6570;&#xFF0C;&#x51F8;&#x4F18;&#x5316;&#x5C31;&#x662F;&#x8981;&#x627E;&#x51FA;&#x4E00;&#x70B9;$x^<em> \in X$&#xFF0C;&#x4F7F;&#x5F97;&#x6BCF;&#x4E00;&#x4E2A;$x \in X$&#x6EE1;&#x8DB3;$f(x^</em>) \leq f(x)$</p>
+</li>
+<li>KKT&#x6761;&#x4EF6;&#x7684;&#x610F;&#x4E49;:&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x7EBF;&#x6027;&#x89C4;&#x5212;&#x95EE;&#x9898;&#x80FD;&#x6709;&#x6700;&#x4F18;&#x89E3;&#x7684;&#x5FC5;&#x8981;&#x548C;&#x5145;&#x5206;&#x6761;&#x4EF6;&#x3002;</li>
+</ul>
+<blockquote>
+<p>KKT&#x6761;&#x4EF6;&#xFF1A;&#x5BF9;&#x4E4B;&#x524D;&#x7684;&#x6807;&#x51C6;&#x5F62;&#x5F0F;&#x6700;&#x4F18;&#x5316;&#x6570;&#x5B66;&#x6A21;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x6EE1;&#x8DB3;</p>
+<ol>
+<li>$h_j(x^<em>) = 0, j = 1, ..., p&#xFF0C;g_k(x^</em>) \leq 0, k = 1, ..., q$</li>
+<li>$\triangle f(x^<em>) + \sum\limits_{j=1}\limits^p\lambda_j\triangle h_j(x^</em>) + \sum\limits_{j=1}\limits^p\mu_k\triangle g_k(x^<em>) = 0, \lambda_j \neq 0, u_k \geq 0, \mu_kg_k(x^</em>) = 0$
+&#x4F5C;&#x4E3A;&#x6EE1;&#x8DB3;KKT&#x6761;&#x4EF6;</li>
+</ol>
+</blockquote>
+<h3 id="813-&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x6C42;&#x89E3;&#x7684;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;">8.1.3. &#x5BF9;&#x5076;&#x95EE;&#x9898;&#x6C42;&#x89E3;&#x7684;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x56FA;&#x5B9A;$\alpha$&#xFF0C;&#x5BF9;w&#x548C;b&#x5206;&#x522B;&#x6C42;&#x504F;&#x5BFC;&#xFF0C;&#x5E26;&#x56DE;L&#x5E76;&#x5316;&#x7B80;(&#x6700;&#x540E;&#x4E00;&#x6B65;&#xFF0C;&#x6CE8;&#x610F;$\sum\limits_{i=1}\limits^n\alpha_iy_i = 0$)</li>
+</ol>
+<p><img src="img/lec6/56.png" alt="">
+<img src="img/lec6/55.png" alt="">
+<img src="img/lec6/54.png" alt=""></p>
+<ol>
+<li>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x6C42;&#x5BF9;$\alpha$&#x7684;&#x6781;&#x5927;</li>
+</ol>
+<p><img src="img/lec6/57.png" alt=""></p>
+<ol>
+<li>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x8BA1;&#x7B97;&#x5B8C;&#x6210;$L(w, b, \alpha)$&#x5173;&#x4E8E;w&#x548C;b&#x7684;&#x6700;&#x5C0F;&#x5316;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0E;$\alpha$&#x7684;&#x6781;&#x5927;&#x4E4B;&#x540E;&#xFF0C;&#x6700;&#x540E;&#x5C31;&#x662F;&#x4F7F;&#x7528;SMO&#x7B97;&#x6CD5;&#x6C42;&#x89E3;&#x5BF9;&#x5076;&#x95EE;&#x9898;&#x4E2D;&#x7684;&#x62C9;&#x683C;&#x6717;&#x65E5;&#x4E58;&#x5B50;$\alpha$</li>
+</ol>
+<p><img src="img/lec6/58.png" alt=""></p>
+<h3 id="814-&#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;&#x95EE;&#x9898;">8.1.4. &#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;&#x95EE;&#x9898;</h3>
+<ol>
+<li>&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x70B9;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x5C06;x&#x4EE3;&#x5165;$f(x) = w^Tx+b$&#x8BA1;&#x7B97;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x6839;&#x636E;&#x6B63;&#x8D1F;&#x53F7;&#x8FDB;&#x884C;&#x7C7B;&#x522B;&#x5212;&#x5206;&#x3002;</li>
+</ol>
+<p>$$
+\begin{array}{l}
+   \because w^* = \sum\limits<em>{i=1}\limits^{n}\alpha_iy_ix_i \
+   \therefore f(x) = (\sum\limits</em>{i=1}\limits^{n}\alpha<em>iy_ix_i)^T x + b \
+   = \sum\limits</em>{i=1}\limits^{n}\alpha_iy_i<x_i, x=""> + b<br>\end{array}</x_i,></p>
+<p>$$</p>
+<ol>
+<li>&#x4E5F;&#x5C31;&#x662F;&#x5BF9;&#x65B0;&#x70B9;&#x9884;&#x6D4B;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x5176;&#x4E0E;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x70B9;&#x7684;&#x5185;&#x79EF;&#x5373;&#x53EF;&#xFF1A;&#x975E;&#x652F;&#x6301;&#x5411;&#x91CF;&#x5BF9;&#x5E94;&#x7684;$\alpha=0$&#xFF0C;&#x8FD9;&#x4E9B;&#x70B9;&#x4E0D;&#x5F71;&#x54CD;&#x5206;&#x7C7B;</li>
+</ol>
+<p><img src="img/lec6/59.png" alt=""></p>
+<h2 id="82-svm&#xFF1A;&#x6838;&#x51FD;&#x6570;&#xFF1A;kernel">8.2. SVM&#xFF1A;&#x6838;&#x51FD;&#x6570;&#xFF1A;kernel</h2>
+<h3 id="821-&#x7279;&#x5F81;&#x7A7A;&#x95F4;&#x7684;&#x9690;&#x5F0F;&#x6620;&#x5C04;&#xFF1A;&#x6838;&#x51FD;&#x6570;">8.2.1. &#x7279;&#x5F81;&#x7A7A;&#x95F4;&#x7684;&#x9690;&#x5F0F;&#x6620;&#x5C04;&#xFF1A;&#x6838;&#x51FD;&#x6570;</h3>
+<ol>
+<li>&#x5BF9;&#x4E8E;&#x975E;&#x7EBF;&#x6027;&#x60C5;&#x51B5;&#xFF0C;SVM&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6838;&#x51FD;&#x6570;K(&#xB7;,&#xB7;)&#xFF0C;&#x901A;&#x8FC7;&#x5C06;&#x6570;&#x636E;&#x6620;&#x5C04;&#x5230;&#x9AD8;&#x7EF4;&#x7A7A;&#x95F4;&#xFF0C;&#x6765;&#x89E3;&#x51B3;&#x5728;&#x539F;&#x59CB;&#x7A7A;&#x95F4;&#x4E2D;&#x7EBF;&#x6027;&#x4E0D;&#x53EF;&#x5206;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
+</ol>
+<p><img src="img/lec6/61.png" alt=""></p>
+<ol>
+<li>&#x975E;&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x5668;&#x6A21;&#x578B;:$f(x) = \sum\limits_{i=1}\limits^Nw_i\phi(x)+b$&#xFF0C;&#x5EFA;&#x7ACB;&#x975E;&#x7EBF;&#x6027;&#x4EFD;&#x5206;&#x7C7B;&#x5668;&#x6B65;&#x9AA4;<ol>
+<li>&#x9996;&#x5148;&#x7528;&#x975E;&#x7EBF;&#x6027;&#x6620;&#x5C04;&#x5C06;&#x6570;&#x636E;&#x53D8;&#x6362;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x5F81;&#x7A7A;&#x95F4;F&#xFF1A;&#x91CD;&#x70B9;</li>
+<li>&#x5728;&#x7279;&#x5F81;&#x7A7A;&#x95F4;&#x4F7F;&#x7528;&#x7EBF;&#x6027;&#x5206;&#x7C7B;&#x5668;&#x8FDB;&#x884C;&#x5206;&#x7C7B;</li>
+</ol>
+</li>
+<li>&#x975E;&#x7EBF;&#x6027;&#x51B3;&#x7B56;&#x89C4;&#x5219;:</li>
+</ol>
+<p>$$
+f(x) = \sum\limits_{i=1}\limits^l\alpha_iy_i&lt;\phi(x_i), \phi(x)&gt;+b</p>
+<p>$$</p>
+<h3 id="822-&#x6838;&#x51FD;&#x6570;&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;&#x975E;&#x7EBF;&#x6027;&#x6570;&#x636E;">8.2.2. &#x6838;&#x51FD;&#x6570;&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;&#x975E;&#x7EBF;&#x6027;&#x6570;&#x636E;</h3>
+<ol>
+<li>&#x5C06;&#x975E;&#x7EBF;&#x6027;&#x6570;&#x636E;&#x6620;&#x5C04;&#x4E3A;&#x7EBF;&#x6027;&#x6570;&#x636E;</li>
+</ol>
+<h4 id="8221-&#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x63CF;&#x8FF0;">8.2.2.1. &#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x63CF;&#x8FF0;</h4>
+<p>$$
+a_1X_1+a_2X_1^2+a_3X_2+a_4X_2^2+a_5X_1X_2+a_6=0</p>
+<p>$$</p>
+<h4 id="8222-&#x4ECE;&#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x5230;&#x4E94;&#x7EF4;&#x7A7A;&#x95F4;&#x6620;&#x5C04;">8.2.2.2. &#x4ECE;&#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x5230;&#x4E94;&#x7EF4;&#x7A7A;&#x95F4;&#x6620;&#x5C04;</h4>
+<p>$$
+Z_1=X_1,Z_2=X_1^2,Z_3=X_3,Z_4=X_4,Z_5=X_1X_2</p>
+<p>$$</p>
+<h4 id="8223-&#x4E94;&#x7EF4;&#x7A7A;&#x95F4;&#x63CF;&#x8FF0;&#x7EBF;&#x6027;&#x8D85;&#x5E73;&#x9762;">8.2.2.3. &#x4E94;&#x7EF4;&#x7A7A;&#x95F4;&#x63CF;&#x8FF0;(&#x7EBF;&#x6027;&#x8D85;&#x5E73;&#x9762;)</h4>
+<p>$$
+\sum\limits_{i=1}\limits^5a_iZ_i + a_6 = 0</p>
+<p>$$</p>
+<h4 id="8224-&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;">8.2.2.4. &#x8BA1;&#x7B97;&#x65B9;&#x6CD5;</h4>
+<blockquote>
+<p>&#x5047;&#x8BBE;&#x6709;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;$x_1 = (\eta_1, \eta_2)^T, x_2 = (\xi_1,\xi_2)^T$</p>
+</blockquote>
+<ol>
+<li>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;&#x6620;&#x5C04;&#x540E;&#x7684;&#x5185;&#x79EF;&#x4E3A;</li>
+</ol>
+<p>$$
+&lt;\phi(x_1), \phi(x_2)&gt; = \eta_1\xi_1 + \eta_1^2\xi_1^2 + \eta_2\xi_2 + \eta_2^2\xi_2^2 + \eta_1\eta_2\xi_1\xi_2</p>
+<p>$$</p>
+<ol>
+<li>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#x5E73;&#x65B9;&#xFF0C;&#x5728;&#x4F4E;&#x7EF4;&#x7A7A;&#x95F4;&#x8BA1;&#x7B97;&#xFF0C;&#x5982;&#x679C;&#x9047;&#x5230;&#x7EF4;&#x5EA6;&#x7206;&#x70B8;&#xFF0C;&#x524D;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x8BA1;&#x7B97;</li>
+</ol>
+<p>$$
+\begin{array}{l}
+   (<x_1, x_2=""> + 1)^2 = 2\eta_1\xi_1 + \eta_1^2\xi_1^2 + 2\eta_2\xi_2 + \eta_2^2\xi_2^2 + 2\eta_1\eta_2\xi_1\xi_2 + 1 \
+   &#x7B49;&#x4EF7;&#x4E8E; \
+   \phi(x_1, x_2) = (\sqrt{2}x_1, x_1^2, \sqrt{2}x_2,x_2^2,\sqrt{2}x_1x_2,1)^T \<br>\end{array}</x_1,></p>
+<p>$$</p>
+<h3 id="823-&#x6838;&#x51FD;&#x6570;">8.2.3. &#x6838;&#x51FD;&#x6570;</h3>
+<ol>
+<li>&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x5411;&#x91CF;&#x5728;&#x9690;&#x5F0F;&#x6620;&#x5C04;&#x8FC7;&#x540E;&#x7684;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x5185;&#x79EF;&#x7684;&#x51FD;&#x6570;&#x53EB;&#x505A;&#x6838;&#x51FD;&#x6570;</li>
+<li>&#x4E0A;&#x4F8B;&#x4E2D;&#x4E3A;$K(x_1, x_2) = (<x_1, x_2=""> + 1)^2$</x_1,></li>
+<li>&#x5206;&#x7C7B;&#x51FD;&#x6570;&#x4E3A;:$f(x) = \sum\limits_{i=1}\limits^Na_iy_iK(x_i, x)+b$</li>
+</ol>
+<h3 id="824-&#x5E38;&#x89C1;&#x6838;&#x51FD;&#x6570;">8.2.4. &#x5E38;&#x89C1;&#x6838;&#x51FD;&#x6570;</h3>
+<ol>
+<li>&#x591A;&#x9879;&#x5F0F;&#x6838;:$K(x<em>1, x_2) = (<x_1, x_2=""> + R)^d$&#xFF0C;&#x7A7A;&#x95F4;&#x7EF4;&#x5EA6;&#x4E3A;$C</x_1,></em>{m+d}^d$&#xFF0C;&#x539F;&#x59CB;&#x7A7A;&#x95F4;&#x7EF4;&#x5EA6;&#x4E3A;m</li>
+<li>&#x9AD8;&#x65AF;&#x6838;:$K(x_1,x_2) = \exp^{-\frac{||x_1-x_2||^2}{2\delta^2}}$&#xFF0C;$\delta$&#x5F71;&#x54CD;&#x9AD8;&#x6B21;&#x7279;&#x5F81;&#x4E0A;&#x6743;&#x91CD;&#x8870;&#x51CF;&#x7684;&#x901F;&#x5EA6;</li>
+</ol>
+<p><img src="img/lec6/60.png" alt=""></p>
+<ol>
+<li>&#x7EBF;&#x6027;&#x6838;:$K(x_1,x_2) = <x_1, x_2="">$</x_1,></li>
+</ol>
+<h2 id="83-&#x4F7F;&#x7528;&#x677E;&#x5F1B;&#x53D8;&#x91CF;&#x5904;&#x7406;outliers&#x65B9;&#x6CD5;">8.3. &#x4F7F;&#x7528;&#x677E;&#x5F1B;&#x53D8;&#x91CF;&#x5904;&#x7406;outliers&#x65B9;&#x6CD5;</h2>
+<ol>
+<li>&#x5982;&#x679C;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x6570;&#x636E;&#x6709;&#x566A;&#x58F0;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x504F;&#x79BB;&#x6B63;&#x5E38;&#x4F4D;&#x7F6E;&#x5F88;&#x8FDC;&#x7684;&#x6570;&#x636E;&#x70B9;&#x4E3A;outlier</li>
+</ol>
+<p><img src="img/lec6/62.png" alt=""></p>
+<ol>
+<li>&#x566A;&#x58F0;&#x70B9;&#x5BF9;&#x76EE;&#x524D;&#x7684;SVM&#x6709;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5141;&#x8BB8;&#x6570;&#x636E;&#x70B9;&#x5728;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x504F;&#x79BB;&#x8D85;&#x5E73;&#x9762;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x539F;&#x672C;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E3A;:$y_i(w^Tx_i+b)\geq 1,i =1,...,n$</li>
+<li>&#x65B0;&#x7684;&#x7EA6;&#x675F;&#x6761;&#x4EF6;&#x4E3A;:$y_i(w^Tx_i+b)\geq 1 - \xi_i,i =1,...,n$</li>
+<li>$\xi<em>i$&#x662F;&#x677E;&#x5F1B;&#x53D8;&#x91CF;&#xFF0C;&#x5BF9;&#x5E94;&#x6570;&#x636E;&#x70B9;$x_i$&#x5141;&#x8BB8;&#x504F;&#x79BB;&#x51FD;&#x6570;&#x95F4;&#x9694;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4FEE;&#x6B63;&#x6211;&#x4EEC;&#x7684;&#x4F18;&#x5316;&#x95EE;&#x9898;&#xFF1A;$\min \frac{1}{2}||w||^2 + C\sum\limits</em>{i = 1}\limits^n\xi_i$<ol>
+<li>&#x53C2;&#x6570;C:&#x63A7;&#x5236;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x201C;&#x5BFB;&#x627E;margin&#x6700;&#x5927;&#x7684;&#x8D85;&#x5E73;&#x9762;&#x201D;&#x548C;&#x201C;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x70B9;&#x504F;&#x5DEE;&#x91CF;&#x6700;&#x5C0F;&#x201D;&#x4E4B;&#x95F4;&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x5B9E;&#x73B0;&#x786E;&#x5B9A;&#x597D;&#x7684;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x53C2;&#x6570;$\xi$&#x662F;&#x9700;&#x8981;&#x4F18;&#x5316;&#x7684;&#x53D8;&#x91CF;</li>
+</ol>
+</li>
+<li>&#x65B0;&#x7684;&#x62C9;&#x683C;&#x6717;&#x65E5;&#x51FD;&#x6570;&#x5982;&#x4E0B;</li>
+</ol>
+<p>$$
+L(w, b, \xi, \alpha, r) = \frac{1}{2}||w||^2 + C\sum\limits<em>{i=1}\limits^n\xi_i - \sum\limits</em>{i=1}\limits^n\alpha<em>i(y_i(w^Tx_i+b) - 1 + \xi_i) - \sum\limits</em>{i=1}\limits^nr_i\xi_i</p>
+<p>$$</p>
+<ol>
+<li>&#x5206;&#x6790;&#x65B9;&#x6CD5;&#x548C;&#x4E0A;&#x9762;&#x76F8;&#x540C;</li>
+</ol>
+<p><img src="img/lec6/63.png" alt="">
+<img src="img/lec6/64.png" alt=""></p>
+<h1 id="9-&#x8BC1;&#x660E;svm">9. &#x8BC1;&#x660E;SVM</h1>
+<ol>
+<li>&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x53C2;&#x89C1;&#x53C2;&#x8003;&#x4E94;</li>
+</ol>
+<h1 id="10-&#x53C2;&#x8003;">10. &#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://www.cnblogs.com/keye/p/10267473.html" target="_blank">&#x51B3;&#x7B56;&#x6811;&#x7B97;&#x6CD5;&#x539F;&#x7406;(ID3&#xFF0C;C4.5)</a></li>
+<li><a href="https://www.cnblogs.com/lovephysics/p/7231294.html" target="_blank">&#x51B3;&#x7B56;&#x6811;(ID3 )&#x539F;&#x7406;&#x53CA;&#x5B9E;&#x73B0;</a></li>
+<li><a href="https://www.cnblogs.com/keye/p/10564914.html" target="_blank">&#x51B3;&#x7B56;&#x6811;&#x7B97;&#x6CD5;&#x539F;&#x7406;(CART&#x5206;&#x7C7B;&#x6811;)</a></li>
+<li><a href="https://blog.csdn.net/sinat_30353259/article/details/80901746" target="_blank">&#x673A;&#x5668;&#x5B66;&#x4E60;&#x4E4B;KNN&#xFF08;k&#x8FD1;&#x90BB;&#xFF09;&#x7B97;&#x6CD5;&#x8BE6;&#x89E3;</a></li>
+<li>&#x300A;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x901A;&#x4FD7;&#x5BFC;&#x8BBA;&#xFF08;&#x7406;&#x89E3;SVM&#x7684;&#x4E09;&#x5C42;&#x5883;&#x754C;&#xFF09;&#x300B;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lecture5-数据降维.html" class="navigation navigation-prev " aria-label="Previous page: Lecture5-数据降维">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lecture7-聚类.html" class="navigation navigation-next " aria-label="Next page: Lecture7-聚类">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lecture6-分类","level":"1.8","depth":1,"next":{"title":"Lecture7-聚类","level":"1.9","depth":1,"path":"Lecture7-聚类.md","ref":"Lecture7-聚类.md","articles":[]},"previous":{"title":"Lecture5-数据降维","level":"1.7","depth":1,"path":"Lecture5-数据降维.md","ref":"Lecture5-数据降维.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Lecture6-分类.md","mtime":"2020-11-04T14:33:29.905Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

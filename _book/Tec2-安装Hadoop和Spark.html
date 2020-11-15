@@ -1,0 +1,664 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Tec2-安装Hadoop和Spark · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Tec3-yolo.html" />
+    
+    
+    <link rel="prev" href="Tec1-TF-IDF算法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Tec2-安装Hadoop和Spark</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="tec2-&#x5B89;&#x88C5;hadoop&#x548C;spark">Tec2-&#x5B89;&#x88C5;Hadoop&#x548C;Spark</h2>
+<h1 id="1-&#x672C;&#x673A;java&#x914D;&#x7F6E;&#x4EE5;&#x53CA;&#x5B89;&#x88C5;&#x7684;&#x76EE;&#x6807;&#x7248;&#x672C;">1. &#x672C;&#x673A;Java&#x914D;&#x7F6E;&#x4EE5;&#x53CA;&#x5B89;&#x88C5;&#x7684;&#x76EE;&#x6807;&#x7248;&#x672C;</h1>
+<ol>
+<li>Java:jdk1.8.0_251</li>
+<li>WIN10</li>
+<li>Hadoop:&#x76EE;&#x6807;&#x5B89;&#x88C5;&#x7248;&#x672C;&#x4E3A;3.1.3</li>
+<li>Scala:&#x76EE;&#x6807;&#x5B89;&#x88C5;&#x7248;&#x672C;&#x4E3A;2.11.12</li>
+<li>Spark:&#x76EE;&#x6807;&#x5B89;&#x88C5;&#x7248;&#x672C;&#x4E3A;3.0.0(&#x9002;&#x7528;&#x4E8E;Hadoop 2.7.0&#x4EE5;&#x4E0A;&#x7248;&#x672C;)</li>
+</ol>
+<h1 id="2-&#x5B89;&#x88C5;jdk">2. &#x5B89;&#x88C5;JDK</h1>
+<ol>
+<li>&#x63D0;&#x524D;&#x5B89;&#x88C5;&#x597D;JDK 8/11&#xFF0C;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x5373;&#x53EF;</li>
+</ol>
+<h1 id="3-&#x5B89;&#x88C5;&#x8FD0;&#x884C;hadoop">3. &#x5B89;&#x88C5;&#x8FD0;&#x884C;Hadoop</h1>
+<h2 id="31-&#x4E0B;&#x8F7D;hadoop">3.1. &#x4E0B;&#x8F7D;Hadoop</h2>
+<ol>
+<li><a href="https://mirror.bit.edu.cn/apache/hadoop/common/" target="_blank">&#x4E0B;&#x8F7D;&#x7F51;&#x5740;</a></li>
+<li>&#x672C;&#x6559;&#x7A0B;&#x7684;Hadoop&#x7248;&#x672C;&#x4E0B;&#x8F7D;&#x5730;&#x5740;:<a href="https://mirror.bit.edu.cn/apache/hadoop/common/hadoop-3.1.3/hadoop-3.1.3.tar.gz" target="_blank">https://mirror.bit.edu.cn/apache/hadoop/common/hadoop-3.1.3/hadoop-3.1.3.tar.gz</a></li>
+</ol>
+<h2 id="32-&#x4E0B;&#x8F7D;winutils-310">3.2. &#x4E0B;&#x8F7D;Winutils-3.1.0</h2>
+<ol>
+<li>&#x56E0;&#x4E3A;Hadoop&#x5728;2.0&#x4E4B;&#x524D;&#x662F;&#x5B8C;&#x5168;&#x8FD0;&#x884C;&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x4E4B;&#x540E;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;Windows&#x4E0A;&#x5B89;&#x88C5;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4E0B;&#x8F7D;&#x76F8;&#x5E94;&#x7684;exe&#x624D;&#x53EF;&#x4EE5;&#x3002;</li>
+<li><a href="https://github.com/stormbroken/apache-hadoop-3.1.0-winutils" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a>&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;fork&#x7684;&#x65B9;&#x5F0F;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x4ED3;&#x5E93;&#x7136;&#x540E;&#x4E0B;&#x8F7D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x9009;&#x62E9;&#x4E0B;&#x8F7D;ZIP&#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<h2 id="33-&#x89E3;&#x538B;hadoop">3.3. &#x89E3;&#x538B;Hadoop</h2>
+<ol>
+<li>&#x5C06;&#x521A;&#x521A;&#x4E0B;&#x8F7D;&#x7684;&#x4EE5;tar.gz&#x7684;&#x6587;&#x4EF6;&#x4EE5;<strong>&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;</strong>&#x8FDB;&#x884C;&#x89E3;&#x538B;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x7BA1;&#x7406;&#x6743;&#x9650;&#x89E3;&#x538B;&#x662F;&#x65E0;&#x6CD5;&#x89E3;&#x51B3;so&#x6587;&#x4EF6;&#x7684;&#x89E3;&#x538B;&#x7684;&#x3002;</li>
+<li>&#x5C06;&#x521A;&#x521A;&#x4E0B;&#x8F7D;&#x7684;Wintuils-3.1.0&#x7684;bin&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x8D4B;&#x503C;&#x5230;Hadoop&#x89E3;&#x538B;&#x540E;&#x7684;bin&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002;</li>
+</ol>
+<h2 id="34-&#x914D;&#x7F6E;hadoop&#x7684;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;">3.4. &#x914D;&#x7F6E;Hadoop&#x7684;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;</h2>
+<ol>
+<li>&#x65B0;&#x5EFA;<code>HADOOP_HOME</code>&#x7684;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#xFF0C;&#x5176;&#x53D8;&#x91CF;&#x503C;&#x4E3A;&#x521A;&#x521A;<code>Hadoop</code>&#x89E3;&#x538B;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6BD4;&#x5982;<code>D:\hadoop</code></li>
+<li>&#x4E3A;Path&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x503C;:<code>%HADOOP_HOME%\bin</code></li>
+</ol>
+<h2 id="35-&#x68C0;&#x67E5;hadoop&#x7684;&#x5B89;&#x88C5;&#x60C5;&#x51B5;">3.5. &#x68C0;&#x67E5;Hadoop&#x7684;&#x5B89;&#x88C5;&#x60C5;&#x51B5;</h2>
+<ol>
+<li>&#x67E5;&#x770B;&#x7248;&#x672C;:<code>hadoop version</code></li>
+<li>&#x542F;&#x52A8;Hadoop:<code>HADOOP_HOME/sbin/start-all.cmd</code></li>
+</ol>
+<h2 id="36-&#x8FD0;&#x884C;&#x95EE;&#x9898;">3.6. &#x8FD0;&#x884C;&#x95EE;&#x9898;</h2>
+<h3 id="361-&#x7CFB;&#x7EDF;&#x627E;&#x4E0D;&#x5230;javahome&#x7684;&#x8DEF;&#x5F84;">3.6.1. &#x7CFB;&#x7EDF;&#x627E;&#x4E0D;&#x5230;JAVA_HOME&#x7684;&#x8DEF;&#x5F84;</h3>
+<ol>
+<li>&#x539F;&#x56E0;:JAVA&#x5B89;&#x88C5;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x4E2D;&#x5305;&#x542B;&#x6709;&#x7A7A;&#x683C;</li>
+<li>&#x4FEE;&#x6539;<code>bin\hadoop.cmd</code>&#x6587;&#x4EF6;&#x4E2D;&#x7684;JAVA_HOME&#x7684;&#x503C;:&#x6CE8;&#x610F;&#x9700;&#x8981;&#x540C;&#x65F6;&#x4FEE;&#x6539;<code>etc\hadoop\hadoop-env.cmd</code>&#x4E2D;&#x7684;JAVA_JOME&#x7684;&#x503C;<pre><code class="lang-cmd"><span class="hljs-built_in">set</span> JAVA_HOME=C:\PROGRA~<span class="hljs-number">1</span>\Java\jdk1.<span class="hljs-number">8</span>.<span class="hljs-number">0</span>_251(your jdk name)
+</code></pre>
+</li>
+</ol>
+<h3 id="362-javalangclassnotfoundexception-orgapachehadoopyarnservertimelineservicecollector">3.6.2. <code>java.lang.ClassNotFoundException: org.apache.hadoop.yarn.server.timelineservice.collector</code></h3>
+<ol>
+<li>Hadoop&#x542F;&#x52A8;&#x62A5;&#x9519;&#xFF0C;&#x7F3A;&#x5C11;<code>hadoop-yarn-server-timelineservice jar</code>&#x5305;</li>
+<li>&#x89E3;&#x51B3;&#x65B9;&#x6848;:&#x4ECE;<code>Hadoop\share\hadoop\yarn\timelineservice</code>&#x4E0B;<code>hadoop-yarn-server-timelineservice-x.x.x.jar</code>&#x590D;&#x5236;&#x5230;<code>Hadoop\share\hadoop\yarn\lib</code>&#x76EE;&#x5F55;&#x4E0B;&#x3002;</li>
+</ol>
+<h3 id="363-namenode&#x8FDB;&#x7A0B;&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#xFF0C;&#x62A5;orgapachehadoophdfsservercommoninconsistentfsstateexception">3.6.3. NameNode&#x8FDB;&#x7A0B;&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#xFF0C;&#x62A5;<code>org.apache.hadoop.hdfs.server.common.InconsistentFSStateException</code></h3>
+<ol>
+<li>&#x91CD;&#x542F;Hadoop&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x63A7;&#x5236;&#x53F0;&#x6B63;&#x5E38;&#x6253;&#x5370;&#x65E5;&#x5FD7;&#xFF0C;&#x4F46;&#x662F;jps&#x663E;&#x793A;&#x6CA1;&#x6709;namenode&#x8FDB;&#x7A0B;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x76EE;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#x6216;&#x8005;&#x76EE;&#x5F55;&#x4E0D;&#x53EF;&#x8BBF;&#x95EE;</li>
+<li>&#x89E3;&#x51B3;&#x65B9;&#x6848;:&#x91CD;&#x65B0;&#x683C;&#x5F0F;&#x5316;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;<ol>
+<li>&#x505C;&#x6B62;hadoop&#x7684;&#x8FDB;&#x7A0B;:<code>HADOOP_HOME/sbin/stop-all.sh</code></li>
+<li>&#x91CD;&#x65B0;&#x683C;&#x5F0F;&#x5316;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;:<code>HADOOP_HOME/bin/hdfs namenode -format</code></li>
+<li>&#x542F;&#x52A8;Hadoop:<code>HADOOP_HOME/sbin/start-all.sh</code></li>
+</ol>
+</li>
+</ol>
+<h3 id="364-namenode&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#xFF0C;&#x65E5;&#x5FD7;&#x63D0;&#x793A;file-has-no-authority">3.6.4. NameNode&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#xFF0C;&#x65E5;&#x5FD7;&#x63D0;&#x793A;<code>file:/// has no authority</code></h3>
+<ol>
+<li>&#x8FD0;&#x884C;Hadoop&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x663E;&#x793A;:<code>file:/// has no authority</code></li>
+<li>&#x4FEE;&#x6539;<code>etc\hadoop\core-site.xml</code>&#x7684;&#x914D;&#x7F6E;<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>fs.default.name<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>hdfs://localhost:8020<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+</code></pre>
+</li>
+</ol>
+<h1 id="4-&#x5B89;&#x88C5;&#x8FD0;&#x884C;spark">4. &#x5B89;&#x88C5;&#x8FD0;&#x884C;Spark</h1>
+<h2 id="41-&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;scala">4.1. &#x4E0B;&#x8F7D;&#x5B89;&#x88C5;Scala</h2>
+<ol>
+<li><a href="https://www.scala-lang.org/download/all.html" target="_blank">Scala&#x5B89;&#x88C5;</a></li>
+<li>&#x6CE8;:&#x4E00;&#x5B9A;&#x8981;&#x63D0;&#x524D;&#x5B89;&#x88C5;&#x597D;JDK&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;JAVA_HOME&#x7684;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x672C;&#x6559;&#x7A0B;&#x5B89;&#x88C5;&#x4F7F;&#x7528;&#x7684;&#x662F;2.11.12&#x7248;&#x672C;&#x7684;Scala</li>
+<li>Windows&#x53EF;&#x4EE5;&#x9009;&#x62E9;<ol>
+<li>&#x65B9;&#x6848;&#x4E00;:<a href="https://downloads.lightbend.com/scala/2.11.12/scala-2.11.12.zip" target="_blank">&#x4E0B;&#x8F7D;Scala-2.11.12.zip</a>&#x7136;&#x540E;&#x89E3;&#x538B;&#x7F29;&#x540E;&#xFF0C;&#x624B;&#x52A8;&#x914D;&#x7F6E;&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;</li>
+<li>&#x65B9;&#x6848;&#x4E8C;:<a href="https://downloads.lightbend.com/scala/2.11.12/scala-2.11.12.msi" target="_blank">&#x4F7F;&#x7528;Windows&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;</a>&#xFF0C;&#x4E4B;&#x540E;&#x6839;&#x636E;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x7684;&#x6307;&#x5F15;&#x5B8C;&#x6210;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+</li>
+<li>&#x68C0;&#x67E5;&#x5B89;&#x88C5;&#x6548;&#x679C;:&#x5728;cmd&#x4E2D;&#x8F93;&#x5165;<code>scala</code>&#x5373;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x7248;&#x672C;</li>
+</ol>
+<h2 id="42-&#x4E0B;&#x8F7D;spark">4.2. &#x4E0B;&#x8F7D;Spark</h2>
+<ol>
+<li><a href="http://spark.apache.org/downloads.html" target="_blank">&#x9009;&#x62E9;&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></li>
+<li><a href="https://www.apache.org/dyn/closer.lua/spark/spark-3.0.0/spark-3.0.0-bin-hadoop2.7.tgz" target="_blank">&#x672C;&#x6559;&#x7A0B;&#x7684;Spark&#x7684;&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></li>
+</ol>
+<h2 id="43-&#x5B89;&#x88C5;spark">4.3. &#x5B89;&#x88C5;Spark</h2>
+<ol>
+<li>&#x5C06;&#x521A;&#x521A;&#x4E0B;&#x8F7D;&#x7684;&#x538B;&#x7F29;&#x5305;&#x5C31;&#x538B;&#x7F29;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x89E3;&#x538B;&#x7F29;&#x7684;&#x4F4D;&#x7F6E;(&#x4E5F;&#x5C31;&#x662F;&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;)</li>
+<li>&#x8FDB;&#x5165;&#x5230;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;<code>\bin</code>&#x5728;cmd&#x547D;&#x4EE4;&#x4E0B;&#x8FD0;&#x884C;<code>spark-shell</code>&#xFF0C;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</li>
+</ol>
+<p><img src="img/spark/1.png" alt=""></p>
+<h1 id="5-&#x8FD0;&#x884C;spark">5. &#x8FD0;&#x884C;Spark</h1>
+<ol>
+<li>&#x9996;&#x5148;&#x9700;&#x8981;&#x6709;IDEA&#xFF0C;&#x5E76;&#x4E14;&#x5B89;&#x88C5;&#x4E86;Scala&#x7684;Plugin</li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Scala&#x7684;IDEA&#x9879;&#x76EE;</li>
+</ol>
+<p><img src="img/spark/2.png" alt=""></p>
+<ol>
+<li>&#x9009;&#x62E9;&#x76F8;&#x5E94;&#x7684;JDK&#x548C;Scala SDK&#xFF0C;&#x521B;&#x5EFA;HelloWorld&#x9879;&#x76EE;</li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x4E3A;Hello&#x7684;Scala Object&#xFF0C;&#x4EA7;&#x751F;Hello.scala&#x7684;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x7F16;&#x8F91;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Hello</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span></span>(args: <span class="hljs-type">Array</span>[<span class="hljs-type">String</span>]): <span class="hljs-type">Unit</span> = {
+ println(<span class="hljs-string">&quot;Hello World&quot;</span>);
+}
+}
+</code></pre>
+</li>
+<li>IDEA&#x4E2D;&#x8FD0;&#x884C;&#x6B63;&#x5E38;</li>
+</ol>
+<p><img src="img/spark/3.png" alt=""></p>
+<ol>
+<li>&#x4F7F;&#x7528;<code>File-&gt;Project Structure-&gt;Artifacts</code>&#x751F;&#x6210;META-INF&#x6587;&#x4EF6;&#x5939;</li>
+</ol>
+<p><img src="img/spark/4.png" alt="">
+<img src="img/spark/5.png" alt=""></p>
+<ol>
+<li>&#x6253;&#x5305;JAR&#xFF1A;&#x9009;&#x62E9;Build-&gt;Build Artifact-&gt;Build</li>
+</ol>
+<p><img src="img/spark/6.png" alt=""></p>
+<ol>
+<li>&#x5C06;&#x538B;&#x7F29;&#x540E;&#x7684;jar&#x6587;&#x4EF6;&#x4F7F;&#x7528;spark-submit&#x6765;&#x6267;&#x884C;:<code>spark-submit --class Hello HelloWorld.jar</code></li>
+</ol>
+<h1 id="6-&#x53C2;&#x8003;">6. &#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://www.cnblogs.com/java-spring/p/11744195.html" target="_blank">&#x5728;windows&#x4E0A;&#x642D;&#x5EFA;hadoop&#x5F00;&#x53D1;&#x73AF;&#x5883;</a></li>
+<li><a href="https://blog.csdn.net/weixin_39723337/article/details/86482536" target="_blank">hadoop&#x542F;&#x52A8;&#x62A5;&#x9519;java.lang.ClassNotFoundException: org.apache.hadoop.yarn.server.timelineservice.collector</a></li>
+<li><a href="https://blog.csdn.net/qq_32641659/article/details/87894610" target="_blank">hadoop&#x5F02;&#x5E38;&#x5904;&#x7406;&#x4E4B;nameNode&#x8FDB;&#x7A0B;&#x65E0;&#x6CD5;&#x542F;&#x52A8;&#xFF0C;&#x62A5;org.apache.hadoop.hdfs.server.common.InconsistentFSStateException</a></li>
+<li><a href="https://www.cnblogs.com/chevin/p/11064854.html" target="_blank">Windows&#x4E0A;&#x5B89;&#x88C5;&#x8FD0;&#x884C;Spark</a></li>
+<li><a href="https://blog.csdn.net/freecrystal_alex/article/details/78296851" target="_blank">intellij idea &#x6253;&#x53EF;&#x8FD0;&#x884C;scala jar &#x5305;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Tec1-TF-IDF算法.html" class="navigation navigation-prev " aria-label="Previous page: Tec1-TF-IDF算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Tec3-yolo.html" class="navigation navigation-next " aria-label="Next page: Tec3-yolo">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tec2-安装Hadoop和Spark","level":"1.16","depth":1,"next":{"title":"Tec3-yolo","level":"1.17","depth":1,"path":"Tec3-yolo.md","ref":"Tec3-yolo.md","articles":[]},"previous":{"title":"Tec1-TF-IDF算法","level":"1.15","depth":1,"path":"Tec1-TF-IDF算法.md","ref":"Tec1-TF-IDF算法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Tec2-安装Hadoop和Spark.md","mtime":"2020-09-16T02:30:36.530Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

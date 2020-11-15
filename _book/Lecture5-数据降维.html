@@ -1,0 +1,1010 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lecture5-数据降维 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lecture6-分类.html" />
+    
+    
+    <link rel="prev" href="Lecture4-链接分析.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Lecture5-数据降维</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lecture5-&#x6570;&#x636E;&#x964D;&#x7EF4;">Lecture5-&#x6570;&#x636E;&#x964D;&#x7EF4;</h2>
+<p>[TOC]</p>
+<h1 id="1-&#x964D;&#x7EF4;dimensionality-reduction">1. &#x964D;&#x7EF4;(Dimensionality Reduction)</h1>
+<ol>
+<li>&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x6570;&#x636E;&#x80FD;&#x591F;&#x5728;&#x4F4E;&#x7EF4;&#x7A7A;&#x95F4;&#x88AB;&#x8868;&#x793A;</li>
+<li>&#x9AD8;&#x7EF4;&#x6570;&#x636E;&#x5728;&#x4F4E;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x8868;&#x793A;&#x662F;&#x66F4;&#x52A0;&#x9AD8;&#x6548;&#x7684;&#x3002;</li>
+</ol>
+<h2 id="11-svd&#x793A;&#x4F8B;">1.1. SVD&#x793A;&#x4F8B;</h2>
+<blockquote>
+<p>r&#x8868;&#x793A;&#x4FDD;&#x7559;&#x7684;&#x7279;&#x5F81;&#x503C;&#x7684;&#x6570;&#x91CF;</p>
+</blockquote>
+<p><img src="img/lec5/1.png" alt=""></p>
+<h2 id="12-&#x538B;&#x7F29;&#x964D;&#x4F4E;&#x5C3A;&#x5BF8;">1.2. &#x538B;&#x7F29;/&#x964D;&#x4F4E;&#x5C3A;&#x5BF8;</h2>
+<ol>
+<li>$10^6$&#x884C;&#xFF0C;$10^3$&#x5217;&#xFF0C;&#x4E0D;&#x66F4;&#x65B0;</li>
+<li>&#x968F;&#x673A;&#x8BBF;&#x95EE;&#x4E00;&#x884C;&#x6570;&#x636E;&#xFF0C;&#x5F88;&#x5C11;&#x7684;&#x9519;&#x8BEF;&#x65F6;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;</li>
+<li>&#x5982;&#x4E0B;&#x7684;&#x77E9;&#x9635;&#x5176;&#x5B9E;&#x662F;&#x4E2A;&#x4E8C;&#x7EF4;&#x77E9;&#x9635;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x7F29;&#x653E;[1 1 1 0 0]&#x6216;[0 0 0 1 1]&#x53EF;&#x4EE5;&#x91CD;&#x5EFA;&#x6240;&#x6709;&#x7684;&#x884C;</li>
+</ol>
+<p><img src="img/lec5/2.png" alt=""></p>
+<h2 id="13-&#x77E9;&#x9635;&#x7684;&#x79E9;">1.3. &#x77E9;&#x9635;&#x7684;&#x79E9;</h2>
+<ol>
+<li>&#x4EC0;&#x4E48;&#x662F;&#x77E9;&#x9635;A&#x7684;&#x79E9;?A&#x7684;&#x7EBF;&#x6027;&#x72EC;&#x7ACB;&#x5217;&#x6570;</li>
+<li>&#x4F8B;&#x5B50;:</li>
+</ol>
+<p>$$
+A = \begin{bmatrix} 
+   1 &amp; 2 &amp; 1 \
+   -1 &amp; -3 &amp; 1 \
+   3 &amp; 5 &amp; 0 \
+\end{bmatrix}\ Rank(A) = 2</p>
+<p>$$</p>
+<h2 id="14-&#x79E9;&#x662F;&#x53EF;&#x4EE5;&#x964D;&#x7EF4;">1.4. &#x79E9;&#x662F;&#x53EF;&#x4EE5;&#x964D;&#x7EF4;</h2>
+<p><img src="img/lec5/4.png" alt=""></p>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>[1 2 1][-2 -3 1]</code>&#x4E24;&#x4E2A;&#x5411;&#x91CF;&#x6765;&#x91CD;&#x5199;&#x77E9;&#x9635;A&#xFF0C;A&#x7684;&#x65B0;&#x5750;&#x6807;&#x4E3A;:<code>[1 0][0 1][1 -1]</code></p>
+</blockquote>
+<h2 id="15-&#x964D;&#x7EF4;&#x7684;&#x76EE;&#x7684;">1.5. &#x964D;&#x7EF4;&#x7684;&#x76EE;&#x7684;</h2>
+<ol>
+<li>&#x6570;&#x5B66;&#x4E0A;&#x662F;<strong>&#x53D1;&#x73B0;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x8F74;</strong></li>
+<li>&#x53D1;&#x73B0;&#x9690;&#x85CF;&#x7684;&#x8054;&#x7CFB;&#x548C;&#x4E3B;&#x9898;:&#x6BD4;&#x5982;&#x7ECF;&#x5E38;&#x4E00;&#x540C;&#x51FA;&#x73B0;&#x7684;&#x5355;&#x8BCD;&#x7B49;</li>
+<li>&#x79FB;&#x9664;&#x76F8;&#x4F3C;&#x548C;&#x566A;&#x58F0;&#x7279;&#x5F81;:&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x5355;&#x8BCD;&#x90FD;&#x662F;&#x6709;&#x7528;&#x7684;</li>
+<li>&#x6570;&#x636E;&#x89E3;&#x91CA;&#x548C;&#x53EF;&#x89C6;&#x5316;</li>
+<li>&#x66F4;&#x5BB9;&#x6613;&#x5904;&#x7406;&#x548C;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF1A;(&#x627E;&#x5230;&#x89C4;&#x5F8B;&#xFF0C;&#x538B;&#x7F29;&#x6570;&#x636E;&#x91CF;)</li>
+</ol>
+<h2 id="16-&#x964D;&#x7EF4;&#x7684;&#x63CF;&#x8FF0;">1.6. &#x964D;&#x7EF4;&#x7684;&#x63CF;&#x8FF0;</h2>
+<ol>
+<li>&#x4E0E;&#x7528;&#x4E24;&#x4E2A;&#x5750;&#x6807;&#x8868;&#x793A;&#x6BCF;&#x4E00;&#x4E2A;&#x70B9;&#x4E0D;&#x540C;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x8F74;&#x4E0A;&#x7684;&#x5750;&#x6807;&#x8868;&#x793A;&#x6BCF;&#x4E00;&#x4E2A;&#x70B9;(&#x5BF9;&#x5E94;&#x7EA2;&#x7EBF;&#x4E0A;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;)&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x70B9;&#x5E76;&#x4E0D;&#x5B8C;&#x5168;&#x5728;&#x76F4;&#x7EBF;&#x4E0A;(&#x4FE1;&#x606F;&#x635F;&#x5931;)&#xFF0C;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x8FD9;&#x90E8;&#x5206;&#x4FE1;&#x606F;&#x635F;&#x5931;&#x3002;</li>
+</ol>
+<h1 id="2-svd">2. SVD</h1>
+<blockquote>
+<p>&#x5947;&#x5F02;&#x503C;&#x7684;&#x503C;&#x5FC5;&#x7136;&#x4E3A;&#x6B63;</p>
+</blockquote>
+<h2 id="21-svd&#x7684;&#x5206;&#x7C7B;">2.1. SVD&#x7684;&#x5206;&#x7C7B;</h2>
+<p><img src="img/lec5/5.png" alt=""></p>
+<h2 id="22-svd&#x7684;&#x4ECB;&#x7ECD;">2.2. SVD&#x7684;&#x4ECB;&#x7ECD;</h2>
+<ol>
+<li>&#x53D8;&#x91CF;(&#x7EF4;&#x6570;)&#x8F83;&#x591A;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x5206;&#x6790;&#x95EE;&#x9898;&#x7684;&#x590D;&#x6742;&#x6027;</li>
+<li>&#x6570;&#x636E;&#x4E30;&#x5BCC;&#x4F46;&#x77E5;&#x8BC6;&#x8D2B;&#x4E4F;:&#x5B9E;&#x9645;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x4E00;&#x5B9A;&#x7684;&#x76F8;&#x5173;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x591A;&#x53D8;&#x91CF;&#x4E2D;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x8D44;&#x8BAF;&#x7684;&#x91CD;&#x53E0;</li>
+<li>&#x4EBA;&#x4EEC;&#x81EA;&#x7136;&#x5E0C;&#x671B;&#x901A;&#x8FC7;&#x514B;&#x670D;&#x76F8;&#x5173;&#x3001;&#x91CD;&#x53E0;&#x6027;&#xFF0C;<strong>&#x7528;&#x8F83;&#x5C11;&#x7684;&#x53D8;&#x91CF;&#x6765;&#x4EE3;&#x66FF;&#x539F;&#x6765;&#x591A;&#x7684;&#x53D8;&#x91CF;</strong>&#xFF0C;&#x800C;&#x8FD9;&#x79CD;&#x4EE3;&#x66FF;&#x53EF;&#x4EE5;&#x53CD;&#x6620;&#x539F;&#x6765;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5927;&#x90E8;&#x5206;&#x8D44;&#x8BAF;&#xFF0C;&#x8FD9;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x79CD;&#x201C;&#x964D;&#x7EF4;&#x201D;&#x7684;&#x601D;&#x60F3;&#x3002;</li>
+</ol>
+<h1 id="3-&#x964D;&#x7EF4;&#x65B9;&#x6CD5;&#x6C47;&#x603B;">3. &#x964D;&#x7EF4;&#x65B9;&#x6CD5;&#x6C47;&#x603B;</h1>
+<p><img src="img/lec5/6.png" alt=""></p>
+<h2 id="31-&#x7279;&#x5F81;&#x503C;&#x4E0E;&#x7279;&#x5F81;&#x5411;&#x91CF;">3.1. &#x7279;&#x5F81;&#x503C;&#x4E0E;&#x7279;&#x5F81;&#x5411;&#x91CF;</h2>
+<ol>
+<li>&#x8BBE;$A$&#x662F;$n$&#x9636;&#x77E9;&#x9635;&#xFF0C;&#x5982;&#x679C;&#x6570;$\lambda$&#x548C;n&#x7EF4;&#x975E;&#x96F6;&#x5217;&#x5411;&#x91CF;&#x4F7F;&#x5173;&#x7CFB;&#x5F0F;$Ax = \lambda x$&#x6210;&#x7ACB;</li>
+<li>&#x5219;&#x79F0;$\lambda$&#x662F;&#x65B9;&#x9635;A&#x7684;&#x7279;&#x5F81;&#x503C;&#xFF0C;&#x975E;&#x96F6;&#x5411;&#x91CF;x&#x79F0;&#x4E3A;A&#x7684;&#x5BF9;&#x5E94;&#x7279;&#x5F81;&#x503C;&#x7684;&#x7279;&#x5F81;&#x5411;&#x91CF;&#x3002;</li>
+<li>&#x4E00;&#x822C;&#x6C42;&#x89E3;&#x65B9;&#x6CD5;</li>
+</ol>
+<p>$$
+|A - \lambda I| = 0 \iff
+\begin{vmatrix}
+   a<em>{11} &amp; a</em>{12} &amp; ... &amp; a<em>{1n} \
+   a</em>{21} &amp; a<em>{22} &amp; ... &amp; a</em>{2n} \
+   . &amp; . &amp; ... &amp; . \
+   a<em>{n1} &amp; a</em>{n2} &amp; ... &amp; a_{nn} \
+\end{vmatrix} = 0</p>
+<p>$$</p>
+<h2 id="32-&#x964D;&#x7EF4;&#x65B9;&#x6CD5;">3.2. &#x964D;&#x7EF4;&#x65B9;&#x6CD5;</h2>
+<ol>
+<li>PCA(&#x4E3B;&#x6210;&#x5206;&#x5206;&#x6790;&#xFF0C;Principal-Component Analysis)</li>
+<li>LDA(&#x7EBF;&#x6027;&#x5224;&#x522B;&#x5206;&#x6790;)</li>
+<li>&#x56E0;&#x5B50;&#x5206;&#x6790;</li>
+<li>SVD(&#x5947;&#x5F02;&#x503C;&#x5206;&#x89E3;&#xFF0C;Singular-Value Decomposition)</li>
+<li>CUR&#x5206;&#x89E3;</li>
+</ol>
+<h1 id="4-svd&#x5947;&#x5F02;&#x503C;&#x5206;&#x89E3;&#xFF0C;singular-value-decomposition">4. SVD(&#x5947;&#x5F02;&#x503C;&#x5206;&#x89E3;&#xFF0C;Singular-Value Decomposition)</h1>
+<p>$$
+A<em>{[m * n]} = U</em>{[m <em> r]} </em> \Sigma<em>{[r * r]} (V</em>{[n * r])^T}</p>
+<p>$$</p>
+<table>
+<thead>
+<tr>
+<th>&#x77E9;&#x9635;&#x7B26;&#x53F7;</th>
+<th>&#x77E9;&#x9635;&#x540D;&#x79F0;</th>
+<th>&#x77E9;&#x9635;&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>&#x8F93;&#x5165;&#x6570;&#x636E;&#x77E9;&#x9635;</td>
+<td>m * n&#x7EF4;</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>&#x5DE6;&#x5947;&#x5F02;&#x77E9;&#x9635;</td>
+<td>m * r&#x7EF4;&#xFF0C;&#x6B63;&#x4EA4;&#x77E9;&#x9635;&#xFF0C;$UU^T = I$</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>&#x5947;&#x5F02;&#x503C;&#x5BF9;&#x89D2;&#x77E9;&#x9635;</td>
+<td>r * r&#x7EF4;&#xFF0C;r&#x662F;&#x77E9;&#x9635;A&#x7684;&#x79E9;&#xFF0C;&#x53EA;&#x6709;&#x5BF9;&#x89D2;&#x7EBF;&#x4E0A;&#x6709;&#x503C;&#xFF0C;&#x5176;&#x4ED6;&#x5143;&#x7D20;&#x5747;&#x4E3A;0</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>&#x53F3;&#x5947;&#x5F02;&#x77E9;&#x9635;</td>
+<td>n * r&#x7EF4;&#xFF0C;&#x6B63;&#x4EA4;&#x77E9;&#x9635;&#xFF0C;$V^TV = I$</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Notes:&#x5947;&#x5F02;&#x503C;&#x5206;&#x89E3;&#x7684;&#x4FE1;&#x606F;&#x4E0B;&#x964D;&#x662F;&#x975E;&#x5E38;&#x5FEB;&#x7684;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x524D;100&#x4E2A;&#x5947;&#x5F02;&#x503C;&#x5C31;&#x53EF;&#x4EE5;&#x8868;&#x5F81;&#x5927;&#x591A;&#x6570;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+</blockquote>
+<h2 id="41-svd&#x56FE;&#x793A;">4.1. SVD&#x56FE;&#x793A;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec5/8.png" alt=""></td>
+<td><img src="img/lec5/9.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="42-&#x5947;&#x5F02;&#x503C;&#x6C42;&#x89E3;">4.2. &#x5947;&#x5F02;&#x503C;&#x6C42;&#x89E3;</h2>
+<p>$$
+AA^T = U\Sigma V^TV\Sigma^TU^T = U\Sigma\Sigma^TU^T \tag{1-1}</p>
+<p>$$</p>
+<p>$$
+A^TA = V\Sigma U^TU\Sigma V^T = V\Sigma^T\Sigma V^T \tag{1-2}</p>
+<p>$$</p>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x5206;&#x6790;&#x53EF;&#x4EE5;&#x77E5;&#x9053;$AA^T$&#x548C;$A^TA$&#x662F;&#x5BF9;&#x79F0;&#x77E9;&#x9635;</p>
+<ol>
+<li>&#x6211;&#x4EEC;&#x5229;&#x7528;&#x4E0A;&#x9762;&#x7684;(1-1)&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x7279;&#x5F81;&#x503C;&#x5206;&#x89E3;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7279;&#x5F81;&#x77E9;&#x9635;&#x5C31;&#x662F;U</li>
+<li>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;(1-2)&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x7279;&#x5F81;&#x503C;&#x5206;&#x89E3;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7279;&#x5F81;&#x77E9;&#x9635;&#x5C31;&#x662F;V</li>
+<li>&#x5BF9;$\Sigma\Sigma^T$&#x6216;&#x8005;$\Sigma^T\Sigma$&#x4E2D;&#x7684;&#x7279;&#x5F81;&#x503C;&#x5F00;&#x65B9;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x6240;&#x6709;&#x7684;&#x5947;&#x5F02;&#x503C;</li>
+</ol>
+</blockquote>
+<h2 id="43-svd&#x8BA1;&#x7B97;&#x793A;&#x4F8B;">4.3. SVD&#x8BA1;&#x7B97;&#x793A;&#x4F8B;</h2>
+<p>$$
+A = \begin{bmatrix}
+     0 &amp; 1 \
+     1 &amp; 1 \
+     1 &amp; 0
+\end{bmatrix} \ 
+A^T = \begin{bmatrix}
+     0 &amp; 1 &amp; 1 \
+     1 &amp; 1 &amp; 0
+\end{bmatrix}</p>
+<p>$$</p>
+<blockquote>
+<p>&#x6C42;&#x89E3;&#x7279;&#x5F81;&#x503C;&#x8981;&#x4ECE;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5217;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x77E9;&#x9635;&#x540D;</th>
+<th>&#x77E9;&#x9635;&#x503C;</th>
+<th>&#x7279;&#x5F81;&#x503C;</th>
+<th>&#x7279;&#x5F81;&#x77E9;&#x9635;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U$</td>
+<td>$U = A * A^T = \begin{bmatrix} 1 &amp; 1 &amp; 0 \ 1 &amp; 2 &amp; 0 \ 0 &amp; 1 &amp; 1\end{bmatrix}$</td>
+<td>$\lambda_1 = 3, u_1 = (\frac{1}{\sqrt{6}},\frac{2}{\sqrt{6}},\frac{1}{\sqrt{6}})^T$<br>$\lambda_2 = 1, u_2 = (\frac{1}{\sqrt{2}}, 0, -\frac{1}{\sqrt{2}})^T$<br>$\lambda_3 = 0, u_3 = (\frac{1}{\sqrt{3}}, -\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}})^T$</td>
+<td>$\begin{bmatrix} \frac{1}{\sqrt{6}} &amp; \frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{3}} \ \frac{2}{\sqrt{6}} &amp; 0 &amp; -\frac{1}{\sqrt{3}} \ \frac{1}{\sqrt{6}} &amp; -\frac{1}{\sqrt{2}} &amp; \frac{1}{\sqrt{3}} \end{bmatrix}$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>$V = A^T*A = (\begin{matrix} 2 &amp; 1 \ 1 &amp; 2\end{matrix})$</td>
+<td>$\lambda_1 = 3,v_1 = (\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}) ^ T$<br>$\lambda_2 = 1,v_2 = (-\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}}) ^ T$</td>
+<td>$\begin{bmatrix} \frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}} \ \frac{1}{\sqrt{2}} &amp; -\frac{1}{\sqrt{2}} \end{bmatrix}$</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x6C42;&#x89E3;&#x5947;&#x5F02;&#x503C;&#x4E3A;:$\sqrt{3}\ and\ 1$</p>
+</blockquote>
+<h2 id="44-svd&#x7684;&#x6027;&#x8D28;">4.4. SVD&#x7684;&#x6027;&#x8D28;</h2>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x5B9E;&#x6570;&#x77E9;&#x9635;A&#x6309;&#x7167;&#x5206;&#x89E3;&#x4E3A;$A = U\Sigma V^T$</p>
+</blockquote>
+<ol>
+<li>$U,\Sigma,V$:&#x552F;&#x4E00;</li>
+<li>U,V:&#x5217;&#x6B63;&#x4EA4;<ol>
+<li>$U^TU = I,V^TV = I$&#xFF0C;I&#x662F;&#x5355;&#x4F4D;&#x77E9;&#x9635;</li>
+<li>&#x5217;&#x662F;&#x6B63;&#x4EA4;&#x5355;&#x4F4D;&#x5411;&#x91CF;</li>
+</ol>
+</li>
+<li>$\Sigma$:&#x5BF9;&#x89D2;&#x77E9;&#x9635;&#xFF1A;&#x5BF9;&#x89D2;&#x503C;&#xFF08;&#x5947;&#x5F02;&#x503C;&#xFF09;&#x4E3A;&#x6B63;&#xFF0C;&#x5E76;&#x4EE5;&#x964D;&#x5E8F;&#x6392;&#x5217;</li>
+</ol>
+<h2 id="45-svd&#x7684;&#x4F8B;&#x5B50;&#x7684;&#x89E3;&#x91CA;users-to-movies">4.5. SVD&#x7684;&#x4F8B;&#x5B50;&#x7684;&#x89E3;&#x91CA;(Users to Movies)</h2>
+<p><img src="img/lec5/10.png" alt="">
+<img src="img/lec5/11.png" alt=""></p>
+<ul>
+<li>U:&quot;User to Concept&quot;&#x76F8;&#x4F3C;&#x5EA6;&#x77E9;&#x9635;<ul>
+<li>&#x7B2C;&#x4E00;&#x5217;:SciFi-concept</li>
+<li>&#x7B2C;&#x4E8C;&#x5217;:Romance-concept</li>
+</ul>
+</li>
+<li>$\Sigma$:<ul>
+<li>&#x7B2C;&#x4E00;&#x5BF9;&#x89D2;&#x503C;:&quot;strength&quot; of the SciFi-concept</li>
+<li>&#x5BF9;&#x89D2;&#x503C;:&quot;strength&quot; of each concept</li>
+</ul>
+</li>
+<li>V:&quot;movie-to-concept&quot;&#x76F8;&#x4F3C;&#x5EA6;&#x77E9;&#x9635;</li>
+</ul>
+<p><img src="img/lec5/12.png" alt=""></p>
+<h2 id="46-svd&#x7684;&#x5411;&#x91CF;&#x7406;&#x89E3;">4.6. SVD&#x7684;&#x5411;&#x91CF;&#x7406;&#x89E3;</h2>
+<p><img src="img/lec5/13.png" alt=""></p>
+<ol>
+<li>&#x4E0D;&#x4F7F;&#x7528;&#x4E8C;&#x7EF4;(x, y)&#x6765;&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x70B9;,&#x800C;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x70B9;z&#x6765;&#x63CF;&#x8FF0;&#x8FD9;&#x4E2A;&#x70B9;&#x3002;</li>
+<li>&#x70B9;&#x7684;&#x4F4D;&#x7F6E;&#x662F;&#x5728;&#x5411;&#x91CF;v1&#x4E0A;&#x7684;</li>
+<li>&#x5982;&#x4F55;&#x9009;&#x62E9;v1:&#x6700;&#x5C0F;&#x5316;reconstruction errors(&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x6B27;&#x6C0F;&#x8DDD;&#x79BB;)</li>
+</ol>
+<h3 id="461-&#x6700;&#x5C0F;&#x5316;-reconstruction-errors">4.6.1. &#x6700;&#x5C0F;&#x5316; reconstruction errors</h3>
+<ol>
+<li>SVD&#x76EE;&#x6807;:&#x6700;&#x5C0F;&#x5316; reconstruction errors</li>
+</ol>
+<p>$$
+\sum\limits<em>{i = 1}\limits^{N}\sum\limits</em>{j = 1}\limits^D||x<em>{ij} - z</em>{ij}||^2 \to 0</p>
+<p>$$</p>
+<ol>
+<li>&#x5982;&#x4F55;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6CA1;&#x6709;&#x4E86;&#xFF0C;&#x4E0B;&#x964D;&#x7ED3;&#x675F;&#x4E86;&#xFF1F;&#x8BBE;&#x7F6E;&#x6700;&#x5C0F;&#x7684;&#x5947;&#x5F02;&#x503C;&#x4E3A;0</li>
+</ol>
+<p><img src="img/lec5/17.png" alt=""></p>
+<ol>
+<li>&#x5F97;&#x5230;SVD&#x540E;&#x7684;&#x8FD1;&#x4F3C;&#x77E9;&#x9635;(&#x5C06;&#x6700;&#x5C0F;&#x7684;&#x5947;&#x5F02;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;0&#x548C;U&#x3001;V&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x884C;&#x548C;&#x5217;&#x7F6E;&#x4E3A;0&#xFF0C;&#x91CD;&#x65B0;&#x505A;&#x4E58;&#x6CD5;&#x5F97;&#x5230;&#x65B0;&#x7684;&#x77E9;&#x9635;)</li>
+</ol>
+<p><img src="img/lec5/18.png" alt=""></p>
+<h3 id="462-svd&#x5411;&#x91CF;&#x7406;&#x89E3;&#x4F8B;&#x5B50;users-to-movies">4.6.2. SVD&#x5411;&#x91CF;&#x7406;&#x89E3;&#x4F8B;&#x5B50;:Users to Movies</h3>
+<p><img src="img/lec5/14.png" alt="">
+<img src="img/lec5/15.png" alt="">
+<img src="img/lec5/16.png" alt=""></p>
+<h2 id="47-svd---&#x6700;&#x4F4E;&#x79E9;&#x8FD1;&#x4F3C;">4.7. SVD - &#x6700;&#x4F4E;&#x79E9;&#x8FD1;&#x4F3C;</h2>
+<p><img src="img/lec5/19.png" alt=""></p>
+<ol>
+<li>$&#x5B9A;&#x7406;:&#x5982;&#x679C;A = U\Sigma V^T&#x5E76;&#x4E14;B = U S V^T&#xFF0C;&#x5E76;&#x4E14;S&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x89D2;r*r&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x5E76;&#x4E14;s_i = \delta_i(i = 1...k)&#xFF0C;&#x5E76;&#x4E14;&#x5176;&#x4ED6;&#x7684;s_i=0&#xFF0C;&#x90A3;&#x4E48;B&#x662F;A&#x7684;&#x6700;&#x5408;&#x9002;&#x7684;&#x8FD1;&#x4F3C;&#x77E9;&#x9635;&#xFF0C;&#x5E76;&#x4E14;rank(B) = k$</li>
+<li>&#x4EC0;&#x4E48;&#x662F;&#x6700;&#x597D;?B&#x5728;$rank(B) = k$&#x7684;&#x65F6;&#x5019;&#x662F;$\min\limits_B||A-B||_F$&#x7684;&#x89E3;</li>
+<li>$||A-B||<em>F = \sqrt{\sum\limits</em>{ij}(A<em>{ij} - B</em>{ij})^2}$</li>
+</ol>
+<h3 id="471-&#x5F15;&#x7406;">4.7.1. &#x5F15;&#x7406;</h3>
+<ol>
+<li>$||M||<em>F = \sum\limits_i(q</em>{ii})^2$ &#x5F53; M = P Q R&#x662F;M&#x7684;SVD&#x7684;&#x65F6;&#x5019;</li>
+<li>$U\Sigma V^T - USV^T = U(\Sigma - S)V^T$</li>
+</ol>
+<h3 id="472-&#x5F15;&#x7406;&#x7684;&#x8BC1;&#x660E;">4.7.2. &#x5F15;&#x7406;&#x7684;&#x8BC1;&#x660E;</h3>
+<p>$$
+\begin{array}{l}
+|M|=\sum\limits<em>i\sum\limits_j\left(m</em>{i j}\right)^{2}=\sum\limits<em>i \sum\limits_j\left(\sum\limits_k \sum\limits_lp</em>{i k} q<em>{kl} r</em>{lj}\right)^{2} \
+|M|=\sum\limits<em>i\sum\limits_j\sum\limits_k\sum\limits_l \sum\limits_n\sum\limits_m p</em>{ik} q<em>{kl} r</em>{lj} p<em>{in} q</em>{nm} r_{mj}
+\end{array}</p>
+<p>$$</p>
+<ul>
+<li>$\sum\limits<em>ip</em>{ik}p_{in}$&#x662F;1&#xFF0C;&#x5982;&#x679C;k=n&#xFF0C;&#x4E0D;&#x7136;&#x4E3A;0</li>
+<li>P&#x662F;&#x5217;&#x6B63;&#x4EA4;&#x77E9;&#x9635;&#xFF0C;R&#x662F;&#x6B63;&#x4EA4;&#x77E9;&#x9635;&#xFF0C;Q&#x662F;&#x5BF9;&#x89D2;&#x77E9;&#x9635;</li>
+</ul>
+<p>$$
+\begin{array}{l}
+A = U \Sigma V^T, B = U S V^T \
+\
+\min\limits<em>{B, rank(B)=K}||A-B||_F \ 
+= \min ||\Sigma - S||_F = \min\limits</em>{s<em>i}\sum\limits</em>{i=1}\limits^r(\delta_i-s_i)^2
+\end{array}</p>
+<p>$$</p>
+<ul>
+<li>&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x662F;&#x6700;&#x5C0F;&#x5316;$\min\limits<em>{s_i}\sum\limits</em>{i=1}^r(\theta_i-s_i)^2$</li>
+<li>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5C31;&#x662F;&#x4EE4;$s_i = \delta_i(i = 1...k)$&#x5E76;&#x4E14;&#x5176;&#x4ED6;$s_i=0$</li>
+</ul>
+<p>$$
+\begin{array}{l}
+\min\limits<em>{s_i}\sum\limits</em>{i=1}\limits^k(\delta<em>i-s_i)^2 + \sum\limits</em>{i = k + 1}\limits^r\delta^2 \
+= \sum\limits_{i = k + 1}\limits^r\delta^2
+\end{array}</p>
+<p>$$</p>
+<h3 id="473-&#x5B9A;&#x7406;&#x7684;&#x8BF4;&#x660E;">4.7.3. &#x5B9A;&#x7406;&#x7684;&#x8BF4;&#x660E;</h3>
+<p><img src="img/lec5/20.png" alt="">
+<img src="img/lec5/21.png" alt=""></p>
+<ul>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x5C06;$\delta_i$&#x8BBE;&#x7F6E;&#x4E3A;0&#x662F;&#x6B63;&#x786E;&#x7684;&#x505A;&#x6CD5;&#xFF1F;<ul>
+<li>&#x5411;&#x91CF;$u_i$&#x548C;$v_i$&#x662F;&#x5355;&#x4F4D;&#x957F;&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;$\delta_i$&#x662F;&#x7528;&#x6765;&#x8C03;&#x6574;&#x4ED6;&#x4EEC;&#x7684;</li>
+<li>&#x6240;&#x4EE5;&#x8BA9;$\delta_i$&#x6210;&#x4E3A;0&#x53EF;&#x4EE5;&#x5BFC;&#x81F4;&#x66F4;&#x5C11;&#x7684;&#x635F;&#x5931;</li>
+</ul>
+</li>
+<li>&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4FDD;&#x6301;&#x591A;&#x5C11;$\delta_s$&#xFF0C;&#x62C7;&#x6307;&#x539F;&#x5219;:$\sum\limits_i\delta_i^2$&#x7684;&#x548C;&#x5728;80%-90%&#xFF0C;&#x4FDD;&#x8BC1;&#x4FE1;&#x606F;&#x635F;&#x5931;&#x4E0D;&#x592A;&#x591A;</li>
+</ul>
+<h2 id="48-svd&#x7B97;&#x6CD5;&#x7684;&#x590D;&#x6742;&#x5EA6;">4.8. SVD&#x7B97;&#x6CD5;&#x7684;&#x590D;&#x6742;&#x5EA6;</h2>
+<ol>
+<li><strong>&#x8BA1;&#x7B97;SVD&#x7684;&#x590D;&#x6742;&#x5EA6;</strong>:$min(O(nm^2), O(n^2m))$</li>
+<li>&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x53EA;&#x60F3;&#x77E5;&#x9053;&#x5947;&#x5F02;&#x503C;&#x6216;&#x8005;&#x524D;k&#x4E2A;&#x5947;&#x5F02;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x77E9;&#x9635;&#x662F;&#x7A00;&#x758F;&#x77E9;&#x9635;&#xFF0C;&#x90A3;&#x4E48;&#x590D;&#x6742;&#x5EA6;&#x4F1A;&#x5927;&#x5927;&#x4E0B;&#x964D;</li>
+</ol>
+<h2 id="49-svd&#x548C;&#x7279;&#x5F81;&#x5206;&#x89E3;&#x7684;&#x5173;&#x7CFB;">4.9. SVD&#x548C;&#x7279;&#x5F81;&#x5206;&#x89E3;&#x7684;&#x5173;&#x7CFB;</h2>
+<ol>
+<li><p>SVD&#x89D2;&#x5EA6;&#xFF1A;$A = U \Sigma V^T$</p>
+</li>
+<li><p>&#x7279;&#x5F81;&#x5206;&#x89E3;&#x7684;&#x89D2;&#x5EA6;&#xFF1A;$A = X \Lambda X^T$</p>
+<ol>
+<li>A&#x662F;&#x5BF9;&#x79F0;&#x7684;</li>
+<li>U,V,X&#x90FD;&#x662F;&#x6B63;&#x4EA4;&#x77E9;&#x9635;</li>
+<li>$\Lambda,\Sigma$&#x90FD;&#x662F;&#x5BF9;&#x89D2;&#x7684;</li>
+</ol>
+</li>
+</ol>
+<p>$$
+\begin{array}{l}
+AA^T \
+= U\Sigma V^T (U\Sigma V^T)^T \
+= U\Sigma V^T (V\Sigma^TU^T) \
+= U\Sigma\Sigma^TU^T(X \Lambda^2 X^T )\
+\
+A^TA \
+= V(\Sigma^TU^T)(U\Sigma V^T) \
+= V\Sigma\Sigma^TV^T(X \Lambda^2 X^T )
+\end{array}</p>
+<p>$$</p>
+<h2 id="410-&#x6848;&#x4F8B;&#x5982;&#x4F55;&#x67E5;&#x8BE2;">4.10. &#x6848;&#x4F8B;:&#x5982;&#x4F55;&#x67E5;&#x8BE2;</h2>
+<ol>
+<li>&#x67E5;&#x627E;&#x7C7B;&#x4F3C;&#x8FD9;&#x4E2A;&#x77E9;&#x9635;&#x7684;&#x7528;&#x6237;:&#x5C06;&#x67E5;&#x8BE2;&#x6620;&#x5C04;&#x5230;&#x201C;&#x6982;&#x5FF5;&#x7A7A;&#x95F4;&#x201D;&#x4E2D;-&#x600E;&#x4E48;&#x505A;&#xFF1F;</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec5/22.png" alt=""></td>
+<td><img src="img/lec5/23.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>user q:$q_{concept} = q V$</li>
+<li>user d:$d_{concept} = d V$</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec5/24.png" alt=""></td>
+<td><img src="img/lec5/25.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>&#x89C2;&#x5BDF;&#xFF1A;&#x88AB;&#x8BC4;&#x7EA7;&#x4E3A;&#x201C;Alien&#x201D;&#xFF0C;&#x201C; Serenity&#x201D;&#x7684;&#x7528;&#x6237;d&#x4E0E;&#x88AB;&#x8BC4;&#x7EA7;&#x4E3A;&#x201C;Matrix&#x201D;&#x7684;&#x7528;&#x6237;q&#x76F8;&#x4F3C;&#xFF0C;&#x5C3D;&#x7BA1;d&#x548C;q&#x7684;&#x5171;&#x540C;&#x70B9;&#x4E3A;&#x96F6;&#xFF01;</li>
+</ol>
+<p><img src="img/lec5/26.png" alt=""></p>
+<h2 id="411-svd&#x7684;&#x6548;&#x679C;">4.11. SVD&#x7684;&#x6548;&#x679C;</h2>
+<p><img src="img/lec5/27.png" alt=""></p>
+<h1 id="5-cur&#x5206;&#x89E3;">5. CUR&#x5206;&#x89E3;</h1>
+<ol>
+<li>&#x76EE;&#x6807;:&#x5C06;&#x77E9;&#x9635;A&#x89E3;&#x91CA;&#x4E3A;C&#xFF0C;U&#xFF0C;R&#xFF0C;&#x4F7F;&#x5F97;$||A - C<em>U</em>R||_F$&#x6700;&#x5C0F;</li>
+</ol>
+<p><img src="img/lec5/34.png" alt=""></p>
+<h2 id="51-&#x9009;&#x62E9;&#x884C;&#x548C;&#x5217;&#x7684;&#x65B9;&#x5F0F;">5.1. &#x9009;&#x62E9;&#x884C;&#x548C;&#x5217;&#x7684;&#x65B9;&#x5F0F;</h2>
+<ol>
+<li>&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x662F;&#x968F;&#x673A;&#x7684;&#x9009;&#x62E9;&#x884C;&#x548C;&#x5217;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x4FDD;&#x7559;&#x4E86;&#x5BF9;&#x4E8E;&#x91CD;&#x8981;&#x7684;&#x884C;&#x548C;&#x5217;&#x7684;&#x6743;&#x91CD;</li>
+<li>&#x884C;&#x548C;&#x5217;&#x7684;&#x6743;&#x91CD;&#x8BA1;&#x7B97;:$f=\sum\limits<em>{i,j}a</em>{ij}^2$</li>
+<li>&#x6211;&#x4EEC;&#x6309;&#x7167;&#x6982;&#x7387;$p<em>i = \sum\limits</em>{j}\frac{a_{ij}^2}{f}$&#x9009;&#x62E9;&#x884C;</li>
+<li>&#x6211;&#x4EEC;&#x6309;&#x7167;&#x6982;&#x7387;$q<em>j = \sum\limits</em>{i}\frac{a_{ij}^2}{f}$</li>
+<li>&#x5F52;&#x4E00;&#x5316;&#x5904;&#x7406;:&#x5C06;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x9664;&#x4EE5;$\sqrt{rq_j}$(&#x884C;)&#x3001;$\sqrt{rp_i}$(&#x5217;)</li>
+</ol>
+<h2 id="52-cur&#x5BF9;&#x5217;&#x884C;&#x8FDB;&#x884C;&#x53D6;&#x6837;">5.2. CUR&#x5BF9;&#x5217;(&#x884C;)&#x8FDB;&#x884C;&#x53D6;&#x6837;</h2>
+<ol>
+<li>&#x4EE5;&#x5217;&#x4E3A;&#x4F8B;&#xFF0C;&#x884C;&#x4E5F;&#x662F;&#x76F8;&#x4F3C;&#x7684;</li>
+<li>&#x8F93;&#x5165;:&#x77E9;&#x9635;$A \in R^{m * n}$&#xFF0C;&#x6837;&#x4F8B;&#x6570;c</li>
+<li>&#x8F93;&#x51FA;:$C_d \in R^{m * c}$</li>
+<li>&#x7B97;&#x6CD5;&#x8FC7;&#x7A0B;:<ol>
+<li>&#x5BF9;&#x4E8E;$\forall x \in [1, n]&#xFF0C;P(x) = \frac{\sum\limits<em>iA(i, x)^2}{\sum\limits</em>{i,j}A(i,j)^2}$</li>
+<li>&#x5BF9;&#x4E8E;$\forall i \in [1, c]$&#xFF0C;&#x4EE5;&#x4E00;&#x5217;&#x4E3A;&#x4F8B;<ol>
+<li>&#x9009;&#x62E9;$k \in [1, n]$&#x6EE1;&#x8DB3;&#x5206;&#x5E03;P(x)</li>
+<li>&#x8BA1;&#x7B97;$C<em>d(:,i) = \frac{A(:,k)}{\sqrt{cP(k)}} = \frac{A(:, k)}{\sqrt{c * \frac{\sum\limits_iA(i, k)^2}{\sum\limits</em>{i,j}A(i,j)^2}}}$</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x968F;&#x673A;&#x7B97;&#x6CD5;&#xFF0C;&#x540C;&#x4E00;&#x5217;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x91C7;&#x6837;</li>
+</ol>
+<h2 id="53-&#x8BA1;&#x7B97;u">5.3. &#x8BA1;&#x7B97;U</h2>
+<ol>
+<li>U&#x662F;&#x4E00;&#x4E2A;$r*r$&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x6240;&#x4EE5;&#x662F;&#x6BD4;&#x8F83;&#x5C0F;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x4ED6;&#x662F;&#x9AD8;&#x5BC6;&#x5EA6;&#x3001;&#x96BE;&#x8BA1;&#x7B97;&#x7684;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;</li>
+<li>&#x9996;&#x5148;&#x8BA1;&#x7B97;W&#xFF0C;&#x6211;&#x4EEC;&#x8BA9;W&#x662F;&#x5217;C&#x548C;&#x884C;R&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5E76;&#x4E14;&#x8BA1;&#x7B97;&#x51FA;W&#x7684;SVD&#x8868;&#x793A;&#x4E3A;$W = X \Sigma Y^T$</li>
+<li>&#x7136;&#x540E;&#x8BA1;&#x7B97;$\Sigma$&#x7684;Moore-Penorse inverse(&#x4F2A;&#x9006;&#x77E9;&#x9635;):$\Sigma$<ol>
+<li>$\Sigma$&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x89D2;&#x77E9;&#x9635;</li>
+<li>&#x4ED6;&#x7684;Moore-Penorse inverse&#x6EE1;&#x8DB3;<ol>
+<li>$\frac{1}{\sigma}$ &#x5982;&#x679C;$\sigma \neq 0$</li>
+<li>0 &#x5982;&#x679C;$\sigma=0$</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>&#x7136;&#x540E;:$U = W^+ = Y(\Sigma^+)^2X^T$<ol>
+<li>&#x975E;&#x96F6;&#x5947;&#x5F02;&#x503C;&#x7684;&#x5012;&#x6570;&#xFF1A;$\Sigma<em>{ii}^{+} = 1/\Sigma</em>{ii}$</li>
+<li>$W^+$&#x662F;&#x4F2A;&#x9006;</li>
+</ol>
+</li>
+</ol>
+<p><img src="img/lec5/30.png" alt=""></p>
+<h3 id="531-&#x4E3A;&#x4EC0;&#x4E48;&#x4F2A;&#x9006;&#x662F;&#x6709;&#x6548;&#x7684;">5.3.1. &#x4E3A;&#x4EC0;&#x4E48;&#x4F2A;&#x9006;&#x662F;&#x6709;&#x6548;&#x7684;</h3>
+<p>$$
+\begin{matrix}
+   W = X \Sigma Y \
+   W^{-1} = X^{-1} <em> \Sigma^{-1} </em> Y^{-1} \
+   \because X^{-1} = X^T, Y^{-1} = Y^T \
+   \Sigma^{-1} = \frac{1}{\Sigma_{ii}} \
+\end{matrix}</p>
+<p>$$</p>
+<ul>
+<li>X&#x3001;Y&#x6B63;&#x4EA4;&#x77E9;&#x9635;&#xFF0C;$\Sigma$&#x662F;&#x5BF9;&#x89D2;&#x77E9;&#x9635;</li>
+<li>&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;W&#x662F;&#x975E;&#x5947;&#x5F02;&#x77E9;&#x9635;&#xFF0C;&#x4F2A;&#x9006;&#x77E9;&#x9635;&#x662F;&#x771F;&#x7684;&#x9006;&#x77E9;&#x9635;</li>
+</ul>
+<h2 id="54-cur&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x8BC1;&#x660E;&#x662F;svd&#x7684;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x8FD1;&#x4F3C;">5.4. CUR&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x8BC1;&#x660E;&#x662F;SVD&#x7684;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x8FD1;&#x4F3C;</h2>
+<p><img src="img/lec5/31.png" alt=""></p>
+<h2 id="55-cur&#x7684;&#x4F18;&#x70B9;&#x548C;&#x7F3A;&#x70B9;">5.5. CUR&#x7684;&#x4F18;&#x70B9;&#x548C;&#x7F3A;&#x70B9;</h2>
+<h3 id="551-&#x4F18;&#x70B9;">5.5.1. &#x4F18;&#x70B9;</h3>
+<ol>
+<li>&#x5F88;&#x597D;&#x8BA1;&#x7B97;&#xFF1A;&#x7531;&#x4E8E;&#x57FA;&#x5411;&#x91CF;&#x662F;&#x5B9E;&#x9645;&#x7684;&#x5217;&#x548C;&#x884C;</li>
+<li>&#x7A00;&#x758F;&#x77E9;&#x9635;&#xFF1A;&#x7531;&#x4E8E;&#x57FA;&#x5411;&#x91CF;&#x662F;&#x5B9E;&#x9645;&#x7684;&#x5217;&#x548C;&#x884C;</li>
+</ol>
+<h3 id="552-&#x7F3A;&#x70B9;">5.5.2. &#x7F3A;&#x70B9;</h3>
+<ol>
+<li>&#x91CD;&#x590D;&#x7684;&#x5217;&#x548C;&#x884C;&#xFF1A;&#x5927;&#x91CF;&#x7684;&#x5217;&#x5C06;&#x88AB;&#x591A;&#x6B21;&#x91C7;&#x6837;</li>
+</ol>
+<h2 id="56-&#x5982;&#x4F55;&#x907F;&#x514D;&#x91CD;&#x590D;">5.6. &#x5982;&#x4F55;&#x907F;&#x514D;&#x91CD;&#x590D;</h2>
+<ol>
+<li>&#x65B9;&#x6848;&#x4E00;:&#x76F4;&#x63A5;&#x629B;&#x5F03;</li>
+<li>&#x65B9;&#x6CD5;&#x4E8C;:&#x7528;&#x91CD;&#x590D;&#x9879;&#x7684;&#x5E73;&#x65B9;&#x6839;&#x7F29;&#x653E;&#xFF08;&#x4E58;&#xFF09;&#x5217;/&#x884C;</li>
+</ol>
+<h1 id="6-svd&#x548C;cur">6. SVD&#x548C;CUR</h1>
+<p><img src="img/lec5/32.png" alt=""></p>
+<h2 id="61-&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x9A8C;">6.1. &#x7B80;&#x5355;&#x7684;&#x5B9E;&#x9A8C;</h2>
+<ol>
+<li>DBLP bibliographic data<ol>
+<li>Author-to-conference &#x7684;&#x5927;&#x7A00;&#x758F;&#x77E9;&#x9635;</li>
+<li>$A_{ij}$:&#x4F5C;&#x8005;i&#x5728;&#x4F1A;&#x8BAE;j&#x4E0A;&#x53D1;&#x8868;&#x7684;&#x8BBA;&#x6587;&#x6570;&#x91CF;</li>
+<li>428k&#x4E2A;&#x4F5C;&#x8005;(&#x5217;)&#xFF0C;3659&#x4F1A;&#x8BAE;(&#x884C;)</li>
+<li>&#x975E;&#x5E38;&#x7A00;&#x758F;</li>
+</ol>
+</li>
+</ol>
+<h2 id="62-dblp&#x7684;&#x7ED3;&#x679C;">6.2. DBLP&#x7684;&#x7ED3;&#x679C;</h2>
+<p><img src="img/lec5/33.png" alt=""></p>
+<h1 id="7-&#x7EBF;&#x6027;&#x5047;&#x8BBE;">7. &#x7EBF;&#x6027;&#x5047;&#x8BBE;</h1>
+<ol>
+<li>SVD&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x7EBF;&#x6027;&#x6295;&#x5F71;:&#x4F4E;&#x7EF4;&#x7EBF;&#x6027;&#x6295;&#x5F71;&#xFF0C;&#x4FDD;&#x6301;&#x6B27;&#x5F0F;&#x8DDD;&#x79BB;</li>
+<li>&#x975E;&#x7EBF;&#x6027;&#x65B9;&#x6CD5;:Isomap<ol>
+<li>&#x6570;&#x636E;&#x4F4D;&#x4E8E;&#x4E00;&#x4E2A;&#x4F4E;&#x7EF4;&#x7684;&#x975E;&#x7EBF;&#x6027;&#x66F2;&#x7EBF;</li>
+<li>&#x4F7F;&#x7528;&#x8DDD;&#x79BB;&#x5EA6;&#x91CF;&#x5BF9;&#x5E94;&#x7684;&#x5F62;&#x72B6;</li>
+</ol>
+</li>
+</ol>
+<h1 id="8-&#x5176;&#x4ED6;&#x53C2;&#x8003;">8. &#x5176;&#x4ED6;&#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://www.zhihu.com/question/22237507" target="_blank">&#x5947;&#x5F02;&#x503C;&#x7684;&#x7269;&#x7406;&#x542B;&#x4E49;&#x662F;&#x4EC0;&#x4E48;</a></li>
+<li><a href="https://blog.csdn.net/mr_kktian/article/details/72760506" target="_blank">&#x6D45;&#x8C08;SVD&#x5206;&#x89E3;&#x548C;CUR&#x5206;&#x89E3;</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lecture4-链接分析.html" class="navigation navigation-prev " aria-label="Previous page: Lecture4-链接分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lecture6-分类.html" class="navigation navigation-next " aria-label="Next page: Lecture6-分类">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lecture5-数据降维","level":"1.7","depth":1,"next":{"title":"Lecture6-分类","level":"1.8","depth":1,"path":"Lecture6-分类.md","ref":"Lecture6-分类.md","articles":[]},"previous":{"title":"Lecture4-链接分析","level":"1.6","depth":1,"path":"Lecture4-链接分析.md","ref":"Lecture4-链接分析.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Lecture5-数据降维.md","mtime":"2020-11-04T12:10:26.500Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

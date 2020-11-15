@@ -1,0 +1,1051 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lecture3-大数据存储和处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lecture4-链接分析.html" />
+    
+    
+    <link rel="prev" href="Lecture2-大数据平台.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Exam-整理.html">
+            
+                <a href="Exam-整理.html">
+            
+                    
+                    Exam-整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Lecture1-大数据分析.html">
+            
+                <a href="Lecture1-大数据分析.html">
+            
+                    
+                    Lecture1-大数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Lecture2-大数据平台.html">
+            
+                <a href="Lecture2-大数据平台.html">
+            
+                    
+                    Lecture2-大数据平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="Lecture3-大数据存储和处理.html">
+            
+                <a href="Lecture3-大数据存储和处理.html">
+            
+                    
+                    Lecture3-大数据存储和处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Lecture4-链接分析.html">
+            
+                <a href="Lecture4-链接分析.html">
+            
+                    
+                    Lecture4-链接分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Lecture5-数据降维.html">
+            
+                <a href="Lecture5-数据降维.html">
+            
+                    
+                    Lecture5-数据降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Lecture6-分类.html">
+            
+                <a href="Lecture6-分类.html">
+            
+                    
+                    Lecture6-分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Lecture7-聚类.html">
+            
+                <a href="Lecture7-聚类.html">
+            
+                    
+                    Lecture7-聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Lecture8-推荐系统.html">
+            
+                <a href="Lecture8-推荐系统.html">
+            
+                    
+                    Lecture8-推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Lecture9-知识图谱.html">
+            
+                <a href="Lecture9-知识图谱.html">
+            
+                    
+                    Lecture9-知识图谱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Lecture10-Graph%20DB.md">
+            
+                <span>
+            
+                    
+                    Lecture10-Graph%20DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="Lecture11-图挖掘.html">
+            
+                <a href="Lecture11-图挖掘.html">
+            
+                    
+                    Lecture11-图挖掘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Lecture12-Spark与数据分析.html">
+            
+                <a href="Lecture12-Spark与数据分析.html">
+            
+                    
+                    Lecture12-Spark与数据分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="Tec1-TF-IDF算法.html">
+            
+                <a href="Tec1-TF-IDF算法.html">
+            
+                    
+                    Tec1-TF-IDF算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="Tec2-安装Hadoop和Spark.html">
+            
+                <a href="Tec2-安装Hadoop和Spark.html">
+            
+                    
+                    Tec2-安装Hadoop和Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="Tec3-yolo.html">
+            
+                <a href="Tec3-yolo.html">
+            
+                    
+                    Tec3-yolo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="Tec4-情感分析.html">
+            
+                <a href="Tec4-情感分析.html">
+            
+                    
+                    Tec4-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="Tec5-pdfminer.html">
+            
+                <a href="Tec5-pdfminer.html">
+            
+                    
+                    Tec5-pdfminer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="Tec6-文本预处理与关键词提取.html">
+            
+                <a href="Tec6-文本预处理与关键词提取.html">
+            
+                    
+                    Tec6-文本预处理与关键词提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="Tec7-图片处理.html">
+            
+                <a href="Tec7-图片处理.html">
+            
+                    
+                    Tec7-图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="Tec8-鸢尾花数据集分类.html">
+            
+                <a href="Tec8-鸢尾花数据集分类.html">
+            
+                    
+                    Tec8-鸢尾花数据集分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="Tec9-SVD.html">
+            
+                <a href="Tec9-SVD.html">
+            
+                    
+                    Tec9-SVD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="Tec10-基于MovieLens的推荐系统.html">
+            
+                <a href="Tec10-基于MovieLens的推荐系统.html">
+            
+                    
+                    Tec10-基于MovieLens的推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Lecture3-大数据存储和处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lecture3-&#x5927;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x5904;&#x7406;">Lecture3-&#x5927;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x5904;&#x7406;</h2>
+<p>[TOC]</p>
+<h1 id="1-&#x5E38;&#x89C1;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;">1. &#x5E38;&#x89C1;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;</h1>
+<ol>
+<li>&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;</li>
+<li>NoSQL:&#x6CDB;&#x6307;&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6BD4;&#x5982;MongoDB</li>
+<li>&#x5168;&#x6587;&#x68C0;&#x7D22;&#x6846;&#x67B6;:Elasticsearch</li>
+</ol>
+<h2 id="11-&#x5B58;&#x50A8;&#x7684;&#x533A;&#x522B;">1.1. &#x5B58;&#x50A8;&#x7684;&#x533A;&#x522B;</h2>
+<ol>
+<li>&#x884C;&#x5F0F;&#x5B58;&#x50A8;&#xFF1A;&#x5927;&#x6570;&#x636E;&#x91CF;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7D22;&#x5F15;&#xFF0C;&#x5219;&#x4F1A;&#x904D;&#x5386;</li>
+<li>&#x5217;&#x5F0F;&#x5B58;&#x50A8;&#xFF1A;&#x53EF;&#x4EE5;&#x5927;&#x91CF;&#x7684;&#x538B;&#x7F29;&#x7A7A;&#x95F4;</li>
+<li>&#x4F4D;&#x56FE;&#x7D22;&#x5F15;</li>
+</ol>
+<blockquote>
+<p>&#x4F4D;&#x56FE;&#x7D22;&#x5F15;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x4E3A;</p>
+<ol>
+<li>&quot;&#x7537;&quot;:100101</li>
+<li>&quot;&#x5973;&quot;:011010</li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x884C;&#x53F7;</th>
+<th>&#x59D3;&#x540D;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>&#x7537;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&#x5973;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&#x5973;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>&#x7537;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>&#x5973;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&#x7537;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-&#x4E0D;&#x540C;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x7684;&#x5BF9;&#x6BD4;">1.2. &#x4E0D;&#x540C;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x7684;&#x5BF9;&#x6BD4;</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>name</th>
+<th>age</th>
+<th>sex</th>
+<th>aihao</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>&#x5C0F;&#x660E;</td>
+<td>21</td>
+<td>&#x7537;</td>
+<td>&#x5973;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&#x9694;&#x58C1;&#x8001;&#x738B;</td>
+<td>25</td>
+<td></td>
+<td>&#x9694;&#x58C1;&#x5B69;&#x5B50;</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>MySQL&#x5F62;&#x5F0F;&#x5B58;&#x50A8;</li>
+</ol>
+<pre><code class="lang-sql">1,&#x5C0F;&#x660E;,21,&#x7537;,&#x5973;
+2,&#x9694;&#x58C1;&#x8001;&#x738B;,25, null, &#x9694;&#x58C1;&#x5B69;&#x5B50;
+</code></pre>
+<ol>
+<li>HBase&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;:<ol>
+<li>HBase&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x5217;&#x5F0F;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;&#x8BB0;&#x5F55;&#x6309;<strong>&#x5217;&#x7C07;</strong>&#x96C6;&#x4E2D;&#x5B58;&#x653E;&#xFF0C;&#x901A;&#x8FC7;&#x4E3B;&#x952E;(row, key)&#x548C;&#x4E3B;&#x952E;&#x7684;range&#x6765;&#x68C0;&#x7D22;&#x6570;&#x636E;&#x3002;</li>
+<li>HBase&#x8868;&#x4E2D;&#x6BCF;&#x4E2A;&#x5217;&#x90FD;&#x5C5E;&#x4E8E;&#x67D0;&#x4E00;&#x4E2A;&#x5217;&#x7C07;</li>
+<li>&#x5217;&#x7C07;&#x662F;&#x8868;&#x7684;Schame&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4F46;&#x662F;&#x5217;&#x4E0D;&#x662F;&#xFF0C;&#x5217;&#x540D;&#x90FD;&#x662F;&#x4EE5;&#x5217;&#x7C07;&#x4F5C;&#x4E3A;&#x524D;&#x7F00;&#x3002;</li>
+</ol>
+</li>
+</ol>
+<pre><code>&lt;1, name&gt;,&#x5C0F;&#x660E;
+&lt;1, age&gt;, 21
+...
+&lt;2, name&gt;, &#x9694;&#x58C1;&#x8001;&#x738B;
+</code></pre><ol>
+<li>&#x4F20;&#x7EDF;&#x8868;&#x4E2D;&#x4F7F;&#x7528;Alter&#x5B50;&#x53E5;&#x6765;&#x4FEE;&#x6539;&#x8868;&#x7ED3;&#x6784;&#xFF0C;&#x800C;HBase&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x5C31;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x8868;&#x7ED3;&#x6784;</li>
+</ol>
+<h2 id="13-es&#x65B9;&#x5F0F;">1.3. ES&#x65B9;&#x5F0F;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x6587;&#x6863;id</th>
+<th>&#x6587;&#x6863;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc1</td>
+<td>how are you? fine, thank you, and you? I fine too, thank you!</td>
+</tr>
+<tr>
+<td>doc2</td>
+<td>good morning, LiLei, good morning, Hanmeimei</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x5012;&#x6392;&#x7D22;&#x5F15;&#x793A;&#x4F8B;:ES&#x7684;&#x5B58;&#x50A8;(&#x5012;&#x6392;&#x7D22;&#x5F15;)&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</p>
+<ol>
+<li>&#x5E94;&#x8BE5;&#x5C06;&#x67E5;&#x8BE2;&#x9891;&#x7387;&#x9AD8;&#x7684;&#x5355;&#x8BCD;&#x653E;&#x5728;&#x524D;&#x9762;(&#x8D8A;&#x9AD8;&#x8D8A;&#x524D;)</li>
+<li>ES&#x9ED8;&#x8BA4;&#x5C06;&#x6587;&#x6863;&#x5B58;&#x50A8;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E0D;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x4FE1;&#x606F;</li>
+<li>TF-IDF&#x7B97;&#x6CD5;&#xFF1A;&#x53C2;&#x89C1;<a href="Tec1-TF-IDF&#x7B97;&#x6CD5;.html">Tec1-TF-IDF&#x7B97;&#x6CD5;</a></li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>dictionary</th>
+<th>posting-list</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fine</td>
+<td><code>-&gt;</code> doc1</td>
+</tr>
+<tr>
+<td>Hanmei</td>
+<td><code>-&gt;</code> doc2</td>
+</tr>
+<tr>
+<td>good</td>
+<td><code>-&gt;</code> doc2</td>
+</tr>
+<tr>
+<td>LiLei</td>
+<td><code>-&gt;</code> doc2</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>you</td>
+<td><code>-&gt;</code> doc1 <code>-&gt;</code> doc2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="14-&#x5217;&#x5B58;&#x50A8;&#x548C;&#x884C;&#x5B58;&#x50A8;">1.4. &#x5217;&#x5B58;&#x50A8;&#x548C;&#x884C;&#x5B58;&#x50A8;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>&#x5217;&#x5B58;&#x50A8;</th>
+<th>&#x884C;&#x5B58;&#x50A8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5173;&#x6CE8;&#x70B9;</td>
+<td>&#x7ECF;&#x5E38;&#x5173;&#x6CE8;&#x4E00;&#x5F20;&#x8868;&#x67D0;&#x51E0;&#x5217;&#x800C;&#x975E;&#x6574;&#x8868;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;</td>
+<td>&#x5173;&#x6CE8;&#x6574;&#x5F20;&#x8868;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6216;&#x8005;&#x9700;&#x8981;&#x7ECF;&#x5E38;&#x66F4;&#x65B0;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>&#x8BA1;&#x7B97;&#x9700;&#x8981;</td>
+<td>&#x6570;&#x636E;&#x8868;&#x5217;&#x6709;&#x975E;&#x5E38;&#x591A;&#x884C;&#x6570;&#x636E;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x805A;&#x96C6;&#x8BA1;&#x7B97;&#x7684;&#x65F6;&#x5019;</td>
+<td>&#x4E0D;&#x9700;&#x8981;&#x805A;&#x96C6;&#x8FD0;&#x7B97;&#xFF0C;&#x6216;&#x8005;&#x5FEB;&#x901F;&#x67E5;&#x8BE2;&#x9700;&#x6C42;</td>
+</tr>
+<tr>
+<td>&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;</td>
+<td>&#x57FA;&#x4E8E;&#x4E00;&#x5217;&#x6216;&#x8005;&#x6BD4;&#x8F83;&#x5C11;&#x7684;&#x5217;&#x8BA1;&#x7B97;&#x7684;&#x65F6;&#x5019;</td>
+<td>&#x9700;&#x8981;&#x7ECF;&#x5E38;&#x8BFB;&#x53D6;&#x67D0;&#x884C;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x5F62;&#x5F0F;</td>
+<td>&#x6570;&#x636E;&#x8868;&#x62E5;&#x6709;&#x975E;&#x5E38;&#x591A;&#x7684;&#x5217;&#x7684;&#x65F6;&#x5019;</td>
+<td>&#x6570;&#x636E;&#x8868;&#x672C;&#x8EAB;&#x6570;&#x636E;&#x884C;&#x5E76;&#x4E0D;&#x591A;</td>
+</tr>
+<tr>
+<td>&#x6570;&#x636E;&#x7279;&#x6027;</td>
+<td>&#x6570;&#x636E;&#x8868;&#x5217;&#x6709;&#x975E;&#x5E38;&#x591A;&#x7684;&#x91CD;&#x590D;&#x6570;&#x636E;&#xFF0C;&#x6709;&#x5229;&#x4E8E;&#x9AD8;&#x5EA6;&#x538B;&#x7F29;</td>
+<td>&#x6570;&#x636E;&#x8868;&#x7684;&#x5217;&#x672C;&#x8EAB;&#x6709;&#x592A;&#x591A;&#x552F;&#x4E00;&#x7684;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="15-&#x8BFB;&#x5199;&#x7684;&#x533A;&#x522B;">1.5. &#x8BFB;&#x5199;&#x7684;&#x533A;&#x522B;</h2>
+<p><img src="img/lec3/7.png" alt=""></p>
+<h2 id="16-&#x805A;&#x7C07;&#x7D22;&#x5F15;&#x548C;&#x975E;&#x805A;&#x7C07;&#x7D22;&#x5F15;">1.6. &#x805A;&#x7C07;&#x7D22;&#x5F15;&#x548C;&#x975E;&#x805A;&#x7C07;&#x7D22;&#x5F15;</h2>
+<blockquote>
+<p>&#x7269;&#x7406;&#x5B58;&#x50A8;&#x7684;&#x6700;&#x5C0F;&#x7684;&#x5355;&#x4F4D;&#x662F;&#x5757;(Block)</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x805A;&#x96C6;&#x7D22;&#x5F15;</th>
+<th>&#x975E;&#x805A;&#x96C6;&#x7D22;&#x5F15;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/lec3/9.png" alt=""></td>
+<td><img src="img/lec3/8.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<h2 id="17-mysql">1.7. MySQL</h2>
+<ol>
+<li>&#x67E5;&#x8BE2;:<code>Select (tuple) from database</code></li>
+<li>&#x63D2;&#x5165;:<code>Insert into database value</code></li>
+<li>&#x66F4;&#x65B0;:<code>Update database set xxx = xxx where statement</code></li>
+<li>&#x5220;&#x9664;:<code>Delete from database where xxx</code></li>
+</ol>
+<h2 id="18-hbase">1.8. HBase</h2>
+<h3 id="181-hbase&#x5BF9;lsm&#x7684;&#x5B9E;&#x73B0;">1.8.1. HBase&#x5BF9;LSM&#x7684;&#x5B9E;&#x73B0;</h3>
+<blockquote>
+<p>LSM&#xFF0C;Log-Structured Merge-Tree&#xFF0C;&#x65E5;&#x5FD7;&#x7ED3;&#x6784;&#x5408;&#x5E76;&#x6811;</p>
+</blockquote>
+<ol>
+<li>&#x5047;&#x8BBE;&#x5185;&#x5B58;&#x975E;&#x5E38;&#x5927;&#xFF0C;&#x6709;&#x9650;&#x7684;&#x4F7F;&#x7528;&#x5185;&#x5B58;&#x5B58;&#x50A8;&#xFF0C;&#x7ED3;&#x5408;&#x65E5;&#x5FD7;&#x7ED3;&#x6784;&#x5B9E;&#x73B0;&#x3002;</li>
+<li>&#x6709;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x4E0D;&#x662F;&#x7ACB;&#x9A6C;&#x66F4;&#x65B0;&#xFF0C;&#x800C;&#x662F;&#x5148;&#x9A7B;&#x7559;&#x6570;&#x636E;&#xFF0C;&#x79EF;&#x7D2F;&#x5230;&#x4E00;&#x5B9A;&#x6761;&#x76EE;&#x540E;&#x5F52;&#x5E76;&#x6392;&#x5E8F;&#xFF0C;&#x7136;&#x540E;&#x8FFD;&#x52A0;&#x5230;&#x78C1;&#x76D8;&#x7684;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x5B50;&#x53EF;&#x4EE5;&#x663E;&#x8457;&#x51CF;&#x5C11;&#x78C1;&#x76D8;&#x7684;&#x5F00;&#x9500;&#xFF0C;&#x4E00;&#x6B21;&#x6027;&#x5927;&#x89C4;&#x6A21;&#x5199;&#x5165;&#xFF0C;&#x51CF;&#x5C11;&#x968F;&#x673A;&#x7684;I/O&#xFF0C;&#x4E0D;&#x80FD;&#x547D;&#x4E2D;&#x4F1A;&#x5BFC;&#x81F4;&#x8F83;&#x591A;&#x7684;&#x78C1;&#x76D8;&#x6D88;&#x8017;&#x3002;</li>
+</ol>
+<h3 id="182-hbase&#x7684;&#x5B9E;&#x73B0;">1.8.2. HBase&#x7684;&#x5B9E;&#x73B0;</h3>
+<ol>
+<li>&#x67E5;&#x8BE2;</li>
+<li>&#x63D2;&#x5165;</li>
+<li>&#x66F4;&#x65B0;&amp;&#x5220;&#x9664;:&#x770B;&#x505A;&#x4E00;&#x4E2A;&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x95F4;&#x6233;&#x548C;Delete&#x6807;&#x8BC6;&#x6765;&#x6807;&#x8BC6;</li>
+</ol>
+<blockquote>
+<p>memstore:&#x63D2;&#x5165;&#x65F6;&#x4F18;&#x5148;&#x653E;&#x7F6E;&#x5230;memstore&#xFF0C;&#x9A7B;&#x5B58;&#x5185;&#x5B58;&#xFF0C;&#x5230;&#x4E86;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x540E;&#x518D;&#x5237;&#x65B0;&#x5230;storeFile&#x3001;&#x63D2;&#x5165;&#x90FD;&#x662F;&#x5199;&#x5165;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<h2 id="19-es">1.9. ES</h2>
+<h3 id="191-es&#x7684;&#x90E8;&#x5206;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;">1.9.1. ES&#x7684;&#x90E8;&#x5206;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</h3>
+<ol>
+<li>&#x4E00;&#x4E2A;Node&#x662F;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;</li>
+<li>&#x5BB9;&#x707E;&#x7684;&#x8BDD;&#x5C31;&#x662F;&#x591A;&#x526F;&#x672C;&#x5BB9;&#x707E;</li>
+</ol>
+<h3 id="192-es&#x7684;&#x64CD;&#x4F5C;">1.9.2. ES&#x7684;&#x64CD;&#x4F5C;</h3>
+<ol>
+<li>&#x63D2;&#x5165;:&#x548C;HBase&#x76F8;&#x4F3C;&#xFF0C;&#x4E0D;&#x662F;&#x5199;&#x5165;&#x5373;&#x53EF;&#x67E5;&#x8BE2;&#xFF0C;&#x5EFA;&#x7ACB;index&#x9700;&#x8981;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x5F00;&#x9500;</li>
+<li>&#x8BFB;&#x53D6;</li>
+<li>&#x66F4;&#x65B0;&amp;&#x5220;&#x9664;</li>
+</ol>
+<h2 id="110-&#x4E0D;&#x540C;&#x5B58;&#x50A8;&#x7684;&#x5BB9;&#x707E;&#x65B9;&#x5F0F;">1.10. &#x4E0D;&#x540C;&#x5B58;&#x50A8;&#x7684;&#x5BB9;&#x707E;&#x65B9;&#x5F0F;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5B58;&#x50A8;&#x65B9;&#x5F0F;</th>
+<th>&#x7ED3;&#x6784;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MySQL</td>
+<td>&#x5355;&#x8282;&#x70B9;&#xFF0C;&#x5305;&#x542B;&#x6570;&#x636E;&#x3001;&#x65E5;&#x5FD7;&#x4E24;&#x4E2A;&#x5C42;&#x9762;&#x7684;&#x64CD;&#x4F5C;</td>
+</tr>
+<tr>
+<td>HBase &amp; HDFS</td>
+<td>&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x7C7B;&#x4F3C;MySQL&#x7684;&#x5355;&#x8282;&#x70B9;</td>
+</tr>
+<tr>
+<td>ES</td>
+<td>&#x5404;&#x8282;&#x70B9;&#x5907;&#x4EFD;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-hadoop&#x4ECB;&#x7ECD;">2. Hadoop&#x4ECB;&#x7ECD;</h1>
+<blockquote>
+<p>Hadoop:&#x4E00;&#x4E2A;Apache&#x57FA;&#x91D1;&#x4F1A;&#x5F00;&#x53D1;&#x7684;&#x5F00;&#x6E90;&#x8F6F;&#x4EF6;&#x6846;&#x67B6;&#xFF0C;&#x652F;&#x6301;&#x5728;&#x7531;&#x666E;&#x901A;&#x8BA1;&#x7B97;&#x673A;&#x7EC4;&#x6210;&#x7684;&#x96C6;&#x7FA4;&#x4E2D;&#x8FD0;&#x884C;&#x6D77;&#x91CF;&#x6570;&#x636E;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x8BA9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8F7B;&#x677E;&#x6269;&#x5C55;&#x5230;&#x4E0A;&#x5343;&#x4E2A;&#x8282;&#x70B9;&#x548C;PB&#x7EA7;&#x522B;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+</blockquote>
+<h2 id="21-google-&#x4E09;&#x5927;&#x8BBA;&#x6587;">2.1. Google &#x4E09;&#x5927;&#x8BBA;&#x6587;</h2>
+<ol>
+<li>MapReduce</li>
+<li>GFS</li>
+<li>Big Table</li>
+</ol>
+<h2 id="22-doug-cutting-&#x5C71;&#x5BE8;&#x9879;&#x76EE;">2.2. Doug Cutting &#x5C71;&#x5BE8;&#x9879;&#x76EE;</h2>
+<ol>
+<li>MapReduce</li>
+<li>HDFS</li>
+<li>HBase</li>
+</ol>
+<h2 id="23-&#x5927;&#x6570;&#x636E;&#x5904;&#x7406;&#x5C42;&#x6B21;&#x67B6;&#x6784;">2.3. &#x5927;&#x6570;&#x636E;&#x5904;&#x7406;&#x5C42;&#x6B21;&#x67B6;&#x6784;</h2>
+<p><img src="img/lec3/2.png" alt=""></p>
+<h2 id="24-hadoop&#x6838;&#x5FC3;">2.4. Hadoop&#x6838;&#x5FC3;</h2>
+<ol>
+<li>MapReduce<ol>
+<li>Map:&#x4EFB;&#x52A1;&#x7684;&#x5206;&#x89E3;</li>
+<li>Reduce:&#x7ED3;&#x6784;&#x7684;&#x6C47;&#x603B;</li>
+</ol>
+</li>
+<li>HDFS<ol>
+<li>NameNode</li>
+<li>DataNode</li>
+<li>Client</li>
+</ol>
+</li>
+</ol>
+<h3 id="241-mapreduce">2.4.1. MapReduce</h3>
+<ol>
+<li>MapReduce&#x662F;&#x4E00;&#x79CD;&#x5E76;&#x884C;&#x7F16;&#x7A0B;&#x6A21;&#x578B;&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x5206;&#x6CBB;&#x7B97;&#x6CD5;&#x7684;&#x4E00;&#x79CD;&#x5B9E;&#x73B0;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5927;&#x89C4;&#x6A21;&#x6570;&#x636E;&#x96C6;&#x7684;&#x5E76;&#x884C;&#x8BA1;&#x7B97;<ol>
+<li>map:<code>(k1,v1)-&gt;list(k2,v2)</code></li>
+<li>reduce:<code>(k2,list(v2)) -&gt; (k3, v3)</code></li>
+</ol>
+</li>
+<li>&#x793A;&#x4F8B;:&#x66F9;&#x51B2;&#x79F0;&#x8C61;</li>
+<li>&#x8FC7;&#x7A0B;:<code>Input -&gt; Map -&gt; Sort -&gt; Combine -&gt; Partition -&gt; Reduce -&gt; Output</code></li>
+</ol>
+<p><img src="img/lec3/1.png" alt=""></p>
+<h3 id="242-hdfs&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;">2.4.2. HDFS&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;</h3>
+<ol>
+<li>Block</li>
+<li>NameNode &amp; Secondary NameNode</li>
+<li>Datanode</li>
+</ol>
+<h3 id="243-hdfs&#x67B6;&#x6784;">2.4.3. HDFS&#x67B6;&#x6784;</h3>
+<p><img src="img/lec3/3.png" alt=""></p>
+<h4 id="2431-block">2.4.3.1. Block</h4>
+<ol>
+<li>&#x5757;&#x5927;&#x5C0F;&#x9ED8;&#x8BA4;&#x4E3A;64M(v1.0)</li>
+<li>&#x5757;&#x5927;&#x5C0F;&#x9ED8;&#x8BA4;&#x4E3A;128M(v2.0)</li>
+<li>&#x6570;&#x636E;&#x548C;&#x5143;&#x6570;&#x636E;</li>
+</ol>
+<p><img src="img/lec3/4.png" alt=""></p>
+<ol>
+<li>&#x5907;&#x4EFD;</li>
+<li>&#x4E00;&#x6B21;&#x5199;&#x5165;&#x591A;&#x6B21;&#x8BFB;&#x53D6;</li>
+</ol>
+<h4 id="2432-namenode">2.4.3.2. NameNode</h4>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x7BA1;&#x7406;&#x8005;&#xFF0C;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;metadata&#xFF0C;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x5B58;&#x50A8;&#x5757;&#x7684;&#x8D4B;&#x503C;</li>
+<li>&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;EditLog&#x3001;FSImage</li>
+<li>&#x4E24;&#x4E2A;&#x6620;&#x5C04;&#xFF1A;<code>Filename -&gt; BlockSequence(FsImage)</code>&#x3001;<code>Block -&gt; DatanodeList(BlockReport)</code></li>
+<li>&#x5355;&#x70B9;(NameNode)&#x98CE;&#x9669;</li>
+</ol>
+<h4 id="2433-secondary-namenode">2.4.3.3. Secondary NameNode</h4>
+<ol>
+<li>&#x4E0D;&#x662F;&#x5907;&#x7528;NameNode&#xFF0C;&#x800C;&#x662F;&#x79D8;&#x4E66;</li>
+<li>&#x5408;&#x5E76;&#x548C;&#x4FDD;&#x5B58;EditLog&#x3001;FSImage<ol>
+<li>Checkpoint.period</li>
+<li>Checkpoint.size</li>
+</ol>
+</li>
+</ol>
+<h4 id="2434-datanode">2.4.3.4. Datanode</h4>
+<p>&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;&#x3002;&#x5B83;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x5757;&#x5728;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x4E86;&#x6587;&#x4EF6;&#x5757;&#x7684;meta-data&#xFF0C;&#x540C;&#x65F6;&#x5468;&#x671F;&#x6027;&#x7684;&#x53D1;&#x9001;&#x6240;&#x6709;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5757;&#x7684;&#x62A5;&#x9519;&#x7ED9;Namenode</p>
+<h4 id="2435-hdfs&#x6587;&#x4EF6;&#x8BFB;&#x5199;">2.4.3.5. HDFS&#x6587;&#x4EF6;&#x8BFB;&#x5199;</h4>
+<p>&#x8BFB;&#x6587;&#x4EF6;&#xFF1A;&#x8BFB;&#x53D6;&#x5B8C;&#x4E4B;&#x540E;&#x4F1A;&#x6821;&#x9A8C;(Check Sum)&#xFF0C;&#x672A;&#x901A;&#x8FC7;&#x5219;&#x544A;&#x77E5;&#x9519;&#x8BEF;</p>
+<p><img src="img/lec3/5.png" alt=""></p>
+<p>&#x5199;&#x6587;&#x4EF6;:&#x590D;&#x5236;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x5197;&#x4F59;&#x6570;&#x636E;&#x653E;&#x7F6E;&#x5728;&#x673A;&#x67DC;&#x4E2D;&#xFF0C;&#x8DE8;&#x673A;&#x67DC;&#x8981;&#x7ECF;&#x8FC7;&#x4EA4;&#x6362;&#x673A;&#x7B49;&#x8BBE;&#x5907;</p>
+<p><img src="img/lec3/6.png" alt=""></p>
+<h1 id="3-hbase">3. HBase</h1>
+<ol>
+<li>HBase&#x4EE5;&#x8C37;&#x6B4C;&#x7684;BigTable&#x4E3A;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x7528;Java&#x7F16;&#x5199;</li>
+<li>HBase&#x662F;&#x5728;HDFS&#x4E0A;&#x5F00;&#x53D1;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5BB9;&#x9519;&#x7684;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#x5927;&#x91CF;&#x7684;&#x7A00;&#x758F;&#x6570;&#x636E;</li>
+<li>&#x4E00;&#x4E2A;HBase&#x7CFB;&#x7EDF;&#x5305;&#x62EC;&#x4E00;&#x7EC4;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x8868;&#x5305;&#x542B;&#x884C;&#x548C;&#x5217;&#xFF0C;&#x5C31;&#x50CF;&#x4F20;&#x7EDF;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E00;&#x6837;&#x3002;&#x6BCF;&#x4E2A;&#x8868;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x5B9A;&#x4E49;&#x4E3A;&#x4E3B;&#x952E;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6240;&#x6709;&#x5BF9;HBase&#x8868;&#x7684;&#x8BBF;&#x95EE;&#x5C1D;&#x8BD5;&#x90FD;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x4E3B;&#x952E;&#x3002;&#x4E00;&#x4E2A;HBase Column&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x3002;</li>
+</ol>
+<h2 id="31-&#x4EC0;&#x4E48;&#x662F;hbase">3.1. &#x4EC0;&#x4E48;&#x662F;HBase</h2>
+<ol>
+<li>HBase&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x3001;&#x975E;&#x7ED3;&#x6784;&#x5316;&#x3001;&#x7A00;&#x758F;&#x3001;&#x9762;&#x5411;&#x5217;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;</li>
+<li>HBase&#x662F;&#x57FA;&#x4E8E;HDFS&#xFF0C;&#x5C71;&#x5BE8;&#x7248;&#x7684;BigTable&#xFF0C;&#x7EE7;&#x627F;&#x4E86;&#x53EF;&#x9760;&#x6027;&#x3001;&#x9AD8;&#x6027;&#x80FD;&#x3001;&#x53EF;&#x4F38;&#x7F29;&#x6027;</li>
+</ol>
+<h2 id="32-hbase&#x67B6;&#x6784;">3.2. HBase&#x67B6;&#x6784;</h2>
+<p><img src="img/lec3/10.png" alt="">
+<img src="img/lec3/11.png" alt=""></p>
+<h2 id="33-hbase&#x89D2;&#x8272;">3.3. HBase&#x89D2;&#x8272;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x89D2;&#x8272;</th>
+<th>&#x5185;&#x5BB9;&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ZooKeeper</td>
+<td>1. &#x4E00;&#x4E2A;&#x9AD8;&#x6548;&#x7684;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x534F;&#x8C03;&#x7CFB;&#x7EDF;<br>2. Hadoop&#x7684;&#x5B50;&#x9879;&#x76EE;&#xFF0C;&#x4E0D;&#x5C5E;&#x4E8E;HBase</td>
+</tr>
+<tr>
+<td>HMaster</td>
+<td>1. &#x7BA1;&#x7406;&#x7F51;&#x7EDC;&#x5BF9;Table&#x7684;&#x589E;&#x3001;&#x5220;&#x3001;&#x6539;&#x3001;&#x67E5;&#x64CD;&#x4F5C;<br>2. &#x7BA1;&#x7406;HRegionServer&#x8D1F;&#x8F7D;&#x5747;&#x8861;</td>
+</tr>
+<tr>
+<td>HRegionServer</td>
+<td>1. &#x7BA1;&#x7406;&#x4E00;&#x7CFB;&#x5217;HRegion<br>2. Region&#x8BFB;&#x5199;&#x7684;&#x573A;&#x6240;</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/lec3/12.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>&#x89D2;&#x8272;</th>
+<th>&#x5185;&#x5BB9;&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HRegion</td>
+<td>1. &#x5BF9;&#x5E94;Table&#x7684;Region<br>2. HStore&#x548C;HLog</td>
+</tr>
+<tr>
+<td>HStore</td>
+<td>1. &#x5BF9;&#x5E94;&#x4E86;Table&#x4E2D;&#x7684;&#x4E00;&#x4E2A;Column Family&#x7684;&#x5B58;&#x50A8;<br>2. MemStore<br>3. StoreFile(HFile)</td>
+</tr>
+<tr>
+<td>StoreFile</td>
+<td>1. Compact<br>2. Split</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/lec3/13.png" alt=""></p>
+<h2 id="34-hbase&#x6570;&#x636E;&#x6A21;&#x578B;">3.4. HBase&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
+<blockquote>
+<p>Table &amp; Column Family</p>
+<ol>
+<li>RowKey:Table&#x7684;&#x4E3B;&#x952E;, &#x8BB0;&#x5F55;&#x6309;&#x7167;RowKey&#x6392;&#x5E8F;</li>
+<li>Timestamp:&#x6BCF;&#x6B21;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x5BF9;&#x5E94;&#x7684;&#x65F6;&#x95F4;&#x6233;,&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x6570;&#x636E;&#x7684;version number(&#x5783;&#x573E;&#x6E05;&#x7406;)</li>
+<li>Column Family:Table&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7531;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;Column Family&#x7EC4;&#x6210;,&#x4E00;&#x4E2A;Column Family&#x4E2D;&#x53EF;&#x4EE5;&#x7531;&#x4EFB;&#x610F;&#x591A;&#x4E2A;Colum&#x7EC4;&#x6210;</li>
+</ol>
+</blockquote>
+<p><img src="img/lec3/14.png" alt=""></p>
+<blockquote>
+<p>Table &amp; Region</p>
+<ol>
+<li>&#x8BB0;&#x5F55;&#x6570;&#x4E0D;&#x65AD;&#x589E;&#x591A;&#x540E;,Table&#x4F1A;&#x9010;&#x6E10;&#x5206;&#x88C2;&#x6210;&#x591A;&#x4EFD;splits,&#x6210;&#x4E3A;regions</li>
+<li>&#x4E00;&#x4E2A;region&#x7531;[startkey,endkey)&#x8868;&#x793A;</li>
+<li>&#x4E0D;&#x540C;&#x7684;region&#x4F1A;&#x88AB;Master&#x5206;&#x914D;&#x7ED9;&#x76F8;&#x5E94;&#x7684;RegionServer&#x8FDB;&#x884C;&#x7BA1;&#x7406;.</li>
+</ol>
+</blockquote>
+<p><img src="img/lec3/15.png" alt=""></p>
+<ol>
+<li><code>.META.</code>:&#x8BB0;&#x5F55;&#x7528;&#x6237;&#x8868;&#x7684;Region&#x4FE1;&#x606F;,&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;regoin</li>
+<li><code>-ROOT-</code>:&#x8BB0;&#x5F55;.META.&#x8868;&#x7684;Region&#x4FE1;&#x606F;,&#x53EA;&#x6709;&#x4E00;&#x4E2A;region</li>
+<li><code>Zookeeper</code>:&#x8BB0;&#x5F55;&#x4E86;-ROOT-&#x8868;&#x7684;location</li>
+</ol>
+<p><img src="img/lec3/16.png" alt=""></p>
+<h2 id="35-&#x6570;&#x636E;&#x5BFC;&#x5165;">3.5. &#x6570;&#x636E;&#x5BFC;&#x5165;</h2>
+<ol>
+<li>Sybase -&gt; HBase<ol>
+<li>bcp out</li>
+<li>importtsv</li>
+</ol>
+</li>
+</ol>
+<pre><code class="lang-sh">hadoop jar ~/hbase-0.92.1/hbase-0.92.1.jar importtsv \
+-Dimporttsv.separator= <span class="hljs-string">&quot;,&quot;</span> <span class="hljs-comment"># &#x6307;&#x5B9A;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x5206;&#x9694;&#x7B26;&#x4E3A;;\</span>
+-Dimporttsv.bulk.output=/output <span class="hljs-comment"># &#x8F93;&#x51FA;hfile&#x5230;/output</span>
+-Dimporttsv.columns=HBASE ROW KEY,cf1:USER NAME
+<span class="hljs-comment">#&#x6E90;&#x6587;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x5217;&#x4E3A;rowkey &#xFF0C;&#x7B2C;&#x4E8C;&#x5217;&#x4E3A;cf1:USER NAME\</span>
+users /bulkload/users.txt <span class="hljs-comment">#&#x5BFC; &#x5165;hbase&#x7684;users&#x8868;&#x4E2D;,&#x8F93; &#x5165;&#x6587;&#x4EF6;&#x5728;/bulkload\</span>
+hadoop jar ~/hbase-0.92. 1/hbase-0.92.1.jar completebulkload/output users
+</code></pre>
+<h2 id="36-&#x8BBF;&#x95EE;&#x63A5;&#x53E3;">3.6. &#x8BBF;&#x95EE;&#x63A5;&#x53E3;</h2>
+<ol>
+<li>Hadoop &amp; HBase&#x63D0;&#x4F9B;JAVA&#x63A5;&#x53E3;</li>
+<li>Thrift&#x652F;&#x6301;&#x591A;&#x8BED;&#x8A00;&#x8BBF;&#x95EE;HBase&#xFF0C;C++&#x3001;C#&#x3001;Cocoa&#x3001;Erlang&#x3001;Haskell&#x3001;Java&#x3001;Ocami&#x3001;Perl&#x3001;PHP&#x3001;Python&#x3001;Ruby&#x3001;Smalltalk</li>
+</ol>
+<h1 id="4-hive">4. Hive</h1>
+<ol>
+<li>Hive&#x662F;&#x57FA;&#x4E8E;Hadoop&#x7684;&#x6570;&#x636E;&#x4ED3;&#x5E93;&#x5DE5;&#x5177;&#xFF0C;&#x63D0;&#x4F9B;&#x5B8C;&#x6574;&#x7684;SQL&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7ED3;&#x6784;&#x5316;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x6620;&#x5C04;&#x4E3A;&#x4E00;&#x5F20;&#x6570;&#x636E;&#x5E93;&#x8868;&#x3002;<ol>
+<li>&#x53EF;&#x4EE5;&#x5C06;SQL&#x8BED;&#x53E5;&#x8F6C;&#x6362;&#x4E3A;MapReduce&#x4EFB;&#x52A1;&#x8FDB;&#x884C;&#x8FD0;&#x884C;&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;SQL&#x8BED;&#x53E5;&#x5FEB;&#x901F;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#x7684;MapReduce&#x7EDF;&#x8BA1;&#xFF0C;&#x4E0D;&#x5FC5;&#x5F00;&#x53D1;&#x4E13;&#x95E8;&#x7684;MapReduce&#x5E94;&#x7528;</li>
+</ol>
+</li>
+<li>&#x5B66;&#x4E60;&#x6210;&#x672C;&#x4F4E;</li>
+</ol>
+<h2 id="41-hive&#x4F53;&#x7CFB;&#x7ED3;&#x6784;">4.1. Hive&#x4F53;&#x7CFB;&#x7ED3;&#x6784;</h2>
+<p><img src="img/lec3/19.png" alt=""></p>
+<h2 id="42-hive&#x8FD0;&#x7EF4;&#x8981;&#x70B9;">4.2. Hive&#x8FD0;&#x7EF4;&#x8981;&#x70B9;</h2>
+<blockquote>
+<p>Hive&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x5957;Hadoop&#x7684;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#xFF0C;&#x8FD0;&#x7EF4;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#x95EE;&#x9898;&#x9700;&#x8981;&#x6CE8;&#x610F;</p>
+</blockquote>
+<ol>
+<li>&#x4F7F;&#x7528;&#x5355;&#x72EC;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5B58;&#x50A8;&#x5143;&#x6570;&#x636E;</li>
+<li>&#x5B9A;&#x4E49;&#x5408;&#x7406;&#x7684;&#x8868;&#x5206;&#x533A;&#x548C;&#x952E;</li>
+<li>&#x8BBE;&#x7F6E;&#x5408;&#x7406;&#x7684;bucket&#x6570;&#x636E;&#x91CF;</li>
+<li>&#x8FDB;&#x884C;&#x8868;&#x538B;&#x7F29;</li>
+<li>&#x5B9A;&#x4E49;&#x5916;&#x90E8;&#x8868;&#x4F7F;&#x7528;&#x89C4;&#x8303;</li>
+<li>&#x5408;&#x7406;&#x7684;&#x63A7;&#x5236;Mapper&#xFF0C;Reducer&#x6570;&#x91CF;</li>
+</ol>
+<h1 id="5-pig">5. Pig</h1>
+<blockquote>
+<p>Apache Pig&#x67B6;&#x6784;</p>
+</blockquote>
+<ol>
+<li>&#x4E25;&#x683C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;Pig&#x5206;&#x6790;Hadoop&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7684;&#x8BED;&#x8A00;&#x79F0;&#x4E3A;Pig Latin&#x662F;&#x4E00;&#x79CD;&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x5904;&#x7406;&#x8BED;&#x8A00;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7EC4;&#x4E30;&#x5BCC;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x5BF9;&#x6570;&#x636E;&#x6267;&#x884C;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x8981;&#x6267;&#x884C;&#x7279;&#x5B9A;&#x4EFB;&#x52A1;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x4F7F;&#x7528;Pig&#xFF0C;&#x9700;&#x8981;&#x7528;Pig Latin&#x8BED;&#x8A00;&#x7F16;&#x5199;Pig&#x811A;&#x672C;,&#x5E76;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x6267;&#x884C;&#x673A;&#x5236;( Grunt Shell&#xFF0C;UDFs&#xFF0C;Embedded )&#x6267;&#x884C;&#x5B83;&#x4EEC;&#x3002;&#x6267;&#x884C;&#x540E;,&#x8FD9;&#x4E9B;&#x811A;&#x672C;&#x5C06;&#x901A;&#x8FC7;&#x5E94;&#x7528;Pig&#x6846;&#x67B6;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x8F6C;&#x6362;&#x6765;&#x751F;&#x6210;&#x6240;&#x9700;&#x7684;&#x8F93;&#x51FA;&#x3002;</li>
+<li>&#x5728;&#x5185;&#x90E8;, Apache Pig&#x5C06;&#x8FD9;&#x4E9B;&#x811A;&#x672C;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x7CFB;&#x5217;MapReduce&#x4F5C;&#x4E1A;,&#x56E0;&#x6B64;,&#x5B83;&#x4F7F;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x5DE5;&#x4F5C;&#x53D8;&#x5F97;&#x5BB9;&#x6613;&#x3002;</li>
+</ol>
+<h2 id="51-pig&#x7EC4;&#x6210;&#x7EC4;&#x6210;">5.1. Pig&#x7EC4;&#x6210;&#x7EC4;&#x6210;</h2>
+<ol>
+<li>Parser (&#x89E3;&#x6790;&#x5668;)&#xFF1A;&#x6700;&#x521D;, Pig&#x811A;&#x672C;&#x7531;&#x89E3;&#x6790;&#x5668;&#x5904;&#x7406;,&#x5B83;&#x68C0;&#x67E5;&#x811A;&#x672C;&#x7684;&#x8BED;&#x6CD5;,&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x548C;&#x5176;&#x4ED6;&#x6742;&#x9879;&#x68C0;&#x67E5;&#x3002;&#x89E3;&#x6790;&#x5668;&#x7684;&#x8F93;&#x51FA;&#x5C06;&#x662F;DAG(&#x6709;&#x5411;&#x65E0;&#x73AF;&#x56FE;),&#x5B83;&#x8868;&#x793A;Pig Latin&#x8BED;&#x53E5;&#x548C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x3002;&#x5728;DAG&#x4E2D;,&#x811A;&#x672C;&#x7684;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x8868;&#x793A;&#x4E3A;&#x8282;&#x70B9;,&#x6570;&#x636E;&#x6D41;&#x8868;&#x793A;&#x4E3A;&#x8FB9;&#x3002;</li>
+<li>Optimizer (&#x4F18;&#x5316;&#x5668;)&#xFF1A;&#x903B;&#x8F91;&#x8BA1;&#x5212;(DAG)&#x4F20;&#x9012;&#x5230;&#x903B;&#x8F91;&#x4F18;&#x5316;&#x5668;,&#x903B;&#x8F91;&#x4F18;&#x5316;&#x5668;&#x6267;&#x884C;&#x903B;&#x8F91;&#x4F18;&#x5316;,&#x4F8B;&#x5982;&#x6295;&#x5F71;&#x548C;&#x4E0B;&#x63A8;&#x3002;</li>
+<li>Compiler (&#x7F16;&#x8BD1;&#x5668;)&#xFF1A;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x4F18;&#x5316;&#x7684;&#x903B;&#x8F91;&#x8BA1;&#x5212;&#x7F16;&#x8BD1;&#x4E3A;&#x4E00;&#x7CFB;&#x5217;MapReduce&#x4F5C;&#x4E1A;&#x3002;</li>
+<li>Execution engine (&#x6267;&#x884C;&#x5F15;&#x64CE;)&#xFF1A;&#x6700;&#x540E;,MapReduce&#x4F5C;&#x4E1A;&#x4EE5;&#x6392;&#x5E8F;&#x987A;&#x5E8F;&#x63D0;&#x4EA4;&#x5230;Hadoop&#x3002;&#x8FD9;&#x4E9B;MapReduce&#x4F5C;&#x4E1A;&#x5728;Hadoop&#x4E0A;&#x6267;&#x884C;,&#x4EA7;&#x751F;&#x6240;&#x9700;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
+</ol>
+<h2 id="52-pig&#x4E0E;sql&#x533A;&#x522B;">5.2. Pig&#x4E0E;SQL&#x533A;&#x522B;</h2>
+<ol>
+<li>&#x4F7F;&#x7528;&#x5EF6;&#x8FDF;&#x8BC4;&#x4EF7;&#x3001;&#x4F7F;&#x7528;ETL&#x3001;&#x80FD;&#x591F;&#x5728;&#x7BA1;&#x9053;&#x4E2D;&#x4EFB;&#x4F55;&#x65F6;&#x523B;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x3001;&#x652F;&#x6301;&#x7BA1;&#x9053;&#x5206;&#x88C2;</li>
+<li>Pig Latin&#x662F;&#x7A0B;&#x5E8F;&#x6027;&#x7684;,&#x5B83;&#x5728;&#x7BA1;&#x9053;&#x8303;&#x4F8B;&#x4E2D;&#x975E;&#x5E38;&#x81EA;&#x7136;,&#x800C;SQL&#x5219;&#x662F;&#x58F0;&#x660E;&#x6027;&#x7684;&#x3002;&#x5728;SQL&#x7528;&#x6237;&#x4E2D;,&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x8981;&#x8FDE;&#x63A5;&#x4E24;&#x4E2A;&#x8868;&#x7684;&#x6570;&#x636E;,&#x4F46;&#x4E0D;&#x80FD;&#x6307;&#x5B9A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x8FDE;&#x63A5;&#x5B9E;&#x73B0;&#x3002;</li>
+<li>Pig Latin&#x5141;&#x8BB8;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x6216;&#x5B9E;&#x73B0;&#x7684;&#x5404;&#x4E2A;&#x65B9;&#x9762; ,&#x4EE5;&#x5728;&#x591A;&#x4E2A;&#x65B9;&#x9762;&#x6267;&#x884C;&#x811A;&#x672C;&#x3002;Pig Latin&#x7F16;&#x7A0B;&#x7C7B;&#x4F3C;&#x4E8E; &#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x3002;</li>
+</ol>
+<h1 id="6-&#x53C2;&#x8003;">6. &#x53C2;&#x8003;</h1>
+<ol>
+<li><a href="https://blog.csdn.net/qq_41848129/article/details/99720517" target="_blank">HBase&#x5B58;&#x50A8;&#x65B9;&#x5F0F;</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Lecture2-大数据平台.html" class="navigation navigation-prev " aria-label="Previous page: Lecture2-大数据平台">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Lecture4-链接分析.html" class="navigation navigation-next " aria-label="Next page: Lecture4-链接分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lecture3-大数据存储和处理","level":"1.5","depth":1,"next":{"title":"Lecture4-链接分析","level":"1.6","depth":1,"path":"Lecture4-链接分析.md","ref":"Lecture4-链接分析.md","articles":[]},"previous":{"title":"Lecture2-大数据平台","level":"1.4","depth":1,"path":"Lecture2-大数据平台.md","ref":"Lecture2-大数据平台.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Lecture3-大数据存储和处理.md","mtime":"2020-11-04T12:10:16.941Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-15T13:44:10.403Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
