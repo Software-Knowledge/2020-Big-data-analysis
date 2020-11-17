@@ -494,6 +494,126 @@ $$
 4. 不均衡性
 5. 计算量较大
 
+## 5.6. KNN算法的Sklearn实现
+> Sklearn KNN声明
+
+```py
+def KNeighborsClassifier(n_neighbors = 5,
+                       weights='uniform',
+                       algorithm = '',
+                       leaf_size = '30',
+                       p = 2,
+                       metric = 'minkowski',
+                       metric_params = None,
+                       n_jobs = None
+                       )
+```
+1. n_neighbors：KNN 中的"K"，一般默认值为5。
+   1. K值较小，就相当于用较小的领域中的训练实例进行预测，训练误差近似误差小（偏差小），泛化误差会增大（方差大），换句话说，K值较小就意味着整体模型变得复杂，容易发生过拟合；
+   2. K值较大，就相当于用较大领域中的训练实例进行预测，泛化误差小（方差小），但缺点是近似误差大（偏差大），换句话说，K值较大就意味着整体模型变得简单，容易发生欠拟合；一个极端是K等于样本数m，则完全没有分类，此时无论输入实例是什么，都只是简单的预测它属于在训练实例中最多的类，模型过于简单。
+2. weights（权重）：最普遍的 KNN 算法无论距离如何，权重都一样，但有时候我们想搞点特殊化，比如距离更近的点让它更加重要。这时候就需要 weight 这个参数了，这个参数有三个可选参数的值，决定了如何分配权重。参数选项如下
+   1. uniform：不管远近权重都一样，就是最普通的 KNN 算法的形式。
+   2. distance：权重和距离成反比，距离预测目标越近具有越高的权重。
+   3. 自定义函数：自定义一个函数，根据输入的坐标值返回对应的权重，达到自定义权重的目的。
+3. leaf_size：这个值控制了使用kd树或者球树时，停止建子树的叶子节点数量的阈值。
+   1. 值越小，生成的kd树和球树越大，层数越深，建树时间越长。随着样本的数量增加，这个值也在增加，但是过大可能会过拟合，需要通过交叉检验来选择。
+   2. 默认值为30
+4. algorithm：在 sklearn 中，要构建 KNN 模型有三种构建方式，而当 KD 树也比较慢的时候，则可以试试球树来构建 KNN。参数选项如下：
+   1. brute:蛮力实现直接计算距离比较，适用于小数据集
+   2. kd_tree:使用 KD 树构建 KNN 模型，适用于比较大数据集
+   3. ball_tree:使用球树实现 KNN，适用于KD树解决起来更复杂
+   4. auto:默认参数，自动选择合适的方法构建模型.不过当数据较小或比较稀疏时，无论选择哪个最后都会使用 'brute'
+5. p：和metric结合使用的，当metric参数是"minkowski"的时候，p=1为曼哈顿距离， p=2为欧式距离。默认为p=2。
+6. metric：指定距离度量方法，一般都是使用欧式距离。
+   1. euclidean：欧式距离，$p=2$
+   2. manhattan：曼哈顿距离，$p=1$
+   3. chebyshev：切比雪夫距离，$p=\infty，D(x, y) = \max|x_i - y_i|(i = 1, 2, ..., n)$
+   4. minkowski：闵可夫斯基距离，默认参数，$\sqrt[q]{\sum\limits_{i=1}\limits^n(|x_i-y_i|)^p}$
+7. n_jobs：指定多少个CPU进行运算，默认是-1，也就是全部都算。
+8. radius：限定半径，默认为1，半径的选择与样本分布有关，可以通过交叉检验来选择一个比较小的半径
+9. outlier_labe:int类型，主要用于预测时，如果目标点半径内没有任何训练集的样本点时，应该标记的类别，不建议选择默认值 None,因为这样遇到异常点会报错。一般设置为训练集里最多样本的类别。
+
+### 5.6.1. KNN进行鸢尾花数据集分类
+1. 通过对比效果来找到合适的K值。
+
+```py
+from sklearn.datasets import load_iris
+from sklearn.model_selection  import cross_val_score
+import matplotlib.pyplot as plt
+from sklearn.neighbors import KNeighborsClassifier
+
+#读取鸢尾花数据集
+iris = load_iris()
+x = iris.data
+y = iris.target
+k_range = range(1, 31)
+k_error = []
+#循环，取k=1到k=31，查看误差效果
+for k in k_range:
+    knn = KNeighborsClassifier(n_neighbors=k)
+    #cv参数决定数据集划分比例，这里是按照5:1划分训练集和测试集
+    scores = cross_val_score(knn, x, y, cv=6, scoring='accuracy')
+    k_error.append(1 - scores.mean())
+
+#画图，x轴为k值，y值为误差值
+plt.plot(k_range, k_error)
+plt.xlabel('Value of K for KNN')
+plt.ylabel('Error')
+plt.show()
+```
+
+2. 执行KNN算法
+
+```py
+import matplotlib.pyplot as plt
+from numpy import *
+from matplotlib.colors import ListedColormap
+from sklearn import neighbors, datasets
+
+n_neighbors = 11
+
+# 导入一些要玩的数据
+iris = datasets.load_iris()
+x = iris.data[:, :2]  # 我们只采用前两个feature,方便画图在二维平面显示
+y = iris.target
+
+
+h = .02  # 网格中的步长
+
+# 创建彩色的图
+cmap_light = ListedColormap(['#FFAAAA', '#AAFFAA', '#AAAAFF'])
+cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])
+
+
+#weights是KNN模型中的一个参数，上述参数介绍中有介绍，这里绘制两种权重参数下KNN的效果图
+for weights in ['uniform', 'distance']:
+    # 创建了一个knn分类器的实例，并拟合数据。
+    clf = neighbors.KNeighborsClassifier(n_neighbors, weights=weights)
+    clf.fit(x, y)
+
+    # 绘制决策边界。为此，我们将为每个分配一个颜色
+    # 来绘制网格中的点 [x_min, x_max]x[y_min, y_max].
+    x_min, x_max = x[:, 0].min() - 1, x[:, 0].max() + 1
+    y_min, y_max = x[:, 1].min() - 1, x[:, 1].max() + 1
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
+                         np.arange(y_min, y_max, h))
+    Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+
+    # 将结果放入一个彩色图中
+    Z = Z.reshape(xx.shape)
+    plt.figure()
+    plt.pcolormesh(xx, yy, Z, cmap=cmap_light)
+
+    # 绘制训练点
+    plt.scatter(x[:, 0], x[:, 1], c=y, cmap=cmap_bold)
+    plt.xlim(xx.min(), xx.max())
+    plt.ylim(yy.min(), yy.max())
+    plt.title("3-Class classification (k = %i, weights = '%s')"
+              % (n_neighbors, weights))
+
+plt.show()
+```
+
 # 6. 集成学习
 - 集成学习并不是简单地将数据集在多个不同分类器上重复训练，而是对数据集进行扰动
 - 一个分类训练中的错误还可以被下一个分类器进行利用
@@ -963,3 +1083,7 @@ $$
 3. <a href = "https://www.cnblogs.com/keye/p/10564914.html">决策树算法原理(CART分类树)</a>
 4. <a href = "https://blog.csdn.net/sinat_30353259/article/details/80901746">机器学习之KNN（k近邻）算法详解</a>
 5. 《支持向量机通俗导论（理解SVM的三层境界）》
+6. <a href = "https://blog.csdn.net/laobai1015/article/details/82763033">SVM的Python实现</a>
+7. <a href = "https://www.cnblogs.com/shenxiaolin/p/8854838.html">Sklearn实现鸢尾花数据集</a>
+8. <a href = "https://www.cnblogs.com/listenfwind/p/10685192.html">深入浅出KNN算法（二） sklearn KNN实践</a>
+9. <a href = "https://blog.csdn.net/qq_40195360/article/details/86714337">【实现思路好】KNN 原理及参数总结</a>

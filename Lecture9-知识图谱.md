@@ -595,3 +595,96 @@ Lecture9-知识图谱
    3. A:为你找到如下比赛:（屏幕显示“皇马对巴萨”等三场比赛）
    4. U:帮我建一个第二场比赛的提醒
 
+# 11. KG embedding
+
+## 11.1. 推荐论文
+1. <a href = "https://link.zhihu.com/?target=https%3A//ieeexplore.ieee.org/abstract/document/8047276">Knowledge Graph Embedding: A Survey of Approaches and Applications</a>
+2. <a href = "https://link.zhihu.com/?target=http%3A//nlp.csai.tsinghua.edu.cn/~lzy/publications/knowledge_2016.pdf">知识表示学习研究进展，刘知远</a>
+
+## 11.2. 简介
+1. KG Embedding主要是把实体（entities）和关系（relations）嵌入（Embed）到一个连续向量空间里面
+2. KG Embedding主要包含三个步骤：
+   1. 对实体（entities）和关系（relations）进行表示
+   2. 定义得分函数（scoring function）
+   3. 实体和关系的表示进行学习
+
+## 11.3. 模型
+1. KG Embedding方法被划分为两类
+
+### 11.3.1. 距离变换模型(Translational distance models)
+![](img/lec9/64.png)
+![](img/lec9/65.png)
+
+### 11.3.2. 语义匹配模型
+1. 模型有RESCAL、DistMult和HolE
+
+![](img/lec9/66.png)
+
+2. 还有SME、NTN、MLP和NAM等方式
+
+![](img/lec9/67.png)
+
+![](img/lec9/68.png)
+
+### 11.3.3. 不同模型的复杂度比较
+![](img/lec9/69.png)
+
+## 11.4. 训练
+1. 模型训练有两种：基于开放世界假设和基于闭合世界假设
+
+### 11.4.1. 开发世界假设，Training under Open World Assumption，OWA
+1. KGS只包含真实的事实，$D^+$只存储正例
+2. logistic loss:$\min\limits_{\theta}\sum\limits_{r \in D^+ \cup D^-}log(1 + exp(-y_{hrt} * f_r(h, t)))$
+3. pairwise ranking loss：$\min\limits_{\theta}\sum\limits_{r^+ \in D^+}\sum\limits_{r^- \in D^-}\max(0, \gamma - f_r(h, t) + f_{r'}(h',t'))$
+
+### 11.4.2. 闭合世界假设，Training under Cloesd World Assumption，CMA
+1. 没有包含在$D^+$中的样例都是错误的
+2. squared loss:$\min\limits_{\theta}\sum\limits_{h, t\in E, r\infty R(y_{hrt} - f_r(h, t))^2$
+
+## 11.5. 其他参考信息
+1. 实体类型，Entity Types
+2. 关系路径，Relation Paths
+3. 背景描述，Textual Descriptions
+4. 逻辑规则， Logical Rules
+5. 实体属性，Entity Attributes
+6. 临时信息，Temporal Information
+7. 图的结构，Graph Structures
+
+## 11.6. 应用
+1. In-KG Applications：
+   1. 链接预测，知识图谱补全，Link Prediction，[公式]，[公式]，[公式]
+   2. 三元组分类，Triple Classifification，判断三元组事实[公式]是否为真
+   3. 实体分类，Entity Classifification，将实体归类为不同的实体 语义类别
+   4. 实体判别，Entity resolution，判断两个实体是否为同一个目标
+2. Out-of-KG Applications：
+   1. 关系抽取， Relation Extraction
+   2. 问答系统，Question Answering
+   3. 推荐系统， Recommender Systems
+
+## 11.7. TransE算法
+1. 三元组的表示:(h, r, t)含义为(头实体，关系，尾实体)
+2. 目标：我们找到正确的三元组，即: h + r = t
+3. 算法过程描述
+
+![](img/lec9/70.png)
+
+4. 注意：
+   1. 我们需要关注的是之前的项和后面的项之间的关系，如果正确了则给予正反馈，否则基于负反馈。
+   2. SGD的收敛效果没有GD，但是这个可以有效的避免过拟合情况的出现。
+
+## 11.8. TransH算法
+<a href = "https://blog.csdn.net/MonkeyDSummer/article/details/85273843">TransH 算法详解</a>
+
+# 12. 实践项目参考
+1. <a href = "https://blog.csdn.net/qq_35273499/article/details/80259821">项目实战：如何构建知识图谱</a>
+2. <a href = "https://blog.csdn.net/hadoopdevelop/article/details/84787934?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">知识图谱完整项目实战（附源码）（2）</a>
+3. <a href = "https://github.com/smoothnlp/SmoothNLP">github:smoothNLP开源项目</a>
+
+# 13. 知识图谱数据集介绍
+1. <a href = "https://zhuanlan.zhihu.com/p/133649429">【知识工程】知识图谱常用实验数据集Freebase、WordNet概述</a>
+
+# 14. 参考
+1. <a href = "https://zhuanlan.zhihu.com/p/102391664">知识表示-KG Embedding</a>
+2. <a href = "https://www.jianshu.com/p/995cc0b8ebe5">最全知识图谱介绍:关键技术、开放数据集、应用案例汇总</a>
+3. <a href = "https://blog.csdn.net/MonkeyDSummer/article/details/85253813">TransE算法详解</a>
+4. <a href = "https://blog.csdn.net/u011274209/article/details/50991385">TransE算法（Translating Embedding）（主要是注解）</a>
