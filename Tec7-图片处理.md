@@ -701,4 +701,4 @@ if __name__ == '__main__':
 1. <a herf = "https://blog.csdn.net/u012067766/article/details/80013611">使用python PIL库实现简单验证码的去噪</a>
 2. <a href = "https://blog.csdn.net/zhuoyuezai/article/details/79635120">如何将Numpy数组保存为图像</a>
 3. <a href = "https://blog.csdn.net/m0_37772174/article/details/102886027">SVD应用于图像压缩 Python代码测试</a>
-4. <a href = "https://blog.csdn.net/weixin_44984664/article/details/105242426">调用Mathpix API 自制Mathpix snipping （每月1000次免费！！！）</a>
+4. <a href = "https://blog.csdn.net/weixin_44984664/article/details/105242426">调用Mathpix API 自制Mathpix snipping （每月1000次免费！！！)</a>

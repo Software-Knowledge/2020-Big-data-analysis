@@ -155,7 +155,7 @@ print("Default Mode: " + "/ ".join(seg_list))
  
 seg_list = jieba.cut("他来到了网易杭研大厦")  # 默认是精确模式
 print(", ".join(seg_list))
-# 新词识别:他, 来到, 了, 网易, 杭研, 大厦 (此处，“杭研”并没有在词典中，但是也被Viterbi算法识别出来了) 
+# 新词识别:他, 来到, 了, 网易, 杭研, 大厦 (此处，"杭研"并没有在词典中，但是也被Viterbi算法识别出来了) 
  
 seg_list = jieba.cut_for_search("小明硕士毕业于中国科学院计算所，后在日本京都大学深造")
 print(", ".join(seg_list)
@@ -505,7 +505,7 @@ if __name__ == '__main__':
 ```
 
 # 6. 参考
-1. <a href = "https://www.cnblogs.com/jclian91/p/9898511.html">NLP入门（三）词形还原（Lemmatization）</a>
+1. <a href = "https://www.cnblogs.com/jclian91/p/9898511.html">NLP入门（三)词形还原（Lemmatization)</a>
 2. <a href = "https://blog.csdn.net/weixin_39712314/article/details/106173356">nltk_data LookupError: Resource punkt not found. Please use the NLTK Downloader to obtain the resour</a>
 3. <a href = "https://zhuanlan.zhihu.com/p/161342541">用Python给你的文本提取关键词</a>
 4. <a href = "https://blog.csdn.net/bozhanggu2239/article/details/80157305">Python的jieba分词及TF-IDF和TextRank 算法提取关键字</a>

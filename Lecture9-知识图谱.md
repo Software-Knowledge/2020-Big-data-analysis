@@ -20,7 +20,7 @@ Lecture9-知识图谱
 
 
 ## 2.1. 知识图谱分类
-1. 领域（行业）知识图谱 (Domain specific Knowledge Graph)：聚焦于特定领域或者行业的知识图谱
+1. 领域（行业)知识图谱 (Domain specific Knowledge Graph)：聚焦于特定领域或者行业的知识图谱
 2. 企业知识图谱(Enterprise knowledge graph)：贯穿企业各业务部门的知识图谱
 
 ![](img/lec9/2.png)
@@ -45,13 +45,13 @@ Lecture9-知识图谱
 1. Entity/Objects/Instances:维基百科：实体就是东西,它本身，作为主体或作为对象存在，实际上或潜在地，具体地或抽象地，物理地或非物理地存在。
 2. Concept:概念
    1. 在形而上学，尤其是本体论中，概念是存在的基本类别。
-   2. 类别的（心理）表示
+   2. 类别的（心理)表示
 3. Category:类别有共同点的实体组；
 4. Type/class:类型/类别，WIKITIONARY：基于共享特征的分组；一类。
 
 ## 3.2. KG组成：Node-Entity例子
 1. Date：特朗普 出生日期 1946年6月14日
-2. String：特朗普 简介“唐纳德·特朗普(Donald Trump)，第45任美国总统，1946 年6月14日生于纽约，美国共和党籍政治家”
+2. String：特朗普 简介"唐纳德·特朗普(Donald Trump)，第45任美国总统，1946 年6月14日生于纽约，美国共和党籍政治家"
 3. Numeric：特朗普 年龄 71
 
 ![](img/lec9/6.png)
@@ -83,13 +83,13 @@ Lecture9-知识图谱
 2. 物理符号系统
    1. 物理符号系统具有一般智能操作的必要和充分手段
    2. 可以将思维视为根据正式规则对信息进行操作的设备。
-3. GOFAI（老式人工智能，由John Haugeland提出），专注于此类高水平符号，例如`<dog>`和`<tail>`
+3. GOFAI（老式人工智能，由John Haugeland提出)，专注于此类高水平符号，例如`<dog>`和`<tail>`
 4. AI System = Knowledge + Reasoning
 
 ## 4.2. 代表人物和时间节点
 ![](img/lec9/8.png)
 
-1. KE（知识工程）是一门工程学科，涉及将知识集成到计算机系统中，以解决通常需要高水平专业知识的复杂问题。 参考维基百科
+1. KE（知识工程)是一门工程学科，涉及将知识集成到计算机系统中，以解决通常需要高水平专业知识的复杂问题。 参考维基百科
 2. 知识工程是以知识为处理对象，研究知识系统的知识表示、处理和应用的方法和开发工具的学科的方法和开发工具的学科
 
 ![](img/lec9/9.png)
@@ -128,7 +128,7 @@ Lecture9-知识图谱
 ## 4.6. 互联网应用催生大数据世代知识工程(BigKE)
 1. 大规模开放性应用
    1. 永远不知道用户下一个搜索关键字是什么
-   2. “创造101”、“吃鸡”、“纸片人”、“蛙儿”
+   2. "创造101"、"吃鸡"、"纸片人"、"蛙儿"
 2. 精度要求不高:搜索引擎从来不需要保证每个搜索的理解和检索都是正确的
 3. 应用/推理简单
 4. 大部分搜索理解与回答只需要实现简单的推理
@@ -285,7 +285,7 @@ Lecture9-知识图谱
 ## 8.2. Cyc
 1. 简介:常识知识图谱
 2. 特点:通过人工方法将上百万条人类常识编码成机器可用的形式，用以进行智能推断
-3. 规模:目前ResearchCyc知识图谱中包含了700万条断言（事实和规则），涉及63万个概念，38000种关系
+3. 规模:目前ResearchCyc知识图谱中包含了700万条断言（事实和规则)，涉及63万个概念，38000种关系
 4. http://www.cyc.com/
 
 ## 8.3. WordNet
@@ -314,7 +314,7 @@ Lecture9-知识图谱
    1. Freebase 所有知识采用结构化的表示形式，可由机器和人编辑
    2. Wikidata是维基百科的姐妹工程，同样可由机器和人自由编辑
    3. 2016年8月31日，Freebase宣布关闭， 所有数据汇入Wikidata
-2. 样例：“Donald Trump”
+2. 样例："Donald Trump"
 3. 特点
    1. 众包构建
    2. 结构化三元组
@@ -356,7 +356,7 @@ Lecture9-知识图谱
 
 ## 9.2. NoKG(Not Only KG)
 1. 传统知识工程，专家构建，代价高昂， 规模有限；知识边界易于突破，难以适应大数据时代开放应用到规模化需求
-2. 大规模开放应用需要“大”知识（大规模知识库）
+2. 大规模开放应用需要"大"知识（大规模知识库)
 3. Small Knowledge + Big Data = Big Knowledge，知识图谱引领知识工程
 
 ## 9.3. DKG与GKG的区别
@@ -550,7 +550,7 @@ Lecture9-知识图谱
 1. 问句预处理：基于概念、实体、属性和操作符进行分词
 2. 问句实体项识别
    1. 概念、实体、属性
-   2. 操作符（><=）
+   2. 操作符（><=)
    3. 日期实体
    4. 数值实体
 3. 实体三元组生成
@@ -562,7 +562,7 @@ Lecture9-知识图谱
 
 ## 10.11. 基于模板规则的问句解析
 1. 方法步骤
-   1. “冷启动”阶段，不用训练，快速生效，适度泛化
+   1. "冷启动"阶段，不用训练，快速生效，适度泛化
    2. 内置实体抽取+ 用户自定义实体库+ 规则模板语籵：播放刘德华冰币
    3. 模板：[播放][singer][song]
    4. 模板质量判定：语籵是否自动生成模板
@@ -581,18 +581,18 @@ Lecture9-知识图谱
    1. (question classification)，语义匹配与答案选择
    2. (answer selection)，答案自动生成
    3. (answer generation);即对用户输入解析、答案查询与检索等环节进行优化。
-3. 优点：实现“端到端＂的问答：把问题与答案均使用复杂的特征向量表示，使用深度学习来计算问题与答案的相似度
+3. 优点：实现"端到端＂的问答：把问题与答案均使用复杂的特征向量表示，使用深度学习来计算问题与答案的相似度
 4. 不足：不支持复杂的查询;需要比较长的训练过程，不适用于现实应用场景中的知识更新后的实时查询
 
 ## 10.14. 智能问答面临的问题和挑战
 1. 复杂query的解析
-   1. 多意图:“帮我播放音乐，打开窗户”
-   2. xxx:“如果明天下币，提醒我关窗户”
-   3. 其他:“帮我建一个明天C罗比赛的提醒
+   1. 多意图:"帮我播放音乐，打开窗户"
+   2. xxx:"如果明天下币，提醒我关窗户"
+   3. 其他:"帮我建一个明天C罗比赛的提醒
 2. 复杂多轮及上下文
    1. 任务型、问答、闲聊等多种技能的自由切换以及上下文传递
    2. U:明天西甲的比赛
-   3. A:为你找到如下比赛:（屏幕显示“皇马对巴萨”等三场比赛）
+   3. A:为你找到如下比赛:（屏幕显示"皇马对巴萨"等三场比赛)
    4. U:帮我建一个第二场比赛的提醒
 
 # 11. KG embedding
@@ -602,10 +602,10 @@ Lecture9-知识图谱
 2. <a href = "https://link.zhihu.com/?target=http%3A//nlp.csai.tsinghua.edu.cn/~lzy/publications/knowledge_2016.pdf">知识表示学习研究进展，刘知远</a>
 
 ## 11.2. 简介
-1. KG Embedding主要是把实体（entities）和关系（relations）嵌入（Embed）到一个连续向量空间里面
+1. KG Embedding主要是把实体（entities)和关系（relations)嵌入（Embed)到一个连续向量空间里面
 2. KG Embedding主要包含三个步骤：
-   1. 对实体（entities）和关系（relations）进行表示
-   2. 定义得分函数（scoring function）
+   1. 对实体（entities)和关系（relations)进行表示
+   2. 定义得分函数（scoring function)
    3. 实体和关系的表示进行学习
 
 ## 11.3. 模型
@@ -677,7 +677,7 @@ Lecture9-知识图谱
 
 # 12. 实践项目参考
 1. <a href = "https://blog.csdn.net/qq_35273499/article/details/80259821">项目实战：如何构建知识图谱</a>
-2. <a href = "https://blog.csdn.net/hadoopdevelop/article/details/84787934?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">知识图谱完整项目实战（附源码）（2）</a>
+2. <a href = "https://blog.csdn.net/hadoopdevelop/article/details/84787934?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param">知识图谱完整项目实战（附源码)（2)</a>
 3. <a href = "https://github.com/smoothnlp/SmoothNLP">github:smoothNLP开源项目</a>
 
 # 13. 知识图谱数据集介绍
@@ -687,4 +687,4 @@ Lecture9-知识图谱
 1. <a href = "https://zhuanlan.zhihu.com/p/102391664">知识表示-KG Embedding</a>
 2. <a href = "https://www.jianshu.com/p/995cc0b8ebe5">最全知识图谱介绍:关键技术、开放数据集、应用案例汇总</a>
 3. <a href = "https://blog.csdn.net/MonkeyDSummer/article/details/85253813">TransE算法详解</a>
-4. <a href = "https://blog.csdn.net/u011274209/article/details/50991385">TransE算法（Translating Embedding）（主要是注解）</a>
+4. <a href = "https://blog.csdn.net/u011274209/article/details/50991385">TransE算法（Translating Embedding)（主要是注解)</a>

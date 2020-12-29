@@ -15,4 +15,4 @@ restruct1 = (U[:,0:sval_nums]).dot(np.diag(Sigma[0:sval_nums])).dot(VT[0:sval_nu
 ```
 
 # 3. 参考
-1. <a href = "https://www.cnblogs.com/endlesscoding/p/10033527.html">SVD（奇异值分解）小结</a>
+1. <a href = "https://www.cnblogs.com/endlesscoding/p/10033527.html">SVD（奇异值分解)小结</a>
