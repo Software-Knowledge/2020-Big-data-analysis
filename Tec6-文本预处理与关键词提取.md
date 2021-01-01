@@ -67,9 +67,8 @@ print(tagged_sent)
 # [('The', 'DT'), ('brown', 'JJ'), ('fox', 'NN'), ('is', 'VBZ'), ('quick', 'JJ'), ('and', 'CC'), ('he', 'PRP'), ('is', 'VBZ'), ('jumping', 'VBG'), ('over', 'IN'), ('the', 'DT'), ('lazy', 'JJ'), ('dog', 'NN')]
 ```
 
-|                     |                     |
-| ------------------- | ------------------- |
 | ![](img/tec6/1.png) | ![](img/tec6/2.png) |
+| ------------------- | ------------------- |
 
 # 2. nltk_data下载失败
 - 错误代码
