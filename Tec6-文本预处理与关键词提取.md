@@ -504,7 +504,7 @@ if __name__ == '__main__':
 ```
 
 # 6. 参考
-1. <a href = "https://www.cnblogs.com/jclian91/p/9898511.html">NLP入门（三)词形还原（Lemmatization)</a>
+1. <a href = "https://www.cnblogs.com/jclian91/p/9898511.html">NLP入门(三)词形还原(Lemmatization)</a>
 2. <a href = "https://blog.csdn.net/weixin_39712314/article/details/106173356">nltk_data LookupError: Resource punkt not found. Please use the NLTK Downloader to obtain the resour</a>
 3. <a href = "https://zhuanlan.zhihu.com/p/161342541">用Python给你的文本提取关键词</a>
 4. <a href = "https://blog.csdn.net/bozhanggu2239/article/details/80157305">Python的jieba分词及TF-IDF和TextRank 算法提取关键字</a>

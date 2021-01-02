@@ -124,7 +124,7 @@ $$
 ![](img/lec4/12.png)
 
 ### 3.5.2. Power Iteration方法原理
-1. 查找主要特征向量（对应于最大特征值的向量)的方法
+1. 查找主要特征向量(对应于最大特征值的向量)的方法
 $$
 r^{(1)} = M * r ^{(0)} \\
 r^{(2)} = M^{2} * r ^{(0)} \\
@@ -157,7 +157,7 @@ $$
 3. 结合之前矩阵形式的等式，我们可以知道r就是Random Walk的平稳分布
 
 ### 3.6.2. 存在性和唯一性
-随机游走理论（又称马尔可夫过程)的主要结果是：对于满足某些条件的图，平稳分布是唯一的，并且无论在时间t = 0时的初始概率分布如何，最终都会达到平稳分布
+随机游走理论(又称马尔可夫过程)的主要结果是：对于满足某些条件的图，平稳分布是唯一的，并且无论在时间t = 0时的初始概率分布如何，最终都会达到平稳分布
 
 ## 3.7. PageRank的问题
 1. PageRank是否收敛？
@@ -299,7 +299,7 @@ $$
 ## 4.1. 算法步骤
 
 ### 4.1.1. 确定话题分类
-一般来说，可以参考Open Directory（DMOZ)的一级话题类别作为topic。目前DMOZ的一级topic有：Arts（艺术)、Business（商务)、Computers（计算机)、Games（游戏)、Health（医疗健康)、Home（居家)、Kids and Teens（儿童)、News（新闻)、Recreation（娱乐修养)、Reference（参考)、Regional（地域)、Science（科技)、Shopping（购物)、Society（人文社会)、Sports（体育)。
+一般来说，可以参考Open Directory(DMOZ)的一级话题类别作为topic。目前DMOZ的一级topic有：Arts(艺术)、Business(商务)、Computers(计算机)、Games(游戏)、Health(医疗健康)、Home(居家)、Kids and Teens(儿童)、News(新闻)、Recreation(娱乐修养)、Reference(参考)、Regional(地域)、Science(科技)、Shopping(购物)、Society(人文社会)、Sports(体育)。
 
 ### 4.1.2. 网页topic归属
 这一步需要将每个页面归入最合适的分类，具体归类有很多算法，例如可以使用TF-IDF基于词素归类，也可以聚类后人工归类，具体不再展开。这一步最终的结果是每个网页被归到其中一个topic。

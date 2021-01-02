@@ -271,4 +271,4 @@ if __name__ == '__main__':
 # 3. 参考
 1. <a href = "https://www.jianshu.com/p/9ada2ba92919?utm_campaign">分析9000部电影|一个简单的电影推荐系统</a>
 2. <a href = "https://blog.csdn.net/weixin_26752765/article/details/108132875">基于MovieLens的电影推荐系统</a>
-3. <a href = "https://blog.csdn.net/Joenyye/article/details/80912909">Python推荐算法案例（2)——基于内容的电影推荐</a>
+3. <a href = "https://blog.csdn.net/Joenyye/article/details/80912909">Python推荐算法案例(2)——基于内容的电影推荐</a>
